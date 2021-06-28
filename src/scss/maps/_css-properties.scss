@@ -1,0 +1,511 @@
+$active-class-name:'.active';
+$css-properties: (
+    background-color: (
+        name: '.bg',
+        property: (
+            'background-color',
+        ),
+        unit: 'percent',
+    ),
+    background-position: (
+        name: '.bg',
+        property: (
+            'background-position',
+        ),
+        unit: 'background-position',
+    ),
+    border-color: (
+        name: '.br',
+        property: (
+            'border-color',
+        ),
+        unit: 'percent',
+    ),
+    border-style: (
+        name: '.br',
+        property: (
+            'border-style',
+        ),
+        unit: 'border-style',
+    ),
+    border-width: (
+        name: '.br',
+        property: (
+            'border-width',
+        ),
+        unit: border-width,
+    ),
+    border-top-width: (
+        name: '.br-t',
+        property: (
+            'border-top-width',
+        ),
+        unit: border-width,
+    ),
+    border-right-width: (
+        name: '.br-r',
+        property: (
+            'border-right-width',
+        ),
+        unit: border-width,
+    ),
+    border-left-width: (
+        name: '.br-l',
+        property: (
+            'border-left-width',
+        ),
+        unit: border-width,
+    ),
+    border-bottom-width: (
+        name: '.br-b',
+        property: (
+            'border-bottom-width',
+        ),
+        unit: border-width,
+    ),
+    border-radius: (
+        name: '.br',
+        property: (
+            'border-radius',
+        ),
+        unit: 'radius',
+    ),
+    border-top-right-radius: (
+        name: '.br-tr',
+        property: (
+            'border-top-right-radius',
+        ),
+        unit: 'radius',
+    ),
+    border-top-left-radius: (
+        name: '.br-tl',
+        property: (
+            'border-top-left-radius',
+        ),
+        unit: 'radius',
+    ),
+    border-bottom-right-radius: (
+        name: '.br-br',
+        property: (
+            'border-bottom-right-radius',
+        ),
+        unit: 'radius',
+    ),
+    border-bottom-left-radius: (
+        name: '.br-bl',
+        property: (
+            'border-bottom-left-radius',
+        ),
+        unit: 'radius',
+    ),
+    box-shadow: (
+        name: '.shadow',
+        property: (
+            'box-shadow',
+        ),
+        unit: 'shadow',
+    ),
+    rich-shadow: (
+        name: '.shadow',
+        property: (
+            'box-shadow',
+        ),
+        unit: 'rich-shadow',
+    ),
+    display: (
+        name: '.',
+        property: (
+            'display',
+        ),
+        unit: 'display',
+    ),
+    text-align: (
+        name: '.text',
+        property: (
+            'text-align',
+        ),
+        unit: 'text-align',
+    ),
+    color: (
+        name: '.c',
+        property: (
+            'color',
+        ),
+        unit: 'percent',
+    ),
+    float: (
+        name: '.float',
+        property: (
+            'float',
+        ),
+        unit: 'float',
+    ),
+    font-family: (
+        name: '.font',
+        property: (
+            'font-family',
+        ),
+        unit: 'font-family',
+    ),
+    font-size: (
+        name: '.font',
+        property: (
+            'font-size',
+        ),
+        unit: 'font-size',
+    ),
+    font-weight: (
+        name: '.font',
+        property: (
+            'font-weight',
+        ),
+        unit: 'font-weight',
+    ),
+    hover: (
+        name: '.h\\3A ',
+        property: (
+            'background-color',
+        ),
+        unit: 'hover',
+    ),
+    is-active: (
+        name: '#{$active-class-name}>.a\\3A ',
+        property: (
+            'background-color',
+        ),
+        unit: 'active',
+    ),
+    is-active-self: (
+        name: '#{$active-class-name}.a\\3A ',
+        property: (
+            'background-color',
+        ),
+        unit: 'active',
+    ),
+    active: (
+        name: '.a\\3A ',
+        property: (
+            'background-color',
+        ),
+        unit: 'active',
+    ),
+    visited: (
+        name: '.v\\3A ',
+        property: (
+            'background-color',
+        ),
+        unit: 'visited',
+    ),
+    hover-bg: (
+        name: '.h\\3A bg',
+        property: (
+            'background-color',
+        ),
+        unit: 'hover',
+    ),
+    hover-text: (
+        name: '.h\\3A c',
+        property: (
+            'color',
+        ),
+        unit: 'hover',
+    ),
+    bottom: (
+        name: '.b',
+        property: (
+            'bottom',
+        ),
+        unit: 'sizeAlt',
+    ),
+    left: (
+        name: '.l',
+        property: (
+            'left',
+        ),
+        unit: 'sizeAlt',
+    ),
+    list-type: (
+        name: '.ul',
+        property: (
+            'list-style-type',
+        ),
+        unit: 'list-type',
+    ),
+    margin: (
+        name: '.m',
+        property: (
+            'margin',
+        ),
+        unit: 'size',
+    ),
+    margin-horizontal: (
+        name: '.m-x',
+        property: (
+            'margin-right',
+            'margin-left',
+        ),
+        unit: 'size',
+    ),
+    margin-vertical: (
+        name: '.m-y',
+        property: (
+            'margin-top',
+            'margin-bottom',
+        ),
+        unit: 'size',
+    ),
+    margin-top: (
+        name: '.m-t',
+        property: (
+            'margin-top',
+        ),
+        unit: 'size',
+    ),
+    margin-bottom: (
+        name: '.m-b',
+        property: (
+            'margin-bottom',
+        ),
+        unit: 'size',
+    ),
+    margin-left: (
+        name: '.m-l',
+        property: (
+            'margin-left',
+        ),
+        unit: 'size',
+    ),
+    margin-right: (
+        name: '.m-r',
+        property: (
+            'margin-right',
+        ),
+        unit: 'size',
+    ),
+    grid-column-gap: (
+        name: '.gap-x',
+        property: (
+            'grid-column-gap',
+        ),
+        unit: 'size-positive',
+    ),
+    grid-row-gap: (
+        name: '.gap-y',
+        property: (
+            'grid-row-gap',
+        ),
+        unit: 'size-positive',
+    ),
+    padding: (
+        name: '.p',
+        property: (
+            'padding',
+        ),
+        unit: 'size-positive',
+    ),
+    padding-horizontal: (
+        name: '.p-x',
+        property: (
+            'padding-left',
+            'padding-right',
+        ),
+        unit: 'size-positive',
+    ),
+    padding-vertical: (
+        name: '.p-y',
+        property: (
+            'padding-bottom',
+            'padding-top',
+        ),
+        unit: 'size-positive',
+    ),
+    padding-top: (
+        name: '.p-t',
+        property: (
+            'padding-top',
+        ),
+        unit: 'size-positive',
+    ),
+    padding-bottom: (
+        name: '.p-b',
+        property: (
+            'padding-bottom',
+        ),
+        unit: 'size-positive',
+    ),
+    padding-left: (
+        name: '.p-l',
+        property: (
+            'padding-left',
+        ),
+        unit: 'size-positive',
+    ),
+    padding-right: (
+        name: '.p-r',
+        property: (
+            'padding-right',
+        ),
+        unit: 'size-positive',
+    ),
+    line-height: (
+        name: '.lh',
+        property: (
+            'line-height',
+        ),
+        unit: 'line-height',
+    ),
+    opacity: (
+        name: '.opacity',
+        property: (
+            'opacity',
+        ),
+        unit: 'opacity',
+    ),
+    background-blend-mode: (
+        name: '.bg-blend',
+        property: (
+            'background-blend-mode',
+        ),
+        unit: 'blend',
+    ),
+    mix-blend-mode: (
+        name: '.font-blend',
+        property: (
+            'mix-blend-mode',
+        ),
+        unit: 'blend',
+    ),
+    position: (
+        name: '.',
+        property: (
+            'position',
+        ),
+        unit: 'position',
+    ),
+    background-transparent: (
+        name: '.bg',
+        property: (
+            'background-color',
+        ),
+        unit: 'opacity',
+    ),
+    border-transparent: (
+        name: '.br',
+        property: (
+            'border-color',
+        ),
+        unit: 'opacity',
+    ),
+    color-transparent: (
+        name: '.c',
+        property: (
+            'color',
+        ),
+        unit: 'opacity',
+    ),
+    right: (
+        name: '.r',
+        property: (
+            'right',
+        ),
+        unit: 'sizeAlt',
+    ),
+    top: (
+        name: '.t',
+        property: (
+            'top',
+        ),
+        unit: 'sizeAlt',
+    ),
+    text-indent: (
+        name: '.text-indent',
+        property: (
+            'text-indent',
+        ),
+        unit: 'text-indent',
+    ),
+    text-shadow: (
+        name: '.text-shadow',
+        property: (
+            'text-shadow',
+        ),
+        unit: 'text-shadow',
+    ),
+    transition: (
+        name: '.transition',
+        property: (
+            'transition',
+        ),
+        unit: 'transition',
+    ),
+    ease: (
+        name: '.ease',
+        property: (
+            'transition-timing-function',
+        ),
+        unit: 'ease',
+    ),
+    transform-origin: (
+        name: '.origin',
+        property: (
+            'transform-origin',
+        ),
+        unit: 'transform-origin',
+    ),
+    scale: (
+        name: '.scale',
+        property: (
+            'transform',
+        ),
+        unit: 'scale',
+    ),
+    grid-width: (
+        name: '.w-grid',
+        property: (
+            'width',
+        ),
+        unit: grid,
+    ),
+    height-viewport: (
+        name: '.h',
+        property: (
+            'height',
+        ),
+        unit: height-viewport,
+    ),
+    min-height: (
+        name: '.min-h',
+        property: (
+            'min-height',
+        ),
+        unit: height-viewport,
+    ),
+    width: (
+        name: '.w',
+        property: (
+            'width',
+        ),
+        unit: width-percent,
+    ),
+    max-width: (
+        name: '.max-w',
+        property: (
+            'max-width',
+        ),
+        unit: max-width,
+    ),
+    word-break: (
+        name: '.wb',
+        property: (
+            'word-break',
+        ),
+        unit: word-break,
+    ),
+    z-index: (
+        name: '.z',
+        property: (
+            'z-index',
+        ),
+        unit: z-index,
+    ),
+);

@@ -1,0 +1,57 @@
+//globally importing the modular scale to make development easier;
+@use "sass:map";
+@use "sass:selector";
+@use "modularscale-sass/stylesheets/_modularscale.scss" as *;
+@use "maps";
+
+
+$modularscale: (
+  base: 16px,
+  ratio: 1.5
+);
+
+@debug ms(-1);
+@debug ms();
+@debug ms(0);
+@debug ms(1);
+@debug ms(2);
+
+$modularscale: (
+  base: 1em,
+  ratio: 1.3,
+  20em: (
+    ratio: 1.3
+  ),
+  60em: (
+    ratio: 1.6
+  ),
+);
+
+body {
+  line-height: 1.3;
+  margin: 0 auto;
+  padding: 10% 5% 50%;
+  max-width: 42em;
+  font-size: ms(0);
+}
+
+
+
+
+
+@each $type, $map in maps.$css-properties{
+    $classNameBase: map.get($map,name);
+    @if( $classNameBase == '.' ){
+        $classNameBase:map.get($map,property);
+    }
+    $selector: selector.append($classNameBase, map.get($map,unit));
+    
+    @debug $selector;
+    #{$selector}{
+            @if( map-has-key($map, property) ){
+                @each $prop in map.get($map,property ){
+                    #{$prop}:map-get($map , name );
+                }
+        }
+    }
+}
