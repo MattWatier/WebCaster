@@ -11,19 +11,28 @@
     "fill-range": "^7.0.1",
     "glob-parent": "^5.1.2",
     "is-binary-path": "^2.1.0",
-    "is-glob": "^4.0.1",
-    "normalize-path": "^3.0.0",
-    "modularscale-sass": "^3.0.10",
-    "is-number": "^7.0.0",
     "is-extglob": "^2.1.1",
+    "is-glob": "^4.0.1",
+    "is-number": "^7.0.0",
+    "modularscale-sass": "^3.0.10",
+    "normalize-path": "^3.0.0",
     "picomatch": "^2.3.0",
+    "postcss-merge-rules": "^5.0.2",
     "readdirp": "^3.6.0",
     "sass": "^1.35.1",
     "to-regex-range": "^5.0.1"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "cssnano": "^5.0.6",
+    "gzipper": "^5.0.0",
+    "postcss": "^8.3.5",
+    "postcss-cli": "^8.3.1",
+    "postcss-combine-media-query": "^1.0.1"
+  },
   "scripts": {
-    "scss": "sass -w --load-path=node_modules/ src/scss/UC.scss dist/css/UC.css "
+    "scss": "sass -w --load-path=node_modules/ src/scss/UC.scss dist/css/UC.css ",
+    "postcss": "postcss dist/css/UC.css > dist/css/UC.min.css","gzipper": "gzipper",
+    "compress": "gzipper compress ./dist"
   },
   "repository": {
     "type": "git",
