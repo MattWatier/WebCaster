@@ -13,45 +13,44 @@ $units: (
 	),
 	direction-edges: (
 		t: (
-			logical: block-start,
 			fallback: top,
+			logical: block-start,
 		),
 		l: (
-			logical: inline-start,
 			fallback: left,
+			logical: inline-start,
 		),
 		r: (
-			logical: inline-end,
 			fallback: right,
+			logical: inline-end,
 		),
 		b: (
-			logical: block-start,
 			fallback: bottom,
-		),
+			logical: block-start,
+		)
 	),
 	direction-corners: (
 		tl: (
-			logical: start-start,
 			fallback: top-left,
+			logical: start-start,
 		),
 		tr: (
-			logical: end-start,
 			fallback: top-right,
+			logical: end-start,
 		),
 		bl: (
-			logical: start-end,
 			fallback: bottom-left,
+			logical: start-end,
 		),
 		br: (
-			logical: end-end,
 			fallback: bottom-right,
+			logical: end-end,
 		),
 	),
 	breakpoints: (
 		sm: 480px,
 		md: 768px,
-		lg: 1024px,
-		xl: 1200px,
+		lg: 1024px
 	),
 	size: (
 		0: 0,

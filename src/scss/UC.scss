@@ -6,7 +6,7 @@
 @use "modularscale-sass/stylesheets/_modularscale.scss" as *;
 @use "maps";
 @use "sass:meta";
-$colon:'\\3A ';
+$colon: '\\3A ';
 $modularscale: (
   base: 16px,
   ratio: 1.5,
@@ -38,58 +38,71 @@ body {
 }
 
 @mixin breakpointLoop($breakpoints) {
+  // create mobile first rule
   @content ( '' );
+  // loop through the rules with media queries going up.
   @each $breakpointLabel, $value in $breakpoints {
     @media screen and (min-width: #{$value}) {
       @content ( $colon+$breakpointLabel );
     }
   }
 }
-@mixin directionModifierLoop($directions) {
+@mixin directionModifierLoop($directionsMap) {
+  //create the base all unit version first
   @content ( '', '' );
-  @each $direction, $map in $directions {
-    @each $directionType, $propertyDirectionMod in $map {
-      @content ( '-'+$direction,'-'+$propertyDirectionMod );
-    }
+  //loop through the variations second
+  @each $direction, $propertyDirectionMap in $directionsMap {
+    @content ( '-'+$direction,$propertyDirectionMap );
+  }
+}
+@mixin propertyDirectionMapLoop($propertyDirectionMap) {
+  //loop through the variations second
+  @each $label, $propertyDirection in $propertyDirectionMap {
+    @content ( "-"+$propertyDirection );
   }
 }
 @mixin propertyValueLoop($units, $unitLoopMode) {
-  @if( $unitLoopMode == 'basic'){
+  // basic single layer value loop
+  @if ($unitLoopMode == 'basic') {
     @each $unitLabel, $propertyValue in $units {
       @content ( $unitLabel, $propertyValue );
     }
-  }
-
-  @else{
-    @each $unitLabel,$propertyValue in maps.$theme-palette {
+  } @else {
+    // complex color loop with value and modifier loop
+    @each $unitLabel, $propertyValue in maps.$theme-palette {
       @content ( $unitLabel,  $propertyValue );
-        @if($unitLabel == black or $unitLabel == white){
-          @each $unitLabelModifier, $propertyValueModifier in map.get(maps.$units,opacity) {
-            @content ( $unitLabel+'-'+$unitLabelModifier, color.change( $propertyValue , $alpha: $propertyValueModifier ));
-          }
-        }@else{
-          @each $unitLabelModifier, $propertyValueModifier in $units {
-            @content ( $unitLabel+'-'+$unitLabelModifier, color.scale( $propertyValue , $lightness: $propertyValueModifier ));
-          }
+      @if ($unitLabel == black or $unitLabel == white) {
+        @each $unitLabelModifier, $propertyValueModifier in map.get(maps.$units, opacity) {
+          @content ( $unitLabel+'-'+$unitLabelModifier, color.change( $propertyValue , $alpha: $propertyValueModifier ));
         }
+      } @else {
+        @each $unitLabelModifier, $propertyValueModifier in $units {
+          @content ( $unitLabel+'-'+$unitLabelModifier, color.scale( $propertyValue , $lightness: $propertyValueModifier ));
+        }
+      }
     }
   }
 }
 
 @mixin pseudoStateModifierLoop($states) {
+  // create base rule with no modifications to state
   @content ( '','', '' );
-  $stateClass: "";
-  $pseudoLabel: "";
+  $stateClass: '';
+  $pseudoLabel: '';
   @each $stateLabelModifier, $pseudoLabelModifier in $states {
-    @if($pseudoLabelModifier == active){
-      $stateClass: ".active ";
-      $pseudoLabel: ""
-    }@else{
-      $stateClass: "";
-      $pseudoLabel: ":"+$pseudoLabelModifier
-    }
+    // active is not a true pseudo class but rather a style that reacts to its parent having active
+    @if ($pseudoLabelModifier == active) {
+      $stateClass: '.active >';
+      $pseudoLabel: '';
       @content ($stateClass, $stateLabelModifier + $colon  , $pseudoLabel );
-   
+      $stateClass: '.active';
+      $pseudoLabel: '';
+      @content ($stateClass, $stateLabelModifier + $colon  , $pseudoLabel );
+    } @else {
+      $stateClass: '';
+      $pseudoLabel: ':' + $pseudoLabelModifier;
+      @content ($stateClass, $stateLabelModifier + $colon  , $pseudoLabel );
+    }
   }
 }
 
@@ -107,36 +120,53 @@ body {
   @if (map.get($map, responsive)) {
     $bp: map.get(maps.$units, breakpoints);
   }
-  $unitLoopMode:'basic';
-  @if( map.has-key($map,loopMode)){
-    $unitLoopMode:map.get($map,loopMode);
+  $unitLoopMode: 'basic';
+  @if (map.has-key($map, loopMode)) {
+    $unitLoopMode: map.get($map, loopMode);
   }
   $pseudoStates: ();
-  @if( map.has-key($map,states)){
+  @if (map.has-key($map, states)) {
     $pseudoStates: map.get(maps.$units, states);
   }
 
   @include breakpointLoop($bp) using ($breakpointLabel) {
-    @include directionModifierLoop($dir) using ($labelDirectionMod, $propertyDirectionMod) {
-      @include pseudoStateModifierLoop($pseudoStates) using ($stateClass,$stateLabelModifier,$pseudoLabelModifier) {
-      @include propertyValueLoop( map.get(maps.$units, map.get($map , unit )),$unitLoopMode) using ( $unitLabel, $propertyValue){
-        #{ $stateClass+"."+$stateLabelModifier + $base + $labelDirectionMod + $separator + $unitLabel + $breakpointLabel + $pseudoLabelModifier } {
-          @each $prop in map.get($map, property) {
-            $prop-post: '';
-            @if ($prop == 'border-radius') {
-              $prop: 'border';
-              $prop-post: '-radius';
+    @include directionModifierLoop($dir) using ($labelDirectionMod, $propertyDirectionMap) {
+      @include propertyValueLoop(map.get(maps.$units, map.get($map, unit)), $unitLoopMode) using
+        ($unitLabel, $propertyValue) {
+        @include pseudoStateModifierLoop($pseudoStates) using ($stateClass, $stateLabelModifier, $pseudoLabelModifier) {
+          #{
+            $stateClass
+            + '.'
+            + $stateLabelModifier
+            + $base
+            + $labelDirectionMod
+            + $separator
+            + $unitLabel
+            + $breakpointLabel
+            + $pseudoLabelModifier
+            } {
+            @each $prop in map.get($map, property) {
+              @if (type-of($propertyDirectionMap) == 'map') {
+                $prop-post: '';
+                @if ($prop == 'border-radius') {
+                  $prop: 'border';
+                  $prop-post: '-radius';
+                }
+                @if ($prop == 'border-width') {
+                  $prop: 'border';
+                  $prop-post: '-width';
+                }
+                @include propertyDirectionMapLoop($propertyDirectionMap) using ($propertyDirection) {
+                  #{ $prop + $propertyDirection + $prop-post }: $propertyValue;
+                }
+              } @else {
+                #{ $prop }: $propertyValue;
+              }
+              // if direction is  x , y duplicate.
             }
-            @if ($prop == 'border-width') {
-              $prop: 'border';
-              $prop-post: '-width';
-            }
-            #{ $prop + $propertyDirectionMod + $prop-post }: $propertyValue;
           }
         }
       }
-    }
-      
     }
   }
 }
