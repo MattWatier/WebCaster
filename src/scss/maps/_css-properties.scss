@@ -1,48 +1,48 @@
-$active-class-name:'active';
+$active-class-name: 'active';
 $css-properties: (
     background-color: (
         name: 'bg',
-        direction:null,
+        direction: null,
         property: (
             'background-color',
         ),
         unit: 'percent',
         loopMode: 'color',
         responsive: false,
-        states:true,
+        states: true,
     ),
     background-position: (
         name: 'bg',
-        direction:null,
+        direction: null,
         property: (
             'background-position',
         ),
         unit: 'background-position',
-        responsive: false
+        responsive: false,
     ),
     border-color: (
         name: 'br',
-        direction:null,
+        direction: null,
         property: (
             'border-color',
         ),
         unit: 'percent',
-        loopMode:'color',
+        loopMode: 'color',
         responsive: false,
-        states:true,
-
+        states: true,
     ),
     border-style: (
         name: 'br',
-        direction:null,
+        direction: null,
         property: (
             'border-style',
         ),
-        unit: 'border-style', responsive: true
+        unit: 'border-style',
+        responsive: true,
     ),
     border-width: (
         name: 'br',
-        direction:direction-edges,
+        direction: direction-edges,
         property: (
             'border-width',
         ),
@@ -50,16 +50,16 @@ $css-properties: (
     ),
     border-radius: (
         name: 'br',
-        direction:direction-corners,
+        direction: direction-corners,
         property: (
             'border-radius',
         ),
         unit: 'radius',
-        responsive: true
+        responsive: true,
     ),
     box-shadow: (
         name: 'shadow',
-        direction:null,
+        direction: null,
         property: (
             'box-shadow',
         ),
@@ -67,7 +67,7 @@ $css-properties: (
     ),
     rich-shadow: (
         name: 'shadow',
-        direction:null,
+        direction: null,
         property: (
             'box-shadow',
         ),
@@ -75,16 +75,16 @@ $css-properties: (
     ),
     display: (
         name: '',
-        direction:null,
+        direction: null,
         property: (
             'display',
         ),
         unit: 'display',
-        responsive:true
+        responsive: true,
     ),
     text-align: (
         name: 'text',
-        direction:null,
+        direction: null,
         property: (
             'text-align',
         ),
@@ -92,18 +92,18 @@ $css-properties: (
     ),
     font-color: (
         name: 'c',
-        direction:null,
+        direction: null,
         property: (
             'color',
         ),
         unit: 'percent',
         loopMode: 'color',
         responsive: false,
-        states:true,
+        states: true,
     ),
     float: (
         name: 'float',
-        direction:null,
+        direction: null,
         property: (
             'float',
         ),
@@ -111,7 +111,7 @@ $css-properties: (
     ),
     font-family: (
         name: 'font',
-        direction:null,
+        direction: null,
         property: (
             'font-family',
         ),
@@ -119,26 +119,26 @@ $css-properties: (
     ),
     font-size: (
         name: 'font',
-        direction:null,
+        direction: null,
         property: (
             'font-size',
         ),
         unit: 'font-size',
-        responsive:true
+        responsive: true,
     ),
     font-weight: (
         name: 'font',
-        direction:null,
+        direction: null,
         property: (
             'font-weight',
         ),
         unit: 'font-weight',
-        states:true,
+        states: true,
     ),
     bottom: (
         name: 'b',
-        direction:null,
-        responsive:true,
+        direction: null,
+        responsive: true,
         property: (
             'bottom',
         ),
@@ -146,9 +146,8 @@ $css-properties: (
     ),
     left: (
         name: 'l',
-        direction:null,
-        responsive:true,
-
+        direction: null,
+        responsive: true,
         property: (
             'left',
         ),
@@ -156,7 +155,7 @@ $css-properties: (
     ),
     list-type: (
         name: 'ul',
-        direction:null,
+        direction: null,
         property: (
             'list-style-type',
         ),
@@ -164,8 +163,8 @@ $css-properties: (
     ),
     margin: (
         name: 'm',
-        direction:direction-edges,
-        responsive:true,
+        direction: direction-edges,
+        responsive: true,
         property: (
             'margin',
         ),
@@ -173,8 +172,8 @@ $css-properties: (
     ),
     margin-horizontal: (
         name: 'm-x',
-        direction:null,
-        responsive:true,
+        direction: null,
+        responsive: true,
         property: (
             'margin-right',
             'margin-left',
@@ -185,8 +184,8 @@ $css-properties: (
     ),
     margin-vertical: (
         name: 'm-y',
-        direction:null,
-        responsive:true,
+        direction: null,
+        responsive: true,
         property: (
             'margin-top',
             'margin-bottom',
@@ -197,7 +196,7 @@ $css-properties: (
     ),
     grid-column-gap: (
         name: 'gap-x',
-        direction:null,
+        direction: null,
         property: (
             'grid-column-gap',
         ),
@@ -205,7 +204,7 @@ $css-properties: (
     ),
     grid-row-gap: (
         name: 'gap-y',
-        direction:null,
+        direction: null,
         property: (
             'grid-row-gap',
         ),
@@ -213,7 +212,7 @@ $css-properties: (
     ),
     padding: (
         name: 'p',
-        direction:'direction-edges',
+        direction: 'direction-edges',
         property: (
             'padding',
         ),
@@ -227,12 +226,12 @@ $css-properties: (
             'padding-inline-start',
             'padding-inline-end',
         ),
-        direction:null,
+        direction: null,
         unit: 'size-positive',
     ),
     padding-vertical: (
         name: 'p-y',
-        direction:null,
+        direction: null,
         property: (
             'padding-bottom',
             'padding-top',
@@ -243,7 +242,7 @@ $css-properties: (
     ),
     line-height: (
         name: 'lh',
-        direction:null,
+        direction: null,
         property: (
             'line-height',
         ),
@@ -251,16 +250,16 @@ $css-properties: (
     ),
     opacity: (
         name: 'opacity',
-        direction:null,
+        direction: null,
         property: (
             'opacity',
         ),
         unit: 'opacity',
-        states:true,
+        states: true,
     ),
     background-blend-mode: (
         name: 'bg-blend',
-        direction:null,
+        direction: null,
         property: (
             'background-blend-mode',
         ),
@@ -268,7 +267,7 @@ $css-properties: (
     ),
     mix-blend-mode: (
         name: 'font-blend',
-        direction:null,
+        direction: null,
         property: (
             'mix-blend-mode',
         ),
@@ -276,7 +275,7 @@ $css-properties: (
     ),
     position: (
         name: '',
-        direction:null,
+        direction: null,
         property: (
             'position',
         ),
@@ -284,8 +283,8 @@ $css-properties: (
     ),
     right: (
         name: 'r',
-        direction:null,
-        responsive:true,
+        direction: null,
+        responsive: true,
         property: (
             'right',
         ),
@@ -293,8 +292,8 @@ $css-properties: (
     ),
     top: (
         name: 't',
-        direction:null,
-        responsive:true,
+        direction: null,
+        responsive: true,
         property: (
             'top',
         ),
@@ -302,7 +301,7 @@ $css-properties: (
     ),
     text-indent: (
         name: 'text-indent',
-        direction:null,
+        direction: null,
         property: (
             'text-indent',
         ),
@@ -310,15 +309,33 @@ $css-properties: (
     ),
     text-shadow: (
         name: 'text-shadow',
-        direction:null,
+        direction: null,
         property: (
             'text-shadow',
         ),
         unit: 'text-shadow',
     ),
+    text-decoration: (
+        name: '',
+        responsive: false,
+        direction: null,
+        property: (
+            'text-decoration',
+        ),
+        unit: 'text-decoration',
+    ),
+    text-transform:(
+        name: '',
+        responsive: false,
+        direction: null,
+        property: (
+            'text-transform',
+        ),
+        unit: 'text-transform',
+    ),
     transition: (
         name: 'transition',
-        direction:null,
+        direction: null,
         property: (
             'transition',
         ),
@@ -326,7 +343,7 @@ $css-properties: (
     ),
     ease: (
         name: 'ease',
-        direction:null,
+        direction: null,
         property: (
             'transition-timing-function',
         ),
@@ -334,7 +351,7 @@ $css-properties: (
     ),
     transform-origin: (
         name: 'origin',
-        direction:null,
+        direction: null,
         property: (
             'transform-origin',
         ),
@@ -342,7 +359,7 @@ $css-properties: (
     ),
     scale: (
         name: 'scale',
-        direction:null,
+        direction: null,
         property: (
             'transform',
         ),
@@ -350,7 +367,7 @@ $css-properties: (
     ),
     grid-width: (
         name: 'w-grid',
-        direction:null,
+        direction: null,
         property: (
             'width',
         ),
@@ -358,7 +375,7 @@ $css-properties: (
     ),
     height-viewport: (
         name: 'h',
-        direction:null,
+        direction: null,
         property: (
             'height',
         ),
@@ -366,7 +383,7 @@ $css-properties: (
     ),
     min-height: (
         name: 'min-h',
-        direction:null,
+        direction: null,
         property: (
             'min-height',
         ),
@@ -374,7 +391,7 @@ $css-properties: (
     ),
     width: (
         name: 'w',
-        direction:null,
+        direction: null,
         property: (
             'width',
         ),
@@ -382,7 +399,7 @@ $css-properties: (
     ),
     max-width: (
         name: 'max-w',
-        direction:null,
+        direction: null,
         property: (
             'max-width',
         ),
@@ -390,7 +407,7 @@ $css-properties: (
     ),
     word-break: (
         name: 'break',
-        direction:null,
+        direction: null,
         property: (
             'word-break',
         ),
@@ -398,36 +415,37 @@ $css-properties: (
     ),
     z-index: (
         name: 'z',
-        direction:null,
+        direction: null,
         property: (
             'z-index',
         ),
         unit: z-index,
     ),
-    flex-direction:(
-        name:'flex',
-        direction:null,
-        responsive:true,
-        property:(
-            flex-direction
-        ),unit:flex-direction
-    ),
-    justify-content:(
-        name:'justify',
-        direction:null,
-        responsive:true,
-        property:(
-            justify-content
+    flex-direction: (
+        name: 'flex',
+        direction: null,
+        responsive: true,
+        property: (
+            flex-direction,
         ),
-        unit:justify-content
+        unit: flex-direction,
     ),
-    align-items:(
-        name:'flex',
-        direction:null,
-        responsive:true,
-        property:(
-            align-items
+    justify-content: (
+        name: 'justify',
+        direction: null,
+        responsive: true,
+        property: (
+            justify-content,
         ),
-        unit:align-items
-    )
+        unit: justify-content,
+    ),
+    align-items: (
+        name: 'flex',
+        direction: null,
+        responsive: true,
+        property: (
+            align-items,
+        ),
+        unit: align-items,
+    ),
 );

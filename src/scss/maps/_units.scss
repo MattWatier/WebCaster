@@ -264,6 +264,18 @@ $units: (
 		start: start,
 		end: end,
 	),
+	text-decoration:(
+		underline:underline,			
+		dotted:dotted,			    
+		double:double,             
+		dashed:dashed,             
+		undecorated:none        
+	),
+	text-transform:(
+		uppercase:uppercase,          
+		lowercase:lowercase,          
+		capitalize:capitalize         
+	),
 	background-position: (
 		left: left center,
 		right: right center,
