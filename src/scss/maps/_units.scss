@@ -263,6 +263,14 @@ $units: (
 		right: right,
 		start: start,
 		end: end,
+	),	text-decoration: (
+		unset: unset,
+		underline: underline,
+		dotted: dotted,
+		dashed: dashed,
+		double: double,
+		undecorated: none,
+		
 	),
 	background-position: (
 		left: left center,

@@ -429,5 +429,14 @@ $css-properties: (
             align-items
         ),
         unit:align-items
+    ),
+    text-decoration:(
+        name:'',
+        direction:null,
+        responsive:true,
+        property:(
+            text-decoration
+        ),
+        unit:text-decoration
     )
-);
+    );
