@@ -2369,22 +2369,22 @@
 
 .br-bl_square {
   border-bottom-left-radius: 0px;
-  border-end-start-radius: 0px;
+  border-start-end-radius: 0px;
 }
 
 .br-bl_radius {
   border-bottom-left-radius: 0.3333333333rem;
-  border-end-start-radius: 0.3333333333rem;
+  border-start-end-radius: 0.3333333333rem;
 }
 
 .br-bl_round {
   border-bottom-left-radius: 1rem;
-  border-end-start-radius: 1rem;
+  border-start-end-radius: 1rem;
 }
 
 .br-bl_circle {
   border-bottom-left-radius: 100%;
-  border-end-start-radius: 100%;
+  border-start-end-radius: 100%;
 }
 
 .br-br_square {
@@ -2466,22 +2466,22 @@
 
   .br-bl_square\:sm {
     border-bottom-left-radius: 0px;
-    border-end-start-radius: 0px;
+    border-start-end-radius: 0px;
   }
 
   .br-bl_radius\:sm {
     border-bottom-left-radius: 0.3333333333rem;
-    border-end-start-radius: 0.3333333333rem;
+    border-start-end-radius: 0.3333333333rem;
   }
 
   .br-bl_round\:sm {
     border-bottom-left-radius: 1rem;
-    border-end-start-radius: 1rem;
+    border-start-end-radius: 1rem;
   }
 
   .br-bl_circle\:sm {
     border-bottom-left-radius: 100%;
-    border-end-start-radius: 100%;
+    border-start-end-radius: 100%;
   }
 
   .br-br_square\:sm {
@@ -2563,22 +2563,22 @@
 
   .br-bl_square\:md {
     border-bottom-left-radius: 0px;
-    border-end-start-radius: 0px;
+    border-start-end-radius: 0px;
   }
 
   .br-bl_radius\:md {
     border-bottom-left-radius: 0.3333333333rem;
-    border-end-start-radius: 0.3333333333rem;
+    border-start-end-radius: 0.3333333333rem;
   }
 
   .br-bl_round\:md {
     border-bottom-left-radius: 1rem;
-    border-end-start-radius: 1rem;
+    border-start-end-radius: 1rem;
   }
 
   .br-bl_circle\:md {
     border-bottom-left-radius: 100%;
-    border-end-start-radius: 100%;
+    border-start-end-radius: 100%;
   }
 
   .br-br_square\:md {
@@ -2660,22 +2660,22 @@
 
   .br-bl_square\:lg {
     border-bottom-left-radius: 0px;
-    border-end-start-radius: 0px;
+    border-start-end-radius: 0px;
   }
 
   .br-bl_radius\:lg {
     border-bottom-left-radius: 0.3333333333rem;
-    border-end-start-radius: 0.3333333333rem;
+    border-start-end-radius: 0.3333333333rem;
   }
 
   .br-bl_round\:lg {
     border-bottom-left-radius: 1rem;
-    border-end-start-radius: 1rem;
+    border-start-end-radius: 1rem;
   }
 
   .br-bl_circle\:lg {
     border-bottom-left-radius: 100%;
-    border-end-start-radius: 100%;
+    border-start-end-radius: 100%;
   }
 
   .br-br_square\:lg {
