@@ -13,11 +13,7 @@ $modularscale: (
   ratio: 1.5,
 );
 
-@debug ms(-1);
-@debug ms();
-@debug ms(0);
-@debug ms(1);
-@debug ms(2);
+
 
 $modularscale: (
   base: 1em,
@@ -180,3 +176,6 @@ $modularscale: (
   @extend .m_0;
   @extend .p_0;
 }
+
+
+@debug ('build complete');
