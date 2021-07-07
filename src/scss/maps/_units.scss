@@ -26,7 +26,7 @@ $units: (
 		),
 		b: (
 			fallback: bottom,
-			logical: block-start,
+			logical: block-end,
 		)
 	),
 	direction-corners: (
@@ -263,7 +263,8 @@ $units: (
 		right: right,
 		start: start,
 		end: end,
-	),	text-decoration: (
+	),	
+	text-decoration: (
 		unset: unset,
 		underline: underline,
 		dotted: dotted,
@@ -271,13 +272,6 @@ $units: (
 		double: double,
 		undecorated: none,
 		
-	),
-	text-decoration:(
-		underline:underline,			
-		dotted:dotted,			    
-		double:double,             
-		dashed:dashed,             
-		undecorated:none        
 	),
 	text-transform:(
 		uppercase:uppercase,          
@@ -535,6 +529,13 @@ $units: (
 		row-reverse: row-reverse,
 		column-reverse: column-reverse,
 		inherit: inherit,
+	),
+	flex-wrap: (
+		nowrap: nowrap,
+		wrap_unset: unset,
+		wrap: wrap,
+		wrap_reverse: wrap-reverse,
+
 	),
 	justify-content: (
 		flex-start: flex-start,

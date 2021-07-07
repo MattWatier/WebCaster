@@ -197,6 +197,7 @@ $css-properties: (
     grid-column-gap: (
         name: 'gap-x',
         direction: null,
+        responsive:true,
         property: (
             'grid-column-gap',
         ),
@@ -205,6 +206,7 @@ $css-properties: (
     grid-row-gap: (
         name: 'gap-y',
         direction: null,
+        responsive:true,
         property: (
             'grid-row-gap',
         ),
@@ -391,6 +393,7 @@ $css-properties: (
     ),
     width: (
         name: 'w',
+        responsive:true,
         direction: null,
         property: (
             'width',
@@ -430,6 +433,15 @@ $css-properties: (
         ),
         unit: flex-direction,
     ),
+    flex-wrap: (
+        name: '',
+        direction: null,
+        responsive: true,
+        property: (
+            flex-wrap,
+        ),
+        unit: flex-wrap,
+    ),
     justify-content: (
         name: 'justify',
         direction: null,
@@ -440,11 +452,20 @@ $css-properties: (
         unit: justify-content,
     ),
     align-items: (
-        name: 'flex',
+        name: 'items',
         direction: null,
         responsive: true,
         property: (
             align-items,
+        ),
+        unit: align-items,
+    ),
+    align-self: (
+        name: 'self',
+        direction: null,
+        responsive: true,
+        property: (
+            align-self,
         ),
         unit: align-items,
     ),
