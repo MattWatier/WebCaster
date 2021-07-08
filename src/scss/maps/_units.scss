@@ -11,6 +11,10 @@ $units: (
 		a:active,
 		h:hover
 	),
+	cursor: (
+		not-allowed:not-allowed,
+		pointer:pointer,
+	),
 	direction-edges: (
 		t: (
 			fallback: top,
@@ -64,6 +68,11 @@ $units: (
 		3: 0.5 * $basicSizeMultiplier,
 		4: 1 * $basicSizeMultiplier,
 		5: 2 * $basicSizeMultiplier,
+		6: 4 * $basicSizeMultiplier,
+		7: 8 * $basicSizeMultiplier,
+		8: 16 * $basicSizeMultiplier,
+		9: 32 * $basicSizeMultiplier,
+		10: 64 * $basicSizeMultiplier,
 		auto: auto,
 		unset: unset,
 	),
@@ -90,6 +99,11 @@ $units: (
 		3: 0.5 * $basicSizeMultiplier,
 		4: 1 * $basicSizeMultiplier,
 		5: 2 * $basicSizeMultiplier,
+		6: 4 * $basicSizeMultiplier,
+		7: 8 * $basicSizeMultiplier,
+		8: 16 * $basicSizeMultiplier,
+		9: 32 * $basicSizeMultiplier,
+		10: 64 * $basicSizeMultiplier,
 	),
 	unitless: (
 		0: 0,

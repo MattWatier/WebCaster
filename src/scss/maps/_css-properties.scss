@@ -170,6 +170,15 @@ $css-properties: (
         ),
         unit: 'size',
     ),
+    cursor:(
+        name: '',
+        direction: null,
+        responsive: false,
+        property: (
+            'cursor',
+        ),
+        unit: 'cursor',
+    )
     margin-horizontal: (
         name: 'm-x',
         direction: null,
