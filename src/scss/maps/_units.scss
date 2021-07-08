@@ -5,6 +5,11 @@ $base-font-size: 16px;
 $basicSizeMultiplier: 1rem;
 $global-border-radius: math.div(1rem, 3) !default;
 $global-border-round: 1rem !default;
+$modularscale: (
+  base: 1rem,
+  ratio: 1.25,
+);
+
 
 $units: (
 	states: (
