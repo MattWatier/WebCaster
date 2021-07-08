@@ -209,6 +209,7 @@ $css-properties: (
         responsive:true,
         property: (
             'grid-column-gap',
+            'column-gap',
         ),
         unit: 'size-positive',
     ),
@@ -218,6 +219,7 @@ $css-properties: (
         responsive:true,
         property: (
             'grid-row-gap',
+            'row-gap',
         ),
         unit: 'size-positive',
     ),
