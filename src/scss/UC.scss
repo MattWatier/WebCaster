@@ -148,10 +148,10 @@ $modularscale: (
                   $prop-post: '-width';
                 }
                 @include propertyDirectionMapLoop($propertyDirectionMap) using ($propertyDirection) {
-                  #{ $prop + $propertyDirection + $prop-post }: $propertyValue;
+                  #{ $prop + $propertyDirection + $prop-post }: #{$propertyValue};
                 }
               } @else {
-                #{ $prop }: $propertyValue;
+                #{ $prop }: #{$propertyValue};
               }
               // if direction is  x , y duplicate.
             }

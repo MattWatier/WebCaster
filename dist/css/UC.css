@@ -2743,27 +2743,27 @@
 }
 
 .shadow_emboss-light {
-  box-shadow: "inset 1px 1px 2px 0px rgba(0,0,0,0.06), inset 2px 2px 3px 0px rgba(18, 56, 136, 0.045), inset -2px -2px 3px 0px rgba(145,112,19,0.045)";
+  box-shadow: inset 1px 1px 2px 0px rgba(0,0,0,0.06), inset 2px 2px 3px 0px rgba(18, 56, 136, 0.045), inset -2px -2px 3px 0px rgba(145,112,19,0.045);
 }
 
 .shadow_emboss-bold {
-  box-shadow: "inset 2px 3px 10px 0px rgba(0,0,0,0.13), inset 4px 4px 13px 0px rgba(11,20,28,0.07), inset -2px -2px 9px 0px rgba(145,112,19,0.04), inset 2px 1px 5px 4px rgba(0,0,0,0.9)";
+  box-shadow: inset 2px 3px 10px 0px rgba(0,0,0,0.13), inset 4px 4px 13px 0px rgba(11,20,28,0.07), inset -2px -2px 9px 0px rgba(145,112,19,0.04), inset 2px 1px 5px 4px rgba(0,0,0,0.9);
 }
 
 .shadow_bevel-light {
-  box-shadow: "-2px -2px 2px rgba(255, 255, 255, .05 ), -2px -2px 3px rgba(255, 255, 255, .14 ), 2px 3.5px 5.5px rgba(0, 0, 0, .07), 0 6.4px 9.1px rgba(0, 0, 0, .02), 0 16px 9px rgb(0, 0, 0, .02)";
+  box-shadow: -2px -2px 2px rgba(255, 255, 255, .05 ), -2px -2px 3px rgba(255, 255, 255, .14 ), 2px 3.5px 5.5px rgba(0, 0, 0, .07), 0 6.4px 9.1px rgba(0, 0, 0, .02), 0 16px 9px rgb(0, 0, 0, .02);
 }
 
 .shadow_bevel-bold {
-  box-shadow: "-2px -2px 4px hsla(0, 0%, 82.4%, 0.05), -2px -2px 3px hsla(0, 0%, 46.7%, 0.07), 1px 2.5px 4.5px rgba(0, 0, 0, 0.4), 0 6.4px 12.1px rgba(0, 0, 0, 0.14), 0 16px 19px rgba(0,0,0,.07)";
+  box-shadow: -2px -2px 4px hsla(0, 0%, 82.4%, 0.05), -2px -2px 3px hsla(0, 0%, 46.7%, 0.07), 1px 2.5px 4.5px rgba(0, 0, 0, 0.4), 0 6.4px 12.1px rgba(0, 0, 0, 0.14), 0 16px 19px rgba(0,0,0,.07);
 }
 
 .shadow_overlap-light {
-  box-shadow: "0 1px 10px hsla(0, 0%, 0%, 0.05), 0 2px 4px rgba(0,0,0,.3), 1px 5px 5px rgba(0,0,0,.01)";
+  box-shadow: 0 1px 10px hsla(0, 0%, 0%, 0.05), 0 2px 4px rgba(0,0,0,.3), 1px 5px 5px rgba(0,0,0,.01);
 }
 
 .shadow_overlap-bold {
-  box-shadow: "-1px -2px 4px rgba(0,0,0,.08), 0 1px 10px hsla(0, 0%, 0%, 0.06), 0 3px 4px rgba(0,0,0,.5), 1px 5px 5px rgba(0,0,0,.03)";
+  box-shadow: -1px -2px 4px rgba(0,0,0,.08), 0 1px 10px hsla(0, 0%, 0%, 0.06), 0 3px 4px rgba(0,0,0,.5), 1px 5px 5px rgba(0,0,0,.03);
 }
 
 .block {
