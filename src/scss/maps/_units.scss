@@ -58,6 +58,11 @@ $units: (
 	),
 	size: (
 		0: 0,
+		n6: -4 * $basicSizeMultiplier,
+		n7: -8 * $basicSizeMultiplier,
+		n8: -16 * $basicSizeMultiplier,
+		n9: -32 * $basicSizeMultiplier,
+		n10: -64 * $basicSizeMultiplier,
 		n5: -2 * $basicSizeMultiplier,
 		n4: -1 * $basicSizeMultiplier,
 		n3: -0.5 * $basicSizeMultiplier,
