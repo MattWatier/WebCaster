@@ -224,6 +224,7 @@ $css-properties: (
     padding: (
         name: 'p',
         direction: 'direction-edges',
+        responsive:true,
         property: (
             'padding',
         ),
@@ -231,6 +232,7 @@ $css-properties: (
     ),
     padding-horizontal: (
         name: 'p-x',
+        responsive:true,
         property: (
             'padding-left',
             'padding-right',
@@ -243,6 +245,7 @@ $css-properties: (
     padding-vertical: (
         name: 'p-y',
         direction: null,
+        responsive:true,
         property: (
             'padding-bottom',
             'padding-top',
