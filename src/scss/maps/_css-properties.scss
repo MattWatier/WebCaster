@@ -125,6 +125,15 @@ $css-properties: (
         ),
         unit: 'font-size',
         responsive: true,
+    ),    
+    font-size-adjust: (
+        name: 'font-size',
+        direction: null,
+        property: (
+            'font-size',
+        ),
+        unit: 'font-size',
+        responsive: true,
     ),
     font-weight: (
         name: 'font',

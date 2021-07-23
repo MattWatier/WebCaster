@@ -3,7 +3,7 @@
 /// @param {String} $type - accepts `drop` , and `inset`
 /// @param {Hex} $color - Color of the Shadow
 /// @param {Number} $alpha -Number between 0 - 1 to set the alpha of the shadow
-/// @return {style definision}  
+/// @return {style definition}  
 @function make-shadow(
     $multiplier: 1,
     $type:"drop",

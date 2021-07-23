@@ -1,5 +1,5 @@
 @use "modularscale-sass/stylesheets/_modularscale.scss" as *;
-@use "../helpers/makeshadow" as helper;
+@use "../helpers" as helper;
 @use "sass:math";
 $base-font-size: 16px;
 $basicSizeMultiplier: 1rem;
@@ -59,7 +59,7 @@ $units: (
 	breakpoints: (
 		sm: 480px,
 		md: 768px,
-		lg: 1024px
+		lg: 1024px,
 		xl: 1200px
 	),
 	size: (
@@ -324,6 +324,11 @@ $units: (
 		xbold: 900,
 	),
 	font-size: (
+		n5: ms(-5),
+		n4: ms(-4),
+		n3: ms(-3),
+		n2: ms(-2),
+		n1: ms(-1),
 		0: ms(0),
 		1: ms(1),
 		2: ms(2),
@@ -335,11 +340,18 @@ $units: (
 		8: ms(8),
 		9: ms(9),
 		10: ms(10),
-		n1: ms(-1),
-		n2: ms(-2),
-		n3: ms(-3),
-		n4: ms(-4),
-		n5: ms(-5),
+	),
+	font-size-adjust: (
+		down-1:helper.strip-unit(ms(-1)) * 1em,
+		down-2:helper.strip-unit(ms(-2)) * 1em,
+		down-3:helper.strip-unit(ms(-3)) * 1em,
+		down-4:helper.strip-unit(ms(-4)) * 1em,
+		down-5:helper.strip-unit(ms(-5)) * 1em,
+		up-1:helper.strip-unit(ms(1)) * 1em,
+		up-2:helper.strip-unit(ms(2)) * 1em,
+		up-3:helper.strip-unit(ms(3)) * 1em,
+		up-4:helper.strip-unit(ms(4)) * 1em,
+		up-5:helper.strip-unit(ms(5)) * 1em,
 	),
 	display: (
 		block: block,
