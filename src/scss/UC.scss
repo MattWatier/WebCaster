@@ -41,27 +41,34 @@ $modularscale: (
     @content ( "-"+$propertyDirection );
   }
 }
-@mixin propertyValueLoop($units, $unitLoopMode) {
+@mixin propertyValueLoop($unitList, $unitLoopMode) {
   // basic single layer value loop
-  @if ($unitLoopMode == 'basic') {
-    @each $unitLabel, $propertyValue in $units {
+  //break the list into individual maps.
+  @each $unit in $unitList {
+    $unitMap: map.get(maps.$units, $unit); 
+    @if ($unitLoopMode == 'basic') {
+      @each $unitLabel, $propertyValue in $unitMap {
       @content ( $unitLabel, $propertyValue );
     }
-  } @else {
+  }
+  @else {
     // complex color loop with value and modifier loop
     @each $unitLabel, $propertyValue in maps.$theme-palette {
+
       @content ( $unitLabel,  $propertyValue );
       @if ($unitLabel == black or $unitLabel == white) {
         @each $unitLabelModifier, $propertyValueModifier in map.get(maps.$units, opacity) {
           @content ( $unitLabel+'-'+$unitLabelModifier, color.change( $propertyValue , $alpha: $propertyValueModifier ));
         }
       } @else {
-        @each $unitLabelModifier, $propertyValueModifier in $units {
+        @each $unitLabelModifier, $propertyValueModifier in $unitMap {
+          @debug($unit);
           @content ( $unitLabel+'-'+$unitLabelModifier, color.scale( $propertyValue , $lightness: $propertyValueModifier ));
         }
       }
     }
   }
+}
 }
 
 @mixin pseudoStateModifierLoop($states) {
@@ -110,10 +117,11 @@ $modularscale: (
   }
 
   @include breakpointLoop($bp) using ($breakpointLabel) {
-    @include directionModifierLoop($dir) using ($labelDirectionMod, $propertyDirectionMap) {
-      @include propertyValueLoop(map.get(maps.$units, map.get($map, unit)), $unitLoopMode) using
+    @include pseudoStateModifierLoop($pseudoStates) using ($stateClass, $stateLabelModifier, $pseudoLabelModifier) {
+      @include directionModifierLoop($dir) using ($labelDirectionMod, $propertyDirectionMap) {
+      @include propertyValueLoop(map.get($map, unit), $unitLoopMode) using
         ($unitLabel, $propertyValue) {
-        @include pseudoStateModifierLoop($pseudoStates) using ($stateClass, $stateLabelModifier, $pseudoLabelModifier) {
+        
           #{
             $stateClass
             + '.'
@@ -162,8 +170,8 @@ $modularscale: (
 
 
 .ul_none{
-  @extend .m_0;
-  @extend .p_0;
+  @extend .m_0 !optional;
+  @extend .p_0 !optional;
 }
 
 
