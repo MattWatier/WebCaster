@@ -1,12 +1,21 @@
+@use "sass:map";
 $teal: #3182bd;
 $dark-grey: #676a72;
 $orange: #e6550d;
 $black: #101010;
 $white: #fdfdfd;
+$contrast-threshold: 60%;
 $theme-palette: (
-    primary: $teal,
-    secondary: $dark-grey,
-    accent: $orange,
-    black: $black,
-    white: $white,
+    'primary': $teal,
+    'secondary': $dark-grey,
+    'accent': $orange,
+    'black': $black,
+    'white': $white,
     );
+
+    .c_light{
+        color: map.get( $theme-palette ,'white');
+    }
+    .c_dark{
+        color: map.get( $theme-palette ,'black');
+    }

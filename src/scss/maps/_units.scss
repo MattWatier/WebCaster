@@ -156,6 +156,21 @@ $units: (
 		n4: -78%,
 		n5: -90%,
 	),
+	decimal-positive: (
+		0: 0,
+		1: .15,
+		2: .37,
+		3: .6,
+		4: .78,
+		5: .9,
+	),
+	decimal-negative: (
+		n1: -.15,
+		n2: -.37,
+		n3: -.60,
+		n4: -.78,
+		n5: -.90,
+	),
 	width-percent: (
 		auto: auto,
 		0: 0%,
