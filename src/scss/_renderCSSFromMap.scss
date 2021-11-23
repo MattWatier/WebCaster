@@ -1,0 +1,239 @@
+//globally importing the modular scale to make development easier;
+@use "sass:map";
+@use "sass:selector";
+@use "sass:color";
+@use "sass:math";
+@use "helpers";
+@use "modularscale-sass/stylesheets/_modularscale.scss" as *;
+@use "maps";
+@use "sass:meta";
+$colon: '\\3A ';
+$modularscale: (
+  base: 16px,
+  ratio: 1.25,
+);
+:root {
+@each $color, $value in maps.$theme-palette {
+  --#{$color}-h: #{ color.hue($value) };
+  --#{$color}-s: #{ color.saturation($value) };
+  --#{$color}-l: #{ color.lightness($value) };
+}
+
+}
+
+
+@mixin breakpointLoop($breakpoints) {
+  // create mobile first rule
+  @content ( '' );
+  // loop through the rules with media queries going up.
+  @each $breakpointLabel, $value in $breakpoints {
+    @media screen and (min-width: #{$value}) {
+      @content ( $colon+$breakpointLabel );
+    }
+  }
+}
+@mixin directionModifierLoop($directionsMap) {
+  //create the base all unit version first
+  @content ( '', '' );
+  //loop through the variations second
+  @each $direction, $propertyDirectionMap in $directionsMap {
+    @content ( '-'+$direction,$propertyDirectionMap );
+  }
+}
+@mixin propertyDirectionMapLoop($propertyDirectionMap) {
+  //loop through the variations second
+  @each $label, $propertyDirection in $propertyDirectionMap {
+    @content ( "-"+$propertyDirection );
+  }
+}
+@function alphaColor($propertyValue,$propertyValueModifier){
+  @return color.change( $propertyValue , $alpha: $propertyValueModifier ); 
+}
+@function alphaColorCSSVar($unitLabel,$propertyValue,$propertyValueModifier){
+
+  @return hsla( var( --#{$unitLabel}-h ),var( --#{$unitLabel}-s ),var( --#{$unitLabel}-l ), $propertyValueModifier ); 
+}
+@function shadeColor($propertyValue,$propertyValueModifier){
+  @return  color.scale( $propertyValue , $lightness: $propertyValueModifier ); 
+}
+@function calcLightness($unitLabel,$propertyValueModifier){
+  $lightness : color.lightness(map.get(maps.$theme-palette,$unitLabel));
+  $range:0;
+  $shift:0;
+  @if($propertyValueModifier >= 0){
+    $range: 100 - math.div($lightness,1%);
+  }@else{
+    $range: math.div($lightness,1%);
+  }
+  $shift: $range * math.div($propertyValueModifier,100);
+  @debug( $lightness , $range, $propertyValueModifier, $shift , $lightness + $shift );
+  @return  calc(var( --#{$unitLabel}-l) + #{$shift});
+}
+@function calcLightnessCSSvar($unitLabel,$propertyValueModifier){
+  @if($propertyValueModifier >= 0){
+    @return  calc( var( --#{$unitLabel}-l ) + ( ( 100% - var( --#{$unitLabel}-l ) ) * #{ $propertyValueModifier }));
+  }@else{
+    @return  calc( var( --#{$unitLabel}-l ) + ( ( var( --#{$unitLabel}-l )) * #{ $propertyValueModifier } ));
+  }
+}
+@function shadeColorCSSVar($unitLabel,$propertyValue,$propertyValueModifier){
+  @return hsl( var( --#{$unitLabel}-h ),var( --#{$unitLabel}-s ),calcLightnessCSSvar($unitLabel,$propertyValueModifier)); 
+}
+@mixin propertyValueLoop($unitList, $unitLoopMode) {
+  // basic single layer value loop
+  //break the list into individual maps.
+  $luminance: 'light';
+  @each $unit in $unitList {
+    $unitMap: map.get(maps.$units, $unit); 
+    @if ($unitLoopMode == 'basic') {
+      @each $unitLabel, $propertyValue in $unitMap {
+      @content ( $unitLabel, $propertyValue,$luminance );
+    }
+  }
+  @else {
+    // complex color loop with value and modifier loop
+    @each $unitLabel, $propertyValue in maps.$theme-palette {
+
+      @if ($unitLabel == 'black' or $unitLabel == 'white') {
+        @if($unitLabel == 'black'){ $luminance: 'dark'; } @else{ $luminance: 'light'; }
+        @content ( $unitLabel,  alphaColorCSSVar($unitLabel,$propertyValue,1),$luminance );
+        @each $unitLabelModifier, $propertyValueModifier in map.get(maps.$units, opacity) {
+          @content ( $unitLabel+'-'+$unitLabelModifier, alphaColorCSSVar($unitLabel,$propertyValue,$propertyValueModifier),$luminance);
+        }
+      } @else {
+        @if(color.lightness(map.get(maps.$theme-palette ,$unitLabel)) > 60%){
+          $luminance: 'dark';
+        }
+        @content ( $unitLabel,  shadeColorCSSVar($unitLabel,$propertyValue,0),$luminance );
+        @each $unitLabelModifier, $propertyValueModifier in $unitMap {
+          $color: color.adjust( map.get(maps.$theme-palette ,$unitLabel) , $lightness:$propertyValueModifier * 100%  );
+          @debug( $propertyValueModifier, color.lightness(map.get(maps.$theme-palette ,$unitLabel)) ,color.lightness( $color ));
+          @if(color.lightness( $color ) < 50%){
+            $luminance: 'dark';
+          }@else{
+            $luminance: 'light';
+          }
+          @content ( $unitLabel+'-'+$unitLabelModifier,shadeColorCSSVar($unitLabel,$propertyValue,$propertyValueModifier),$luminance);
+        }
+      }
+    }
+  }
+}
+}
+
+@mixin pseudoStateModifierLoop($states) {
+  // create base rule with no modifications to state
+  @content ( '','', '' );
+  $stateClass: '';
+  $pseudoLabel: '';
+  @each $stateLabelModifier, $pseudoLabelModifier in $states {
+    // active is not a true pseudo class but rather a style that reacts to its parent having active
+    @if ($pseudoLabelModifier == active) {
+      $stateClass: '.active >';
+      $pseudoLabel: '';
+      @content ($stateClass, $stateLabelModifier + $colon  , $pseudoLabel );
+      $stateClass: '.active';
+      $pseudoLabel: '';
+      @content ($stateClass, $stateLabelModifier + $colon  , $pseudoLabel );
+    } @else {
+      $stateClass: '';
+      $pseudoLabel: ':' + $pseudoLabelModifier;
+      @content ($stateClass, $stateLabelModifier + $colon  , $pseudoLabel );
+    }
+  }
+}
+@mixin renderCSSFromMap( $cssPropertiesMap ){
+  @each $type, $map in $cssPropertiesMap {
+    $base: map.get($map, name);
+    $separator: '_';
+    @if ($base == '') {
+      $separator: '';
+    }
+    $dir: ();
+    @if (map.get($map, direction)) {
+      $dir: map.get(maps.$units, map.get($map, direction));
+    }
+    $bp: ();
+    @if (map.get($map, responsive)) {
+      $bp: map.get(maps.$units, breakpoints);
+    }
+    $unitLoopMode: 'basic';
+    @if (map.has-key($map, loopMode)) {
+      $unitLoopMode: map.get($map, loopMode);
+    }
+    $pseudoStates: ();
+    @if (map.has-key($map, states)) {
+      $pseudoStates: map.get(maps.$units, states);
+    }
+
+    @include breakpointLoop($bp) using ($breakpointLabel) {
+      @include pseudoStateModifierLoop($pseudoStates) using ($stateClass, $stateLabelModifier, $pseudoLabelModifier) {
+        @include directionModifierLoop($dir) using ($labelDirectionMod, $propertyDirectionMap) {
+        @include propertyValueLoop(map.get($map, unit), $unitLoopMode) using
+          ($unitLabel, $propertyValue, $luminance) {
+          
+            #{
+              $stateClass
+              + '.'
+              + $stateLabelModifier
+              + $base
+              + $labelDirectionMod
+              + $separator
+              + $unitLabel
+              + $breakpointLabel
+              + $pseudoLabelModifier
+              } {
+              @each $prop in map.get($map, property) {
+                @if (type-of($propertyDirectionMap) == 'map') {
+                  $prop-post: '';
+                  @if ($prop == 'border-radius') {
+                    $prop: 'border';
+                    $prop-post: '-radius';
+                  }
+                  @if ($prop == 'border-width') {
+                    $prop: 'border';
+                    $prop-post: '-width';
+                  }
+                  @include propertyDirectionMapLoop($propertyDirectionMap) using ($propertyDirection) {
+                    #{ $prop + $propertyDirection + $prop-post }: #{$propertyValue};
+                  }
+                } @else {
+                  #{ $prop }: #{$propertyValue};
+                  @if ($prop == 'background-color'){
+                    @if($stateLabelModifier == '' ){
+                      // add the best contrast color for the background that don't use transparency
+                      @if($luminance == 'light'){
+                        @extend .c_dark;
+                      }@else{
+                        @extend .c_light;
+                      }
+                    }
+                  }
+                }
+                // if direction is  x , y duplicate.
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+// Each CSS Utility Class
+// If it is responsive. If it is loop through breakpoints
+// If it has pseudo states. If it is loop through states
+// If it has direction modifiers. If it is loop through directions.
+// If color loop through color loop
+// else loop through units
+// End loops
+// End Each
+
+
+.ul_none{
+  @extend .m_0 !optional;
+  @extend .p_0 !optional;
+}
+
+
+@debug ('build complete');

@@ -2,20 +2,12 @@
 @use "sass:map";
 @use "base";
 @use "maps";
+@use "mapsAlternate" as maps;
 @use "renderCSSFromMap" as renderMap;
 
 
 
 @include renderMap.renderCSSFromMap(maps.$css-properties);
-// Each CSS Utility Class
-// If it is responsive. If it is loop through breakpoints
-// If it has pseudo states. If it is loop through states
-// If it has direction modifiers. If it is loop through directions.
-// If color loop through color loop
-// else loop through units
-// End loops
-// End Each
-
 
 .ul_none{
   @extend .m_0 !optional;

@@ -32,15 +32,18 @@
   font-family: muli, "Open Sans", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
 }
 
-.c_light, .bg_primary-n1, .bg_primary-n2, .bg_primary-n3, .bg_primary-n4, .bg_primary-n5, .bg_secondary, .bg_secondary-n1, .bg_secondary-n2, .bg_secondary-n3, .bg_secondary-n4, .bg_secondary-n5, .bg_accent, .bg_accent-n1, .bg_accent-n2, .bg_accent-n3, .bg_accent-n4, .bg_accent-n5, .bg_black, .bg_black-0, .bg_black-_01, .bg_black-_05, .bg_black-1, .bg_black-2, .bg_black-3, .bg_black-4, .bg_black-5, .bg_black-6, .bg_black-7, .bg_black-8, .bg_black-9, .bg_black-10, .bg_primary-0, .bg_secondary-0, .bg_accent-0 {
+.c_light, .bg_brand-n1, .bg_brand-n2, .bg_brand-n3, .bg_brand-n4, .bg_brand-n5, .bg_primary, .bg_primary-n1, .bg_primary-n2, .bg_primary-n3, .bg_primary-n4, .bg_primary-n5, .bg_secondary, .bg_secondary-n1, .bg_secondary-n2, .bg_secondary-n3, .bg_secondary-n4, .bg_secondary-n5, .bg_accent, .bg_accent-n1, .bg_accent-n2, .bg_accent-n3, .bg_accent-n4, .bg_accent-n5, .bg_black, .bg_black-0, .bg_black-_01, .bg_black-_05, .bg_black-1, .bg_black-2, .bg_black-3, .bg_black-4, .bg_black-5, .bg_black-6, .bg_black-7, .bg_black-8, .bg_black-9, .bg_black-10, .bg_brand-0, .bg_primary-0, .bg_secondary-0, .bg_accent-0 {
   color: #fdfdfd;
 }
 
-.c_dark, .bg_primary, .bg_white, .bg_white-0, .bg_white-_01, .bg_white-_05, .bg_white-1, .bg_white-2, .bg_white-3, .bg_white-4, .bg_white-5, .bg_white-6, .bg_white-7, .bg_white-8, .bg_white-9, .bg_white-10, .bg_primary-1, .bg_primary-2, .bg_primary-3, .bg_primary-4, .bg_primary-5, .bg_secondary, .bg_secondary-1, .bg_secondary-2, .bg_secondary-3, .bg_secondary-4, .bg_secondary-5, .bg_accent, .bg_accent-1, .bg_accent-2, .bg_accent-3, .bg_accent-4, .bg_accent-5 {
+.c_dark, .bg_brand, .bg_white, .bg_white-0, .bg_white-_01, .bg_white-_05, .bg_white-1, .bg_white-2, .bg_white-3, .bg_white-4, .bg_white-5, .bg_white-6, .bg_white-7, .bg_white-8, .bg_white-9, .bg_white-10, .bg_brand-1, .bg_brand-2, .bg_brand-3, .bg_brand-4, .bg_brand-5, .bg_primary, .bg_primary-1, .bg_primary-2, .bg_primary-3, .bg_primary-4, .bg_primary-5, .bg_secondary, .bg_secondary-1, .bg_secondary-2, .bg_secondary-3, .bg_secondary-4, .bg_secondary-5, .bg_accent, .bg_accent-1, .bg_accent-2, .bg_accent-3, .bg_accent-4, .bg_accent-5 {
   color: #101010;
 }
 
 :root {
+  --brand-h: 228.8deg;
+  --brand-s: 75%;
+  --brand-l: 39.2156862745%;
   --primary-h: 205.2857142857deg;
   --primary-s: 58.8235294118%;
   --primary-l: 46.6666666667%;
@@ -342,6 +345,30 @@
   background-blend-mode: unset;
 }
 
+.bg_brand {
+  background-color: hsl(var(--brand-h), var(--brand-s), calc( var( --brand-l ) + ( ( 100% - var( --brand-l ) ) * 0)));
+}
+
+.bg_brand-n1 {
+  background-color: hsl(var(--brand-h), var(--brand-s), calc( var( --brand-l ) + ( ( var( --brand-l )) * -0.15 )));
+}
+
+.bg_brand-n2 {
+  background-color: hsl(var(--brand-h), var(--brand-s), calc( var( --brand-l ) + ( ( var( --brand-l )) * -0.37 )));
+}
+
+.bg_brand-n3 {
+  background-color: hsl(var(--brand-h), var(--brand-s), calc( var( --brand-l ) + ( ( var( --brand-l )) * -0.6 )));
+}
+
+.bg_brand-n4 {
+  background-color: hsl(var(--brand-h), var(--brand-s), calc( var( --brand-l ) + ( ( var( --brand-l )) * -0.78 )));
+}
+
+.bg_brand-n5 {
+  background-color: hsl(var(--brand-h), var(--brand-s), calc( var( --brand-l ) + ( ( var( --brand-l )) * -0.9 )));
+}
+
 .bg_primary {
   background-color: hsl(var(--primary-h), var(--primary-s), calc( var( --primary-l ) + ( ( 100% - var( --primary-l ) ) * 0)));
 }
@@ -524,6 +551,34 @@
 
 .bg_white-10 {
   background-color: hsla(var(--white-h), var(--white-s), var(--white-l), 1);
+}
+
+.bg_brand {
+  background-color: hsl(var(--brand-h), var(--brand-s), calc( var( --brand-l ) + ( ( 100% - var( --brand-l ) ) * 0)));
+}
+
+.bg_brand-0 {
+  background-color: hsl(var(--brand-h), var(--brand-s), calc( var( --brand-l ) + ( ( 100% - var( --brand-l ) ) * 0)));
+}
+
+.bg_brand-1 {
+  background-color: hsl(var(--brand-h), var(--brand-s), calc( var( --brand-l ) + ( ( 100% - var( --brand-l ) ) * 0.15)));
+}
+
+.bg_brand-2 {
+  background-color: hsl(var(--brand-h), var(--brand-s), calc( var( --brand-l ) + ( ( 100% - var( --brand-l ) ) * 0.37)));
+}
+
+.bg_brand-3 {
+  background-color: hsl(var(--brand-h), var(--brand-s), calc( var( --brand-l ) + ( ( 100% - var( --brand-l ) ) * 0.6)));
+}
+
+.bg_brand-4 {
+  background-color: hsl(var(--brand-h), var(--brand-s), calc( var( --brand-l ) + ( ( 100% - var( --brand-l ) ) * 0.78)));
+}
+
+.bg_brand-5 {
+  background-color: hsl(var(--brand-h), var(--brand-s), calc( var( --brand-l ) + ( ( 100% - var( --brand-l ) ) * 0.9)));
 }
 
 .bg_primary {
@@ -722,6 +777,30 @@
   background-color: hsla(var(--white-h), var(--white-s), var(--white-l), 1);
 }
 
+.active > .a\:bg_brand {
+  background-color: hsl(var(--brand-h), var(--brand-s), calc( var( --brand-l ) + ( ( 100% - var( --brand-l ) ) * 0)));
+}
+
+.active > .a\:bg_brand-n1 {
+  background-color: hsl(var(--brand-h), var(--brand-s), calc( var( --brand-l ) + ( ( var( --brand-l )) * -0.15 )));
+}
+
+.active > .a\:bg_brand-n2 {
+  background-color: hsl(var(--brand-h), var(--brand-s), calc( var( --brand-l ) + ( ( var( --brand-l )) * -0.37 )));
+}
+
+.active > .a\:bg_brand-n3 {
+  background-color: hsl(var(--brand-h), var(--brand-s), calc( var( --brand-l ) + ( ( var( --brand-l )) * -0.6 )));
+}
+
+.active > .a\:bg_brand-n4 {
+  background-color: hsl(var(--brand-h), var(--brand-s), calc( var( --brand-l ) + ( ( var( --brand-l )) * -0.78 )));
+}
+
+.active > .a\:bg_brand-n5 {
+  background-color: hsl(var(--brand-h), var(--brand-s), calc( var( --brand-l ) + ( ( var( --brand-l )) * -0.9 )));
+}
+
 .active > .a\:bg_primary {
   background-color: hsl(var(--primary-h), var(--primary-s), calc( var( --primary-l ) + ( ( 100% - var( --primary-l ) ) * 0)));
 }
@@ -904,6 +983,34 @@
 
 .active > .a\:bg_white-10 {
   background-color: hsla(var(--white-h), var(--white-s), var(--white-l), 1);
+}
+
+.active > .a\:bg_brand {
+  background-color: hsl(var(--brand-h), var(--brand-s), calc( var( --brand-l ) + ( ( 100% - var( --brand-l ) ) * 0)));
+}
+
+.active > .a\:bg_brand-0 {
+  background-color: hsl(var(--brand-h), var(--brand-s), calc( var( --brand-l ) + ( ( 100% - var( --brand-l ) ) * 0)));
+}
+
+.active > .a\:bg_brand-1 {
+  background-color: hsl(var(--brand-h), var(--brand-s), calc( var( --brand-l ) + ( ( 100% - var( --brand-l ) ) * 0.15)));
+}
+
+.active > .a\:bg_brand-2 {
+  background-color: hsl(var(--brand-h), var(--brand-s), calc( var( --brand-l ) + ( ( 100% - var( --brand-l ) ) * 0.37)));
+}
+
+.active > .a\:bg_brand-3 {
+  background-color: hsl(var(--brand-h), var(--brand-s), calc( var( --brand-l ) + ( ( 100% - var( --brand-l ) ) * 0.6)));
+}
+
+.active > .a\:bg_brand-4 {
+  background-color: hsl(var(--brand-h), var(--brand-s), calc( var( --brand-l ) + ( ( 100% - var( --brand-l ) ) * 0.78)));
+}
+
+.active > .a\:bg_brand-5 {
+  background-color: hsl(var(--brand-h), var(--brand-s), calc( var( --brand-l ) + ( ( 100% - var( --brand-l ) ) * 0.9)));
 }
 
 .active > .a\:bg_primary {
@@ -1102,6 +1209,30 @@
   background-color: hsla(var(--white-h), var(--white-s), var(--white-l), 1);
 }
 
+.active.a\:bg_brand {
+  background-color: hsl(var(--brand-h), var(--brand-s), calc( var( --brand-l ) + ( ( 100% - var( --brand-l ) ) * 0)));
+}
+
+.active.a\:bg_brand-n1 {
+  background-color: hsl(var(--brand-h), var(--brand-s), calc( var( --brand-l ) + ( ( var( --brand-l )) * -0.15 )));
+}
+
+.active.a\:bg_brand-n2 {
+  background-color: hsl(var(--brand-h), var(--brand-s), calc( var( --brand-l ) + ( ( var( --brand-l )) * -0.37 )));
+}
+
+.active.a\:bg_brand-n3 {
+  background-color: hsl(var(--brand-h), var(--brand-s), calc( var( --brand-l ) + ( ( var( --brand-l )) * -0.6 )));
+}
+
+.active.a\:bg_brand-n4 {
+  background-color: hsl(var(--brand-h), var(--brand-s), calc( var( --brand-l ) + ( ( var( --brand-l )) * -0.78 )));
+}
+
+.active.a\:bg_brand-n5 {
+  background-color: hsl(var(--brand-h), var(--brand-s), calc( var( --brand-l ) + ( ( var( --brand-l )) * -0.9 )));
+}
+
 .active.a\:bg_primary {
   background-color: hsl(var(--primary-h), var(--primary-s), calc( var( --primary-l ) + ( ( 100% - var( --primary-l ) ) * 0)));
 }
@@ -1284,6 +1415,34 @@
 
 .active.a\:bg_white-10 {
   background-color: hsla(var(--white-h), var(--white-s), var(--white-l), 1);
+}
+
+.active.a\:bg_brand {
+  background-color: hsl(var(--brand-h), var(--brand-s), calc( var( --brand-l ) + ( ( 100% - var( --brand-l ) ) * 0)));
+}
+
+.active.a\:bg_brand-0 {
+  background-color: hsl(var(--brand-h), var(--brand-s), calc( var( --brand-l ) + ( ( 100% - var( --brand-l ) ) * 0)));
+}
+
+.active.a\:bg_brand-1 {
+  background-color: hsl(var(--brand-h), var(--brand-s), calc( var( --brand-l ) + ( ( 100% - var( --brand-l ) ) * 0.15)));
+}
+
+.active.a\:bg_brand-2 {
+  background-color: hsl(var(--brand-h), var(--brand-s), calc( var( --brand-l ) + ( ( 100% - var( --brand-l ) ) * 0.37)));
+}
+
+.active.a\:bg_brand-3 {
+  background-color: hsl(var(--brand-h), var(--brand-s), calc( var( --brand-l ) + ( ( 100% - var( --brand-l ) ) * 0.6)));
+}
+
+.active.a\:bg_brand-4 {
+  background-color: hsl(var(--brand-h), var(--brand-s), calc( var( --brand-l ) + ( ( 100% - var( --brand-l ) ) * 0.78)));
+}
+
+.active.a\:bg_brand-5 {
+  background-color: hsl(var(--brand-h), var(--brand-s), calc( var( --brand-l ) + ( ( 100% - var( --brand-l ) ) * 0.9)));
 }
 
 .active.a\:bg_primary {
@@ -1482,6 +1641,30 @@
   background-color: hsla(var(--white-h), var(--white-s), var(--white-l), 1);
 }
 
+.h\:bg_brand:hover {
+  background-color: hsl(var(--brand-h), var(--brand-s), calc( var( --brand-l ) + ( ( 100% - var( --brand-l ) ) * 0)));
+}
+
+.h\:bg_brand-n1:hover {
+  background-color: hsl(var(--brand-h), var(--brand-s), calc( var( --brand-l ) + ( ( var( --brand-l )) * -0.15 )));
+}
+
+.h\:bg_brand-n2:hover {
+  background-color: hsl(var(--brand-h), var(--brand-s), calc( var( --brand-l ) + ( ( var( --brand-l )) * -0.37 )));
+}
+
+.h\:bg_brand-n3:hover {
+  background-color: hsl(var(--brand-h), var(--brand-s), calc( var( --brand-l ) + ( ( var( --brand-l )) * -0.6 )));
+}
+
+.h\:bg_brand-n4:hover {
+  background-color: hsl(var(--brand-h), var(--brand-s), calc( var( --brand-l ) + ( ( var( --brand-l )) * -0.78 )));
+}
+
+.h\:bg_brand-n5:hover {
+  background-color: hsl(var(--brand-h), var(--brand-s), calc( var( --brand-l ) + ( ( var( --brand-l )) * -0.9 )));
+}
+
 .h\:bg_primary:hover {
   background-color: hsl(var(--primary-h), var(--primary-s), calc( var( --primary-l ) + ( ( 100% - var( --primary-l ) ) * 0)));
 }
@@ -1664,6 +1847,34 @@
 
 .h\:bg_white-10:hover {
   background-color: hsla(var(--white-h), var(--white-s), var(--white-l), 1);
+}
+
+.h\:bg_brand:hover {
+  background-color: hsl(var(--brand-h), var(--brand-s), calc( var( --brand-l ) + ( ( 100% - var( --brand-l ) ) * 0)));
+}
+
+.h\:bg_brand-0:hover {
+  background-color: hsl(var(--brand-h), var(--brand-s), calc( var( --brand-l ) + ( ( 100% - var( --brand-l ) ) * 0)));
+}
+
+.h\:bg_brand-1:hover {
+  background-color: hsl(var(--brand-h), var(--brand-s), calc( var( --brand-l ) + ( ( 100% - var( --brand-l ) ) * 0.15)));
+}
+
+.h\:bg_brand-2:hover {
+  background-color: hsl(var(--brand-h), var(--brand-s), calc( var( --brand-l ) + ( ( 100% - var( --brand-l ) ) * 0.37)));
+}
+
+.h\:bg_brand-3:hover {
+  background-color: hsl(var(--brand-h), var(--brand-s), calc( var( --brand-l ) + ( ( 100% - var( --brand-l ) ) * 0.6)));
+}
+
+.h\:bg_brand-4:hover {
+  background-color: hsl(var(--brand-h), var(--brand-s), calc( var( --brand-l ) + ( ( 100% - var( --brand-l ) ) * 0.78)));
+}
+
+.h\:bg_brand-5:hover {
+  background-color: hsl(var(--brand-h), var(--brand-s), calc( var( --brand-l ) + ( ( 100% - var( --brand-l ) ) * 0.9)));
 }
 
 .h\:bg_primary:hover {
@@ -1882,6 +2093,30 @@
   background-position: center center;
 }
 
+.br_brand {
+  border-color: hsl(var(--brand-h), var(--brand-s), calc( var( --brand-l ) + ( ( 100% - var( --brand-l ) ) * 0)));
+}
+
+.br_brand-n1 {
+  border-color: hsl(var(--brand-h), var(--brand-s), calc( var( --brand-l ) + ( ( var( --brand-l )) * -0.15 )));
+}
+
+.br_brand-n2 {
+  border-color: hsl(var(--brand-h), var(--brand-s), calc( var( --brand-l ) + ( ( var( --brand-l )) * -0.37 )));
+}
+
+.br_brand-n3 {
+  border-color: hsl(var(--brand-h), var(--brand-s), calc( var( --brand-l ) + ( ( var( --brand-l )) * -0.6 )));
+}
+
+.br_brand-n4 {
+  border-color: hsl(var(--brand-h), var(--brand-s), calc( var( --brand-l ) + ( ( var( --brand-l )) * -0.78 )));
+}
+
+.br_brand-n5 {
+  border-color: hsl(var(--brand-h), var(--brand-s), calc( var( --brand-l ) + ( ( var( --brand-l )) * -0.9 )));
+}
+
 .br_primary {
   border-color: hsl(var(--primary-h), var(--primary-s), calc( var( --primary-l ) + ( ( 100% - var( --primary-l ) ) * 0)));
 }
@@ -2064,6 +2299,34 @@
 
 .br_white-10 {
   border-color: hsla(var(--white-h), var(--white-s), var(--white-l), 1);
+}
+
+.br_brand {
+  border-color: hsl(var(--brand-h), var(--brand-s), calc( var( --brand-l ) + ( ( 100% - var( --brand-l ) ) * 0)));
+}
+
+.br_brand-0 {
+  border-color: hsl(var(--brand-h), var(--brand-s), calc( var( --brand-l ) + ( ( 100% - var( --brand-l ) ) * 0)));
+}
+
+.br_brand-1 {
+  border-color: hsl(var(--brand-h), var(--brand-s), calc( var( --brand-l ) + ( ( 100% - var( --brand-l ) ) * 0.15)));
+}
+
+.br_brand-2 {
+  border-color: hsl(var(--brand-h), var(--brand-s), calc( var( --brand-l ) + ( ( 100% - var( --brand-l ) ) * 0.37)));
+}
+
+.br_brand-3 {
+  border-color: hsl(var(--brand-h), var(--brand-s), calc( var( --brand-l ) + ( ( 100% - var( --brand-l ) ) * 0.6)));
+}
+
+.br_brand-4 {
+  border-color: hsl(var(--brand-h), var(--brand-s), calc( var( --brand-l ) + ( ( 100% - var( --brand-l ) ) * 0.78)));
+}
+
+.br_brand-5 {
+  border-color: hsl(var(--brand-h), var(--brand-s), calc( var( --brand-l ) + ( ( 100% - var( --brand-l ) ) * 0.9)));
 }
 
 .br_primary {
@@ -2262,6 +2525,30 @@
   border-color: hsla(var(--white-h), var(--white-s), var(--white-l), 1);
 }
 
+.active > .a\:br_brand {
+  border-color: hsl(var(--brand-h), var(--brand-s), calc( var( --brand-l ) + ( ( 100% - var( --brand-l ) ) * 0)));
+}
+
+.active > .a\:br_brand-n1 {
+  border-color: hsl(var(--brand-h), var(--brand-s), calc( var( --brand-l ) + ( ( var( --brand-l )) * -0.15 )));
+}
+
+.active > .a\:br_brand-n2 {
+  border-color: hsl(var(--brand-h), var(--brand-s), calc( var( --brand-l ) + ( ( var( --brand-l )) * -0.37 )));
+}
+
+.active > .a\:br_brand-n3 {
+  border-color: hsl(var(--brand-h), var(--brand-s), calc( var( --brand-l ) + ( ( var( --brand-l )) * -0.6 )));
+}
+
+.active > .a\:br_brand-n4 {
+  border-color: hsl(var(--brand-h), var(--brand-s), calc( var( --brand-l ) + ( ( var( --brand-l )) * -0.78 )));
+}
+
+.active > .a\:br_brand-n5 {
+  border-color: hsl(var(--brand-h), var(--brand-s), calc( var( --brand-l ) + ( ( var( --brand-l )) * -0.9 )));
+}
+
 .active > .a\:br_primary {
   border-color: hsl(var(--primary-h), var(--primary-s), calc( var( --primary-l ) + ( ( 100% - var( --primary-l ) ) * 0)));
 }
@@ -2444,6 +2731,34 @@
 
 .active > .a\:br_white-10 {
   border-color: hsla(var(--white-h), var(--white-s), var(--white-l), 1);
+}
+
+.active > .a\:br_brand {
+  border-color: hsl(var(--brand-h), var(--brand-s), calc( var( --brand-l ) + ( ( 100% - var( --brand-l ) ) * 0)));
+}
+
+.active > .a\:br_brand-0 {
+  border-color: hsl(var(--brand-h), var(--brand-s), calc( var( --brand-l ) + ( ( 100% - var( --brand-l ) ) * 0)));
+}
+
+.active > .a\:br_brand-1 {
+  border-color: hsl(var(--brand-h), var(--brand-s), calc( var( --brand-l ) + ( ( 100% - var( --brand-l ) ) * 0.15)));
+}
+
+.active > .a\:br_brand-2 {
+  border-color: hsl(var(--brand-h), var(--brand-s), calc( var( --brand-l ) + ( ( 100% - var( --brand-l ) ) * 0.37)));
+}
+
+.active > .a\:br_brand-3 {
+  border-color: hsl(var(--brand-h), var(--brand-s), calc( var( --brand-l ) + ( ( 100% - var( --brand-l ) ) * 0.6)));
+}
+
+.active > .a\:br_brand-4 {
+  border-color: hsl(var(--brand-h), var(--brand-s), calc( var( --brand-l ) + ( ( 100% - var( --brand-l ) ) * 0.78)));
+}
+
+.active > .a\:br_brand-5 {
+  border-color: hsl(var(--brand-h), var(--brand-s), calc( var( --brand-l ) + ( ( 100% - var( --brand-l ) ) * 0.9)));
 }
 
 .active > .a\:br_primary {
@@ -2642,6 +2957,30 @@
   border-color: hsla(var(--white-h), var(--white-s), var(--white-l), 1);
 }
 
+.active.a\:br_brand {
+  border-color: hsl(var(--brand-h), var(--brand-s), calc( var( --brand-l ) + ( ( 100% - var( --brand-l ) ) * 0)));
+}
+
+.active.a\:br_brand-n1 {
+  border-color: hsl(var(--brand-h), var(--brand-s), calc( var( --brand-l ) + ( ( var( --brand-l )) * -0.15 )));
+}
+
+.active.a\:br_brand-n2 {
+  border-color: hsl(var(--brand-h), var(--brand-s), calc( var( --brand-l ) + ( ( var( --brand-l )) * -0.37 )));
+}
+
+.active.a\:br_brand-n3 {
+  border-color: hsl(var(--brand-h), var(--brand-s), calc( var( --brand-l ) + ( ( var( --brand-l )) * -0.6 )));
+}
+
+.active.a\:br_brand-n4 {
+  border-color: hsl(var(--brand-h), var(--brand-s), calc( var( --brand-l ) + ( ( var( --brand-l )) * -0.78 )));
+}
+
+.active.a\:br_brand-n5 {
+  border-color: hsl(var(--brand-h), var(--brand-s), calc( var( --brand-l ) + ( ( var( --brand-l )) * -0.9 )));
+}
+
 .active.a\:br_primary {
   border-color: hsl(var(--primary-h), var(--primary-s), calc( var( --primary-l ) + ( ( 100% - var( --primary-l ) ) * 0)));
 }
@@ -2824,6 +3163,34 @@
 
 .active.a\:br_white-10 {
   border-color: hsla(var(--white-h), var(--white-s), var(--white-l), 1);
+}
+
+.active.a\:br_brand {
+  border-color: hsl(var(--brand-h), var(--brand-s), calc( var( --brand-l ) + ( ( 100% - var( --brand-l ) ) * 0)));
+}
+
+.active.a\:br_brand-0 {
+  border-color: hsl(var(--brand-h), var(--brand-s), calc( var( --brand-l ) + ( ( 100% - var( --brand-l ) ) * 0)));
+}
+
+.active.a\:br_brand-1 {
+  border-color: hsl(var(--brand-h), var(--brand-s), calc( var( --brand-l ) + ( ( 100% - var( --brand-l ) ) * 0.15)));
+}
+
+.active.a\:br_brand-2 {
+  border-color: hsl(var(--brand-h), var(--brand-s), calc( var( --brand-l ) + ( ( 100% - var( --brand-l ) ) * 0.37)));
+}
+
+.active.a\:br_brand-3 {
+  border-color: hsl(var(--brand-h), var(--brand-s), calc( var( --brand-l ) + ( ( 100% - var( --brand-l ) ) * 0.6)));
+}
+
+.active.a\:br_brand-4 {
+  border-color: hsl(var(--brand-h), var(--brand-s), calc( var( --brand-l ) + ( ( 100% - var( --brand-l ) ) * 0.78)));
+}
+
+.active.a\:br_brand-5 {
+  border-color: hsl(var(--brand-h), var(--brand-s), calc( var( --brand-l ) + ( ( 100% - var( --brand-l ) ) * 0.9)));
 }
 
 .active.a\:br_primary {
@@ -3022,6 +3389,30 @@
   border-color: hsla(var(--white-h), var(--white-s), var(--white-l), 1);
 }
 
+.h\:br_brand:hover {
+  border-color: hsl(var(--brand-h), var(--brand-s), calc( var( --brand-l ) + ( ( 100% - var( --brand-l ) ) * 0)));
+}
+
+.h\:br_brand-n1:hover {
+  border-color: hsl(var(--brand-h), var(--brand-s), calc( var( --brand-l ) + ( ( var( --brand-l )) * -0.15 )));
+}
+
+.h\:br_brand-n2:hover {
+  border-color: hsl(var(--brand-h), var(--brand-s), calc( var( --brand-l ) + ( ( var( --brand-l )) * -0.37 )));
+}
+
+.h\:br_brand-n3:hover {
+  border-color: hsl(var(--brand-h), var(--brand-s), calc( var( --brand-l ) + ( ( var( --brand-l )) * -0.6 )));
+}
+
+.h\:br_brand-n4:hover {
+  border-color: hsl(var(--brand-h), var(--brand-s), calc( var( --brand-l ) + ( ( var( --brand-l )) * -0.78 )));
+}
+
+.h\:br_brand-n5:hover {
+  border-color: hsl(var(--brand-h), var(--brand-s), calc( var( --brand-l ) + ( ( var( --brand-l )) * -0.9 )));
+}
+
 .h\:br_primary:hover {
   border-color: hsl(var(--primary-h), var(--primary-s), calc( var( --primary-l ) + ( ( 100% - var( --primary-l ) ) * 0)));
 }
@@ -3204,6 +3595,34 @@
 
 .h\:br_white-10:hover {
   border-color: hsla(var(--white-h), var(--white-s), var(--white-l), 1);
+}
+
+.h\:br_brand:hover {
+  border-color: hsl(var(--brand-h), var(--brand-s), calc( var( --brand-l ) + ( ( 100% - var( --brand-l ) ) * 0)));
+}
+
+.h\:br_brand-0:hover {
+  border-color: hsl(var(--brand-h), var(--brand-s), calc( var( --brand-l ) + ( ( 100% - var( --brand-l ) ) * 0)));
+}
+
+.h\:br_brand-1:hover {
+  border-color: hsl(var(--brand-h), var(--brand-s), calc( var( --brand-l ) + ( ( 100% - var( --brand-l ) ) * 0.15)));
+}
+
+.h\:br_brand-2:hover {
+  border-color: hsl(var(--brand-h), var(--brand-s), calc( var( --brand-l ) + ( ( 100% - var( --brand-l ) ) * 0.37)));
+}
+
+.h\:br_brand-3:hover {
+  border-color: hsl(var(--brand-h), var(--brand-s), calc( var( --brand-l ) + ( ( 100% - var( --brand-l ) ) * 0.6)));
+}
+
+.h\:br_brand-4:hover {
+  border-color: hsl(var(--brand-h), var(--brand-s), calc( var( --brand-l ) + ( ( 100% - var( --brand-l ) ) * 0.78)));
+}
+
+.h\:br_brand-5:hover {
+  border-color: hsl(var(--brand-h), var(--brand-s), calc( var( --brand-l ) + ( ( 100% - var( --brand-l ) ) * 0.9)));
 }
 
 .h\:br_primary:hover {
@@ -4594,6 +5013,30 @@
   float: right;
 }
 
+.c_brand {
+  color: hsl(var(--brand-h), var(--brand-s), calc( var( --brand-l ) + ( ( 100% - var( --brand-l ) ) * 0)));
+}
+
+.c_brand-n1 {
+  color: hsl(var(--brand-h), var(--brand-s), calc( var( --brand-l ) + ( ( var( --brand-l )) * -0.15 )));
+}
+
+.c_brand-n2 {
+  color: hsl(var(--brand-h), var(--brand-s), calc( var( --brand-l ) + ( ( var( --brand-l )) * -0.37 )));
+}
+
+.c_brand-n3 {
+  color: hsl(var(--brand-h), var(--brand-s), calc( var( --brand-l ) + ( ( var( --brand-l )) * -0.6 )));
+}
+
+.c_brand-n4 {
+  color: hsl(var(--brand-h), var(--brand-s), calc( var( --brand-l ) + ( ( var( --brand-l )) * -0.78 )));
+}
+
+.c_brand-n5 {
+  color: hsl(var(--brand-h), var(--brand-s), calc( var( --brand-l ) + ( ( var( --brand-l )) * -0.9 )));
+}
+
 .c_primary {
   color: hsl(var(--primary-h), var(--primary-s), calc( var( --primary-l ) + ( ( 100% - var( --primary-l ) ) * 0)));
 }
@@ -4776,6 +5219,34 @@
 
 .c_white-10 {
   color: hsla(var(--white-h), var(--white-s), var(--white-l), 1);
+}
+
+.c_brand {
+  color: hsl(var(--brand-h), var(--brand-s), calc( var( --brand-l ) + ( ( 100% - var( --brand-l ) ) * 0)));
+}
+
+.c_brand-0 {
+  color: hsl(var(--brand-h), var(--brand-s), calc( var( --brand-l ) + ( ( 100% - var( --brand-l ) ) * 0)));
+}
+
+.c_brand-1 {
+  color: hsl(var(--brand-h), var(--brand-s), calc( var( --brand-l ) + ( ( 100% - var( --brand-l ) ) * 0.15)));
+}
+
+.c_brand-2 {
+  color: hsl(var(--brand-h), var(--brand-s), calc( var( --brand-l ) + ( ( 100% - var( --brand-l ) ) * 0.37)));
+}
+
+.c_brand-3 {
+  color: hsl(var(--brand-h), var(--brand-s), calc( var( --brand-l ) + ( ( 100% - var( --brand-l ) ) * 0.6)));
+}
+
+.c_brand-4 {
+  color: hsl(var(--brand-h), var(--brand-s), calc( var( --brand-l ) + ( ( 100% - var( --brand-l ) ) * 0.78)));
+}
+
+.c_brand-5 {
+  color: hsl(var(--brand-h), var(--brand-s), calc( var( --brand-l ) + ( ( 100% - var( --brand-l ) ) * 0.9)));
 }
 
 .c_primary {
@@ -4974,6 +5445,30 @@
   color: hsla(var(--white-h), var(--white-s), var(--white-l), 1);
 }
 
+.active > .a\:c_brand {
+  color: hsl(var(--brand-h), var(--brand-s), calc( var( --brand-l ) + ( ( 100% - var( --brand-l ) ) * 0)));
+}
+
+.active > .a\:c_brand-n1 {
+  color: hsl(var(--brand-h), var(--brand-s), calc( var( --brand-l ) + ( ( var( --brand-l )) * -0.15 )));
+}
+
+.active > .a\:c_brand-n2 {
+  color: hsl(var(--brand-h), var(--brand-s), calc( var( --brand-l ) + ( ( var( --brand-l )) * -0.37 )));
+}
+
+.active > .a\:c_brand-n3 {
+  color: hsl(var(--brand-h), var(--brand-s), calc( var( --brand-l ) + ( ( var( --brand-l )) * -0.6 )));
+}
+
+.active > .a\:c_brand-n4 {
+  color: hsl(var(--brand-h), var(--brand-s), calc( var( --brand-l ) + ( ( var( --brand-l )) * -0.78 )));
+}
+
+.active > .a\:c_brand-n5 {
+  color: hsl(var(--brand-h), var(--brand-s), calc( var( --brand-l ) + ( ( var( --brand-l )) * -0.9 )));
+}
+
 .active > .a\:c_primary {
   color: hsl(var(--primary-h), var(--primary-s), calc( var( --primary-l ) + ( ( 100% - var( --primary-l ) ) * 0)));
 }
@@ -5156,6 +5651,34 @@
 
 .active > .a\:c_white-10 {
   color: hsla(var(--white-h), var(--white-s), var(--white-l), 1);
+}
+
+.active > .a\:c_brand {
+  color: hsl(var(--brand-h), var(--brand-s), calc( var( --brand-l ) + ( ( 100% - var( --brand-l ) ) * 0)));
+}
+
+.active > .a\:c_brand-0 {
+  color: hsl(var(--brand-h), var(--brand-s), calc( var( --brand-l ) + ( ( 100% - var( --brand-l ) ) * 0)));
+}
+
+.active > .a\:c_brand-1 {
+  color: hsl(var(--brand-h), var(--brand-s), calc( var( --brand-l ) + ( ( 100% - var( --brand-l ) ) * 0.15)));
+}
+
+.active > .a\:c_brand-2 {
+  color: hsl(var(--brand-h), var(--brand-s), calc( var( --brand-l ) + ( ( 100% - var( --brand-l ) ) * 0.37)));
+}
+
+.active > .a\:c_brand-3 {
+  color: hsl(var(--brand-h), var(--brand-s), calc( var( --brand-l ) + ( ( 100% - var( --brand-l ) ) * 0.6)));
+}
+
+.active > .a\:c_brand-4 {
+  color: hsl(var(--brand-h), var(--brand-s), calc( var( --brand-l ) + ( ( 100% - var( --brand-l ) ) * 0.78)));
+}
+
+.active > .a\:c_brand-5 {
+  color: hsl(var(--brand-h), var(--brand-s), calc( var( --brand-l ) + ( ( 100% - var( --brand-l ) ) * 0.9)));
 }
 
 .active > .a\:c_primary {
@@ -5354,6 +5877,30 @@
   color: hsla(var(--white-h), var(--white-s), var(--white-l), 1);
 }
 
+.active.a\:c_brand {
+  color: hsl(var(--brand-h), var(--brand-s), calc( var( --brand-l ) + ( ( 100% - var( --brand-l ) ) * 0)));
+}
+
+.active.a\:c_brand-n1 {
+  color: hsl(var(--brand-h), var(--brand-s), calc( var( --brand-l ) + ( ( var( --brand-l )) * -0.15 )));
+}
+
+.active.a\:c_brand-n2 {
+  color: hsl(var(--brand-h), var(--brand-s), calc( var( --brand-l ) + ( ( var( --brand-l )) * -0.37 )));
+}
+
+.active.a\:c_brand-n3 {
+  color: hsl(var(--brand-h), var(--brand-s), calc( var( --brand-l ) + ( ( var( --brand-l )) * -0.6 )));
+}
+
+.active.a\:c_brand-n4 {
+  color: hsl(var(--brand-h), var(--brand-s), calc( var( --brand-l ) + ( ( var( --brand-l )) * -0.78 )));
+}
+
+.active.a\:c_brand-n5 {
+  color: hsl(var(--brand-h), var(--brand-s), calc( var( --brand-l ) + ( ( var( --brand-l )) * -0.9 )));
+}
+
 .active.a\:c_primary {
   color: hsl(var(--primary-h), var(--primary-s), calc( var( --primary-l ) + ( ( 100% - var( --primary-l ) ) * 0)));
 }
@@ -5536,6 +6083,34 @@
 
 .active.a\:c_white-10 {
   color: hsla(var(--white-h), var(--white-s), var(--white-l), 1);
+}
+
+.active.a\:c_brand {
+  color: hsl(var(--brand-h), var(--brand-s), calc( var( --brand-l ) + ( ( 100% - var( --brand-l ) ) * 0)));
+}
+
+.active.a\:c_brand-0 {
+  color: hsl(var(--brand-h), var(--brand-s), calc( var( --brand-l ) + ( ( 100% - var( --brand-l ) ) * 0)));
+}
+
+.active.a\:c_brand-1 {
+  color: hsl(var(--brand-h), var(--brand-s), calc( var( --brand-l ) + ( ( 100% - var( --brand-l ) ) * 0.15)));
+}
+
+.active.a\:c_brand-2 {
+  color: hsl(var(--brand-h), var(--brand-s), calc( var( --brand-l ) + ( ( 100% - var( --brand-l ) ) * 0.37)));
+}
+
+.active.a\:c_brand-3 {
+  color: hsl(var(--brand-h), var(--brand-s), calc( var( --brand-l ) + ( ( 100% - var( --brand-l ) ) * 0.6)));
+}
+
+.active.a\:c_brand-4 {
+  color: hsl(var(--brand-h), var(--brand-s), calc( var( --brand-l ) + ( ( 100% - var( --brand-l ) ) * 0.78)));
+}
+
+.active.a\:c_brand-5 {
+  color: hsl(var(--brand-h), var(--brand-s), calc( var( --brand-l ) + ( ( 100% - var( --brand-l ) ) * 0.9)));
 }
 
 .active.a\:c_primary {
@@ -5734,6 +6309,30 @@
   color: hsla(var(--white-h), var(--white-s), var(--white-l), 1);
 }
 
+.h\:c_brand:hover {
+  color: hsl(var(--brand-h), var(--brand-s), calc( var( --brand-l ) + ( ( 100% - var( --brand-l ) ) * 0)));
+}
+
+.h\:c_brand-n1:hover {
+  color: hsl(var(--brand-h), var(--brand-s), calc( var( --brand-l ) + ( ( var( --brand-l )) * -0.15 )));
+}
+
+.h\:c_brand-n2:hover {
+  color: hsl(var(--brand-h), var(--brand-s), calc( var( --brand-l ) + ( ( var( --brand-l )) * -0.37 )));
+}
+
+.h\:c_brand-n3:hover {
+  color: hsl(var(--brand-h), var(--brand-s), calc( var( --brand-l ) + ( ( var( --brand-l )) * -0.6 )));
+}
+
+.h\:c_brand-n4:hover {
+  color: hsl(var(--brand-h), var(--brand-s), calc( var( --brand-l ) + ( ( var( --brand-l )) * -0.78 )));
+}
+
+.h\:c_brand-n5:hover {
+  color: hsl(var(--brand-h), var(--brand-s), calc( var( --brand-l ) + ( ( var( --brand-l )) * -0.9 )));
+}
+
 .h\:c_primary:hover {
   color: hsl(var(--primary-h), var(--primary-s), calc( var( --primary-l ) + ( ( 100% - var( --primary-l ) ) * 0)));
 }
@@ -5916,6 +6515,34 @@
 
 .h\:c_white-10:hover {
   color: hsla(var(--white-h), var(--white-s), var(--white-l), 1);
+}
+
+.h\:c_brand:hover {
+  color: hsl(var(--brand-h), var(--brand-s), calc( var( --brand-l ) + ( ( 100% - var( --brand-l ) ) * 0)));
+}
+
+.h\:c_brand-0:hover {
+  color: hsl(var(--brand-h), var(--brand-s), calc( var( --brand-l ) + ( ( 100% - var( --brand-l ) ) * 0)));
+}
+
+.h\:c_brand-1:hover {
+  color: hsl(var(--brand-h), var(--brand-s), calc( var( --brand-l ) + ( ( 100% - var( --brand-l ) ) * 0.15)));
+}
+
+.h\:c_brand-2:hover {
+  color: hsl(var(--brand-h), var(--brand-s), calc( var( --brand-l ) + ( ( 100% - var( --brand-l ) ) * 0.37)));
+}
+
+.h\:c_brand-3:hover {
+  color: hsl(var(--brand-h), var(--brand-s), calc( var( --brand-l ) + ( ( 100% - var( --brand-l ) ) * 0.6)));
+}
+
+.h\:c_brand-4:hover {
+  color: hsl(var(--brand-h), var(--brand-s), calc( var( --brand-l ) + ( ( 100% - var( --brand-l ) ) * 0.78)));
+}
+
+.h\:c_brand-5:hover {
+  color: hsl(var(--brand-h), var(--brand-s), calc( var( --brand-l ) + ( ( 100% - var( --brand-l ) ) * 0.9)));
 }
 
 .h\:c_primary:hover {
