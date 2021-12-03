@@ -1,0 +1,22 @@
+{
+	"title": "Web Casters",
+	"mask": "UC.css",
+	"builder": "michelangelo/kss_styleguide/home-template/",
+	"source": "./dist/css/",
+	"destination": "docs/",
+	"homepage": "./markdown/index.md",
+	"custom": ["MarkupWrapperClasses","HideCodeBlock","Note","HideDefault"],
+	"//": "relative to the generated style guide.",
+	"css": [
+		"dist/css/UC.css"
+	],
+	"js": [""],
+	"site_nav": [
+		{
+			"title": "UC",
+			"id": "home_nav",
+			"url": "/",
+			"isActive": true
+		}
+	]
+}

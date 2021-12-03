@@ -7,6 +7,8 @@
 @use "modularscale-sass/stylesheets/_modularscale.scss" as *;
 @use "maps";
 @use "sass:meta";
+
+$debug:true;
 $colon: '\\3A ';
 $modularscale: (
   base: 16px,
@@ -32,12 +34,16 @@ $modularscale: (
     }
   }
 }
-@mixin directionModifierLoop($directionsMap) {
+@mixin directionModifierLoop($directionsMap,$base) {
   //create the base all unit version first
+  $separatorMarker: '';
   @content ( '', '' );
+  @if($base != ''){  
+    $separatorMarker: '-';
+  }
   //loop through the variations second
   @each $direction, $propertyDirectionMap in $directionsMap {
-    @content ( '-'+$direction,$propertyDirectionMap );
+    @content ( $separatorMarker+$direction,$propertyDirectionMap );
   }
 }
 @mixin propertyDirectionMapLoop($propertyDirectionMap) {
@@ -66,7 +72,7 @@ $modularscale: (
     $range: math.div($lightness,1%);
   }
   $shift: $range * math.div($propertyValueModifier,100);
-  @debug( $lightness , $range, $propertyValueModifier, $shift , $lightness + $shift );
+  @if($debug){@debug( $lightness , $range, $propertyValueModifier, $shift , $lightness + $shift );}
   @return  calc(var( --#{$unitLabel}-l) + #{$shift});
 }
 @function calcLightnessCSSvar($unitLabel,$propertyValueModifier){
@@ -107,7 +113,6 @@ $modularscale: (
         @content ( $unitLabel,  shadeColorCSSVar($unitLabel,$propertyValue,0),$luminance );
         @each $unitLabelModifier, $propertyValueModifier in $unitMap {
           $color: color.adjust( map.get(maps.$theme-palette ,$unitLabel) , $lightness:$propertyValueModifier * 100%  );
-          @debug( $propertyValueModifier, color.lightness(map.get(maps.$theme-palette ,$unitLabel)) ,color.lightness( $color ));
           @if(color.lightness( $color ) < 50%){
             $luminance: 'dark';
           }@else{
@@ -145,6 +150,7 @@ $modularscale: (
 @mixin renderCSSFromMap( $cssPropertiesMap ){
   @each $type, $map in $cssPropertiesMap {
     $base: map.get($map, name);
+    @if($debug){@debug( $type, $base );}
     $separator: '_';
     @if ($base == '') {
       $separator: '';
@@ -168,10 +174,20 @@ $modularscale: (
 
     @include breakpointLoop($bp) using ($breakpointLabel) {
       @include pseudoStateModifierLoop($pseudoStates) using ($stateClass, $stateLabelModifier, $pseudoLabelModifier) {
-        @include directionModifierLoop($dir) using ($labelDirectionMod, $propertyDirectionMap) {
+        @include directionModifierLoop($dir,$base) using ($labelDirectionMod, $propertyDirectionMap) {
         @include propertyValueLoop(map.get($map, unit), $unitLoopMode) using
           ($unitLabel, $propertyValue, $luminance) {
-          
+          // Error check if there is no base or labelDirectionMod and $unitLabel is a number skip or $unitLabel starts with the letter 'n'
+          @if ($base == '' and $labelDirectionMod == '' and ( helpers.is-number($unitLabel) or helpers.is-negativeUnitLabel($unitLabel))) {
+            @if($debug){
+              @debug( "skip this unit because it would produce an improper class name"+ '.' + $base + $labelDirectionMod + $separator + $unitLabel );
+            }
+          }
+          @else{
+
+            @if($base == '' and $labelDirectionMod != '' ){
+              $separator: '_';
+            }
             #{
               $stateClass
               + '.'
@@ -199,20 +215,23 @@ $modularscale: (
                   }
                 } @else {
                   #{ $prop }: #{$propertyValue};
-                  @if ($prop == 'background-color'){
-                    @if($stateLabelModifier == '' ){
-                      // add the best contrast color for the background that don't use transparency
-                      @if($luminance == 'light'){
-                        @extend .c_dark;
-                      }@else{
-                        @extend .c_light;
-                      }
-                    }
-                  }
+                  // @if ($prop == 'background-color'){
+                  //   @if($stateLabelModifier == '' ){
+                  //     // add the best contrast color for the background that don't use transparency
+                  //     @if($luminance == 'light'){
+                  //       @extend .c_dark;
+                  //     }@else{
+                  //       @extend .c_light;
+                  //     }
+                  //   }
+                  // }
                 }
                 // if direction is  x , y duplicate.
               }
             }
+            
+          }
+            
           }
         }
       }

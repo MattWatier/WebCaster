@@ -10,11 +10,14 @@
     "chokidar": "^3.5.2",
     "fill-range": "^7.0.1",
     "glob-parent": "^5.1.2",
+    "highlight.js": "^11.3.1",
     "is-binary-path": "^2.1.0",
     "is-extglob": "^2.1.1",
     "is-glob": "^4.0.1",
     "is-number": "^7.0.0",
+    "kss": "^3.0.1",
     "modularscale-sass": "^3.0.10",
+    "ngx-highlightjs": "^6.1.0",
     "normalize-path": "^3.0.0",
     "picomatch": "^2.3.0",
     "readdirp": "^3.6.0",
@@ -29,14 +32,16 @@
     "postcss-combine-media-query": "^1.0.1",
     "postcss-merge-rules": "^5.0.2",
     "postcss-merge-rules-plus": "^1.0.2",
-    "postcss-merge-selectors": "^0.0.6"
+    "postcss-merge-selectors": "^0.0.6",
+    "sc5-styleguide": "^2.2.0"
   },
   "scripts": {
     "scss": "sass  --load-path=node_modules/ src/scss/UC.scss dist/css/UC.css -w",
-    "scssOverload": "sass  --load-path=node_modules/ src/scss/UC.scss dist/css/UC.css -w",
+    "copyStyleToStyleGuide": "copyfiles dist/**/*.*  docs",
     "postcss": "postcss ./dist/css/UC.css -o ./dist/css/UC.min.css -w",
     "gzipper": "gzipper",
-    "compress": "gzipper compress ./dist/css/Uc.min.css"
+    "compress": "gzipper compress ./dist/css/Uc.min.css",
+    "styleguide": "kss --config kss-config.json"
   },
   "repository": {
     "type": "git",

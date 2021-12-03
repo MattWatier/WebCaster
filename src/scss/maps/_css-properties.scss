@@ -241,6 +241,18 @@ $css-properties: (
         'unit': (
             'font-weight',
         ),
+    ),    
+    'grid-gap': (
+        'direction': null,
+        'name': 'gap',
+        'property': (
+            'grid-gap',
+            'gap',
+        ),
+        'responsive': true,
+        'unit': (
+            'size-positive',
+        ),
     ),
     'grid-column-gap': (
         'direction': null,
@@ -548,7 +560,17 @@ $css-properties: (
         ),
         'responsive': true,
         'unit': (
-            'sizeAlt',
+            'size-negative',
+        ),
+    ),
+    'inset': (
+        'direction': 'direction-edges',
+        'name': '',
+        'property': (
+            'inset',
+        ),
+        'unit': (
+            'unset','auto','size-negative','size-positive',
         ),
     ),
     'transform-origin': (

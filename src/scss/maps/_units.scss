@@ -10,7 +10,6 @@ $modularscale: (
   ratio: 1.25,
 );
 
-
 $units: (
 	states: (
 		a:active,
@@ -21,22 +20,10 @@ $units: (
 		pointer:pointer,
 	),
 	direction-edges: (
-		t: (
-			fallback: top,
-			logical: block-start,
-		),
-		l: (
-			fallback: left,
-			logical: inline-start,
-		),
-		r: (
-			fallback: right,
-			logical: inline-end,
-		),
-		b: (
-			fallback: bottom,
-			logical: block-end,
-		)
+		t:(logical:block-start),
+		l:(logical:inline-start),
+		r:(logical:inline-end),
+		b:(logical:block-end)
 	),
 	direction-corners: (
 		tl: (
