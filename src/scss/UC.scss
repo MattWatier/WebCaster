@@ -3,7 +3,7 @@
 @use "base";
 @use "maps";
 @use "renderCSSFromMap" as renderMap;
-@use "styleguide"; //this is the styleguide
+
 [class*="br_"]{
   border-width: 0px;
 }
@@ -26,19 +26,3 @@
 
 
 @debug ('build complete');
-
-/*
-Home Page
- 
-Description: This is the first Comment
- 
-Markup:<H1>Hello World This is a Test</H1>
-
- 
-Weight:0
- 
-Styleguide Recipes
-*/
-
-// Home Page
-
