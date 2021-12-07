@@ -1,0 +1,1700 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Web Casters</title>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <meta content="yes" name="mobile-web-app-capable">
+    <meta content="kss-node" name="generator">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,300" rel="stylesheet">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-rqn26AG5Pj86AF4SO72RK5fyefcQ/x32DNQfChxWvbXIyXFePlEktwD18fEz+kQU" crossorigin="anonymous">
+    <link href="kss-assets/vendor/prism.css" rel="stylesheet">
+    <link href="kss-assets/css/kss.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/UC.css"/>
+
+</head>
+<body class="kss-body texture_light font_ui bg_black-2">
+    <!-- header. -->
+    <header class="bg_white shadow_overlap-light br_black-1 br_solid br_1 sticky t_0 display_none:md flex flex_inline z_5">
+        <h1 class="self_center m_3">
+            <a class="undecorated h:undecorated" href="/WebCasters/index.html">Web Casters</a>
+        </h1>
+        <a class="m-l_auto self_center m_3 kss-header__hamburger-trigger">
+            <div class="kss-header__hamburger"></div>
+        </a>
+    </header>
+    <!-- /header. -->
+    <!-- navigation. -->
+    <!-- /navigation. -->
+    <!-- documentation. -->
+    <header class="p_4 text_center">
+        <h1 class="font_display font_10 font_light display_none block:md">
+            <a class="undecorated h:undecorated c_primary" href="./index.html">Web Casters</a>
+        </h1>
+    </header>
+    <section class="display_none block:md">
+        <aside class="m_auto font_copy display_none block:md sticky t_0">
+            <ul class="ul_none flex flex_row:md flex_column justify_center br-t_1 br_solid br_black-4 p-y_3 br-b_1 ">
+
+                <li class=" w_auto:md w_100 p_2 self_center ">
+                    <a class="block inline-block:md undecorated  h:bg_black-2 a:bg_accent a:c_white h:undecorated c_black-8 h:c_black-9 p_3 br_radius nowrap" href="index.html">
+                        <span class=""><i class="fas fa-home p-x_2"></i></span>
+                    </a>
+                </li>
+                    <li class="w_auto:md w_100 br-l_1 br_black-2 br_solid:md p_2 self_center is-active active">
+                        <a class="block inline-block:md c_black-8 h:c_black-9 undecorated is-active active h:bg_black-2 a:bg_accent a:c_white h:undecorated p_3 br_radius nowrap" href="section-data.html">
+                            <span class="">Data</span>
+                        </a>
+                    </li>
+                    <li class="w_auto:md w_100 br-l_1 br_black-2 br_solid:md p_2 self_center ">
+                        <a class="block inline-block:md c_black-8 h:c_black-9 undecorated  h:bg_black-2 a:bg_accent a:c_white h:undecorated p_3 br_radius nowrap" href="section-sessions.html">
+                            <span class="">Sessions</span>
+                        </a>
+                    </li>
+            </ul>
+        </aside>
+    </section>
+    <section id="MobleNav" class="bg_secondary-n3 display_none:lg font_0 font_ui kss-navigation overflow_auto p-b_2 p-x_3 scrollbar-mini shadow_overlap-bold z_4" style="padding-top:70px">
+        <aside class="display_none:md flex flex_column-reverse">
+            <ul class="block flex flex_column ul_none w_100 ul_none lh_3" id="sitenav">
+                    <li class="flex_auto is-active active m-b_2">
+                        <a class="c_white undecorated h:undecorated a:bg_primary h:bg_black-5 p_2 block br_radius" href="/" id="home_nav">UC</a>
+                    </li>
+                        <li class="flex_auto m-y_2 p_3 bg_black-5 br_radius p_3 shadow_emboss-light">
+                            <ul class="block flex flex_column ul_none w_100 ul_none lh_3">
+                                <li class=" m-b_2 a:bg_accent h:bg_black-5 relative br_radius p_2 m-b_1">
+                                    <a class="  a:c_white c_white-8 h:c_white" href="index.html">
+                                        <span class=""><i class="fas fa-home p-x_2"></i> Home</span>
+                                    </a>
+                                </li>
+                                    <li class="is-active active m-b_2 a:bg_accent h:bg_accent-4 relative br_radius p_2 p-l_3 m-b_1">
+                                        <a class="is-active active a:c_white c_white-8 h:c_white block inline-block:md undecorated flex flex_row h:undecorated flex_nowrap" href="section-data.html">
+                                            <span class="">Data</span>
+                                        </a>
+                                    </li>
+                                            <ul class="m-l_4 ul_none lh_3">
+                                                    <li class=" font_bold  m-b_2">
+                                                        <a class="block inline-block:md undecorated flex flex_row h:undecorated flex_nowrap   c_white-8 h:c_white" href="section-data.html#kssref-data-agenda">
+                                                            <span class="kss-nav__ref flex_shrink p-r_3 font_bold">1.1</span>
+                                                            <span class="flex_auto overflow_ellipsis">Agenda Item</span>
+                                                        </a>
+                                                    </li>
+                                                    <li class=" p-l_4 font-size_down lh_3  m-b_2">
+                                                        <a class="block inline-block:md undecorated flex flex_row h:undecorated flex_nowrap   c_white-8 h:c_white" href="section-data.html#kssref-data-agenda-channelname">
+                                                            <span class="kss-nav__ref flex_shrink p-r_3 font_bold">1.1.1</span>
+                                                            <span class="flex_auto overflow_ellipsis">Channel Name</span>
+                                                        </a>
+                                                    </li>
+                                                    <li class=" p-l_4 font-size_down lh_3  m-b_2">
+                                                        <a class="block inline-block:md undecorated flex flex_row h:undecorated flex_nowrap   c_white-8 h:c_white" href="section-data.html#kssref-data-agenda-id">
+                                                            <span class="kss-nav__ref flex_shrink p-r_3 font_bold">1.1.2</span>
+                                                            <span class="flex_auto overflow_ellipsis">Agenda ID</span>
+                                                        </a>
+                                                    </li>
+                                                    <li class=" p-l_4 font-size_down lh_3  m-b_2">
+                                                        <a class="block inline-block:md undecorated flex flex_row h:undecorated flex_nowrap   c_white-8 h:c_white" href="section-data.html#kssref-data-agenda-livedate">
+                                                            <span class="kss-nav__ref flex_shrink p-r_3 font_bold">1.1.3</span>
+                                                            <span class="flex_auto overflow_ellipsis">Live Date</span>
+                                                        </a>
+                                                    </li>
+                                                    <li class=" p-l_4 font-size_down lh_3  m-b_2">
+                                                        <a class="block inline-block:md undecorated flex flex_row h:undecorated flex_nowrap   c_white-8 h:c_white" href="section-data.html#kssref-data-agenda-livetime">
+                                                            <span class="kss-nav__ref flex_shrink p-r_3 font_bold">1.1.4</span>
+                                                            <span class="flex_auto overflow_ellipsis">Live Time</span>
+                                                        </a>
+                                                    </li>
+                                                    <li class=" p-l_4 font-size_down lh_3  m-b_2">
+                                                        <a class="block inline-block:md undecorated flex flex_row h:undecorated flex_nowrap   c_white-8 h:c_white" href="section-data.html#kssref-data-agenda-ondemandreleasetime">
+                                                            <span class="kss-nav__ref flex_shrink p-r_3 font_bold">1.1.5</span>
+                                                            <span class="flex_auto overflow_ellipsis">On Demand Release Date and Time</span>
+                                                        </a>
+                                                    </li>
+                                                    <li class=" font_bold  m-b_2">
+                                                        <a class="block inline-block:md undecorated flex flex_row h:undecorated flex_nowrap   c_white-8 h:c_white" href="section-data.html#kssref-data-presentation">
+                                                            <span class="kss-nav__ref flex_shrink p-r_3 font_bold">1.2</span>
+                                                            <span class="flex_auto overflow_ellipsis">Presentation</span>
+                                                        </a>
+                                                    </li>
+                                                    <li class=" p-l_4 font-size_down lh_3  m-b_2">
+                                                        <a class="block inline-block:md undecorated flex flex_row h:undecorated flex_nowrap   c_white-8 h:c_white" href="section-data.html#kssref-data-presentation-description">
+                                                            <span class="kss-nav__ref flex_shrink p-r_3 font_bold">1.2.1</span>
+                                                            <span class="flex_auto overflow_ellipsis">Presentation Description</span>
+                                                        </a>
+                                                    </li>
+                                                    <li class=" p-l_4 font-size_down lh_3  m-b_2">
+                                                        <a class="block inline-block:md undecorated flex flex_row h:undecorated flex_nowrap   c_white-8 h:c_white" href="section-data.html#kssref-data-presentation-id">
+                                                            <span class="kss-nav__ref flex_shrink p-r_3 font_bold">1.2.2</span>
+                                                            <span class="flex_auto overflow_ellipsis">Presentation ID</span>
+                                                        </a>
+                                                    </li>
+                                                    <li class=" p-l_4 font-size_down lh_3  m-b_2">
+                                                        <a class="block inline-block:md undecorated flex flex_row h:undecorated flex_nowrap   c_white-8 h:c_white" href="section-data.html#kssref-data-presentation-livetime">
+                                                            <span class="kss-nav__ref flex_shrink p-r_3 font_bold">1.2.3</span>
+                                                            <span class="flex_auto overflow_ellipsis">Presentation Live Time</span>
+                                                        </a>
+                                                    </li>
+                                                    <li class=" p-l_4 font-size_down lh_3  m-b_2">
+                                                        <a class="block inline-block:md undecorated flex flex_row h:undecorated flex_nowrap   c_white-8 h:c_white" href="section-data.html#kssref-data-presentation-title">
+                                                            <span class="kss-nav__ref flex_shrink p-r_3 font_bold">1.2.4</span>
+                                                            <span class="flex_auto overflow_ellipsis">Presentation Title</span>
+                                                        </a>
+                                                    </li>
+                                                    <li class=" font_bold  m-b_2">
+                                                        <a class="block inline-block:md undecorated flex flex_row h:undecorated flex_nowrap   c_white-8 h:c_white" href="section-data.html#kssref-data-presenters">
+                                                            <span class="kss-nav__ref flex_shrink p-r_3 font_bold">1.3</span>
+                                                            <span class="flex_auto overflow_ellipsis">Presenters</span>
+                                                        </a>
+                                                    </li>
+                                                    <li class=" p-l_4 font-size_down lh_3  m-b_2">
+                                                        <a class="block inline-block:md undecorated flex flex_row h:undecorated flex_nowrap   c_white-8 h:c_white" href="section-data.html#kssref-data-presenters-bio">
+                                                            <span class="kss-nav__ref flex_shrink p-r_3 font_bold">1.3.1</span>
+                                                            <span class="flex_auto overflow_ellipsis">Bio</span>
+                                                        </a>
+                                                    </li>
+                                                    <li class=" p-l_4 font-size_down lh_3  m-b_2">
+                                                        <a class="block inline-block:md undecorated flex flex_row h:undecorated flex_nowrap   c_white-8 h:c_white" href="section-data.html#kssref-data-presenters-fullname">
+                                                            <span class="kss-nav__ref flex_shrink p-r_3 font_bold">1.3.2</span>
+                                                            <span class="flex_auto overflow_ellipsis">Full Name</span>
+                                                        </a>
+                                                    </li>
+                                                    <li class=" p-l_4 font-size_down lh_3  m-b_2">
+                                                        <a class="block inline-block:md undecorated flex flex_row h:undecorated flex_nowrap   c_white-8 h:c_white" href="section-data.html#kssref-data-presenters-id">
+                                                            <span class="kss-nav__ref flex_shrink p-r_3 font_bold">1.3.3</span>
+                                                            <span class="flex_auto overflow_ellipsis">Identification Number</span>
+                                                        </a>
+                                                    </li>
+                                                    <li class=" p-l_4 font-size_down lh_3  m-b_2">
+                                                        <a class="block inline-block:md undecorated flex flex_row h:undecorated flex_nowrap   c_white-8 h:c_white" href="section-data.html#kssref-data-presenters-location">
+                                                            <span class="kss-nav__ref flex_shrink p-r_3 font_bold">1.3.4</span>
+                                                            <span class="flex_auto overflow_ellipsis">Location</span>
+                                                        </a>
+                                                    </li>
+                                                    <li class=" p-l_4 font-size_down lh_3  m-b_2">
+                                                        <a class="block inline-block:md undecorated flex flex_row h:undecorated flex_nowrap   c_white-8 h:c_white" href="section-data.html#kssref-data-presenters-photo">
+                                                            <span class="kss-nav__ref flex_shrink p-r_3 font_bold">1.3.5</span>
+                                                            <span class="flex_auto overflow_ellipsis">Photo</span>
+                                                        </a>
+                                                    </li>
+                                                    <li class=" p-l_4 font-size_down lh_3  m-b_2">
+                                                        <a class="block inline-block:md undecorated flex flex_row h:undecorated flex_nowrap   c_white-8 h:c_white" href="section-data.html#kssref-data-presenters-role">
+                                                            <span class="kss-nav__ref flex_shrink p-r_3 font_bold">1.3.6</span>
+                                                            <span class="flex_auto overflow_ellipsis">Role</span>
+                                                        </a>
+                                                    </li>
+                                                    <li class=" p-l_4 font-size_down lh_3  m-b_2">
+                                                        <a class="block inline-block:md undecorated flex flex_row h:undecorated flex_nowrap   c_white-8 h:c_white" href="section-data.html#kssref-data-presenters-title">
+                                                            <span class="kss-nav__ref flex_shrink p-r_3 font_bold">1.3.7</span>
+                                                            <span class="flex_auto overflow_ellipsis">Title</span>
+                                                        </a>
+                                                    </li>
+                                                    <li class=" p-l_4 font-size_down lh_3  m-b_2">
+                                                        <a class="block inline-block:md undecorated flex flex_row h:undecorated flex_nowrap   c_white-8 h:c_white" href="section-data.html#kssref-data-presenters-twitterhandle">
+                                                            <span class="kss-nav__ref flex_shrink p-r_3 font_bold">1.3.8</span>
+                                                            <span class="flex_auto overflow_ellipsis">Twitter Handle</span>
+                                                        </a>
+                                                    </li>
+                                                    <li class=" font_bold  m-b_2">
+                                                        <a class="block inline-block:md undecorated flex flex_row h:undecorated flex_nowrap   c_white-8 h:c_white" href="section-data.html#kssref-data-session">
+                                                            <span class="kss-nav__ref flex_shrink p-r_3 font_bold">1.4</span>
+                                                            <span class="flex_auto overflow_ellipsis">Session</span>
+                                                        </a>
+                                                    </li>
+                                                    <li class=" p-l_4 font-size_down lh_3  m-b_2">
+                                                        <a class="block inline-block:md undecorated flex flex_row h:undecorated flex_nowrap   c_white-8 h:c_white" href="section-data.html#kssref-data-session-description">
+                                                            <span class="kss-nav__ref flex_shrink p-r_3 font_bold">1.4.1</span>
+                                                            <span class="flex_auto overflow_ellipsis">Session Description</span>
+                                                        </a>
+                                                    </li>
+                                                    <li class=" p-l_4 font-size_down lh_3  m-b_2">
+                                                        <a class="block inline-block:md undecorated flex flex_row h:undecorated flex_nowrap   c_white-8 h:c_white" href="section-data.html#kssref-data-session-id">
+                                                            <span class="kss-nav__ref flex_shrink p-r_3 font_bold">1.4.2</span>
+                                                            <span class="flex_auto overflow_ellipsis">Session Identifier</span>
+                                                        </a>
+                                                    </li>
+                                                    <li class=" p-l_4 font-size_down lh_3  m-b_2">
+                                                        <a class="block inline-block:md undecorated flex flex_row h:undecorated flex_nowrap   c_white-8 h:c_white" href="section-data.html#kssref-data-session-subtitle">
+                                                            <span class="kss-nav__ref flex_shrink p-r_3 font_bold">1.4.3</span>
+                                                            <span class="flex_auto overflow_ellipsis">Session Subtitle</span>
+                                                        </a>
+                                                    </li>
+                                                    <li class=" p-l_4 font-size_down lh_3  m-b_2">
+                                                        <a class="block inline-block:md undecorated flex flex_row h:undecorated flex_nowrap   c_white-8 h:c_white" href="section-data.html#kssref-data-session-title">
+                                                            <span class="kss-nav__ref flex_shrink p-r_3 font_bold">1.4.4</span>
+                                                            <span class="flex_auto overflow_ellipsis">Session Title</span>
+                                                        </a>
+                                                    </li>
+                                            </ul>
+                                    <li class=" m-b_2 a:bg_accent h:bg_accent-4 relative br_radius p_2 p-l_3 m-b_1">
+                                        <a class=" a:c_white c_white-8 h:c_white block inline-block:md undecorated flex flex_row h:undecorated flex_nowrap" href="section-sessions.html">
+                                            <span class="">Sessions</span>
+                                        </a>
+                                    </li>
+                            </ul>
+                        </li>
+                <li class="flex_auto m-b_2">
+                    <a class="c_white undecorated h:undecorated a:bg_primary h:bg_black-5 p_2 block br_radius" href="https://acc-style.github.io/origami6/?path=/story/introduction--page" id="origami"><i class="fas fa-paper-plane p-r_3"></i><span>Project Origami</span></a>
+                </li>
+            </ul>
+        </aside>
+    </section>
+    <div class="m_auto p-x_4 ">
+            <!-- display each section, in order. the "root" element comes first in this loop, and can be detected using the "#if @first" block as seen below. -->
+            <div class="flex flex_column flex_row:md gap-x_5 p-t_4 max-w_90 m_auto">
+                <section class="max-w_15 w_20:lg flex_none relative display_none block:md">
+                    <aside class="sticky t_0">
+                        <div>
+                                    <h3>Data</h3>
+                                        <ul class="m-l_0 ul_none lh_2">
+                                                <li class=" font_bold ">
+                                                    <a class="block inline-block:md undecorated flex flex_row h:undecorated flex_nowrap" href="section-data.html#kssref-data-agenda">
+                                                        <span class="flex_auto overflow_ellipsis">Agenda Item</span>
+                                                    </a>
+                                                </li>
+                                                <li class="p-l_4 font-size_down lh_2">
+                                                    <a class="block inline-block:md undecorated flex flex_row h:undecorated flex_nowrap" href="section-data.html#kssref-data-agenda-channelname">
+                                                        <span class="flex_auto overflow_ellipsis">Channel Name</span>
+                                                    </a>
+                                                </li>
+                                                <li class="p-l_4 font-size_down lh_2">
+                                                    <a class="block inline-block:md undecorated flex flex_row h:undecorated flex_nowrap" href="section-data.html#kssref-data-agenda-id">
+                                                        <span class="flex_auto overflow_ellipsis">Agenda ID</span>
+                                                    </a>
+                                                </li>
+                                                <li class="p-l_4 font-size_down lh_2">
+                                                    <a class="block inline-block:md undecorated flex flex_row h:undecorated flex_nowrap" href="section-data.html#kssref-data-agenda-livedate">
+                                                        <span class="flex_auto overflow_ellipsis">Live Date</span>
+                                                    </a>
+                                                </li>
+                                                <li class="p-l_4 font-size_down lh_2">
+                                                    <a class="block inline-block:md undecorated flex flex_row h:undecorated flex_nowrap" href="section-data.html#kssref-data-agenda-livetime">
+                                                        <span class="flex_auto overflow_ellipsis">Live Time</span>
+                                                    </a>
+                                                </li>
+                                                <li class="p-l_4 font-size_down lh_2">
+                                                    <a class="block inline-block:md undecorated flex flex_row h:undecorated flex_nowrap" href="section-data.html#kssref-data-agenda-ondemandreleasetime">
+                                                        <span class="flex_auto overflow_ellipsis">On Demand Release Date and Time</span>
+                                                    </a>
+                                                </li>
+                                                <li class=" font_bold ">
+                                                    <a class="block inline-block:md undecorated flex flex_row h:undecorated flex_nowrap" href="section-data.html#kssref-data-presentation">
+                                                        <span class="flex_auto overflow_ellipsis">Presentation</span>
+                                                    </a>
+                                                </li>
+                                                <li class="p-l_4 font-size_down lh_2">
+                                                    <a class="block inline-block:md undecorated flex flex_row h:undecorated flex_nowrap" href="section-data.html#kssref-data-presentation-description">
+                                                        <span class="flex_auto overflow_ellipsis">Presentation Description</span>
+                                                    </a>
+                                                </li>
+                                                <li class="p-l_4 font-size_down lh_2">
+                                                    <a class="block inline-block:md undecorated flex flex_row h:undecorated flex_nowrap" href="section-data.html#kssref-data-presentation-id">
+                                                        <span class="flex_auto overflow_ellipsis">Presentation ID</span>
+                                                    </a>
+                                                </li>
+                                                <li class="p-l_4 font-size_down lh_2">
+                                                    <a class="block inline-block:md undecorated flex flex_row h:undecorated flex_nowrap" href="section-data.html#kssref-data-presentation-livetime">
+                                                        <span class="flex_auto overflow_ellipsis">Presentation Live Time</span>
+                                                    </a>
+                                                </li>
+                                                <li class="p-l_4 font-size_down lh_2">
+                                                    <a class="block inline-block:md undecorated flex flex_row h:undecorated flex_nowrap" href="section-data.html#kssref-data-presentation-title">
+                                                        <span class="flex_auto overflow_ellipsis">Presentation Title</span>
+                                                    </a>
+                                                </li>
+                                                <li class=" font_bold ">
+                                                    <a class="block inline-block:md undecorated flex flex_row h:undecorated flex_nowrap" href="section-data.html#kssref-data-presenters">
+                                                        <span class="flex_auto overflow_ellipsis">Presenters</span>
+                                                    </a>
+                                                </li>
+                                                <li class="p-l_4 font-size_down lh_2">
+                                                    <a class="block inline-block:md undecorated flex flex_row h:undecorated flex_nowrap" href="section-data.html#kssref-data-presenters-bio">
+                                                        <span class="flex_auto overflow_ellipsis">Bio</span>
+                                                    </a>
+                                                </li>
+                                                <li class="p-l_4 font-size_down lh_2">
+                                                    <a class="block inline-block:md undecorated flex flex_row h:undecorated flex_nowrap" href="section-data.html#kssref-data-presenters-fullname">
+                                                        <span class="flex_auto overflow_ellipsis">Full Name</span>
+                                                    </a>
+                                                </li>
+                                                <li class="p-l_4 font-size_down lh_2">
+                                                    <a class="block inline-block:md undecorated flex flex_row h:undecorated flex_nowrap" href="section-data.html#kssref-data-presenters-id">
+                                                        <span class="flex_auto overflow_ellipsis">Identification Number</span>
+                                                    </a>
+                                                </li>
+                                                <li class="p-l_4 font-size_down lh_2">
+                                                    <a class="block inline-block:md undecorated flex flex_row h:undecorated flex_nowrap" href="section-data.html#kssref-data-presenters-location">
+                                                        <span class="flex_auto overflow_ellipsis">Location</span>
+                                                    </a>
+                                                </li>
+                                                <li class="p-l_4 font-size_down lh_2">
+                                                    <a class="block inline-block:md undecorated flex flex_row h:undecorated flex_nowrap" href="section-data.html#kssref-data-presenters-photo">
+                                                        <span class="flex_auto overflow_ellipsis">Photo</span>
+                                                    </a>
+                                                </li>
+                                                <li class="p-l_4 font-size_down lh_2">
+                                                    <a class="block inline-block:md undecorated flex flex_row h:undecorated flex_nowrap" href="section-data.html#kssref-data-presenters-role">
+                                                        <span class="flex_auto overflow_ellipsis">Role</span>
+                                                    </a>
+                                                </li>
+                                                <li class="p-l_4 font-size_down lh_2">
+                                                    <a class="block inline-block:md undecorated flex flex_row h:undecorated flex_nowrap" href="section-data.html#kssref-data-presenters-title">
+                                                        <span class="flex_auto overflow_ellipsis">Title</span>
+                                                    </a>
+                                                </li>
+                                                <li class="p-l_4 font-size_down lh_2">
+                                                    <a class="block inline-block:md undecorated flex flex_row h:undecorated flex_nowrap" href="section-data.html#kssref-data-presenters-twitterhandle">
+                                                        <span class="flex_auto overflow_ellipsis">Twitter Handle</span>
+                                                    </a>
+                                                </li>
+                                                <li class=" font_bold ">
+                                                    <a class="block inline-block:md undecorated flex flex_row h:undecorated flex_nowrap" href="section-data.html#kssref-data-session">
+                                                        <span class="flex_auto overflow_ellipsis">Session</span>
+                                                    </a>
+                                                </li>
+                                                <li class="p-l_4 font-size_down lh_2">
+                                                    <a class="block inline-block:md undecorated flex flex_row h:undecorated flex_nowrap" href="section-data.html#kssref-data-session-description">
+                                                        <span class="flex_auto overflow_ellipsis">Session Description</span>
+                                                    </a>
+                                                </li>
+                                                <li class="p-l_4 font-size_down lh_2">
+                                                    <a class="block inline-block:md undecorated flex flex_row h:undecorated flex_nowrap" href="section-data.html#kssref-data-session-id">
+                                                        <span class="flex_auto overflow_ellipsis">Session Identifier</span>
+                                                    </a>
+                                                </li>
+                                                <li class="p-l_4 font-size_down lh_2">
+                                                    <a class="block inline-block:md undecorated flex flex_row h:undecorated flex_nowrap" href="section-data.html#kssref-data-session-subtitle">
+                                                        <span class="flex_auto overflow_ellipsis">Session Subtitle</span>
+                                                    </a>
+                                                </li>
+                                                <li class="p-l_4 font-size_down lh_2">
+                                                    <a class="block inline-block:md undecorated flex flex_row h:undecorated flex_nowrap" href="section-data.html#kssref-data-session-title">
+                                                        <span class="flex_auto overflow_ellipsis">Session Title</span>
+                                                    </a>
+                                                </li>
+                                        </ul>
+                            <div class=" font_bold ">
+                                <a class="block inline-block:md undecorated flex flex_row h:undecorated flex_nowrap" href="#topbody">
+                                    <i class="fas fa-arrow-up"></i><span class="flex_auto overflow_ellipsis">Top</span>
+                                </a>
+                            </div>
+                        </div>
+                    </aside>
+                </section>
+                <main class="w_100 flex_auto">
+                            <header class="bg_white kss-section kss-section--depth-1 br_radius shadow_overlap-light br_radius" id="kssref-data">
+                        <article class="kss-section__content relative">
+                            <div class="absolute t_0 r_4 flex flex_row gap-x_2 justify_end">
+                                <a class="c_white bg_black-5 c_white flex_none h:bg_black-7 inline-block p_2 shadow_overlap-light" target="_blank" href="item-data.html" title="pop out component into new tab">
+                                    <i class="fa-external-link fa-fw fas fa-fw fas"></i>
+                                </a>
+                            </div>
+                            <a class="kss-section__permalink" href="#kssref-data">
+                                <h1 class="kss-section__item c_primary kss-section__item--depth-1">
+                                    <span class="kss-section__ref">1</span>
+                                    <span class="kss-section__name">Data</span>
+                                </h1>
+                            </a>
+                        </article>
+                            </header>
+                                <section class="kss-section bg_white kss-section--depth-2 br_radius shadow_2" id="kssref-data-agenda">
+                        <article class="kss-section__content relative">
+                            <div class="absolute t_0 r_4 flex flex_row gap-x_2 justify_end">
+                                <a class="c_white bg_black-5 c_white flex_none h:bg_black-7 inline-block p_2 shadow_overlap-light" target="_blank" href="item-data-agenda.html" title="pop out component into new tab">
+                                    <i class="fa-external-link fa-fw fas fa-fw fas"></i>
+                                </a>
+                            </div>
+                                <p class="kss-section__source font_n3"> Source: <span>dist/css/styleguide.css</span>, line <span>2</span>
+                                </p>
+                            <a class="kss-section__permalink" href="#kssref-data-agenda">
+                                <h2 class="kss-section__item c_primary kss-section__item--depth-2">
+                                    <span class="kss-section__ref">1.1</span>
+                                    <span class="kss-section__name">Agenda Item</span>
+                                </h2>
+                            </a>
+                        </article>
+                            </section>
+                                <section class="kss-section bg_white kss-section--depth-3 br_radius shadow_2" id="kssref-data-agenda-channelname">
+                        <article class="kss-section__content relative">
+                            <div class="absolute t_0 r_4 flex flex_row gap-x_2 justify_end">
+                                <a class="c_white bg_black-5 c_white flex_none h:bg_black-7 inline-block p_2 shadow_overlap-light" target="_blank" href="item-data-agenda-channelname.html" title="pop out component into new tab">
+                                    <i class="fa-external-link fa-fw fas fa-fw fas"></i>
+                                </a>
+                            </div>
+                                <p class="kss-section__source font_n3"> Source: <span>dist/css/styleguide.css</span>, line <span>25</span>
+                                </p>
+                            <a class="kss-section__permalink" href="#kssref-data-agenda-channelname">
+                                <h3 class="kss-section__item c_primary kss-section__item--depth-3">
+                                    <span class="kss-section__ref">1.1.1</span>
+                                    <span class="kss-section__name">Channel Name</span>
+                                </h3>
+                            </a>
+                        </article>
+                            <article class="kss-section__modifiers">
+                                <h1 class="kss-modifiers__heading"> Example 
+                                </h1>
+                                <div class="kss-modifiers__example">
+                                    <div class="">
+                                        Navigating Health Care Economics
+                                    </div>
+                                </div>
+                            </article>
+                            <section class="relative  br-t_1 br_solid br_black-2 bg_black-1 shadow_n1 texture_light">
+                                <main class="kss-section__markup overflow_scroll scrollbar-mini collapse transition_3" id="collapse-data-agenda-channelname">
+                                    <pre><code class="language-markup"  id="code-data-agenda-channelname" value='Navigating Health Care Economics'>Navigating Health Care Economics</code></pre>
+                                    <input class="display_none text-input html-code-input" type="text" name="" id="input-data-agenda-channelname" value='Navigating Health Care Economics'>
+                                </main>
+                                <header class="flex_row flex shadow_n1 br-br_radius br-bl_radius">
+                                    <div class="flex flex_row flex_auto collapsed h:bg_black-7 br-bl_radius c_black-8 h:c_white" aria-expanded="false" data-bs-toggle="collapse" data-bs-target="#collapse-data-agenda-channelname" aria-controls="#collapse-data-agenda-channelname">
+                                        <div class="flex_none p_2 font_1">
+                                            <i class="a:rotation fa-fw fa-chevron-up fas self_center text_center"></i>
+                                        </div>
+                                        <div class="flex_auto flex flex_row">
+                                            <h4 class="font_0 font_bold flex_auto p-l_2 self_center m_0 text_left">Code Sample</h4>
+                                        </div>
+                                    </div>
+                                    <a class="bg_primary br_1 br_black-3 br_solid c_white flex_none font_medium font_ui h:bg_primary-n2 h:undecorated m-l_auto p-x_3 p-y_2 br-br_radius" onclick="CopyCode( 'input-data-agenda-channelname')"><i class="fas fa-copy"></i> Copy Code</a>
+                                </header>
+                            </section>
+                            </section>
+                                <section class="kss-section bg_white kss-section--depth-3 br_radius shadow_2" id="kssref-data-agenda-id">
+                        <article class="kss-section__content relative">
+                            <div class="absolute t_0 r_4 flex flex_row gap-x_2 justify_end">
+                                <a class="c_white bg_black-5 c_white flex_none h:bg_black-7 inline-block p_2 shadow_overlap-light" target="_blank" href="item-data-agenda-id.html" title="pop out component into new tab">
+                                    <i class="fa-external-link fa-fw fas fa-fw fas"></i>
+                                </a>
+                            </div>
+                                <p class="kss-section__source font_n3"> Source: <span>dist/css/styleguide.css</span>, line <span>12</span>
+                                </p>
+                            <a class="kss-section__permalink" href="#kssref-data-agenda-id">
+                                <h3 class="kss-section__item c_primary kss-section__item--depth-3">
+                                    <span class="kss-section__ref">1.1.2</span>
+                                    <span class="kss-section__name">Agenda ID</span>
+                                </h3>
+                            </a>
+                        </article>
+                            <article class="kss-section__modifiers">
+                                <h1 class="kss-modifiers__heading"> Example 
+                                </h1>
+                                <div class="kss-modifiers__example">
+                                    <div class="">
+                                        101
+                                    </div>
+                                </div>
+                            </article>
+                            <section class="relative  br-t_1 br_solid br_black-2 bg_black-1 shadow_n1 texture_light">
+                                <main class="kss-section__markup overflow_scroll scrollbar-mini collapse transition_3" id="collapse-data-agenda-id">
+                                    <pre><code class="language-markup"  id="code-data-agenda-id" value='101'>101</code></pre>
+                                    <input class="display_none text-input html-code-input" type="text" name="" id="input-data-agenda-id" value='101'>
+                                </main>
+                                <header class="flex_row flex shadow_n1 br-br_radius br-bl_radius">
+                                    <div class="flex flex_row flex_auto collapsed h:bg_black-7 br-bl_radius c_black-8 h:c_white" aria-expanded="false" data-bs-toggle="collapse" data-bs-target="#collapse-data-agenda-id" aria-controls="#collapse-data-agenda-id">
+                                        <div class="flex_none p_2 font_1">
+                                            <i class="a:rotation fa-fw fa-chevron-up fas self_center text_center"></i>
+                                        </div>
+                                        <div class="flex_auto flex flex_row">
+                                            <h4 class="font_0 font_bold flex_auto p-l_2 self_center m_0 text_left">Code Sample</h4>
+                                        </div>
+                                    </div>
+                                    <a class="bg_primary br_1 br_black-3 br_solid c_white flex_none font_medium font_ui h:bg_primary-n2 h:undecorated m-l_auto p-x_3 p-y_2 br-br_radius" onclick="CopyCode( 'input-data-agenda-id')"><i class="fas fa-copy"></i> Copy Code</a>
+                                </header>
+                            </section>
+                            </section>
+                                <section class="kss-section bg_white kss-section--depth-3 br_radius shadow_2" id="kssref-data-agenda-livedate">
+                        <article class="kss-section__content relative">
+                            <div class="absolute t_0 r_4 flex flex_row gap-x_2 justify_end">
+                                    <div class="inline-block flex_none p_2 bg_accent-n1 c_white shadow_overlap-light">
+                                        <i class="fas fa-fw fa-text-size"></i>
+                                    </div>
+                                <a class="c_white bg_black-5 c_white flex_none h:bg_black-7 inline-block p_2 shadow_overlap-light" target="_blank" href="item-data-agenda-livedate.html" title="pop out component into new tab">
+                                    <i class="fa-external-link fa-fw fas fa-fw fas"></i>
+                                </a>
+                            </div>
+                                <p class="kss-section__source font_n3"> Source: <span>dist/css/styleguide.css</span>, line <span>55</span>
+                                </p>
+                            <a class="kss-section__permalink" href="#kssref-data-agenda-livedate">
+                                <h3 class="kss-section__item c_primary kss-section__item--depth-3">
+                                    <span class="kss-section__ref">1.1.3</span>
+                                    <span class="kss-section__name">Live Date</span>
+                                </h3>
+                            </a>
+                        </article>
+                            <article class="kss-section__modifiers">
+                                <h1 class="kss-modifiers__heading"> Example 
+                                </h1>
+                                <div class="kss-modifiers__example">
+                                    <div class="">
+                                        Saturday, Nov. 20, 2021
+                                    </div>
+                                </div>
+                            </article>
+                            <div class="bg_accent-4 block c_black inline-block p-y_3 p-x_4 w_100">
+                                <h5 class="font_bold m_0 c_black inline-block">FORMAT:</h5>
+                                Day-of-Week, Month-Abbreviation.  Day, Year
+                            </div>
+                            <section class="relative  br-t_1 br_solid br_black-2 bg_black-1 shadow_n1 texture_light">
+                                <main class="kss-section__markup overflow_scroll scrollbar-mini collapse transition_3" id="collapse-data-agenda-livedate">
+                                    <pre><code class="language-markup"  id="code-data-agenda-livedate" value='Saturday, Nov. 20, 2021'>Saturday, Nov. 20, 2021</code></pre>
+                                    <input class="display_none text-input html-code-input" type="text" name="" id="input-data-agenda-livedate" value='Saturday, Nov. 20, 2021'>
+                                </main>
+                                <header class="flex_row flex shadow_n1 br-br_radius br-bl_radius">
+                                    <div class="flex flex_row flex_auto collapsed h:bg_black-7 br-bl_radius c_black-8 h:c_white" aria-expanded="false" data-bs-toggle="collapse" data-bs-target="#collapse-data-agenda-livedate" aria-controls="#collapse-data-agenda-livedate">
+                                        <div class="flex_none p_2 font_1">
+                                            <i class="a:rotation fa-fw fa-chevron-up fas self_center text_center"></i>
+                                        </div>
+                                        <div class="flex_auto flex flex_row">
+                                            <h4 class="font_0 font_bold flex_auto p-l_2 self_center m_0 text_left">Code Sample</h4>
+                                        </div>
+                                    </div>
+                                    <a class="bg_primary br_1 br_black-3 br_solid c_white flex_none font_medium font_ui h:bg_primary-n2 h:undecorated m-l_auto p-x_3 p-y_2 br-br_radius" onclick="CopyCode( 'input-data-agenda-livedate')"><i class="fas fa-copy"></i> Copy Code</a>
+                                </header>
+                            </section>
+                            </section>
+                                <section class="kss-section bg_white kss-section--depth-3 br_radius shadow_2" id="kssref-data-agenda-livetime">
+                        <article class="kss-section__content relative">
+                            <div class="absolute t_0 r_4 flex flex_row gap-x_2 justify_end">
+                                    <div class="inline-block flex_none p_2 bg_highlight c_white shadow_overlap-light">
+                                        <i class="fas fa-fw fa-comment-alt"></i>
+                                    </div>
+                                    <div class="inline-block flex_none p_2 bg_accent-n1 c_white shadow_overlap-light">
+                                        <i class="fas fa-fw fa-text-size"></i>
+                                    </div>
+                                <a class="c_white bg_black-5 c_white flex_none h:bg_black-7 inline-block p_2 shadow_overlap-light" target="_blank" href="item-data-agenda-livetime.html" title="pop out component into new tab">
+                                    <i class="fa-external-link fa-fw fas fa-fw fas"></i>
+                                </a>
+                            </div>
+                                <p class="kss-section__source font_n3"> Source: <span>dist/css/styleguide.css</span>, line <span>39</span>
+                                </p>
+                            <a class="kss-section__permalink" href="#kssref-data-agenda-livetime">
+                                <h3 class="kss-section__item c_primary kss-section__item--depth-3">
+                                    <span class="kss-section__ref">1.1.4</span>
+                                    <span class="kss-section__name">Live Time</span>
+                                </h3>
+                            </a>
+                        </article>
+                            <article class="kss-section__modifiers">
+                                <h1 class="kss-modifiers__heading"> Example 
+                                </h1>
+                                <div class="kss-modifiers__example">
+                                    <div class="">
+                                        @ 11:15 a.m. – 11:45 p.m <abbr title="EASTERN TIME, UTC -4">EDT</abbr>
+                                    </div>
+                                </div>
+                            </article>
+                            <div class="bg_accent-4 block c_black inline-block p-y_3 p-x_4 w_100">
+                                <h5 class="font_bold m_0 c_black inline-block">FORMAT:</h5>
+                                12 hour with 'a.m.'/'p.m' and Abbreviation of Timezone.
+                            </div>
+                            <div class="bg_highlight-4 block c_black inline-block p-y_3 p-x_4 w_100">
+                                <h5 class="font_bold m_0 c_black">NOTE:</h5>
+                                The 'a.m.'/'p.m.' if the same should only occur on the last time mark.  11:15 a.m. - 11:30 a.m. should be shortened to 11:15  - 11:30 a.m.
+                            </div>
+                            <section class="relative  br-t_1 br_solid br_black-2 bg_black-1 shadow_n1 texture_light">
+                                <main class="kss-section__markup overflow_scroll scrollbar-mini collapse transition_3" id="collapse-data-agenda-livetime">
+                                    <pre><code class="language-markup"  id="code-data-agenda-livetime" value='@ 11:15 a.m. – 11:45 p.m &lt;abbr title&#x3D;&quot;EASTERN TIME, UTC -4&quot;&gt;EDT&lt;/abbr&gt;'>@ 11:15 a.m. – 11:45 p.m &lt;abbr title&#x3D;&quot;EASTERN TIME, UTC -4&quot;&gt;EDT&lt;/abbr&gt;</code></pre>
+                                    <input class="display_none text-input html-code-input" type="text" name="" id="input-data-agenda-livetime" value='@ 11:15 a.m. – 11:45 p.m &lt;abbr title&#x3D;&quot;EASTERN TIME, UTC -4&quot;&gt;EDT&lt;/abbr&gt;'>
+                                </main>
+                                <header class="flex_row flex shadow_n1 br-br_radius br-bl_radius">
+                                    <div class="flex flex_row flex_auto collapsed h:bg_black-7 br-bl_radius c_black-8 h:c_white" aria-expanded="false" data-bs-toggle="collapse" data-bs-target="#collapse-data-agenda-livetime" aria-controls="#collapse-data-agenda-livetime">
+                                        <div class="flex_none p_2 font_1">
+                                            <i class="a:rotation fa-fw fa-chevron-up fas self_center text_center"></i>
+                                        </div>
+                                        <div class="flex_auto flex flex_row">
+                                            <h4 class="font_0 font_bold flex_auto p-l_2 self_center m_0 text_left">Code Sample</h4>
+                                        </div>
+                                    </div>
+                                    <a class="bg_primary br_1 br_black-3 br_solid c_white flex_none font_medium font_ui h:bg_primary-n2 h:undecorated m-l_auto p-x_3 p-y_2 br-br_radius" onclick="CopyCode( 'input-data-agenda-livetime')"><i class="fas fa-copy"></i> Copy Code</a>
+                                </header>
+                            </section>
+                            </section>
+                                <section class="kss-section bg_white kss-section--depth-3 br_radius shadow_2" id="kssref-data-agenda-ondemandreleasetime">
+                        <article class="kss-section__content relative">
+                            <div class="absolute t_0 r_4 flex flex_row gap-x_2 justify_end">
+                                    <div class="inline-block flex_none p_2 bg_highlight c_white shadow_overlap-light">
+                                        <i class="fas fa-fw fa-comment-alt"></i>
+                                    </div>
+                                    <div class="inline-block flex_none p_2 bg_accent-n1 c_white shadow_overlap-light">
+                                        <i class="fas fa-fw fa-text-size"></i>
+                                    </div>
+                                <a class="c_white bg_black-5 c_white flex_none h:bg_black-7 inline-block p_2 shadow_overlap-light" target="_blank" href="item-data-agenda-ondemandreleasetime.html" title="pop out component into new tab">
+                                    <i class="fa-external-link fa-fw fas fa-fw fas"></i>
+                                </a>
+                            </div>
+                                <p class="kss-section__source font_n3"> Source: <span>dist/css/styleguide.css</span>, line <span>69</span>
+                                </p>
+                            <a class="kss-section__permalink" href="#kssref-data-agenda-ondemandreleasetime">
+                                <h3 class="kss-section__item c_primary kss-section__item--depth-3">
+                                    <span class="kss-section__ref">1.1.5</span>
+                                    <span class="kss-section__name">On Demand Release Date and Time</span>
+                                </h3>
+                            </a>
+                        </article>
+                            <article class="kss-section__modifiers">
+                                <h1 class="kss-modifiers__heading"> Example 
+                                </h1>
+                                <div class="kss-modifiers__example">
+                                    <div class="">
+                                        Saturday, Nov. 20, 2021 @ 8:00 p.m. <abbr title="EASTERN TIME, UTC -4">EDT</abbr>
+                                    </div>
+                                </div>
+                            </article>
+                            <div class="bg_accent-4 block c_black inline-block p-y_3 p-x_4 w_100">
+                                <h5 class="font_bold m_0 c_black inline-block">FORMAT:</h5>
+                                Day-of-Week, Month-Abbreviation.  Day, Year @ Hour:Minute 'a.m.'/'p.m' Abbreviation-of-Timezone.
+                            </div>
+                            <div class="bg_highlight-4 block c_black inline-block p-y_3 p-x_4 w_100">
+                                <h5 class="font_bold m_0 c_black">NOTE:</h5>
+                                 Use the simple abbreviation for the timezone without Daylight Savings Time. IE: ET not EDT or EST.
+                            </div>
+                            <section class="relative  br-t_1 br_solid br_black-2 bg_black-1 shadow_n1 texture_light">
+                                <main class="kss-section__markup overflow_scroll scrollbar-mini collapse transition_3" id="collapse-data-agenda-ondemandreleasetime">
+                                    <pre><code class="language-markup"  id="code-data-agenda-ondemandreleasetime" value='Saturday, Nov. 20, 2021 @ 8:00 p.m. &lt;abbr title&#x3D;&quot;EASTERN TIME, UTC -4&quot;&gt;EDT&lt;/abbr&gt;'>Saturday, Nov. 20, 2021 @ 8:00 p.m. &lt;abbr title&#x3D;&quot;EASTERN TIME, UTC -4&quot;&gt;EDT&lt;/abbr&gt;</code></pre>
+                                    <input class="display_none text-input html-code-input" type="text" name="" id="input-data-agenda-ondemandreleasetime" value='Saturday, Nov. 20, 2021 @ 8:00 p.m. &lt;abbr title&#x3D;&quot;EASTERN TIME, UTC -4&quot;&gt;EDT&lt;/abbr&gt;'>
+                                </main>
+                                <header class="flex_row flex shadow_n1 br-br_radius br-bl_radius">
+                                    <div class="flex flex_row flex_auto collapsed h:bg_black-7 br-bl_radius c_black-8 h:c_white" aria-expanded="false" data-bs-toggle="collapse" data-bs-target="#collapse-data-agenda-ondemandreleasetime" aria-controls="#collapse-data-agenda-ondemandreleasetime">
+                                        <div class="flex_none p_2 font_1">
+                                            <i class="a:rotation fa-fw fa-chevron-up fas self_center text_center"></i>
+                                        </div>
+                                        <div class="flex_auto flex flex_row">
+                                            <h4 class="font_0 font_bold flex_auto p-l_2 self_center m_0 text_left">Code Sample</h4>
+                                        </div>
+                                    </div>
+                                    <a class="bg_primary br_1 br_black-3 br_solid c_white flex_none font_medium font_ui h:bg_primary-n2 h:undecorated m-l_auto p-x_3 p-y_2 br-br_radius" onclick="CopyCode( 'input-data-agenda-ondemandreleasetime')"><i class="fas fa-copy"></i> Copy Code</a>
+                                </header>
+                            </section>
+                            </section>
+                                <section class="kss-section bg_white kss-section--depth-2 br_radius shadow_2" id="kssref-data-presentation">
+                        <article class="kss-section__content relative">
+                            <div class="absolute t_0 r_4 flex flex_row gap-x_2 justify_end">
+                                <a class="c_white bg_black-5 c_white flex_none h:bg_black-7 inline-block p_2 shadow_overlap-light" target="_blank" href="item-data-presentation.html" title="pop out component into new tab">
+                                    <i class="fa-external-link fa-fw fas fa-fw fas"></i>
+                                </a>
+                            </div>
+                                <p class="kss-section__source font_n3"> Source: <span>dist/css/styleguide.css</span>, line <span>151</span>
+                                </p>
+                            <a class="kss-section__permalink" href="#kssref-data-presentation">
+                                <h2 class="kss-section__item c_primary kss-section__item--depth-2">
+                                    <span class="kss-section__ref">1.2</span>
+                                    <span class="kss-section__name">Presentation</span>
+                                </h2>
+                            </a>
+                        </article>
+                            </section>
+                                <section class="kss-section bg_white kss-section--depth-3 br_radius shadow_2" id="kssref-data-presentation-description">
+                        <article class="kss-section__content relative">
+                            <div class="absolute t_0 r_4 flex flex_row gap-x_2 justify_end">
+                                <a class="c_white bg_black-5 c_white flex_none h:bg_black-7 inline-block p_2 shadow_overlap-light" target="_blank" href="item-data-presentation-description.html" title="pop out component into new tab">
+                                    <i class="fa-external-link fa-fw fas fa-fw fas"></i>
+                                </a>
+                            </div>
+                                <p class="kss-section__source font_n3"> Source: <span>dist/css/styleguide.css</span>, line <span>161</span>
+                                </p>
+                            <a class="kss-section__permalink" href="#kssref-data-presentation-description">
+                                <h3 class="kss-section__item c_primary kss-section__item--depth-3">
+                                    <span class="kss-section__ref">1.2.1</span>
+                                    <span class="kss-section__name">Presentation Description</span>
+                                </h3>
+                            </a>
+                        </article>
+                            <article class="kss-section__modifiers">
+                                <h1 class="kss-modifiers__heading"> Example 
+                                </h1>
+                                <div class="kss-modifiers__example">
+                                    <div class="">
+                                        Markup:Drug Coated Balloons
+                                    </div>
+                                </div>
+                            </article>
+                            <section class="relative  br-t_1 br_solid br_black-2 bg_black-1 shadow_n1 texture_light">
+                                <main class="kss-section__markup overflow_scroll scrollbar-mini collapse transition_3" id="collapse-data-presentation-description">
+                                    <pre><code class="language-markup"  id="code-data-presentation-description" value='Markup:Drug Coated Balloons'>Markup:Drug Coated Balloons</code></pre>
+                                    <input class="display_none text-input html-code-input" type="text" name="" id="input-data-presentation-description" value='Markup:Drug Coated Balloons'>
+                                </main>
+                                <header class="flex_row flex shadow_n1 br-br_radius br-bl_radius">
+                                    <div class="flex flex_row flex_auto collapsed h:bg_black-7 br-bl_radius c_black-8 h:c_white" aria-expanded="false" data-bs-toggle="collapse" data-bs-target="#collapse-data-presentation-description" aria-controls="#collapse-data-presentation-description">
+                                        <div class="flex_none p_2 font_1">
+                                            <i class="a:rotation fa-fw fa-chevron-up fas self_center text_center"></i>
+                                        </div>
+                                        <div class="flex_auto flex flex_row">
+                                            <h4 class="font_0 font_bold flex_auto p-l_2 self_center m_0 text_left">Code Sample</h4>
+                                        </div>
+                                    </div>
+                                    <a class="bg_primary br_1 br_black-3 br_solid c_white flex_none font_medium font_ui h:bg_primary-n2 h:undecorated m-l_auto p-x_3 p-y_2 br-br_radius" onclick="CopyCode( 'input-data-presentation-description')"><i class="fas fa-copy"></i> Copy Code</a>
+                                </header>
+                            </section>
+                            </section>
+                                <section class="kss-section bg_white kss-section--depth-3 br_radius shadow_2" id="kssref-data-presentation-id">
+                        <article class="kss-section__content relative">
+                            <div class="absolute t_0 r_4 flex flex_row gap-x_2 justify_end">
+                                <a class="c_white bg_black-5 c_white flex_none h:bg_black-7 inline-block p_2 shadow_overlap-light" target="_blank" href="item-data-presentation-id.html" title="pop out component into new tab">
+                                    <i class="fa-external-link fa-fw fas fa-fw fas"></i>
+                                </a>
+                            </div>
+                                <p class="kss-section__source font_n3"> Source: <span>dist/css/styleguide.css</span>, line <span>204</span>
+                                </p>
+                            <a class="kss-section__permalink" href="#kssref-data-presentation-id">
+                                <h3 class="kss-section__item c_primary kss-section__item--depth-3">
+                                    <span class="kss-section__ref">1.2.2</span>
+                                    <span class="kss-section__name">Presentation ID</span>
+                                </h3>
+                            </a>
+                        </article>
+                            <article class="kss-section__modifiers">
+                                <h1 class="kss-modifiers__heading"> Example 
+                                </h1>
+                                <div class="kss-modifiers__example">
+                                    <div class="">
+                                        15612
+                                    </div>
+                                </div>
+                            </article>
+                            <section class="relative  br-t_1 br_solid br_black-2 bg_black-1 shadow_n1 texture_light">
+                                <main class="kss-section__markup overflow_scroll scrollbar-mini collapse transition_3" id="collapse-data-presentation-id">
+                                    <pre><code class="language-markup"  id="code-data-presentation-id" value='15612'>15612</code></pre>
+                                    <input class="display_none text-input html-code-input" type="text" name="" id="input-data-presentation-id" value='15612'>
+                                </main>
+                                <header class="flex_row flex shadow_n1 br-br_radius br-bl_radius">
+                                    <div class="flex flex_row flex_auto collapsed h:bg_black-7 br-bl_radius c_black-8 h:c_white" aria-expanded="false" data-bs-toggle="collapse" data-bs-target="#collapse-data-presentation-id" aria-controls="#collapse-data-presentation-id">
+                                        <div class="flex_none p_2 font_1">
+                                            <i class="a:rotation fa-fw fa-chevron-up fas self_center text_center"></i>
+                                        </div>
+                                        <div class="flex_auto flex flex_row">
+                                            <h4 class="font_0 font_bold flex_auto p-l_2 self_center m_0 text_left">Code Sample</h4>
+                                        </div>
+                                    </div>
+                                    <a class="bg_primary br_1 br_black-3 br_solid c_white flex_none font_medium font_ui h:bg_primary-n2 h:undecorated m-l_auto p-x_3 p-y_2 br-br_radius" onclick="CopyCode( 'input-data-presentation-id')"><i class="fas fa-copy"></i> Copy Code</a>
+                                </header>
+                            </section>
+                            </section>
+                                <section class="kss-section bg_white kss-section--depth-3 br_radius shadow_2" id="kssref-data-presentation-livetime">
+                        <article class="kss-section__content relative">
+                            <div class="absolute t_0 r_4 flex flex_row gap-x_2 justify_end">
+                                    <div class="inline-block flex_none p_2 bg_highlight c_white shadow_overlap-light">
+                                        <i class="fas fa-fw fa-comment-alt"></i>
+                                    </div>
+                                    <div class="inline-block flex_none p_2 bg_accent-n1 c_white shadow_overlap-light">
+                                        <i class="fas fa-fw fa-text-size"></i>
+                                    </div>
+                                <a class="c_white bg_black-5 c_white flex_none h:bg_black-7 inline-block p_2 shadow_overlap-light" target="_blank" href="item-data-presentation-livetime.html" title="pop out component into new tab">
+                                    <i class="fa-external-link fa-fw fas fa-fw fas"></i>
+                                </a>
+                            </div>
+                                <p class="kss-section__source font_n3"> Source: <span>dist/css/styleguide.css</span>, line <span>186</span>
+                                </p>
+                            <a class="kss-section__permalink" href="#kssref-data-presentation-livetime">
+                                <h3 class="kss-section__item c_primary kss-section__item--depth-3">
+                                    <span class="kss-section__ref">1.2.3</span>
+                                    <span class="kss-section__name">Presentation Live Time</span>
+                                </h3>
+                            </a>
+                        </article>
+                            <article class="kss-section__modifiers">
+                                <h1 class="kss-modifiers__heading"> Example 
+                                </h1>
+                                <div class="kss-modifiers__example">
+                                    <div class="">
+                                        11:45 – 11:49 a.m. <abbr title="EASTERN DAYLIGHT TIME, UTC -4">ET</abbr>
+                                    </div>
+                                </div>
+                            </article>
+                            <div class="bg_accent-4 block c_black inline-block p-y_3 p-x_4 w_100">
+                                <h5 class="font_bold m_0 c_black inline-block">FORMAT:</h5>
+                                12 hour with 'a.m.'/'p.m' and Abbreviation of Timezone.
+                            </div>
+                            <div class="bg_highlight-4 block c_black inline-block p-y_3 p-x_4 w_100">
+                                <h5 class="font_bold m_0 c_black">NOTE:</h5>
+                                The 'a.m.'/'p.m.' if the same should only occur on the last time mark.  11:15 a.m. - 11:30 a.m. should be shortened to 11:15  - 11:30 a.m.
+                            </div>
+                            <section class="relative  br-t_1 br_solid br_black-2 bg_black-1 shadow_n1 texture_light">
+                                <main class="kss-section__markup overflow_scroll scrollbar-mini collapse transition_3" id="collapse-data-presentation-livetime">
+                                    <pre><code class="language-markup"  id="code-data-presentation-livetime" value='11:45 – 11:49 a.m. &lt;abbr title&#x3D;&quot;EASTERN DAYLIGHT TIME, UTC -4&quot;&gt;ET&lt;/abbr&gt;'>11:45 – 11:49 a.m. &lt;abbr title&#x3D;&quot;EASTERN DAYLIGHT TIME, UTC -4&quot;&gt;ET&lt;/abbr&gt;</code></pre>
+                                    <input class="display_none text-input html-code-input" type="text" name="" id="input-data-presentation-livetime" value='11:45 – 11:49 a.m. &lt;abbr title&#x3D;&quot;EASTERN DAYLIGHT TIME, UTC -4&quot;&gt;ET&lt;/abbr&gt;'>
+                                </main>
+                                <header class="flex_row flex shadow_n1 br-br_radius br-bl_radius">
+                                    <div class="flex flex_row flex_auto collapsed h:bg_black-7 br-bl_radius c_black-8 h:c_white" aria-expanded="false" data-bs-toggle="collapse" data-bs-target="#collapse-data-presentation-livetime" aria-controls="#collapse-data-presentation-livetime">
+                                        <div class="flex_none p_2 font_1">
+                                            <i class="a:rotation fa-fw fa-chevron-up fas self_center text_center"></i>
+                                        </div>
+                                        <div class="flex_auto flex flex_row">
+                                            <h4 class="font_0 font_bold flex_auto p-l_2 self_center m_0 text_left">Code Sample</h4>
+                                        </div>
+                                    </div>
+                                    <a class="bg_primary br_1 br_black-3 br_solid c_white flex_none font_medium font_ui h:bg_primary-n2 h:undecorated m-l_auto p-x_3 p-y_2 br-br_radius" onclick="CopyCode( 'input-data-presentation-livetime')"><i class="fas fa-copy"></i> Copy Code</a>
+                                </header>
+                            </section>
+                            </section>
+                                <section class="kss-section bg_white kss-section--depth-3 br_radius shadow_2" id="kssref-data-presentation-title">
+                        <article class="kss-section__content relative">
+                            <div class="absolute t_0 r_4 flex flex_row gap-x_2 justify_end">
+                                <a class="c_white bg_black-5 c_white flex_none h:bg_black-7 inline-block p_2 shadow_overlap-light" target="_blank" href="item-data-presentation-title.html" title="pop out component into new tab">
+                                    <i class="fa-external-link fa-fw fas fa-fw fas"></i>
+                                </a>
+                            </div>
+                                <p class="kss-section__source font_n3"> Source: <span>dist/css/styleguide.css</span>, line <span>173</span>
+                                </p>
+                            <a class="kss-section__permalink" href="#kssref-data-presentation-title">
+                                <h3 class="kss-section__item c_primary kss-section__item--depth-3">
+                                    <span class="kss-section__ref">1.2.4</span>
+                                    <span class="kss-section__name">Presentation Title</span>
+                                </h3>
+                            </a>
+                        </article>
+                            <article class="kss-section__modifiers">
+                                <h1 class="kss-modifiers__heading"> Example 
+                                </h1>
+                                <div class="kss-modifiers__example">
+                                    <div class="">
+                                        New York Cardiovascular Symposium 2021 Welcome Video and Introduction of Session and Presenters
+                                    </div>
+                                </div>
+                            </article>
+                            <section class="relative  br-t_1 br_solid br_black-2 bg_black-1 shadow_n1 texture_light">
+                                <main class="kss-section__markup overflow_scroll scrollbar-mini collapse transition_3" id="collapse-data-presentation-title">
+                                    <pre><code class="language-markup"  id="code-data-presentation-title" value='New York Cardiovascular Symposium 2021 Welcome Video and Introduction of Session and Presenters'>New York Cardiovascular Symposium 2021 Welcome Video and Introduction of Session and Presenters</code></pre>
+                                    <input class="display_none text-input html-code-input" type="text" name="" id="input-data-presentation-title" value='New York Cardiovascular Symposium 2021 Welcome Video and Introduction of Session and Presenters'>
+                                </main>
+                                <header class="flex_row flex shadow_n1 br-br_radius br-bl_radius">
+                                    <div class="flex flex_row flex_auto collapsed h:bg_black-7 br-bl_radius c_black-8 h:c_white" aria-expanded="false" data-bs-toggle="collapse" data-bs-target="#collapse-data-presentation-title" aria-controls="#collapse-data-presentation-title">
+                                        <div class="flex_none p_2 font_1">
+                                            <i class="a:rotation fa-fw fa-chevron-up fas self_center text_center"></i>
+                                        </div>
+                                        <div class="flex_auto flex flex_row">
+                                            <h4 class="font_0 font_bold flex_auto p-l_2 self_center m_0 text_left">Code Sample</h4>
+                                        </div>
+                                    </div>
+                                    <a class="bg_primary br_1 br_black-3 br_solid c_white flex_none font_medium font_ui h:bg_primary-n2 h:undecorated m-l_auto p-x_3 p-y_2 br-br_radius" onclick="CopyCode( 'input-data-presentation-title')"><i class="fas fa-copy"></i> Copy Code</a>
+                                </header>
+                            </section>
+                            </section>
+                                <section class="kss-section bg_white kss-section--depth-2 br_radius shadow_2" id="kssref-data-presenters">
+                        <article class="kss-section__content relative">
+                            <div class="absolute t_0 r_4 flex flex_row gap-x_2 justify_end">
+                                <a class="c_white bg_black-5 c_white flex_none h:bg_black-7 inline-block p_2 shadow_overlap-light" target="_blank" href="item-data-presenters.html" title="pop out component into new tab">
+                                    <i class="fa-external-link fa-fw fas fa-fw fas"></i>
+                                </a>
+                            </div>
+                                <p class="kss-section__source font_n3"> Source: <span>dist/css/styleguide.css</span>, line <span>217</span>
+                                </p>
+                            <a class="kss-section__permalink" href="#kssref-data-presenters">
+                                <h2 class="kss-section__item c_primary kss-section__item--depth-2">
+                                    <span class="kss-section__ref">1.3</span>
+                                    <span class="kss-section__name">Presenters</span>
+                                </h2>
+                            </a>
+                        </article>
+                            </section>
+                                <section class="kss-section bg_white kss-section--depth-3 br_radius shadow_2" id="kssref-data-presenters-bio">
+                        <article class="kss-section__content relative">
+                            <div class="absolute t_0 r_4 flex flex_row gap-x_2 justify_end">
+                                <a class="c_white bg_black-5 c_white flex_none h:bg_black-7 inline-block p_2 shadow_overlap-light" target="_blank" href="item-data-presenters-bio.html" title="pop out component into new tab">
+                                    <i class="fa-external-link fa-fw fas fa-fw fas"></i>
+                                </a>
+                            </div>
+                                <p class="kss-section__source font_n3"> Source: <span>dist/css/styleguide.css</span>, line <span>364</span>
+                                </p>
+                            <a class="kss-section__permalink" href="#kssref-data-presenters-bio">
+                                <h3 class="kss-section__item c_primary kss-section__item--depth-3">
+                                    <span class="kss-section__ref">1.3.1</span>
+                                    <span class="kss-section__name">Bio</span>
+                                </h3>
+                            </a>
+                        </article>
+                            <article class="kss-section__modifiers">
+                                <h1 class="kss-modifiers__heading"> Example 
+                                </h1>
+                                <div class="kss-modifiers__example">
+                                    <div class="">
+                                        <p>Omnis laboriosam vero dolorum harum nihil debitis placeat eligendi. Molestiae voluptatibus nemo eveniet. Vero ipsum eius. Alias sapiente quidem dolore dolorem atque alias est.</p>
+                                    </div>
+                                </div>
+                            </article>
+                            <section class="relative  br-t_1 br_solid br_black-2 bg_black-1 shadow_n1 texture_light">
+                                <main class="kss-section__markup overflow_scroll scrollbar-mini collapse transition_3" id="collapse-data-presenters-bio">
+                                    <pre><code class="language-markup"  id="code-data-presenters-bio" value='&lt;p&gt;Omnis laboriosam vero dolorum harum nihil debitis placeat eligendi. Molestiae voluptatibus nemo eveniet. Vero ipsum eius. Alias sapiente quidem dolore dolorem atque alias est.&lt;/p&gt;'>&lt;p&gt;Omnis laboriosam vero dolorum harum nihil debitis placeat eligendi. Molestiae voluptatibus nemo eveniet. Vero ipsum eius. Alias sapiente quidem dolore dolorem atque alias est.&lt;/p&gt;</code></pre>
+                                    <input class="display_none text-input html-code-input" type="text" name="" id="input-data-presenters-bio" value='&lt;p&gt;Omnis laboriosam vero dolorum harum nihil debitis placeat eligendi. Molestiae voluptatibus nemo eveniet. Vero ipsum eius. Alias sapiente quidem dolore dolorem atque alias est.&lt;/p&gt;'>
+                                </main>
+                                <header class="flex_row flex shadow_n1 br-br_radius br-bl_radius">
+                                    <div class="flex flex_row flex_auto collapsed h:bg_black-7 br-bl_radius c_black-8 h:c_white" aria-expanded="false" data-bs-toggle="collapse" data-bs-target="#collapse-data-presenters-bio" aria-controls="#collapse-data-presenters-bio">
+                                        <div class="flex_none p_2 font_1">
+                                            <i class="a:rotation fa-fw fa-chevron-up fas self_center text_center"></i>
+                                        </div>
+                                        <div class="flex_auto flex flex_row">
+                                            <h4 class="font_0 font_bold flex_auto p-l_2 self_center m_0 text_left">Code Sample</h4>
+                                        </div>
+                                    </div>
+                                    <a class="bg_primary br_1 br_black-3 br_solid c_white flex_none font_medium font_ui h:bg_primary-n2 h:undecorated m-l_auto p-x_3 p-y_2 br-br_radius" onclick="CopyCode( 'input-data-presenters-bio')"><i class="fas fa-copy"></i> Copy Code</a>
+                                </header>
+                            </section>
+                            </section>
+                                <section class="kss-section bg_white kss-section--depth-3 br_radius shadow_2" id="kssref-data-presenters-fullname">
+                        <article class="kss-section__content relative">
+                            <div class="absolute t_0 r_4 flex flex_row gap-x_2 justify_end">
+                                    <div class="inline-block flex_none p_2 bg_accent-n1 c_white shadow_overlap-light">
+                                        <i class="fas fa-fw fa-text-size"></i>
+                                    </div>
+                                <a class="c_white bg_black-5 c_white flex_none h:bg_black-7 inline-block p_2 shadow_overlap-light" target="_blank" href="item-data-presenters-fullname.html" title="pop out component into new tab">
+                                    <i class="fa-external-link fa-fw fas fa-fw fas"></i>
+                                </a>
+                            </div>
+                                <p class="kss-section__source font_n3"> Source: <span>dist/css/styleguide.css</span>, line <span>248</span>
+                                </p>
+                            <a class="kss-section__permalink" href="#kssref-data-presenters-fullname">
+                                <h3 class="kss-section__item c_primary kss-section__item--depth-3">
+                                    <span class="kss-section__ref">1.3.2</span>
+                                    <span class="kss-section__name">Full Name</span>
+                                </h3>
+                            </a>
+                                <div class="kss-section__description reading-typography font-size_up overflow_auto ">
+                                    <div class="font_n1">
+                                    </div>
+                                    <p>The full name of the Presenters member</p>
+
+                                </div>
+                        </article>
+                            <article class="kss-section__modifiers">
+                                <h1 class="kss-modifiers__heading"> Example 
+                                </h1>
+                                <div class="kss-modifiers__example">
+                                    <div class="">
+                                        Pepper H. Soda III, MD, FACC
+                                    </div>
+                                </div>
+                            </article>
+                            <div class="bg_accent-4 block c_black inline-block p-y_3 p-x_4 w_100">
+                                <h5 class="font_bold m_0 c_black inline-block">FORMAT:</h5>
+                                First Name MI (if known) Last Name Suffix (Jr., Sr., the III ), Optional Degree, Optional ACC Honorifics, Optional Exceptions Honorifics
+                            </div>
+                            <section class="relative  br-t_1 br_solid br_black-2 bg_black-1 shadow_n1 texture_light">
+                                <main class="kss-section__markup overflow_scroll scrollbar-mini collapse transition_3" id="collapse-data-presenters-fullname">
+                                    <pre><code class="language-markup"  id="code-data-presenters-fullname" value='Pepper H. Soda III, MD, FACC'>Pepper H. Soda III, MD, FACC</code></pre>
+                                    <input class="display_none text-input html-code-input" type="text" name="" id="input-data-presenters-fullname" value='Pepper H. Soda III, MD, FACC'>
+                                </main>
+                                <header class="flex_row flex shadow_n1 br-br_radius br-bl_radius">
+                                    <div class="flex flex_row flex_auto collapsed h:bg_black-7 br-bl_radius c_black-8 h:c_white" aria-expanded="false" data-bs-toggle="collapse" data-bs-target="#collapse-data-presenters-fullname" aria-controls="#collapse-data-presenters-fullname">
+                                        <div class="flex_none p_2 font_1">
+                                            <i class="a:rotation fa-fw fa-chevron-up fas self_center text_center"></i>
+                                        </div>
+                                        <div class="flex_auto flex flex_row">
+                                            <h4 class="font_0 font_bold flex_auto p-l_2 self_center m_0 text_left">Code Sample</h4>
+                                        </div>
+                                    </div>
+                                    <a class="bg_primary br_1 br_black-3 br_solid c_white flex_none font_medium font_ui h:bg_primary-n2 h:undecorated m-l_auto p-x_3 p-y_2 br-br_radius" onclick="CopyCode( 'input-data-presenters-fullname')"><i class="fas fa-copy"></i> Copy Code</a>
+                                </header>
+                            </section>
+                            </section>
+                                <section class="kss-section bg_white kss-section--depth-3 br_radius shadow_2" id="kssref-data-presenters-id">
+                        <article class="kss-section__content relative">
+                            <div class="absolute t_0 r_4 flex flex_row gap-x_2 justify_end">
+                                <a class="c_white bg_black-5 c_white flex_none h:bg_black-7 inline-block p_2 shadow_overlap-light" target="_blank" href="item-data-presenters-id.html" title="pop out component into new tab">
+                                    <i class="fa-external-link fa-fw fas fa-fw fas"></i>
+                                </a>
+                            </div>
+                                <p class="kss-section__source font_n3"> Source: <span>dist/css/styleguide.css</span>, line <span>377</span>
+                                </p>
+                            <a class="kss-section__permalink" href="#kssref-data-presenters-id">
+                                <h3 class="kss-section__item c_primary kss-section__item--depth-3">
+                                    <span class="kss-section__ref">1.3.3</span>
+                                    <span class="kss-section__name">Identification Number</span>
+                                </h3>
+                            </a>
+                        </article>
+                            <article class="kss-section__modifiers">
+                                <h1 class="kss-modifiers__heading"> Example 
+                                </h1>
+                                <div class="kss-modifiers__example">
+                                    <div class="">
+                                        122154254
+                                    </div>
+                                </div>
+                            </article>
+                            <section class="relative  br-t_1 br_solid br_black-2 bg_black-1 shadow_n1 texture_light">
+                                <main class="kss-section__markup overflow_scroll scrollbar-mini collapse transition_3" id="collapse-data-presenters-id">
+                                    <pre><code class="language-markup"  id="code-data-presenters-id" value='122154254'>122154254</code></pre>
+                                    <input class="display_none text-input html-code-input" type="text" name="" id="input-data-presenters-id" value='122154254'>
+                                </main>
+                                <header class="flex_row flex shadow_n1 br-br_radius br-bl_radius">
+                                    <div class="flex flex_row flex_auto collapsed h:bg_black-7 br-bl_radius c_black-8 h:c_white" aria-expanded="false" data-bs-toggle="collapse" data-bs-target="#collapse-data-presenters-id" aria-controls="#collapse-data-presenters-id">
+                                        <div class="flex_none p_2 font_1">
+                                            <i class="a:rotation fa-fw fa-chevron-up fas self_center text_center"></i>
+                                        </div>
+                                        <div class="flex_auto flex flex_row">
+                                            <h4 class="font_0 font_bold flex_auto p-l_2 self_center m_0 text_left">Code Sample</h4>
+                                        </div>
+                                    </div>
+                                    <a class="bg_primary br_1 br_black-3 br_solid c_white flex_none font_medium font_ui h:bg_primary-n2 h:undecorated m-l_auto p-x_3 p-y_2 br-br_radius" onclick="CopyCode( 'input-data-presenters-id')"><i class="fas fa-copy"></i> Copy Code</a>
+                                </header>
+                            </section>
+                            </section>
+                                <section class="kss-section bg_white kss-section--depth-3 br_radius shadow_2" id="kssref-data-presenters-location">
+                        <article class="kss-section__content relative">
+                            <div class="absolute t_0 r_4 flex flex_row gap-x_2 justify_end">
+                                    <div class="inline-block flex_none p_2 bg_highlight c_white shadow_overlap-light">
+                                        <i class="fas fa-fw fa-comment-alt"></i>
+                                    </div>
+                                    <div class="inline-block flex_none p_2 bg_accent-n1 c_white shadow_overlap-light">
+                                        <i class="fas fa-fw fa-text-size"></i>
+                                    </div>
+                                <a class="c_white bg_black-5 c_white flex_none h:bg_black-7 inline-block p_2 shadow_overlap-light" target="_blank" href="item-data-presenters-location.html" title="pop out component into new tab">
+                                    <i class="fa-external-link fa-fw fas fa-fw fas"></i>
+                                </a>
+                            </div>
+                                <p class="kss-section__source font_n3"> Source: <span>dist/css/styleguide.css</span>, line <span>262</span>
+                                </p>
+                            <a class="kss-section__permalink" href="#kssref-data-presenters-location">
+                                <h3 class="kss-section__item c_primary kss-section__item--depth-3">
+                                    <span class="kss-section__ref">1.3.4</span>
+                                    <span class="kss-section__name">Location</span>
+                                </h3>
+                            </a>
+                        </article>
+                            <article class="kss-section__modifiers">
+                                <h1 class="kss-modifiers__heading"> Example 
+                                </h1>
+                                <div class="kss-modifiers__example">
+                                    <div class="">
+                                        New York, NY, USA
+                                    </div>
+                                </div>
+                            </article>
+                            <div class="bg_accent-4 block c_black inline-block p-y_3 p-x_4 w_100">
+                                <h5 class="font_bold m_0 c_black inline-block">FORMAT:</h5>
+                                City, State, Country
+                            </div>
+                            <div class="bg_highlight-4 block c_black inline-block p-y_3 p-x_4 w_100">
+                                <h5 class="font_bold m_0 c_black">NOTE:</h5>
+                                 if the conference country is USA you can drop the country if it is USA.
+                            </div>
+                            <section class="relative  br-t_1 br_solid br_black-2 bg_black-1 shadow_n1 texture_light">
+                                <main class="kss-section__markup overflow_scroll scrollbar-mini collapse transition_3" id="collapse-data-presenters-location">
+                                    <pre><code class="language-markup"  id="code-data-presenters-location" value='New York, NY, USA'>New York, NY, USA</code></pre>
+                                    <input class="display_none text-input html-code-input" type="text" name="" id="input-data-presenters-location" value='New York, NY, USA'>
+                                </main>
+                                <header class="flex_row flex shadow_n1 br-br_radius br-bl_radius">
+                                    <div class="flex flex_row flex_auto collapsed h:bg_black-7 br-bl_radius c_black-8 h:c_white" aria-expanded="false" data-bs-toggle="collapse" data-bs-target="#collapse-data-presenters-location" aria-controls="#collapse-data-presenters-location">
+                                        <div class="flex_none p_2 font_1">
+                                            <i class="a:rotation fa-fw fa-chevron-up fas self_center text_center"></i>
+                                        </div>
+                                        <div class="flex_auto flex flex_row">
+                                            <h4 class="font_0 font_bold flex_auto p-l_2 self_center m_0 text_left">Code Sample</h4>
+                                        </div>
+                                    </div>
+                                    <a class="bg_primary br_1 br_black-3 br_solid c_white flex_none font_medium font_ui h:bg_primary-n2 h:undecorated m-l_auto p-x_3 p-y_2 br-br_radius" onclick="CopyCode( 'input-data-presenters-location')"><i class="fas fa-copy"></i> Copy Code</a>
+                                </header>
+                            </section>
+                            </section>
+                                <section class="kss-section bg_white kss-section--depth-3 br_radius shadow_2" id="kssref-data-presenters-photo">
+                        <article class="kss-section__content relative">
+                            <div class="absolute t_0 r_4 flex flex_row gap-x_2 justify_end">
+                                    <div class="inline-block flex_none p_2 bg_accent-n1 c_white shadow_overlap-light">
+                                        <i class="fas fa-fw fa-text-size"></i>
+                                    </div>
+                                <a class="c_white bg_black-5 c_white flex_none h:bg_black-7 inline-block p_2 shadow_overlap-light" target="_blank" href="item-data-presenters-photo.html" title="pop out component into new tab">
+                                    <i class="fa-external-link fa-fw fas fa-fw fas"></i>
+                                </a>
+                            </div>
+                                <p class="kss-section__source font_n3"> Source: <span>dist/css/styleguide.css</span>, line <span>227</span>
+                                </p>
+                            <a class="kss-section__permalink" href="#kssref-data-presenters-photo">
+                                <h3 class="kss-section__item c_primary kss-section__item--depth-3">
+                                    <span class="kss-section__ref">1.3.5</span>
+                                    <span class="kss-section__name">Photo</span>
+                                </h3>
+                            </a>
+                        </article>
+                            <article class="kss-section__modifiers">
+                                <h1 class="kss-modifiers__heading"> Example 
+                                </h1>
+                                <div class="kss-modifiers__example">
+                                    <div class="max-w_30">
+                                        <img
+    class="aspect_1x1 w_100"
+    src="https://i.pravatar.cc/300"
+    alt="Pepper H. Soda III, MD, FACC"
+/>
+                                    </div>
+                                </div>
+                            </article>
+                            <div class="bg_accent-4 block c_black inline-block p-y_3 p-x_4 w_100">
+                                <h5 class="font_bold m_0 c_black inline-block">FORMAT:</h5>
+                                300px by 300px
+                            </div>
+                            <section class="relative  br-t_1 br_solid br_black-2 bg_black-1 shadow_n1 texture_light">
+                                <main class="kss-section__markup overflow_scroll scrollbar-mini collapse transition_3" id="collapse-data-presenters-photo">
+                                    <pre><code class="language-markup"  id="code-data-presenters-photo" value='&lt;img
+    class&#x3D;&quot;aspect_1x1 w_100&quot;
+    src&#x3D;&quot;https://i.pravatar.cc/300&quot;
+    alt&#x3D;&quot;Pepper H. Soda III, MD, FACC&quot;
+/&gt;'>&lt;img
+    class&#x3D;&quot;aspect_1x1 w_100&quot;
+    src&#x3D;&quot;https://i.pravatar.cc/300&quot;
+    alt&#x3D;&quot;Pepper H. Soda III, MD, FACC&quot;
+/&gt;</code></pre>
+                                    <input class="display_none text-input html-code-input" type="text" name="" id="input-data-presenters-photo" value='&lt;img
+    class&#x3D;&quot;aspect_1x1 w_100&quot;
+    src&#x3D;&quot;https://i.pravatar.cc/300&quot;
+    alt&#x3D;&quot;Pepper H. Soda III, MD, FACC&quot;
+/&gt;'>
+                                </main>
+                                <header class="flex_row flex shadow_n1 br-br_radius br-bl_radius">
+                                    <div class="flex flex_row flex_auto collapsed h:bg_black-7 br-bl_radius c_black-8 h:c_white" aria-expanded="false" data-bs-toggle="collapse" data-bs-target="#collapse-data-presenters-photo" aria-controls="#collapse-data-presenters-photo">
+                                        <div class="flex_none p_2 font_1">
+                                            <i class="a:rotation fa-fw fa-chevron-up fas self_center text_center"></i>
+                                        </div>
+                                        <div class="flex_auto flex flex_row">
+                                            <h4 class="font_0 font_bold flex_auto p-l_2 self_center m_0 text_left">Code Sample</h4>
+                                        </div>
+                                    </div>
+                                    <a class="bg_primary br_1 br_black-3 br_solid c_white flex_none font_medium font_ui h:bg_primary-n2 h:undecorated m-l_auto p-x_3 p-y_2 br-br_radius" onclick="CopyCode( 'input-data-presenters-photo')"><i class="fas fa-copy"></i> Copy Code</a>
+                                </header>
+                            </section>
+                            </section>
+                                <section class="kss-section bg_white kss-section--depth-3 br_radius shadow_2" id="kssref-data-presenters-role">
+                        <article class="kss-section__content relative">
+                            <div class="absolute t_0 r_4 flex flex_row gap-x_2 justify_end">
+                                <a class="c_white bg_black-5 c_white flex_none h:bg_black-7 inline-block p_2 shadow_overlap-light" target="_blank" href="item-data-presenters-role.html" title="pop out component into new tab">
+                                    <i class="fa-external-link fa-fw fas fa-fw fas"></i>
+                                </a>
+                            </div>
+                                <p class="kss-section__source font_n3"> Source: <span>dist/css/styleguide.css</span>, line <span>351</span>
+                                </p>
+                            <a class="kss-section__permalink" href="#kssref-data-presenters-role">
+                                <h3 class="kss-section__item c_primary kss-section__item--depth-3">
+                                    <span class="kss-section__ref">1.3.6</span>
+                                    <span class="kss-section__name">Role</span>
+                                </h3>
+                            </a>
+                        </article>
+                            <article class="kss-section__modifiers">
+                                <h1 class="kss-modifiers__heading"> Example 
+                                </h1>
+                                <div class="kss-modifiers__example">
+                                    <div class="">
+                                        Co-Chair
+                                    </div>
+                                </div>
+                            </article>
+                            <section class="relative  br-t_1 br_solid br_black-2 bg_black-1 shadow_n1 texture_light">
+                                <main class="kss-section__markup overflow_scroll scrollbar-mini collapse transition_3" id="collapse-data-presenters-role">
+                                    <pre><code class="language-markup"  id="code-data-presenters-role" value='Co-Chair'>Co-Chair</code></pre>
+                                    <input class="display_none text-input html-code-input" type="text" name="" id="input-data-presenters-role" value='Co-Chair'>
+                                </main>
+                                <header class="flex_row flex shadow_n1 br-br_radius br-bl_radius">
+                                    <div class="flex flex_row flex_auto collapsed h:bg_black-7 br-bl_radius c_black-8 h:c_white" aria-expanded="false" data-bs-toggle="collapse" data-bs-target="#collapse-data-presenters-role" aria-controls="#collapse-data-presenters-role">
+                                        <div class="flex_none p_2 font_1">
+                                            <i class="a:rotation fa-fw fa-chevron-up fas self_center text_center"></i>
+                                        </div>
+                                        <div class="flex_auto flex flex_row">
+                                            <h4 class="font_0 font_bold flex_auto p-l_2 self_center m_0 text_left">Code Sample</h4>
+                                        </div>
+                                    </div>
+                                    <a class="bg_primary br_1 br_black-3 br_solid c_white flex_none font_medium font_ui h:bg_primary-n2 h:undecorated m-l_auto p-x_3 p-y_2 br-br_radius" onclick="CopyCode( 'input-data-presenters-role')"><i class="fas fa-copy"></i> Copy Code</a>
+                                </header>
+                            </section>
+                            </section>
+                                <section class="kss-section bg_white kss-section--depth-3 br_radius shadow_2" id="kssref-data-presenters-title">
+                        <article class="kss-section__content relative">
+                            <div class="absolute t_0 r_4 flex flex_row gap-x_2 justify_end">
+                                    <div class="inline-block flex_none p_2 bg_warning shadow_overlap-light">
+                                        <i class="fas fa-fw fa-vial"></i>
+                                    </div>
+                                    <div class="inline-block flex_none p_2 bg_highlight c_white shadow_overlap-light">
+                                        <i class="fas fa-fw fa-comment-alt"></i>
+                                    </div>
+                                    <div class="inline-block flex_none p_2 bg_accent-n1 c_white shadow_overlap-light">
+                                        <i class="fas fa-fw fa-text-size"></i>
+                                    </div>
+                                <a class="c_white bg_black-5 c_white flex_none h:bg_black-7 inline-block p_2 shadow_overlap-light" target="_blank" href="item-data-presenters-title.html" title="pop out component into new tab">
+                                    <i class="fa-external-link fa-fw fas fa-fw fas"></i>
+                                </a>
+                            </div>
+                                <p class="kss-section__source font_n3"> Source: <span>dist/css/styleguide.css</span>, line <span>278</span>
+                                </p>
+                            <a class="kss-section__permalink" href="#kssref-data-presenters-title">
+                                <h3 class="kss-section__item c_primary kss-section__item--depth-3">
+                                    <span class="kss-section__ref">1.3.7</span>
+                                    <span class="kss-section__name">Title</span>
+                                </h3>
+                            </a>
+                                <div class="kss-section__description reading-typography font-size_up overflow_auto ">
+                                    <div class="font_n1">
+                                            <span class="bg_warning-n1 c_white m-x_2 inline-block p-x_4 p_2 br_round uppercase">experimental</span>
+                                    </div>
+                                    <p>EXPERIMENTAL: This is not an approved data point.</p>
+
+                                </div>
+                        </article>
+                            <article class="kss-section__modifiers">
+                                <h1 class="kss-modifiers__heading"> Example 
+                                </h1>
+                                <div class="kss-modifiers__example">
+                                    <div class="">
+                                        Physician-in-Chief, Mount SugarLoaf Hospital, Mount SugarLoaf Hospital
+                                    </div>
+                                </div>
+                            </article>
+                            <div class="bg_accent-4 block c_black inline-block p-y_3 p-x_4 w_100">
+                                <h5 class="font_bold m_0 c_black inline-block">FORMAT:</h5>
+                                Institution Title, Institution Division, Institution
+                            </div>
+                            <div class="bg_highlight-4 block c_black inline-block p-y_3 p-x_4 w_100">
+                                <h5 class="font_bold m_0 c_black">NOTE:</h5>
+                                This format is currently not being enforced.
+                            </div>
+                            <section class="relative  br-t_1 br_solid br_black-2 bg_black-1 shadow_n1 texture_light">
+                                <main class="kss-section__markup overflow_scroll scrollbar-mini collapse transition_3" id="collapse-data-presenters-title">
+                                    <pre><code class="language-markup"  id="code-data-presenters-title" value='Physician-in-Chief, Mount SugarLoaf Hospital, Mount SugarLoaf Hospital'>Physician-in-Chief, Mount SugarLoaf Hospital, Mount SugarLoaf Hospital</code></pre>
+                                    <input class="display_none text-input html-code-input" type="text" name="" id="input-data-presenters-title" value='Physician-in-Chief, Mount SugarLoaf Hospital, Mount SugarLoaf Hospital'>
+                                </main>
+                                <header class="flex_row flex shadow_n1 br-br_radius br-bl_radius">
+                                    <div class="flex flex_row flex_auto collapsed h:bg_black-7 br-bl_radius c_black-8 h:c_white" aria-expanded="false" data-bs-toggle="collapse" data-bs-target="#collapse-data-presenters-title" aria-controls="#collapse-data-presenters-title">
+                                        <div class="flex_none p_2 font_1">
+                                            <i class="a:rotation fa-fw fa-chevron-up fas self_center text_center"></i>
+                                        </div>
+                                        <div class="flex_auto flex flex_row">
+                                            <h4 class="font_0 font_bold flex_auto p-l_2 self_center m_0 text_left">Code Sample</h4>
+                                        </div>
+                                    </div>
+                                    <a class="bg_primary br_1 br_black-3 br_solid c_white flex_none font_medium font_ui h:bg_primary-n2 h:undecorated m-l_auto p-x_3 p-y_2 br-br_radius" onclick="CopyCode( 'input-data-presenters-title')"><i class="fas fa-copy"></i> Copy Code</a>
+                                </header>
+                            </section>
+                            </section>
+                                <section class="kss-section bg_white kss-section--depth-4 br_radius shadow_2" id="kssref-data-presenters-title-institution">
+                        <article class="kss-section__content relative">
+                            <div class="absolute t_0 r_4 flex flex_row gap-x_2 justify_end">
+                                <a class="c_white bg_black-5 c_white flex_none h:bg_black-7 inline-block p_2 shadow_overlap-light" target="_blank" href="item-data-presenters-title-institution.html" title="pop out component into new tab">
+                                    <i class="fa-external-link fa-fw fas fa-fw fas"></i>
+                                </a>
+                            </div>
+                                <p class="kss-section__source font_n3"> Source: <span>dist/css/styleguide.css</span>, line <span>299</span>
+                                </p>
+                            <a class="kss-section__permalink" href="#kssref-data-presenters-title-institution">
+                                <h4 class="kss-section__item c_primary kss-section__item--depth-4">
+                                    <span class="kss-section__ref">1.3.7.1</span>
+                                    <span class="kss-section__name">Institution</span>
+                                </h4>
+                            </a>
+                        </article>
+                            <article class="kss-section__modifiers">
+                                <h1 class="kss-modifiers__heading"> Example 
+                                </h1>
+                                <div class="kss-modifiers__example">
+                                    <div class="">
+                                        Mount SugarLoaf Hospital
+                                    </div>
+                                </div>
+                            </article>
+                            <section class="relative  br-t_1 br_solid br_black-2 bg_black-1 shadow_n1 texture_light">
+                                <main class="kss-section__markup overflow_scroll scrollbar-mini collapse transition_3" id="collapse-data-presenters-title-institution">
+                                    <pre><code class="language-markup"  id="code-data-presenters-title-institution" value='Mount SugarLoaf Hospital'>Mount SugarLoaf Hospital</code></pre>
+                                    <input class="display_none text-input html-code-input" type="text" name="" id="input-data-presenters-title-institution" value='Mount SugarLoaf Hospital'>
+                                </main>
+                                <header class="flex_row flex shadow_n1 br-br_radius br-bl_radius">
+                                    <div class="flex flex_row flex_auto collapsed h:bg_black-7 br-bl_radius c_black-8 h:c_white" aria-expanded="false" data-bs-toggle="collapse" data-bs-target="#collapse-data-presenters-title-institution" aria-controls="#collapse-data-presenters-title-institution">
+                                        <div class="flex_none p_2 font_1">
+                                            <i class="a:rotation fa-fw fa-chevron-up fas self_center text_center"></i>
+                                        </div>
+                                        <div class="flex_auto flex flex_row">
+                                            <h4 class="font_0 font_bold flex_auto p-l_2 self_center m_0 text_left">Code Sample</h4>
+                                        </div>
+                                    </div>
+                                    <a class="bg_primary br_1 br_black-3 br_solid c_white flex_none font_medium font_ui h:bg_primary-n2 h:undecorated m-l_auto p-x_3 p-y_2 br-br_radius" onclick="CopyCode( 'input-data-presenters-title-institution')"><i class="fas fa-copy"></i> Copy Code</a>
+                                </header>
+                            </section>
+                            </section>
+                                <section class="kss-section bg_white kss-section--depth-4 br_radius shadow_2" id="kssref-data-presenters-title-institutiondivision">
+                        <article class="kss-section__content relative">
+                            <div class="absolute t_0 r_4 flex flex_row gap-x_2 justify_end">
+                                <a class="c_white bg_black-5 c_white flex_none h:bg_black-7 inline-block p_2 shadow_overlap-light" target="_blank" href="item-data-presenters-title-institutiondivision.html" title="pop out component into new tab">
+                                    <i class="fa-external-link fa-fw fas fa-fw fas"></i>
+                                </a>
+                            </div>
+                                <p class="kss-section__source font_n3"> Source: <span>dist/css/styleguide.css</span>, line <span>312</span>
+                                </p>
+                            <a class="kss-section__permalink" href="#kssref-data-presenters-title-institutiondivision">
+                                <h4 class="kss-section__item c_primary kss-section__item--depth-4">
+                                    <span class="kss-section__ref">1.3.7.2</span>
+                                    <span class="kss-section__name">Institution Division</span>
+                                </h4>
+                            </a>
+                        </article>
+                            <article class="kss-section__modifiers">
+                                <h1 class="kss-modifiers__heading"> Example 
+                                </h1>
+                                <div class="kss-modifiers__example">
+                                    <div class="">
+                                        Mount SugarLoaf Hospital
+                                    </div>
+                                </div>
+                            </article>
+                            <section class="relative  br-t_1 br_solid br_black-2 bg_black-1 shadow_n1 texture_light">
+                                <main class="kss-section__markup overflow_scroll scrollbar-mini collapse transition_3" id="collapse-data-presenters-title-institutiondivision">
+                                    <pre><code class="language-markup"  id="code-data-presenters-title-institutiondivision" value='Mount SugarLoaf Hospital'>Mount SugarLoaf Hospital</code></pre>
+                                    <input class="display_none text-input html-code-input" type="text" name="" id="input-data-presenters-title-institutiondivision" value='Mount SugarLoaf Hospital'>
+                                </main>
+                                <header class="flex_row flex shadow_n1 br-br_radius br-bl_radius">
+                                    <div class="flex flex_row flex_auto collapsed h:bg_black-7 br-bl_radius c_black-8 h:c_white" aria-expanded="false" data-bs-toggle="collapse" data-bs-target="#collapse-data-presenters-title-institutiondivision" aria-controls="#collapse-data-presenters-title-institutiondivision">
+                                        <div class="flex_none p_2 font_1">
+                                            <i class="a:rotation fa-fw fa-chevron-up fas self_center text_center"></i>
+                                        </div>
+                                        <div class="flex_auto flex flex_row">
+                                            <h4 class="font_0 font_bold flex_auto p-l_2 self_center m_0 text_left">Code Sample</h4>
+                                        </div>
+                                    </div>
+                                    <a class="bg_primary br_1 br_black-3 br_solid c_white flex_none font_medium font_ui h:bg_primary-n2 h:undecorated m-l_auto p-x_3 p-y_2 br-br_radius" onclick="CopyCode( 'input-data-presenters-title-institutiondivision')"><i class="fas fa-copy"></i> Copy Code</a>
+                                </header>
+                            </section>
+                            </section>
+                                <section class="kss-section bg_white kss-section--depth-4 br_radius shadow_2" id="kssref-data-presenters-title-institutiontitle">
+                        <article class="kss-section__content relative">
+                            <div class="absolute t_0 r_4 flex flex_row gap-x_2 justify_end">
+                                <a class="c_white bg_black-5 c_white flex_none h:bg_black-7 inline-block p_2 shadow_overlap-light" target="_blank" href="item-data-presenters-title-institutiontitle.html" title="pop out component into new tab">
+                                    <i class="fa-external-link fa-fw fas fa-fw fas"></i>
+                                </a>
+                            </div>
+                                <p class="kss-section__source font_n3"> Source: <span>dist/css/styleguide.css</span>, line <span>325</span>
+                                </p>
+                            <a class="kss-section__permalink" href="#kssref-data-presenters-title-institutiontitle">
+                                <h4 class="kss-section__item c_primary kss-section__item--depth-4">
+                                    <span class="kss-section__ref">1.3.7.3</span>
+                                    <span class="kss-section__name">Institutional Title</span>
+                                </h4>
+                            </a>
+                        </article>
+                            <article class="kss-section__modifiers">
+                                <h1 class="kss-modifiers__heading"> Example 
+                                </h1>
+                                <div class="kss-modifiers__example">
+                                    <div class="">
+                                        Physician-in-Chief
+                                    </div>
+                                </div>
+                            </article>
+                            <section class="relative  br-t_1 br_solid br_black-2 bg_black-1 shadow_n1 texture_light">
+                                <main class="kss-section__markup overflow_scroll scrollbar-mini collapse transition_3" id="collapse-data-presenters-title-institutiontitle">
+                                    <pre><code class="language-markup"  id="code-data-presenters-title-institutiontitle" value='Physician-in-Chief'>Physician-in-Chief</code></pre>
+                                    <input class="display_none text-input html-code-input" type="text" name="" id="input-data-presenters-title-institutiontitle" value='Physician-in-Chief'>
+                                </main>
+                                <header class="flex_row flex shadow_n1 br-br_radius br-bl_radius">
+                                    <div class="flex flex_row flex_auto collapsed h:bg_black-7 br-bl_radius c_black-8 h:c_white" aria-expanded="false" data-bs-toggle="collapse" data-bs-target="#collapse-data-presenters-title-institutiontitle" aria-controls="#collapse-data-presenters-title-institutiontitle">
+                                        <div class="flex_none p_2 font_1">
+                                            <i class="a:rotation fa-fw fa-chevron-up fas self_center text_center"></i>
+                                        </div>
+                                        <div class="flex_auto flex flex_row">
+                                            <h4 class="font_0 font_bold flex_auto p-l_2 self_center m_0 text_left">Code Sample</h4>
+                                        </div>
+                                    </div>
+                                    <a class="bg_primary br_1 br_black-3 br_solid c_white flex_none font_medium font_ui h:bg_primary-n2 h:undecorated m-l_auto p-x_3 p-y_2 br-br_radius" onclick="CopyCode( 'input-data-presenters-title-institutiontitle')"><i class="fas fa-copy"></i> Copy Code</a>
+                                </header>
+                            </section>
+                            </section>
+                                <section class="kss-section bg_white kss-section--depth-3 br_radius shadow_2" id="kssref-data-presenters-twitterhandle">
+                        <article class="kss-section__content relative">
+                            <div class="absolute t_0 r_4 flex flex_row gap-x_2 justify_end">
+                                <a class="c_white bg_black-5 c_white flex_none h:bg_black-7 inline-block p_2 shadow_overlap-light" target="_blank" href="item-data-presenters-twitterhandle.html" title="pop out component into new tab">
+                                    <i class="fa-external-link fa-fw fas fa-fw fas"></i>
+                                </a>
+                            </div>
+                                <p class="kss-section__source font_n3"> Source: <span>dist/css/styleguide.css</span>, line <span>338</span>
+                                </p>
+                            <a class="kss-section__permalink" href="#kssref-data-presenters-twitterhandle">
+                                <h3 class="kss-section__item c_primary kss-section__item--depth-3">
+                                    <span class="kss-section__ref">1.3.8</span>
+                                    <span class="kss-section__name">Twitter Handle</span>
+                                </h3>
+                            </a>
+                        </article>
+                            <article class="kss-section__modifiers">
+                                <h1 class="kss-modifiers__heading"> Example 
+                                </h1>
+                                <div class="kss-modifiers__example">
+                                    <div class="">
+                                        Tweat_DrSoda
+                                    </div>
+                                </div>
+                            </article>
+                            <section class="relative  br-t_1 br_solid br_black-2 bg_black-1 shadow_n1 texture_light">
+                                <main class="kss-section__markup overflow_scroll scrollbar-mini collapse transition_3" id="collapse-data-presenters-twitterhandle">
+                                    <pre><code class="language-markup"  id="code-data-presenters-twitterhandle" value='Tweat_DrSoda'>Tweat_DrSoda</code></pre>
+                                    <input class="display_none text-input html-code-input" type="text" name="" id="input-data-presenters-twitterhandle" value='Tweat_DrSoda'>
+                                </main>
+                                <header class="flex_row flex shadow_n1 br-br_radius br-bl_radius">
+                                    <div class="flex flex_row flex_auto collapsed h:bg_black-7 br-bl_radius c_black-8 h:c_white" aria-expanded="false" data-bs-toggle="collapse" data-bs-target="#collapse-data-presenters-twitterhandle" aria-controls="#collapse-data-presenters-twitterhandle">
+                                        <div class="flex_none p_2 font_1">
+                                            <i class="a:rotation fa-fw fa-chevron-up fas self_center text_center"></i>
+                                        </div>
+                                        <div class="flex_auto flex flex_row">
+                                            <h4 class="font_0 font_bold flex_auto p-l_2 self_center m_0 text_left">Code Sample</h4>
+                                        </div>
+                                    </div>
+                                    <a class="bg_primary br_1 br_black-3 br_solid c_white flex_none font_medium font_ui h:bg_primary-n2 h:undecorated m-l_auto p-x_3 p-y_2 br-br_radius" onclick="CopyCode( 'input-data-presenters-twitterhandle')"><i class="fas fa-copy"></i> Copy Code</a>
+                                </header>
+                            </section>
+                            </section>
+                                <section class="kss-section bg_white kss-section--depth-2 br_radius shadow_2" id="kssref-data-session">
+                        <article class="kss-section__content relative">
+                            <div class="absolute t_0 r_4 flex flex_row gap-x_2 justify_end">
+                                <a class="c_white bg_black-5 c_white flex_none h:bg_black-7 inline-block p_2 shadow_overlap-light" target="_blank" href="item-data-session.html" title="pop out component into new tab">
+                                    <i class="fa-external-link fa-fw fas fa-fw fas"></i>
+                                </a>
+                            </div>
+                                <p class="kss-section__source font_n3"> Source: <span>dist/css/styleguide.css</span>, line <span>85</span>
+                                </p>
+                            <a class="kss-section__permalink" href="#kssref-data-session">
+                                <h2 class="kss-section__item c_primary kss-section__item--depth-2">
+                                    <span class="kss-section__ref">1.4</span>
+                                    <span class="kss-section__name">Session</span>
+                                </h2>
+                            </a>
+                                <div class="kss-section__description reading-typography font-size_up overflow_auto ">
+                                    <div class="font_n1">
+                                    </div>
+                                    <p>A Session is a specific time slot in an Agenda. This could be either a single presentation or a series of presentations.</p>
+<p>Experiential: This is not an approved data point.</p>
+
+                                </div>
+                        </article>
+                            <article class="kss-section__modifiers">
+                                <h1 class="kss-modifiers__heading"> Example 
+                                </h1>
+                                <div class="kss-modifiers__example">
+                                    <div class="">
+                                        Electrical Disorders - Rhythm and Conduction Disorders
+                                    </div>
+                                </div>
+                            </article>
+                            <section class="relative  br-t_1 br_solid br_black-2 bg_black-1 shadow_n1 texture_light">
+                                <main class="kss-section__markup overflow_scroll scrollbar-mini collapse transition_3" id="collapse-data-session">
+                                    <pre><code class="language-markup"  id="code-data-session" value='Electrical Disorders - Rhythm and Conduction Disorders'>Electrical Disorders - Rhythm and Conduction Disorders</code></pre>
+                                    <input class="display_none text-input html-code-input" type="text" name="" id="input-data-session" value='Electrical Disorders - Rhythm and Conduction Disorders'>
+                                </main>
+                                <header class="flex_row flex shadow_n1 br-br_radius br-bl_radius">
+                                    <div class="flex flex_row flex_auto collapsed h:bg_black-7 br-bl_radius c_black-8 h:c_white" aria-expanded="false" data-bs-toggle="collapse" data-bs-target="#collapse-data-session" aria-controls="#collapse-data-session">
+                                        <div class="flex_none p_2 font_1">
+                                            <i class="a:rotation fa-fw fa-chevron-up fas self_center text_center"></i>
+                                        </div>
+                                        <div class="flex_auto flex flex_row">
+                                            <h4 class="font_0 font_bold flex_auto p-l_2 self_center m_0 text_left">Code Sample</h4>
+                                        </div>
+                                    </div>
+                                    <a class="bg_primary br_1 br_black-3 br_solid c_white flex_none font_medium font_ui h:bg_primary-n2 h:undecorated m-l_auto p-x_3 p-y_2 br-br_radius" onclick="CopyCode( 'input-data-session')"><i class="fas fa-copy"></i> Copy Code</a>
+                                </header>
+                            </section>
+                            </section>
+                                <section class="kss-section bg_white kss-section--depth-3 br_radius shadow_2" id="kssref-data-session-description">
+                        <article class="kss-section__content relative">
+                            <div class="absolute t_0 r_4 flex flex_row gap-x_2 justify_end">
+                                <a class="c_white bg_black-5 c_white flex_none h:bg_black-7 inline-block p_2 shadow_overlap-light" target="_blank" href="item-data-session-description.html" title="pop out component into new tab">
+                                    <i class="fa-external-link fa-fw fas fa-fw fas"></i>
+                                </a>
+                            </div>
+                                <p class="kss-section__source font_n3"> Source: <span>dist/css/styleguide.css</span>, line <span>139</span>
+                                </p>
+                            <a class="kss-section__permalink" href="#kssref-data-session-description">
+                                <h3 class="kss-section__item c_primary kss-section__item--depth-3">
+                                    <span class="kss-section__ref">1.4.1</span>
+                                    <span class="kss-section__name">Session Description</span>
+                                </h3>
+                            </a>
+                                <div class="kss-section__description reading-typography font-size_up overflow_auto ">
+                                    <div class="font_n1">
+                                    </div>
+                                    <p>The description of a session.</p>
+
+                                </div>
+                        </article>
+                            <article class="kss-section__modifiers">
+                                <h1 class="kss-modifiers__heading"> Example 
+                                </h1>
+                                <div class="kss-modifiers__example">
+                                    <div class="">
+                                        <p>Maxime et ea adipisci voluptas. Omnis nobis recusandae alias eius sed ipsam aut. Ipsam dolore qui. Soluta laudantium quae assumenda ipsa tempore voluptas et culpa. Et praesentium quasi. Quas ratione vero aspernatur.</p>
+                                    </div>
+                                </div>
+                            </article>
+                            <section class="relative  br-t_1 br_solid br_black-2 bg_black-1 shadow_n1 texture_light">
+                                <main class="kss-section__markup overflow_scroll scrollbar-mini collapse transition_3" id="collapse-data-session-description">
+                                    <pre><code class="language-markup"  id="code-data-session-description" value='&lt;p&gt;Maxime et ea adipisci voluptas. Omnis nobis recusandae alias eius sed ipsam aut. Ipsam dolore qui. Soluta laudantium quae assumenda ipsa tempore voluptas et culpa. Et praesentium quasi. Quas ratione vero aspernatur.&lt;/p&gt;'>&lt;p&gt;Maxime et ea adipisci voluptas. Omnis nobis recusandae alias eius sed ipsam aut. Ipsam dolore qui. Soluta laudantium quae assumenda ipsa tempore voluptas et culpa. Et praesentium quasi. Quas ratione vero aspernatur.&lt;/p&gt;</code></pre>
+                                    <input class="display_none text-input html-code-input" type="text" name="" id="input-data-session-description" value='&lt;p&gt;Maxime et ea adipisci voluptas. Omnis nobis recusandae alias eius sed ipsam aut. Ipsam dolore qui. Soluta laudantium quae assumenda ipsa tempore voluptas et culpa. Et praesentium quasi. Quas ratione vero aspernatur.&lt;/p&gt;'>
+                                </main>
+                                <header class="flex_row flex shadow_n1 br-br_radius br-bl_radius">
+                                    <div class="flex flex_row flex_auto collapsed h:bg_black-7 br-bl_radius c_black-8 h:c_white" aria-expanded="false" data-bs-toggle="collapse" data-bs-target="#collapse-data-session-description" aria-controls="#collapse-data-session-description">
+                                        <div class="flex_none p_2 font_1">
+                                            <i class="a:rotation fa-fw fa-chevron-up fas self_center text_center"></i>
+                                        </div>
+                                        <div class="flex_auto flex flex_row">
+                                            <h4 class="font_0 font_bold flex_auto p-l_2 self_center m_0 text_left">Code Sample</h4>
+                                        </div>
+                                    </div>
+                                    <a class="bg_primary br_1 br_black-3 br_solid c_white flex_none font_medium font_ui h:bg_primary-n2 h:undecorated m-l_auto p-x_3 p-y_2 br-br_radius" onclick="CopyCode( 'input-data-session-description')"><i class="fas fa-copy"></i> Copy Code</a>
+                                </header>
+                            </section>
+                            </section>
+                                <section class="kss-section bg_white kss-section--depth-3 br_radius shadow_2" id="kssref-data-session-id">
+                        <article class="kss-section__content relative">
+                            <div class="absolute t_0 r_4 flex flex_row gap-x_2 justify_end">
+                                <a class="c_white bg_black-5 c_white flex_none h:bg_black-7 inline-block p_2 shadow_overlap-light" target="_blank" href="item-data-session-id.html" title="pop out component into new tab">
+                                    <i class="fa-external-link fa-fw fas fa-fw fas"></i>
+                                </a>
+                            </div>
+                                <p class="kss-section__source font_n3"> Source: <span>dist/css/styleguide.css</span>, line <span>126</span>
+                                </p>
+                            <a class="kss-section__permalink" href="#kssref-data-session-id">
+                                <h3 class="kss-section__item c_primary kss-section__item--depth-3">
+                                    <span class="kss-section__ref">1.4.2</span>
+                                    <span class="kss-section__name">Session Identifier</span>
+                                </h3>
+                            </a>
+                        </article>
+                            <article class="kss-section__modifiers">
+                                <h1 class="kss-modifiers__heading"> Example 
+                                </h1>
+                                <div class="kss-modifiers__example">
+                                    <div class="">
+                                        3652
+                                    </div>
+                                </div>
+                            </article>
+                            <section class="relative  br-t_1 br_solid br_black-2 bg_black-1 shadow_n1 texture_light">
+                                <main class="kss-section__markup overflow_scroll scrollbar-mini collapse transition_3" id="collapse-data-session-id">
+                                    <pre><code class="language-markup"  id="code-data-session-id" value='3652'>3652</code></pre>
+                                    <input class="display_none text-input html-code-input" type="text" name="" id="input-data-session-id" value='3652'>
+                                </main>
+                                <header class="flex_row flex shadow_n1 br-br_radius br-bl_radius">
+                                    <div class="flex flex_row flex_auto collapsed h:bg_black-7 br-bl_radius c_black-8 h:c_white" aria-expanded="false" data-bs-toggle="collapse" data-bs-target="#collapse-data-session-id" aria-controls="#collapse-data-session-id">
+                                        <div class="flex_none p_2 font_1">
+                                            <i class="a:rotation fa-fw fa-chevron-up fas self_center text_center"></i>
+                                        </div>
+                                        <div class="flex_auto flex flex_row">
+                                            <h4 class="font_0 font_bold flex_auto p-l_2 self_center m_0 text_left">Code Sample</h4>
+                                        </div>
+                                    </div>
+                                    <a class="bg_primary br_1 br_black-3 br_solid c_white flex_none font_medium font_ui h:bg_primary-n2 h:undecorated m-l_auto p-x_3 p-y_2 br-br_radius" onclick="CopyCode( 'input-data-session-id')"><i class="fas fa-copy"></i> Copy Code</a>
+                                </header>
+                            </section>
+                            </section>
+                                <section class="kss-section bg_white kss-section--depth-3 br_radius shadow_2" id="kssref-data-session-subtitle">
+                        <article class="kss-section__content relative">
+                            <div class="absolute t_0 r_4 flex flex_row gap-x_2 justify_end">
+                                <a class="c_white bg_black-5 c_white flex_none h:bg_black-7 inline-block p_2 shadow_overlap-light" target="_blank" href="item-data-session-subtitle.html" title="pop out component into new tab">
+                                    <i class="fa-external-link fa-fw fas fa-fw fas"></i>
+                                </a>
+                            </div>
+                                <p class="kss-section__source font_n3"> Source: <span>dist/css/styleguide.css</span>, line <span>99</span>
+                                </p>
+                            <a class="kss-section__permalink" href="#kssref-data-session-subtitle">
+                                <h3 class="kss-section__item c_primary kss-section__item--depth-3">
+                                    <span class="kss-section__ref">1.4.3</span>
+                                    <span class="kss-section__name">Session Subtitle</span>
+                                </h3>
+                            </a>
+                                <div class="kss-section__description reading-typography font-size_up overflow_auto ">
+                                    <div class="font_n1">
+                                    </div>
+                                    <p>The subtitle of a Session.</p>
+<p>Experiential: This is not an approved data point.</p>
+
+                                </div>
+                        </article>
+                            <article class="kss-section__modifiers">
+                                <h1 class="kss-modifiers__heading"> Example 
+                                </h1>
+                                <div class="kss-modifiers__example">
+                                    <div class="">
+                                        Electrical Disorders - Rhythm and Conduction Disorders
+                                    </div>
+                                </div>
+                            </article>
+                            <section class="relative  br-t_1 br_solid br_black-2 bg_black-1 shadow_n1 texture_light">
+                                <main class="kss-section__markup overflow_scroll scrollbar-mini collapse transition_3" id="collapse-data-session-subtitle">
+                                    <pre><code class="language-markup"  id="code-data-session-subtitle" value='Electrical Disorders - Rhythm and Conduction Disorders'>Electrical Disorders - Rhythm and Conduction Disorders</code></pre>
+                                    <input class="display_none text-input html-code-input" type="text" name="" id="input-data-session-subtitle" value='Electrical Disorders - Rhythm and Conduction Disorders'>
+                                </main>
+                                <header class="flex_row flex shadow_n1 br-br_radius br-bl_radius">
+                                    <div class="flex flex_row flex_auto collapsed h:bg_black-7 br-bl_radius c_black-8 h:c_white" aria-expanded="false" data-bs-toggle="collapse" data-bs-target="#collapse-data-session-subtitle" aria-controls="#collapse-data-session-subtitle">
+                                        <div class="flex_none p_2 font_1">
+                                            <i class="a:rotation fa-fw fa-chevron-up fas self_center text_center"></i>
+                                        </div>
+                                        <div class="flex_auto flex flex_row">
+                                            <h4 class="font_0 font_bold flex_auto p-l_2 self_center m_0 text_left">Code Sample</h4>
+                                        </div>
+                                    </div>
+                                    <a class="bg_primary br_1 br_black-3 br_solid c_white flex_none font_medium font_ui h:bg_primary-n2 h:undecorated m-l_auto p-x_3 p-y_2 br-br_radius" onclick="CopyCode( 'input-data-session-subtitle')"><i class="fas fa-copy"></i> Copy Code</a>
+                                </header>
+                            </section>
+                            </section>
+                                <section class="kss-section bg_white kss-section--depth-3 br_radius shadow_2" id="kssref-data-session-title">
+                        <article class="kss-section__content relative">
+                            <div class="absolute t_0 r_4 flex flex_row gap-x_2 justify_end">
+                                <a class="c_white bg_black-5 c_white flex_none h:bg_black-7 inline-block p_2 shadow_overlap-light" target="_blank" href="item-data-session-title.html" title="pop out component into new tab">
+                                    <i class="fa-external-link fa-fw fas fa-fw fas"></i>
+                                </a>
+                            </div>
+                                <p class="kss-section__source font_n3"> Source: <span>dist/css/styleguide.css</span>, line <span>113</span>
+                                </p>
+                            <a class="kss-section__permalink" href="#kssref-data-session-title">
+                                <h3 class="kss-section__item c_primary kss-section__item--depth-3">
+                                    <span class="kss-section__ref">1.4.4</span>
+                                    <span class="kss-section__name">Session Title</span>
+                                </h3>
+                            </a>
+                        </article>
+                            <article class="kss-section__modifiers">
+                                <h1 class="kss-modifiers__heading"> Example 
+                                </h1>
+                                <div class="kss-modifiers__example">
+                                    <div class="">
+                                        Cardiovascular Update for the Clinician III
+                                    </div>
+                                </div>
+                            </article>
+                            <section class="relative  br-t_1 br_solid br_black-2 bg_black-1 shadow_n1 texture_light">
+                                <main class="kss-section__markup overflow_scroll scrollbar-mini collapse transition_3" id="collapse-data-session-title">
+                                    <pre><code class="language-markup"  id="code-data-session-title" value='Cardiovascular Update for the Clinician III'>Cardiovascular Update for the Clinician III</code></pre>
+                                    <input class="display_none text-input html-code-input" type="text" name="" id="input-data-session-title" value='Cardiovascular Update for the Clinician III'>
+                                </main>
+                                <header class="flex_row flex shadow_n1 br-br_radius br-bl_radius">
+                                    <div class="flex flex_row flex_auto collapsed h:bg_black-7 br-bl_radius c_black-8 h:c_white" aria-expanded="false" data-bs-toggle="collapse" data-bs-target="#collapse-data-session-title" aria-controls="#collapse-data-session-title">
+                                        <div class="flex_none p_2 font_1">
+                                            <i class="a:rotation fa-fw fa-chevron-up fas self_center text_center"></i>
+                                        </div>
+                                        <div class="flex_auto flex flex_row">
+                                            <h4 class="font_0 font_bold flex_auto p-l_2 self_center m_0 text_left">Code Sample</h4>
+                                        </div>
+                                    </div>
+                                    <a class="bg_primary br_1 br_black-3 br_solid c_white flex_none font_medium font_ui h:bg_primary-n2 h:undecorated m-l_auto p-x_3 p-y_2 br-br_radius" onclick="CopyCode( 'input-data-session-title')"><i class="fas fa-copy"></i> Copy Code</a>
+                                </header>
+                            </section>
+                            </section>
+                </main>
+            </div>
+        </section>
+        <!-- /documentation. -->
+        <!-- scripts. -->
+        <script src="kss-assets/vendor/jquery.js"></script>
+        <script src="kss-assets/vendor/prism.js"></script>
+        <script src="kss-assets/js/kss.js"></script>
+        <script>
+            var CopyCode = function ($id) {
+                var copyTextarea = document.getElementById($id);
+                console.log($id);
+                copyTextarea.classList.remove('display_none');
+                copyTextarea.focus();
+                copyTextarea.select();
+
+                try {
+                    var successful = document.execCommand('copy');
+                    var msg = successful ? 'successful' : 'unsuccessful';
+                    console.log('Copying text command was ' + msg);
+                } catch (err) {
+                    console.log('Oops, unable to copy');
+                }
+                copyTextarea.classList.add('display_none');
+            };
+        </script>
+        <script src=""></script>
+
+        <!-- /scripts. -->
+</body>
+
+</html>

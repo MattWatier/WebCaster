@@ -1,11 +1,11 @@
 {
 	"title": "Web Casters",
-	"mask": "UC.css",
-	"builder": "michelangelo/kss_styleguide/home-template/",
+	"mask": "styleguide.css",
+	"builder": "michelangelo/kss_styleguide/base-template/",
 	"source": "./dist/css/",
 	"destination": "docs/",
 	"homepage": "./markdown/index.md",
-	"custom": ["MarkupWrapperClasses","HideCodeBlock","Note","HideDefault"],
+	"custom": ["MarkupWrapperClasses","HideCodeBlock","Note","HideDefault", "Format", "Deprecated","Description"],
 	"//": "relative to the generated style guide.",
 	"css": [
 		"css/UC.css"

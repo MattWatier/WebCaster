@@ -36,7 +36,7 @@
     "sc5-styleguide": "^2.2.0"
   },
   "scripts": {
-    "scss": "sass  --load-path=node_modules/ src/scss/UC.scss dist/css/UC.css -w",
+    "scss": "sass  --load-path=node_modules/ src/scss/styleguide.scss dist/css/styleguide.css -w",
     "copyStyleToStyleGuide": "copyfiles -f  ./UtilityClass/dist/css/*.*  ./docs/css",
     "postcss": "postcss ./dist/css/UC.css -o ./docs/css/UC.min.css -w",
     "gzipper": "gzipper",

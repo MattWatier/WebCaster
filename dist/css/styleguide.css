@@ -1,0 +1,457 @@
+@charset "UTF-8";
+/*
+Agenda Item
+
+Description:
+Agenda items are sessions that are scheduled for a specific date, location, and time.
+
+Weight:0
+
+Styleguide Data.Agenda
+*/
+/*
+Agenda ID
+
+Description:
+The ID given to an Agenda. This number is unique to the Agenda and is incremented for each new Agenda created.
+
+Markup:
+101
+
+Weight:1
+
+Styleguide Data.Agenda.ID
+*/
+/*
+Channel Name
+
+Description:
+A channel is a visible category that an Agenda Item belongs to.
+
+Markup:
+Navigating Health Care Economics 
+
+
+Weight:1
+
+Styleguide Data.Agenda.ChannelName
+*/
+/*
+Live Time
+
+Description:
+The time at which a Agenda is live.
+
+Markup: @ 11:15 a.m. – 11:45 p.m <abbr title="EASTERN TIME, UTC -4">EDT</abbr>
+
+FORMAT: 12 hour with 'a.m.'/'p.m' and Abbreviation of Timezone.
+
+NOTE: The 'a.m.'/'p.m.' if the same should only occur on the last time mark.  11:15 a.m. - 11:30 a.m. should be shortened to 11:15  - 11:30 a.m.
+
+Weight:0
+
+Styleguide Data.Agenda.LiveTime
+*/
+/*
+Live Date
+
+Description:
+There is usually a delay to when recording will make it to on demand. This is the time that recording will be available.
+
+Markup: Saturday, Nov. 20, 2021 
+
+FORMAT: Day-of-Week, Month-Abbreviation.  Day, Year
+
+Weight:0
+
+Styleguide Data.Agenda.LiveDate
+*/
+/*
+On Demand Release Date and Time
+
+Description:
+There is usually a delay to when recording will make it to on demand. This is the time that recording will be available.
+
+Markup: Saturday, Nov. 20, 2021 @ 8:00 p.m. <abbr title="EASTERN TIME, UTC -4">EDT</abbr>
+
+FORMAT: Day-of-Week, Month-Abbreviation.  Day, Year @ Hour:Minute 'a.m.'/'p.m' Abbreviation-of-Timezone.  
+
+NOTE:  Use the simple abbreviation for the timezone without Daylight Savings Time. IE: ET not EDT or EST.
+
+Weight:0
+
+Styleguide Data.Agenda.onDemandReleaseTime
+*/
+/*
+Session 
+
+A Session is a specific time slot in an Agenda. This could be either a single presentation or a series of presentations.
+
+Markup:
+Electrical Disorders - Rhythm and Conduction Disorders
+
+Experiential: This is not an approved data point.
+
+Weight:100
+
+Styleguide Data.Session
+*/
+/*
+Session Subtitle
+
+The subtitle of a Session.
+
+Markup:
+Electrical Disorders - Rhythm and Conduction Disorders
+
+Experiential: This is not an approved data point.
+
+Weight:2
+
+Styleguide Data.Session.Subtitle
+*/
+/*
+Session Title
+
+Description:
+The title of a Session.
+
+Markup:
+Cardiovascular Update for the Clinician III
+
+Weight:1
+
+Styleguide Data.Session.Title
+*/
+/*
+Session Identifier
+
+Description:
+The ID given to a session
+
+Markup:
+3652
+
+Weight:0
+
+Styleguide Data.Session.ID
+*/
+/*
+Session Description
+
+The description of a session.
+
+Markup:
+<p>Maxime et ea adipisci voluptas. Omnis nobis recusandae alias eius sed ipsam aut. Ipsam dolore qui. Soluta laudantium quae assumenda ipsa tempore voluptas et culpa. Et praesentium quasi. Quas ratione vero aspernatur.</p>
+
+Weight:3
+
+Styleguide Data.Session.Description
+*/
+/*
+Presentation 
+
+Description:
+A presentation is a single part of education that can not be subdivided.
+
+Weight:0
+
+Styleguide Data.Presentation
+*/
+/*
+Presentation Description
+
+Description:
+The Description of a presentation
+
+Markup:Drug Coated Balloons
+
+Weight:500
+
+Styleguide Data.Presentation.Description
+*/
+/*
+Presentation Title
+
+Description:
+The title of a presentation
+
+Markup:
+New York Cardiovascular Symposium 2021 Welcome Video and Introduction of Session and Presenters
+
+Weight:0
+
+Styleguide Data.Presentation.Title
+*/
+/*
+Presentation Live Time
+
+Description:
+The Live Time of a Presentation
+
+Markup:
+11:45 – 11:49 a.m. <abbr title="EASTERN DAYLIGHT TIME, UTC -4">ET</abbr>
+
+FORMAT: 12 hour with 'a.m.'/'p.m' and Abbreviation of Timezone.
+
+NOTE: The 'a.m.'/'p.m.' if the same should only occur on the last time mark.  11:15 a.m. - 11:30 a.m. should be shortened to 11:15  - 11:30 a.m.
+
+
+Weight:0
+
+Styleguide Data.Presentation.LiveTime
+*/
+/*
+Presentation ID
+
+Description:
+Unique system generated identifier for a presentation.
+
+Markup:
+15612
+
+Weight:0
+
+Styleguide Data.Presentation.ID
+*/
+/*
+Presenters 
+
+Description:
+An educator who created or participated in a presentation
+
+Weight:1000
+
+Styleguide Data.Presenters
+*/
+/*
+Photo
+
+Description:
+A photo of the Presenters member
+
+Markup:
+<img
+    class="aspect_1x1 w_100"
+    src="https://i.pravatar.cc/300"
+    alt="{{> "Data.Presenters.FullName" }}"
+/>
+
+MarkupWrapperClasses: max-w_30
+
+FORMAT: 300px by 300px
+
+Weight:0
+
+Styleguide Data.Presenters.Photo
+*/
+/*
+Full Name
+
+The full name of the Presenters member
+
+Markup: Pepper H. Soda III, MD, FACC
+
+
+FORMAT: First Name MI (if known) Last Name Suffix (Jr., Sr., the III ), Optional Degree, Optional ACC Honorifics, Optional Exceptions Honorifics
+
+Weight:0
+
+Styleguide Data.Presenters.FullName
+*/
+/*
+Location
+
+Description:
+The location of the Presenters member
+
+Markup: New York, NY, USA
+
+Weight:0
+
+FORMAT: City, State, Country
+
+NOTE:  if the conference country is USA you can drop the country if it is USA.
+
+Styleguide Data.Presenters.Location
+*/
+/*
+Title
+
+Description:
+the roles of the Presenters member within the session
+
+Markup:
+{{> "Data.Presenters.Title.InstitutionTitle" }}, {{> "Data.Presenters.Title.InstitutionDivision" }}, {{> "Data.Presenters.Title.Institution" }}
+
+
+
+FORMAT: Institution Title, Institution Division, Institution
+
+NOTE: This format is currently not being enforced.
+
+EXPERIMENTAL: This is not an approved data point.
+
+Weight:100
+
+Styleguide Data.Presenters.Title
+*/
+/*
+Institution
+
+Description:
+Institution of the Presenters member where they hold a title
+
+Markup:
+Mount SugarLoaf Hospital
+
+Weight:101
+
+Styleguide Data.Presenters.Title.Institution
+*/
+/*
+Institution Division
+
+Description:
+The Division of the Institution of the Presenters member where they hold a title
+
+Markup:
+Mount SugarLoaf Hospital
+
+Weight:102
+
+Styleguide Data.Presenters.Title.InstitutionDivision
+*/
+/*
+Institutional Title
+
+Description:
+the roles of the Presenters member within the session
+
+Markup:
+Physician-in-Chief
+
+Weight:103
+
+Styleguide Data.Presenters.Title.InstitutionTitle
+*/
+/*
+Twitter Handle
+
+Description:
+The handle of the Presenters member on twitter
+
+Markup:
+Tweat_DrSoda
+
+Weight:0
+
+Styleguide Data.Presenters.TwitterHandle
+*/
+/*
+Role
+
+Description:
+the roles of the Presenters member within the session
+
+Markup:
+Co-Chair
+
+Weight:0
+
+Styleguide Data.Presenters.Role
+*/
+/*
+Bio
+
+Description:
+simple html text that describes the Presenters member
+
+Markup:
+<p>Omnis laboriosam vero dolorum harum nihil debitis placeat eligendi. Molestiae voluptatibus nemo eveniet. Vero ipsum eius. Alias sapiente quidem dolore dolorem atque alias est.</p>
+
+Weight:0
+
+Styleguide Data.Presenters.Bio
+*/
+/*
+Identification Number
+
+Description:
+this id can both be used to link to the Presenters member's page, the member's image, and disclosures
+
+Markup:
+122154254
+
+Weight:0
+
+Styleguide Data.Presenters.ID
+*/
+/*
+
+Simple
+
+Description: When the count of sessions is lower then 10 in count, the Simple Design is recommended. 
+
+Markup:
+<article class="c_black font_0 m-b_4 br-t_3 br_solid br_primary-2 br_radius isolation_isolate shadow_overlap-light">
+    <div class="br_1 br-b_0 br-tr_radius br-tl_radius br_solid br_black-3 flex flex_column font_ui m-t_n2 relative">
+        <div class="br-b_1 br_solid br_primary-n1">
+            <div class="p_4 p-b_2 flex flex_column flex_row:lg">
+                <h3 class="font_display m-b_3 lh_2 c_primary-n2 font-size_up-2 p-r_4:lg">
+                    <span class="block">
+                        <strong class="font_bold p-r_3">101</strong>
+                        Cardiovascular Update for the Clinician III                    </span>
+                    <span class="c_accent font-size_down-1">Saturday, Nov 20, 2021  @ 11:15 AM – 11:45 AM <abbr title="EASTERN DAYLIGHT TIME, UTC -4">EDT</abbr></span>
+                </h3>
+                <div class="flex_grow m-l_auto:lg">
+                    <div class="flex flex_column-reverse flex_row-reverse:lg flex_wrap gap-x_3 gap-y_3 p-y_3 p-y_0:lg justify_start">
+                        <a href="" class="btn btn-primary h:bg_secondary-n3 z_5">Watch </a>
+                        <a href="" class="btn btn-secondary z_5 a:bg_alert h:bg_alert-n3 { active }"><i class="fas fa-heart c_white"></i></a>
+                    </div>
+                </div>
+            </div>
+            <h4 class="font-size_up p-x_4 c_primary font_medium">Presentations</h4>
+            <ul class="ul_none br-t_1 br_solid br_primary p_0 font_n1 bg_primary-n3">
+                <li class="br-t_1 br_black-2 br_solid p-x_4 p-y_3 m_0 lh_2 bg_white">
+                    <span class="font-size_up-1 block font_display">New York Cardiovascular Symposium 2021 Welcome Video and Introduction of Session and Faculty</span>
+                    <span class="font-size-down opacity_7 font_ui"><strong class="c_primary">Co-Chair:</strong>Pepper H. Soda, MD, FACC (New York, NY, USA)</span>
+                    <span class="font-size-down-1 opacity_6 font_italic block">11:45 – 11:49 AM <abbr title="EASTERN DAYLIGHT TIME, UTC -4">EDT</abbr></span>
+                </li>
+                <li class="br-t_1 br_black-2 br_solid p-x_4 p-y_3 m_0 lh_2 bg_white-9">
+                    <span class="font-size_up-1 block font_display">Antiplatelet Regimen After Drug Coated Balloon </span>
+                    <span class="font-size-down opacity_7 font_ui">Chen (China)</span>
+                    <span class="font-size-down-1 opacity_6 font_italic block">12:00 – 12:45 PM <abbr title="EASTERN DAYLIGHT TIME, UTC -4">EDT</abbr></span>
+                </li>
+                <li class="br-t_1 br_black-2 br_solid p-x_4 p-y_3 m_0 lh_2 bg_white-9">
+                    <span class="font-size_up-1 block font_display">Case: Drug Coated Balloon in De Novo Ostial Left Anterior Descending Artery </span>
+                    <span class="font-size-down opacity_7 font_ui">Qiu (China)</span>
+                    <span class="font-size-down-1 opacity_6 font_italic block">12:45 – 1:00 PM <abbr title="EASTERN DAYLIGHT TIME, UTC -4">EDT</abbr></span>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="c_black flex flex_wrap font_n2 justify_start p_3 br-br_radius br-bl_radius bg_black-2 br_solid br_1 br-t_0 br_black-3">
+        <div class="flex_auto"> <a href="#modal-extra" class="block h:underline uppercase font_bold" data-remote="https://disclosures.acc.org/Public/AnnualMeetingAppConsol?pid=14617" data-toggle="modal" data-target="#modal-disclosures"><i class="far fa-paperclip"></i> Attachments</a>
+        </div>
+        <div class="flex_grow uppercase m-l_auto">
+            <ul class="ul_none font_n2 text_right">
+                <li class="inline-block lh_0 p-l_3">
+                    <span class="bg_CME br_1 br_black-3 br_circle br_solid inline-block m-r_1" style=" height: 1em; width: 1em;">&nbsp;</span> cme
+                </li>
+                <li class="inline-block lh_0 p-l_3">
+                    <span class="bg_COP br_1 br_black-3 br_circle br_solid inline-block m-r_1" style=" height: 1em; width: 1em;">&nbsp;</span> cop
+                </li>
+            </ul>
+        </div>
+    </div>
+</article>
+
+
+Weight: 10
+
+Styleguide Sessions.Simple
+
+*/
+
+/*# sourceMappingURL=styleguide.css.map */
