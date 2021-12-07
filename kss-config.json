@@ -8,7 +8,7 @@
 	"custom": ["MarkupWrapperClasses","HideCodeBlock","Note","HideDefault"],
 	"//": "relative to the generated style guide.",
 	"css": [
-		"dist/css/UC.css"
+		"css/UC.css"
 	],
 	"js": [""],
 	"site_nav": [

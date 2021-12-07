@@ -12,6 +12,6 @@
   "homepage"     : "../kss_styleguide/kss-homepage.md",
 
 "//": "relative to the generated style guide.",
-  "css": [],
+  "css": ["css/UC.css"],
   "js" : []
 }

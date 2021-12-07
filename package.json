@@ -37,8 +37,8 @@
   },
   "scripts": {
     "scss": "sass  --load-path=node_modules/ src/scss/UC.scss dist/css/UC.css -w",
-    "copyStyleToStyleGuide": "copyfiles dist/**/*.*  docs",
-    "postcss": "postcss ./dist/css/UC.css -o ./dist/css/UC.min.css -w",
+    "copyStyleToStyleGuide": "copyfiles -f  ./UtilityClass/dist/css/*.*  ./docs/css",
+    "postcss": "postcss ./dist/css/UC.css -o ./docs/css/UC.min.css -w",
     "gzipper": "gzipper",
     "compress": "gzipper compress ./dist/css/Uc.min.css",
     "styleguide": "kss --config kss-config.json"
