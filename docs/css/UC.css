@@ -19,6 +19,9 @@
   --accent-h: 19.9078341014deg;
   --accent-s: 89.3004115226%;
   --accent-l: 47.6470588235%;
+  --highlight-h: 270.9677419355deg;
+  --highlight-s: 89.3004115226%;
+  --highlight-l: 47.6470588235%;
   --black-h: 0deg;
   --black-s: 0%;
   --black-l: 6.2745098039%;
@@ -411,6 +414,30 @@
   background-color: hsl(var(--accent-h), var(--accent-s), calc( var( --accent-l ) + ( ( var( --accent-l )) * -0.9 )));
 }
 
+.bg_highlight {
+  background-color: hsl(var(--highlight-h), var(--highlight-s), calc( var( --highlight-l ) + ( ( 100% - var( --highlight-l ) ) * 0)));
+}
+
+.bg_highlight-n1 {
+  background-color: hsl(var(--highlight-h), var(--highlight-s), calc( var( --highlight-l ) + ( ( var( --highlight-l )) * -0.15 )));
+}
+
+.bg_highlight-n2 {
+  background-color: hsl(var(--highlight-h), var(--highlight-s), calc( var( --highlight-l ) + ( ( var( --highlight-l )) * -0.37 )));
+}
+
+.bg_highlight-n3 {
+  background-color: hsl(var(--highlight-h), var(--highlight-s), calc( var( --highlight-l ) + ( ( var( --highlight-l )) * -0.6 )));
+}
+
+.bg_highlight-n4 {
+  background-color: hsl(var(--highlight-h), var(--highlight-s), calc( var( --highlight-l ) + ( ( var( --highlight-l )) * -0.78 )));
+}
+
+.bg_highlight-n5 {
+  background-color: hsl(var(--highlight-h), var(--highlight-s), calc( var( --highlight-l ) + ( ( var( --highlight-l )) * -0.9 )));
+}
+
 .bg_black {
   background-color: hsla(var(--black-h), var(--black-s), var(--black-l), 1);
 }
@@ -635,6 +662,34 @@
   background-color: hsl(var(--accent-h), var(--accent-s), calc( var( --accent-l ) + ( ( 100% - var( --accent-l ) ) * 0.9)));
 }
 
+.bg_highlight {
+  background-color: hsl(var(--highlight-h), var(--highlight-s), calc( var( --highlight-l ) + ( ( 100% - var( --highlight-l ) ) * 0)));
+}
+
+.bg_highlight-0 {
+  background-color: hsl(var(--highlight-h), var(--highlight-s), calc( var( --highlight-l ) + ( ( 100% - var( --highlight-l ) ) * 0)));
+}
+
+.bg_highlight-1 {
+  background-color: hsl(var(--highlight-h), var(--highlight-s), calc( var( --highlight-l ) + ( ( 100% - var( --highlight-l ) ) * 0.15)));
+}
+
+.bg_highlight-2 {
+  background-color: hsl(var(--highlight-h), var(--highlight-s), calc( var( --highlight-l ) + ( ( 100% - var( --highlight-l ) ) * 0.37)));
+}
+
+.bg_highlight-3 {
+  background-color: hsl(var(--highlight-h), var(--highlight-s), calc( var( --highlight-l ) + ( ( 100% - var( --highlight-l ) ) * 0.6)));
+}
+
+.bg_highlight-4 {
+  background-color: hsl(var(--highlight-h), var(--highlight-s), calc( var( --highlight-l ) + ( ( 100% - var( --highlight-l ) ) * 0.78)));
+}
+
+.bg_highlight-5 {
+  background-color: hsl(var(--highlight-h), var(--highlight-s), calc( var( --highlight-l ) + ( ( 100% - var( --highlight-l ) ) * 0.9)));
+}
+
 .bg_black {
   background-color: hsla(var(--black-h), var(--black-s), var(--black-l), 1);
 }
@@ -841,6 +896,30 @@
 
 .active > .a\:bg_accent-n5 {
   background-color: hsl(var(--accent-h), var(--accent-s), calc( var( --accent-l ) + ( ( var( --accent-l )) * -0.9 )));
+}
+
+.active > .a\:bg_highlight {
+  background-color: hsl(var(--highlight-h), var(--highlight-s), calc( var( --highlight-l ) + ( ( 100% - var( --highlight-l ) ) * 0)));
+}
+
+.active > .a\:bg_highlight-n1 {
+  background-color: hsl(var(--highlight-h), var(--highlight-s), calc( var( --highlight-l ) + ( ( var( --highlight-l )) * -0.15 )));
+}
+
+.active > .a\:bg_highlight-n2 {
+  background-color: hsl(var(--highlight-h), var(--highlight-s), calc( var( --highlight-l ) + ( ( var( --highlight-l )) * -0.37 )));
+}
+
+.active > .a\:bg_highlight-n3 {
+  background-color: hsl(var(--highlight-h), var(--highlight-s), calc( var( --highlight-l ) + ( ( var( --highlight-l )) * -0.6 )));
+}
+
+.active > .a\:bg_highlight-n4 {
+  background-color: hsl(var(--highlight-h), var(--highlight-s), calc( var( --highlight-l ) + ( ( var( --highlight-l )) * -0.78 )));
+}
+
+.active > .a\:bg_highlight-n5 {
+  background-color: hsl(var(--highlight-h), var(--highlight-s), calc( var( --highlight-l ) + ( ( var( --highlight-l )) * -0.9 )));
 }
 
 .active > .a\:bg_black {
@@ -1067,6 +1146,34 @@
   background-color: hsl(var(--accent-h), var(--accent-s), calc( var( --accent-l ) + ( ( 100% - var( --accent-l ) ) * 0.9)));
 }
 
+.active > .a\:bg_highlight {
+  background-color: hsl(var(--highlight-h), var(--highlight-s), calc( var( --highlight-l ) + ( ( 100% - var( --highlight-l ) ) * 0)));
+}
+
+.active > .a\:bg_highlight-0 {
+  background-color: hsl(var(--highlight-h), var(--highlight-s), calc( var( --highlight-l ) + ( ( 100% - var( --highlight-l ) ) * 0)));
+}
+
+.active > .a\:bg_highlight-1 {
+  background-color: hsl(var(--highlight-h), var(--highlight-s), calc( var( --highlight-l ) + ( ( 100% - var( --highlight-l ) ) * 0.15)));
+}
+
+.active > .a\:bg_highlight-2 {
+  background-color: hsl(var(--highlight-h), var(--highlight-s), calc( var( --highlight-l ) + ( ( 100% - var( --highlight-l ) ) * 0.37)));
+}
+
+.active > .a\:bg_highlight-3 {
+  background-color: hsl(var(--highlight-h), var(--highlight-s), calc( var( --highlight-l ) + ( ( 100% - var( --highlight-l ) ) * 0.6)));
+}
+
+.active > .a\:bg_highlight-4 {
+  background-color: hsl(var(--highlight-h), var(--highlight-s), calc( var( --highlight-l ) + ( ( 100% - var( --highlight-l ) ) * 0.78)));
+}
+
+.active > .a\:bg_highlight-5 {
+  background-color: hsl(var(--highlight-h), var(--highlight-s), calc( var( --highlight-l ) + ( ( 100% - var( --highlight-l ) ) * 0.9)));
+}
+
 .active > .a\:bg_black {
   background-color: hsla(var(--black-h), var(--black-s), var(--black-l), 1);
 }
@@ -1273,6 +1380,30 @@
 
 .active.a\:bg_accent-n5 {
   background-color: hsl(var(--accent-h), var(--accent-s), calc( var( --accent-l ) + ( ( var( --accent-l )) * -0.9 )));
+}
+
+.active.a\:bg_highlight {
+  background-color: hsl(var(--highlight-h), var(--highlight-s), calc( var( --highlight-l ) + ( ( 100% - var( --highlight-l ) ) * 0)));
+}
+
+.active.a\:bg_highlight-n1 {
+  background-color: hsl(var(--highlight-h), var(--highlight-s), calc( var( --highlight-l ) + ( ( var( --highlight-l )) * -0.15 )));
+}
+
+.active.a\:bg_highlight-n2 {
+  background-color: hsl(var(--highlight-h), var(--highlight-s), calc( var( --highlight-l ) + ( ( var( --highlight-l )) * -0.37 )));
+}
+
+.active.a\:bg_highlight-n3 {
+  background-color: hsl(var(--highlight-h), var(--highlight-s), calc( var( --highlight-l ) + ( ( var( --highlight-l )) * -0.6 )));
+}
+
+.active.a\:bg_highlight-n4 {
+  background-color: hsl(var(--highlight-h), var(--highlight-s), calc( var( --highlight-l ) + ( ( var( --highlight-l )) * -0.78 )));
+}
+
+.active.a\:bg_highlight-n5 {
+  background-color: hsl(var(--highlight-h), var(--highlight-s), calc( var( --highlight-l ) + ( ( var( --highlight-l )) * -0.9 )));
 }
 
 .active.a\:bg_black {
@@ -1499,6 +1630,34 @@
   background-color: hsl(var(--accent-h), var(--accent-s), calc( var( --accent-l ) + ( ( 100% - var( --accent-l ) ) * 0.9)));
 }
 
+.active.a\:bg_highlight {
+  background-color: hsl(var(--highlight-h), var(--highlight-s), calc( var( --highlight-l ) + ( ( 100% - var( --highlight-l ) ) * 0)));
+}
+
+.active.a\:bg_highlight-0 {
+  background-color: hsl(var(--highlight-h), var(--highlight-s), calc( var( --highlight-l ) + ( ( 100% - var( --highlight-l ) ) * 0)));
+}
+
+.active.a\:bg_highlight-1 {
+  background-color: hsl(var(--highlight-h), var(--highlight-s), calc( var( --highlight-l ) + ( ( 100% - var( --highlight-l ) ) * 0.15)));
+}
+
+.active.a\:bg_highlight-2 {
+  background-color: hsl(var(--highlight-h), var(--highlight-s), calc( var( --highlight-l ) + ( ( 100% - var( --highlight-l ) ) * 0.37)));
+}
+
+.active.a\:bg_highlight-3 {
+  background-color: hsl(var(--highlight-h), var(--highlight-s), calc( var( --highlight-l ) + ( ( 100% - var( --highlight-l ) ) * 0.6)));
+}
+
+.active.a\:bg_highlight-4 {
+  background-color: hsl(var(--highlight-h), var(--highlight-s), calc( var( --highlight-l ) + ( ( 100% - var( --highlight-l ) ) * 0.78)));
+}
+
+.active.a\:bg_highlight-5 {
+  background-color: hsl(var(--highlight-h), var(--highlight-s), calc( var( --highlight-l ) + ( ( 100% - var( --highlight-l ) ) * 0.9)));
+}
+
 .active.a\:bg_black {
   background-color: hsla(var(--black-h), var(--black-s), var(--black-l), 1);
 }
@@ -1705,6 +1864,30 @@
 
 .h\:bg_accent-n5:hover {
   background-color: hsl(var(--accent-h), var(--accent-s), calc( var( --accent-l ) + ( ( var( --accent-l )) * -0.9 )));
+}
+
+.h\:bg_highlight:hover {
+  background-color: hsl(var(--highlight-h), var(--highlight-s), calc( var( --highlight-l ) + ( ( 100% - var( --highlight-l ) ) * 0)));
+}
+
+.h\:bg_highlight-n1:hover {
+  background-color: hsl(var(--highlight-h), var(--highlight-s), calc( var( --highlight-l ) + ( ( var( --highlight-l )) * -0.15 )));
+}
+
+.h\:bg_highlight-n2:hover {
+  background-color: hsl(var(--highlight-h), var(--highlight-s), calc( var( --highlight-l ) + ( ( var( --highlight-l )) * -0.37 )));
+}
+
+.h\:bg_highlight-n3:hover {
+  background-color: hsl(var(--highlight-h), var(--highlight-s), calc( var( --highlight-l ) + ( ( var( --highlight-l )) * -0.6 )));
+}
+
+.h\:bg_highlight-n4:hover {
+  background-color: hsl(var(--highlight-h), var(--highlight-s), calc( var( --highlight-l ) + ( ( var( --highlight-l )) * -0.78 )));
+}
+
+.h\:bg_highlight-n5:hover {
+  background-color: hsl(var(--highlight-h), var(--highlight-s), calc( var( --highlight-l ) + ( ( var( --highlight-l )) * -0.9 )));
 }
 
 .h\:bg_black:hover {
@@ -1929,6 +2112,34 @@
 
 .h\:bg_accent-5:hover {
   background-color: hsl(var(--accent-h), var(--accent-s), calc( var( --accent-l ) + ( ( 100% - var( --accent-l ) ) * 0.9)));
+}
+
+.h\:bg_highlight:hover {
+  background-color: hsl(var(--highlight-h), var(--highlight-s), calc( var( --highlight-l ) + ( ( 100% - var( --highlight-l ) ) * 0)));
+}
+
+.h\:bg_highlight-0:hover {
+  background-color: hsl(var(--highlight-h), var(--highlight-s), calc( var( --highlight-l ) + ( ( 100% - var( --highlight-l ) ) * 0)));
+}
+
+.h\:bg_highlight-1:hover {
+  background-color: hsl(var(--highlight-h), var(--highlight-s), calc( var( --highlight-l ) + ( ( 100% - var( --highlight-l ) ) * 0.15)));
+}
+
+.h\:bg_highlight-2:hover {
+  background-color: hsl(var(--highlight-h), var(--highlight-s), calc( var( --highlight-l ) + ( ( 100% - var( --highlight-l ) ) * 0.37)));
+}
+
+.h\:bg_highlight-3:hover {
+  background-color: hsl(var(--highlight-h), var(--highlight-s), calc( var( --highlight-l ) + ( ( 100% - var( --highlight-l ) ) * 0.6)));
+}
+
+.h\:bg_highlight-4:hover {
+  background-color: hsl(var(--highlight-h), var(--highlight-s), calc( var( --highlight-l ) + ( ( 100% - var( --highlight-l ) ) * 0.78)));
+}
+
+.h\:bg_highlight-5:hover {
+  background-color: hsl(var(--highlight-h), var(--highlight-s), calc( var( --highlight-l ) + ( ( 100% - var( --highlight-l ) ) * 0.9)));
 }
 
 .h\:bg_black:hover {
@@ -2159,6 +2370,30 @@
   border-color: hsl(var(--accent-h), var(--accent-s), calc( var( --accent-l ) + ( ( var( --accent-l )) * -0.9 )));
 }
 
+.br_highlight {
+  border-color: hsl(var(--highlight-h), var(--highlight-s), calc( var( --highlight-l ) + ( ( 100% - var( --highlight-l ) ) * 0)));
+}
+
+.br_highlight-n1 {
+  border-color: hsl(var(--highlight-h), var(--highlight-s), calc( var( --highlight-l ) + ( ( var( --highlight-l )) * -0.15 )));
+}
+
+.br_highlight-n2 {
+  border-color: hsl(var(--highlight-h), var(--highlight-s), calc( var( --highlight-l ) + ( ( var( --highlight-l )) * -0.37 )));
+}
+
+.br_highlight-n3 {
+  border-color: hsl(var(--highlight-h), var(--highlight-s), calc( var( --highlight-l ) + ( ( var( --highlight-l )) * -0.6 )));
+}
+
+.br_highlight-n4 {
+  border-color: hsl(var(--highlight-h), var(--highlight-s), calc( var( --highlight-l ) + ( ( var( --highlight-l )) * -0.78 )));
+}
+
+.br_highlight-n5 {
+  border-color: hsl(var(--highlight-h), var(--highlight-s), calc( var( --highlight-l ) + ( ( var( --highlight-l )) * -0.9 )));
+}
+
 .br_black {
   border-color: hsla(var(--black-h), var(--black-s), var(--black-l), 1);
 }
@@ -2383,6 +2618,34 @@
   border-color: hsl(var(--accent-h), var(--accent-s), calc( var( --accent-l ) + ( ( 100% - var( --accent-l ) ) * 0.9)));
 }
 
+.br_highlight {
+  border-color: hsl(var(--highlight-h), var(--highlight-s), calc( var( --highlight-l ) + ( ( 100% - var( --highlight-l ) ) * 0)));
+}
+
+.br_highlight-0 {
+  border-color: hsl(var(--highlight-h), var(--highlight-s), calc( var( --highlight-l ) + ( ( 100% - var( --highlight-l ) ) * 0)));
+}
+
+.br_highlight-1 {
+  border-color: hsl(var(--highlight-h), var(--highlight-s), calc( var( --highlight-l ) + ( ( 100% - var( --highlight-l ) ) * 0.15)));
+}
+
+.br_highlight-2 {
+  border-color: hsl(var(--highlight-h), var(--highlight-s), calc( var( --highlight-l ) + ( ( 100% - var( --highlight-l ) ) * 0.37)));
+}
+
+.br_highlight-3 {
+  border-color: hsl(var(--highlight-h), var(--highlight-s), calc( var( --highlight-l ) + ( ( 100% - var( --highlight-l ) ) * 0.6)));
+}
+
+.br_highlight-4 {
+  border-color: hsl(var(--highlight-h), var(--highlight-s), calc( var( --highlight-l ) + ( ( 100% - var( --highlight-l ) ) * 0.78)));
+}
+
+.br_highlight-5 {
+  border-color: hsl(var(--highlight-h), var(--highlight-s), calc( var( --highlight-l ) + ( ( 100% - var( --highlight-l ) ) * 0.9)));
+}
+
 .br_black {
   border-color: hsla(var(--black-h), var(--black-s), var(--black-l), 1);
 }
@@ -2589,6 +2852,30 @@
 
 .active > .a\:br_accent-n5 {
   border-color: hsl(var(--accent-h), var(--accent-s), calc( var( --accent-l ) + ( ( var( --accent-l )) * -0.9 )));
+}
+
+.active > .a\:br_highlight {
+  border-color: hsl(var(--highlight-h), var(--highlight-s), calc( var( --highlight-l ) + ( ( 100% - var( --highlight-l ) ) * 0)));
+}
+
+.active > .a\:br_highlight-n1 {
+  border-color: hsl(var(--highlight-h), var(--highlight-s), calc( var( --highlight-l ) + ( ( var( --highlight-l )) * -0.15 )));
+}
+
+.active > .a\:br_highlight-n2 {
+  border-color: hsl(var(--highlight-h), var(--highlight-s), calc( var( --highlight-l ) + ( ( var( --highlight-l )) * -0.37 )));
+}
+
+.active > .a\:br_highlight-n3 {
+  border-color: hsl(var(--highlight-h), var(--highlight-s), calc( var( --highlight-l ) + ( ( var( --highlight-l )) * -0.6 )));
+}
+
+.active > .a\:br_highlight-n4 {
+  border-color: hsl(var(--highlight-h), var(--highlight-s), calc( var( --highlight-l ) + ( ( var( --highlight-l )) * -0.78 )));
+}
+
+.active > .a\:br_highlight-n5 {
+  border-color: hsl(var(--highlight-h), var(--highlight-s), calc( var( --highlight-l ) + ( ( var( --highlight-l )) * -0.9 )));
 }
 
 .active > .a\:br_black {
@@ -2815,6 +3102,34 @@
   border-color: hsl(var(--accent-h), var(--accent-s), calc( var( --accent-l ) + ( ( 100% - var( --accent-l ) ) * 0.9)));
 }
 
+.active > .a\:br_highlight {
+  border-color: hsl(var(--highlight-h), var(--highlight-s), calc( var( --highlight-l ) + ( ( 100% - var( --highlight-l ) ) * 0)));
+}
+
+.active > .a\:br_highlight-0 {
+  border-color: hsl(var(--highlight-h), var(--highlight-s), calc( var( --highlight-l ) + ( ( 100% - var( --highlight-l ) ) * 0)));
+}
+
+.active > .a\:br_highlight-1 {
+  border-color: hsl(var(--highlight-h), var(--highlight-s), calc( var( --highlight-l ) + ( ( 100% - var( --highlight-l ) ) * 0.15)));
+}
+
+.active > .a\:br_highlight-2 {
+  border-color: hsl(var(--highlight-h), var(--highlight-s), calc( var( --highlight-l ) + ( ( 100% - var( --highlight-l ) ) * 0.37)));
+}
+
+.active > .a\:br_highlight-3 {
+  border-color: hsl(var(--highlight-h), var(--highlight-s), calc( var( --highlight-l ) + ( ( 100% - var( --highlight-l ) ) * 0.6)));
+}
+
+.active > .a\:br_highlight-4 {
+  border-color: hsl(var(--highlight-h), var(--highlight-s), calc( var( --highlight-l ) + ( ( 100% - var( --highlight-l ) ) * 0.78)));
+}
+
+.active > .a\:br_highlight-5 {
+  border-color: hsl(var(--highlight-h), var(--highlight-s), calc( var( --highlight-l ) + ( ( 100% - var( --highlight-l ) ) * 0.9)));
+}
+
 .active > .a\:br_black {
   border-color: hsla(var(--black-h), var(--black-s), var(--black-l), 1);
 }
@@ -3021,6 +3336,30 @@
 
 .active.a\:br_accent-n5 {
   border-color: hsl(var(--accent-h), var(--accent-s), calc( var( --accent-l ) + ( ( var( --accent-l )) * -0.9 )));
+}
+
+.active.a\:br_highlight {
+  border-color: hsl(var(--highlight-h), var(--highlight-s), calc( var( --highlight-l ) + ( ( 100% - var( --highlight-l ) ) * 0)));
+}
+
+.active.a\:br_highlight-n1 {
+  border-color: hsl(var(--highlight-h), var(--highlight-s), calc( var( --highlight-l ) + ( ( var( --highlight-l )) * -0.15 )));
+}
+
+.active.a\:br_highlight-n2 {
+  border-color: hsl(var(--highlight-h), var(--highlight-s), calc( var( --highlight-l ) + ( ( var( --highlight-l )) * -0.37 )));
+}
+
+.active.a\:br_highlight-n3 {
+  border-color: hsl(var(--highlight-h), var(--highlight-s), calc( var( --highlight-l ) + ( ( var( --highlight-l )) * -0.6 )));
+}
+
+.active.a\:br_highlight-n4 {
+  border-color: hsl(var(--highlight-h), var(--highlight-s), calc( var( --highlight-l ) + ( ( var( --highlight-l )) * -0.78 )));
+}
+
+.active.a\:br_highlight-n5 {
+  border-color: hsl(var(--highlight-h), var(--highlight-s), calc( var( --highlight-l ) + ( ( var( --highlight-l )) * -0.9 )));
 }
 
 .active.a\:br_black {
@@ -3247,6 +3586,34 @@
   border-color: hsl(var(--accent-h), var(--accent-s), calc( var( --accent-l ) + ( ( 100% - var( --accent-l ) ) * 0.9)));
 }
 
+.active.a\:br_highlight {
+  border-color: hsl(var(--highlight-h), var(--highlight-s), calc( var( --highlight-l ) + ( ( 100% - var( --highlight-l ) ) * 0)));
+}
+
+.active.a\:br_highlight-0 {
+  border-color: hsl(var(--highlight-h), var(--highlight-s), calc( var( --highlight-l ) + ( ( 100% - var( --highlight-l ) ) * 0)));
+}
+
+.active.a\:br_highlight-1 {
+  border-color: hsl(var(--highlight-h), var(--highlight-s), calc( var( --highlight-l ) + ( ( 100% - var( --highlight-l ) ) * 0.15)));
+}
+
+.active.a\:br_highlight-2 {
+  border-color: hsl(var(--highlight-h), var(--highlight-s), calc( var( --highlight-l ) + ( ( 100% - var( --highlight-l ) ) * 0.37)));
+}
+
+.active.a\:br_highlight-3 {
+  border-color: hsl(var(--highlight-h), var(--highlight-s), calc( var( --highlight-l ) + ( ( 100% - var( --highlight-l ) ) * 0.6)));
+}
+
+.active.a\:br_highlight-4 {
+  border-color: hsl(var(--highlight-h), var(--highlight-s), calc( var( --highlight-l ) + ( ( 100% - var( --highlight-l ) ) * 0.78)));
+}
+
+.active.a\:br_highlight-5 {
+  border-color: hsl(var(--highlight-h), var(--highlight-s), calc( var( --highlight-l ) + ( ( 100% - var( --highlight-l ) ) * 0.9)));
+}
+
 .active.a\:br_black {
   border-color: hsla(var(--black-h), var(--black-s), var(--black-l), 1);
 }
@@ -3453,6 +3820,30 @@
 
 .h\:br_accent-n5:hover {
   border-color: hsl(var(--accent-h), var(--accent-s), calc( var( --accent-l ) + ( ( var( --accent-l )) * -0.9 )));
+}
+
+.h\:br_highlight:hover {
+  border-color: hsl(var(--highlight-h), var(--highlight-s), calc( var( --highlight-l ) + ( ( 100% - var( --highlight-l ) ) * 0)));
+}
+
+.h\:br_highlight-n1:hover {
+  border-color: hsl(var(--highlight-h), var(--highlight-s), calc( var( --highlight-l ) + ( ( var( --highlight-l )) * -0.15 )));
+}
+
+.h\:br_highlight-n2:hover {
+  border-color: hsl(var(--highlight-h), var(--highlight-s), calc( var( --highlight-l ) + ( ( var( --highlight-l )) * -0.37 )));
+}
+
+.h\:br_highlight-n3:hover {
+  border-color: hsl(var(--highlight-h), var(--highlight-s), calc( var( --highlight-l ) + ( ( var( --highlight-l )) * -0.6 )));
+}
+
+.h\:br_highlight-n4:hover {
+  border-color: hsl(var(--highlight-h), var(--highlight-s), calc( var( --highlight-l ) + ( ( var( --highlight-l )) * -0.78 )));
+}
+
+.h\:br_highlight-n5:hover {
+  border-color: hsl(var(--highlight-h), var(--highlight-s), calc( var( --highlight-l ) + ( ( var( --highlight-l )) * -0.9 )));
 }
 
 .h\:br_black:hover {
@@ -3677,6 +4068,34 @@
 
 .h\:br_accent-5:hover {
   border-color: hsl(var(--accent-h), var(--accent-s), calc( var( --accent-l ) + ( ( 100% - var( --accent-l ) ) * 0.9)));
+}
+
+.h\:br_highlight:hover {
+  border-color: hsl(var(--highlight-h), var(--highlight-s), calc( var( --highlight-l ) + ( ( 100% - var( --highlight-l ) ) * 0)));
+}
+
+.h\:br_highlight-0:hover {
+  border-color: hsl(var(--highlight-h), var(--highlight-s), calc( var( --highlight-l ) + ( ( 100% - var( --highlight-l ) ) * 0)));
+}
+
+.h\:br_highlight-1:hover {
+  border-color: hsl(var(--highlight-h), var(--highlight-s), calc( var( --highlight-l ) + ( ( 100% - var( --highlight-l ) ) * 0.15)));
+}
+
+.h\:br_highlight-2:hover {
+  border-color: hsl(var(--highlight-h), var(--highlight-s), calc( var( --highlight-l ) + ( ( 100% - var( --highlight-l ) ) * 0.37)));
+}
+
+.h\:br_highlight-3:hover {
+  border-color: hsl(var(--highlight-h), var(--highlight-s), calc( var( --highlight-l ) + ( ( 100% - var( --highlight-l ) ) * 0.6)));
+}
+
+.h\:br_highlight-4:hover {
+  border-color: hsl(var(--highlight-h), var(--highlight-s), calc( var( --highlight-l ) + ( ( 100% - var( --highlight-l ) ) * 0.78)));
+}
+
+.h\:br_highlight-5:hover {
+  border-color: hsl(var(--highlight-h), var(--highlight-s), calc( var( --highlight-l ) + ( ( 100% - var( --highlight-l ) ) * 0.9)));
 }
 
 .h\:br_black:hover {
@@ -5703,6 +6122,30 @@
   color: hsl(var(--accent-h), var(--accent-s), calc( var( --accent-l ) + ( ( var( --accent-l )) * -0.9 )));
 }
 
+.c_highlight {
+  color: hsl(var(--highlight-h), var(--highlight-s), calc( var( --highlight-l ) + ( ( 100% - var( --highlight-l ) ) * 0)));
+}
+
+.c_highlight-n1 {
+  color: hsl(var(--highlight-h), var(--highlight-s), calc( var( --highlight-l ) + ( ( var( --highlight-l )) * -0.15 )));
+}
+
+.c_highlight-n2 {
+  color: hsl(var(--highlight-h), var(--highlight-s), calc( var( --highlight-l ) + ( ( var( --highlight-l )) * -0.37 )));
+}
+
+.c_highlight-n3 {
+  color: hsl(var(--highlight-h), var(--highlight-s), calc( var( --highlight-l ) + ( ( var( --highlight-l )) * -0.6 )));
+}
+
+.c_highlight-n4 {
+  color: hsl(var(--highlight-h), var(--highlight-s), calc( var( --highlight-l ) + ( ( var( --highlight-l )) * -0.78 )));
+}
+
+.c_highlight-n5 {
+  color: hsl(var(--highlight-h), var(--highlight-s), calc( var( --highlight-l ) + ( ( var( --highlight-l )) * -0.9 )));
+}
+
 .c_black {
   color: hsla(var(--black-h), var(--black-s), var(--black-l), 1);
 }
@@ -5927,6 +6370,34 @@
   color: hsl(var(--accent-h), var(--accent-s), calc( var( --accent-l ) + ( ( 100% - var( --accent-l ) ) * 0.9)));
 }
 
+.c_highlight {
+  color: hsl(var(--highlight-h), var(--highlight-s), calc( var( --highlight-l ) + ( ( 100% - var( --highlight-l ) ) * 0)));
+}
+
+.c_highlight-0 {
+  color: hsl(var(--highlight-h), var(--highlight-s), calc( var( --highlight-l ) + ( ( 100% - var( --highlight-l ) ) * 0)));
+}
+
+.c_highlight-1 {
+  color: hsl(var(--highlight-h), var(--highlight-s), calc( var( --highlight-l ) + ( ( 100% - var( --highlight-l ) ) * 0.15)));
+}
+
+.c_highlight-2 {
+  color: hsl(var(--highlight-h), var(--highlight-s), calc( var( --highlight-l ) + ( ( 100% - var( --highlight-l ) ) * 0.37)));
+}
+
+.c_highlight-3 {
+  color: hsl(var(--highlight-h), var(--highlight-s), calc( var( --highlight-l ) + ( ( 100% - var( --highlight-l ) ) * 0.6)));
+}
+
+.c_highlight-4 {
+  color: hsl(var(--highlight-h), var(--highlight-s), calc( var( --highlight-l ) + ( ( 100% - var( --highlight-l ) ) * 0.78)));
+}
+
+.c_highlight-5 {
+  color: hsl(var(--highlight-h), var(--highlight-s), calc( var( --highlight-l ) + ( ( 100% - var( --highlight-l ) ) * 0.9)));
+}
+
 .c_black {
   color: hsla(var(--black-h), var(--black-s), var(--black-l), 1);
 }
@@ -6133,6 +6604,30 @@
 
 .active > .a\:c_accent-n5 {
   color: hsl(var(--accent-h), var(--accent-s), calc( var( --accent-l ) + ( ( var( --accent-l )) * -0.9 )));
+}
+
+.active > .a\:c_highlight {
+  color: hsl(var(--highlight-h), var(--highlight-s), calc( var( --highlight-l ) + ( ( 100% - var( --highlight-l ) ) * 0)));
+}
+
+.active > .a\:c_highlight-n1 {
+  color: hsl(var(--highlight-h), var(--highlight-s), calc( var( --highlight-l ) + ( ( var( --highlight-l )) * -0.15 )));
+}
+
+.active > .a\:c_highlight-n2 {
+  color: hsl(var(--highlight-h), var(--highlight-s), calc( var( --highlight-l ) + ( ( var( --highlight-l )) * -0.37 )));
+}
+
+.active > .a\:c_highlight-n3 {
+  color: hsl(var(--highlight-h), var(--highlight-s), calc( var( --highlight-l ) + ( ( var( --highlight-l )) * -0.6 )));
+}
+
+.active > .a\:c_highlight-n4 {
+  color: hsl(var(--highlight-h), var(--highlight-s), calc( var( --highlight-l ) + ( ( var( --highlight-l )) * -0.78 )));
+}
+
+.active > .a\:c_highlight-n5 {
+  color: hsl(var(--highlight-h), var(--highlight-s), calc( var( --highlight-l ) + ( ( var( --highlight-l )) * -0.9 )));
 }
 
 .active > .a\:c_black {
@@ -6359,6 +6854,34 @@
   color: hsl(var(--accent-h), var(--accent-s), calc( var( --accent-l ) + ( ( 100% - var( --accent-l ) ) * 0.9)));
 }
 
+.active > .a\:c_highlight {
+  color: hsl(var(--highlight-h), var(--highlight-s), calc( var( --highlight-l ) + ( ( 100% - var( --highlight-l ) ) * 0)));
+}
+
+.active > .a\:c_highlight-0 {
+  color: hsl(var(--highlight-h), var(--highlight-s), calc( var( --highlight-l ) + ( ( 100% - var( --highlight-l ) ) * 0)));
+}
+
+.active > .a\:c_highlight-1 {
+  color: hsl(var(--highlight-h), var(--highlight-s), calc( var( --highlight-l ) + ( ( 100% - var( --highlight-l ) ) * 0.15)));
+}
+
+.active > .a\:c_highlight-2 {
+  color: hsl(var(--highlight-h), var(--highlight-s), calc( var( --highlight-l ) + ( ( 100% - var( --highlight-l ) ) * 0.37)));
+}
+
+.active > .a\:c_highlight-3 {
+  color: hsl(var(--highlight-h), var(--highlight-s), calc( var( --highlight-l ) + ( ( 100% - var( --highlight-l ) ) * 0.6)));
+}
+
+.active > .a\:c_highlight-4 {
+  color: hsl(var(--highlight-h), var(--highlight-s), calc( var( --highlight-l ) + ( ( 100% - var( --highlight-l ) ) * 0.78)));
+}
+
+.active > .a\:c_highlight-5 {
+  color: hsl(var(--highlight-h), var(--highlight-s), calc( var( --highlight-l ) + ( ( 100% - var( --highlight-l ) ) * 0.9)));
+}
+
 .active > .a\:c_black {
   color: hsla(var(--black-h), var(--black-s), var(--black-l), 1);
 }
@@ -6565,6 +7088,30 @@
 
 .active.a\:c_accent-n5 {
   color: hsl(var(--accent-h), var(--accent-s), calc( var( --accent-l ) + ( ( var( --accent-l )) * -0.9 )));
+}
+
+.active.a\:c_highlight {
+  color: hsl(var(--highlight-h), var(--highlight-s), calc( var( --highlight-l ) + ( ( 100% - var( --highlight-l ) ) * 0)));
+}
+
+.active.a\:c_highlight-n1 {
+  color: hsl(var(--highlight-h), var(--highlight-s), calc( var( --highlight-l ) + ( ( var( --highlight-l )) * -0.15 )));
+}
+
+.active.a\:c_highlight-n2 {
+  color: hsl(var(--highlight-h), var(--highlight-s), calc( var( --highlight-l ) + ( ( var( --highlight-l )) * -0.37 )));
+}
+
+.active.a\:c_highlight-n3 {
+  color: hsl(var(--highlight-h), var(--highlight-s), calc( var( --highlight-l ) + ( ( var( --highlight-l )) * -0.6 )));
+}
+
+.active.a\:c_highlight-n4 {
+  color: hsl(var(--highlight-h), var(--highlight-s), calc( var( --highlight-l ) + ( ( var( --highlight-l )) * -0.78 )));
+}
+
+.active.a\:c_highlight-n5 {
+  color: hsl(var(--highlight-h), var(--highlight-s), calc( var( --highlight-l ) + ( ( var( --highlight-l )) * -0.9 )));
 }
 
 .active.a\:c_black {
@@ -6791,6 +7338,34 @@
   color: hsl(var(--accent-h), var(--accent-s), calc( var( --accent-l ) + ( ( 100% - var( --accent-l ) ) * 0.9)));
 }
 
+.active.a\:c_highlight {
+  color: hsl(var(--highlight-h), var(--highlight-s), calc( var( --highlight-l ) + ( ( 100% - var( --highlight-l ) ) * 0)));
+}
+
+.active.a\:c_highlight-0 {
+  color: hsl(var(--highlight-h), var(--highlight-s), calc( var( --highlight-l ) + ( ( 100% - var( --highlight-l ) ) * 0)));
+}
+
+.active.a\:c_highlight-1 {
+  color: hsl(var(--highlight-h), var(--highlight-s), calc( var( --highlight-l ) + ( ( 100% - var( --highlight-l ) ) * 0.15)));
+}
+
+.active.a\:c_highlight-2 {
+  color: hsl(var(--highlight-h), var(--highlight-s), calc( var( --highlight-l ) + ( ( 100% - var( --highlight-l ) ) * 0.37)));
+}
+
+.active.a\:c_highlight-3 {
+  color: hsl(var(--highlight-h), var(--highlight-s), calc( var( --highlight-l ) + ( ( 100% - var( --highlight-l ) ) * 0.6)));
+}
+
+.active.a\:c_highlight-4 {
+  color: hsl(var(--highlight-h), var(--highlight-s), calc( var( --highlight-l ) + ( ( 100% - var( --highlight-l ) ) * 0.78)));
+}
+
+.active.a\:c_highlight-5 {
+  color: hsl(var(--highlight-h), var(--highlight-s), calc( var( --highlight-l ) + ( ( 100% - var( --highlight-l ) ) * 0.9)));
+}
+
 .active.a\:c_black {
   color: hsla(var(--black-h), var(--black-s), var(--black-l), 1);
 }
@@ -6997,6 +7572,30 @@
 
 .h\:c_accent-n5:hover {
   color: hsl(var(--accent-h), var(--accent-s), calc( var( --accent-l ) + ( ( var( --accent-l )) * -0.9 )));
+}
+
+.h\:c_highlight:hover {
+  color: hsl(var(--highlight-h), var(--highlight-s), calc( var( --highlight-l ) + ( ( 100% - var( --highlight-l ) ) * 0)));
+}
+
+.h\:c_highlight-n1:hover {
+  color: hsl(var(--highlight-h), var(--highlight-s), calc( var( --highlight-l ) + ( ( var( --highlight-l )) * -0.15 )));
+}
+
+.h\:c_highlight-n2:hover {
+  color: hsl(var(--highlight-h), var(--highlight-s), calc( var( --highlight-l ) + ( ( var( --highlight-l )) * -0.37 )));
+}
+
+.h\:c_highlight-n3:hover {
+  color: hsl(var(--highlight-h), var(--highlight-s), calc( var( --highlight-l ) + ( ( var( --highlight-l )) * -0.6 )));
+}
+
+.h\:c_highlight-n4:hover {
+  color: hsl(var(--highlight-h), var(--highlight-s), calc( var( --highlight-l ) + ( ( var( --highlight-l )) * -0.78 )));
+}
+
+.h\:c_highlight-n5:hover {
+  color: hsl(var(--highlight-h), var(--highlight-s), calc( var( --highlight-l ) + ( ( var( --highlight-l )) * -0.9 )));
 }
 
 .h\:c_black:hover {
@@ -7221,6 +7820,34 @@
 
 .h\:c_accent-5:hover {
   color: hsl(var(--accent-h), var(--accent-s), calc( var( --accent-l ) + ( ( 100% - var( --accent-l ) ) * 0.9)));
+}
+
+.h\:c_highlight:hover {
+  color: hsl(var(--highlight-h), var(--highlight-s), calc( var( --highlight-l ) + ( ( 100% - var( --highlight-l ) ) * 0)));
+}
+
+.h\:c_highlight-0:hover {
+  color: hsl(var(--highlight-h), var(--highlight-s), calc( var( --highlight-l ) + ( ( 100% - var( --highlight-l ) ) * 0)));
+}
+
+.h\:c_highlight-1:hover {
+  color: hsl(var(--highlight-h), var(--highlight-s), calc( var( --highlight-l ) + ( ( 100% - var( --highlight-l ) ) * 0.15)));
+}
+
+.h\:c_highlight-2:hover {
+  color: hsl(var(--highlight-h), var(--highlight-s), calc( var( --highlight-l ) + ( ( 100% - var( --highlight-l ) ) * 0.37)));
+}
+
+.h\:c_highlight-3:hover {
+  color: hsl(var(--highlight-h), var(--highlight-s), calc( var( --highlight-l ) + ( ( 100% - var( --highlight-l ) ) * 0.6)));
+}
+
+.h\:c_highlight-4:hover {
+  color: hsl(var(--highlight-h), var(--highlight-s), calc( var( --highlight-l ) + ( ( 100% - var( --highlight-l ) ) * 0.78)));
+}
+
+.h\:c_highlight-5:hover {
+  color: hsl(var(--highlight-h), var(--highlight-s), calc( var( --highlight-l ) + ( ( 100% - var( --highlight-l ) ) * 0.9)));
 }
 
 .h\:c_black:hover {
