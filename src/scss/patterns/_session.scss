@@ -10,12 +10,16 @@ Markup:
     <div class="br_1 br-b_0 br-tr_radius br-tl_radius br_solid br_black-3 flex flex_column font_ui m-t_n2 relative">
         <div class="br-b_1 br_solid br_primary-n1">
             <div class="p_4 p-b_2 flex flex_column flex_row:lg">
-                <h3 class="font_display m-b_3 lh_2 c_primary-n2 font-size_up-2 p-r_4:lg">
-                    <span class="block">
-                        <strong class="font_bold p-r_3">101</strong>
-                        Cardiovascular Update for the Clinician III                    </span>
-                    <span class="c_accent font-size_down-1">Saturday, Nov 20, 2021  @ 11:15 AM – 11:45 AM <abbr title="EASTERN DAYLIGHT TIME, UTC -4">EDT</abbr></span>
-                </h3>
+                <header class="p-r_4:lg flex_auto">
+                    <div class="font-size_up-2 font_display m-b_3 lh_2 c_primary-n2">
+                        <strong class="font_bold p-r_3">{{> "Data.Agenda.ID" }}</strong>
+                        {{> "Data.Session.Title" }}
+                    </div>
+                    <div class="font-size_up ">
+                        {{> "Data.Session.Subtitle"}}
+                    </div>
+                    <span class="c_accent font-size_down-1">{{> "Data.Agenda.LiveTime" }} {{>"Data.Agenda.LiveTime"}}</span>
+                </div>
                 <div class="flex_grow m-l_auto:lg">
                     <div class="flex flex_column-reverse flex_row-reverse:lg flex_wrap gap-x_3 gap-y_3 p-y_3 p-y_0:lg justify_start">
                         <a href="" class="btn btn-primary h:bg_secondary-n3 z_5">Watch </a>

@@ -1,0 +1,95 @@
+%Data.Agenda {
+}
+/*
+Agenda Item
+ 
+Description:
+Agenda items are sessions that are scheduled for a specific date, location, and time.
+ 
+Weight:0
+ 
+Styleguide Data.Agenda
+*/
+%Data.Agenda.ID {
+}
+/*
+Agenda ID
+ 
+Description:
+The ID given to an Agenda. This number is unique to the Agenda and is incremented for each new Agenda created.
+ 
+Markup:
+101
+ 
+Weight:1
+ 
+Styleguide Data.Agenda.ID
+*/
+%Data.Agenda.ChannelName {
+}
+/*
+Channel Name
+ 
+Description:
+A channel is a visible category that an Agenda Item belongs to.
+ 
+Markup:
+Navigating Health Care Economics 
+
+ 
+Weight:1
+ 
+Styleguide Data.Agenda.ChannelName
+*/
+%Data.Agenda.LiveTime {
+}
+/*
+Live Time
+ 
+Description:
+The time at which a Agenda is live.
+ 
+Markup: @ 11:15 a.m. – 11:45 p.m <abbr title="EASTERN TIME, UTC -4">EDT</abbr>
+
+FORMAT: 12 hour with 'a.m.'/'p.m' and Abbreviation of Timezone.
+
+NOTE: The 'a.m.'/'p.m.' if the same should only occur on the last time mark.  11:15 a.m. - 11:30 a.m. should be shortened to 11:15  - 11:30 a.m.
+
+Weight:0
+ 
+Styleguide Data.Agenda.LiveTime
+*/
+%Data.Agenda.LiveDate {
+}
+/*
+Live Date
+ 
+Description:
+There is usually a delay to when recording will make it to on demand. This is the time that recording will be available.
+ 
+Markup: Saturday, Nov. 20, 2021 
+
+FORMAT: Day-of-Week, Month-Abbreviation.  Day, Year
+
+Weight:0
+ 
+Styleguide Data.Agenda.LiveDate
+*/
+%Data.Agenda.onDemandReleaseTime {
+}
+/*
+On Demand Release Date and Time
+ 
+Description:
+There is usually a delay to when recording will make it to on demand. This is the time that recording will be available.
+ 
+Markup: Saturday, Nov. 20, 2021 @ 8:00 p.m. <abbr title="EASTERN TIME, UTC -4">EDT</abbr>
+
+FORMAT: Day-of-Week, Month-Abbreviation.  Day, Year @ Hour:Minute 'a.m.'/'p.m' Abbreviation-of-Timezone.  
+
+NOTE:  Use the simple abbreviation for the timezone without Daylight Savings Time. IE: ET not EDT or EST.
+
+Weight:0
+ 
+Styleguide Data.Agenda.onDemandReleaseTime
+*/

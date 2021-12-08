@@ -1,0 +1,79 @@
+%Data.Presentation {
+}
+
+/*
+Presentation 
+
+Description:
+A presentation is a single part of education that can not be subdivided.
+
+Weight:0
+
+Styleguide Data.Presentation
+*/
+%Data.Presentation.Description {
+}
+
+/*
+Presentation Description
+ 
+Description:
+The Description of a presentation
+ 
+Markup:Drug Coated Balloons
+ 
+Weight:500
+ 
+Styleguide Data.Presentation.Description
+*/
+
+%Data.Presentation.Title {
+}
+/*
+Presentation Title
+ 
+Description:
+The title of a presentation
+ 
+Markup:
+New York Cardiovascular Symposium 2021 Welcome Video and Introduction of Session and Presenters
+ 
+Weight:0
+ 
+Styleguide Data.Presentation.Title
+*/
+%Data.Presentation.LiveTime {
+}
+/*
+Presentation Live Time
+
+Description:
+The Live Time of a Presentation
+
+Markup:
+11:45 – 11:49 a.m. <abbr title="EASTERN DAYLIGHT TIME, UTC -4">ET</abbr>
+
+FORMAT: 12 hour with 'a.m.'/'p.m' and Abbreviation of Timezone.
+
+NOTE: The 'a.m.'/'p.m.' if the same should only occur on the last time mark.  11:15 a.m. - 11:30 a.m. should be shortened to 11:15  - 11:30 a.m.
+
+
+Weight:0
+ 
+Styleguide Data.Presentation.LiveTime
+*/
+%Data.Presentation.ID {
+}
+/*
+Presentation ID
+ 
+Description:
+Unique system generated identifier for a presentation.
+ 
+Markup:
+15612
+ 
+Weight:0
+ 
+Styleguide Data.Presentation.ID
+*/
