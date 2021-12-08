@@ -1,25 +1,25 @@
 @charset "UTF-8";
 /*
-Presenters 
+Presenter 
 
 Description:
 An educator who created or participated in a presentation
 
 Weight:1000
 
-Styleguide Data.Presenters
+Styleguide Data.Presenter
 */
 /*
 Photo
 
 Description:
-A photo of the Presenters member
+A photo of the Presenter member
 
 Markup:
 <img
     class="aspect_1x1 w_100"
     src="https://i.pravatar.cc/300"
-    alt="{{> "Data.Presenters.FullName" }}"
+    alt="{{> "Data.Presenter.FullName" }}"
 />
 
 MarkupWrapperClasses: max-w_30
@@ -28,12 +28,12 @@ FORMAT: 300px by 300px
 
 Weight:0
 
-Styleguide Data.Presenters.Photo
+Styleguide Data.Presenter.Photo
 */
 /*
 Full Name
 
-The full name of the Presenters member
+The full name of the Presenter member
 
 Markup: Pepper H. Soda III, MD, FACC
 
@@ -42,13 +42,13 @@ FORMAT: First Name MI (if known) Last Name Suffix (Jr., Sr., the III ), Optional
 
 Weight:0
 
-Styleguide Data.Presenters.FullName
+Styleguide Data.Presenter.FullName
 */
 /*
 Location
 
 Description:
-The location of the Presenters member
+The location of the Presenter member
 
 Markup: New York, NY, USA
 
@@ -58,16 +58,16 @@ FORMAT: City, State, Country
 
 NOTE:  if the conference country is USA you can drop the country if it is USA.
 
-Styleguide Data.Presenters.Location
+Styleguide Data.Presenter.Location
 */
 /*
 Title
 
 Description:
-the roles of the Presenters member within the session
+the roles of the Presenter member within the session
 
 Markup:
-{{> "Data.Presenters.Title.InstitutionTitle" }}, {{> "Data.Presenters.Title.InstitutionDivision" }}, {{> "Data.Presenters.Title.Institution" }}
+{{> "Data.Presenter.Title.InstitutionTitle" }}, {{> "Data.Presenter.Title.InstitutionDivision" }}, {{> "Data.Presenter.Title.Institution" }}
 
 
 
@@ -79,98 +79,98 @@ EXPERIMENTAL: This is not an approved data point.
 
 Weight:100
 
-Styleguide Data.Presenters.Title
+Styleguide Data.Presenter.Title
 */
 /*
 Institution
 
 Description:
-Institution of the Presenters member where they hold a title
+Institution of the Presenter member where they hold a title
 
 Markup:
 Mount SugarLoaf Hospital
 
 Weight:101
 
-Styleguide Data.Presenters.Title.Institution
+Styleguide Data.Presenter.Title.Institution
 */
 /*
 Institution Division
 
 Description:
-The Division of the Institution of the Presenters member where they hold a title
+The Division of the Institution of the Presenter member where they hold a title
 
 Markup:
 Mount SugarLoaf Hospital
 
 Weight:102
 
-Styleguide Data.Presenters.Title.InstitutionDivision
+Styleguide Data.Presenter.Title.InstitutionDivision
 */
 /*
 Institutional Title
 
 Description:
-the roles of the Presenters member within the session
+the roles of the Presenter member within the session
 
 Markup:
 Physician-in-Chief
 
 Weight:103
 
-Styleguide Data.Presenters.Title.InstitutionTitle
+Styleguide Data.Presenter.Title.InstitutionTitle
 */
 /*
 Twitter Handle
 
 Description:
-The handle of the Presenters member on twitter
+The handle of the Presenter member on twitter
 
 Markup:
 Tweat_DrSoda
 
 Weight:0
 
-Styleguide Data.Presenters.TwitterHandle
+Styleguide Data.Presenter.TwitterHandle
 */
 /*
 Role
 
 Description:
-the roles of the Presenters member within the session
+the roles of the Presenter member within the session
 
 Markup:
 Co-Chair
 
 Weight:0
 
-Styleguide Data.Presenters.Role
+Styleguide Data.Presenter.Role
 */
 /*
 Bio
 
 Description:
-simple html text that describes the Presenters member
+simple html text that describes the Presenter member
 
 Markup:
 <p>Omnis laboriosam vero dolorum harum nihil debitis placeat eligendi. Molestiae voluptatibus nemo eveniet. Vero ipsum eius. Alias sapiente quidem dolore dolorem atque alias est.</p>
 
 Weight:0
 
-Styleguide Data.Presenters.Bio
+Styleguide Data.Presenter.Bio
 */
 /*
 Identification Number
 
 Description:
-this id can both be used to link to the Presenters member's page, the member's image, and disclosures
+this id can both be used to link to the Presenter member's page, the member's image, and disclosures
 
 Markup:
 122154254
 
 Weight:0
 
-Styleguide Data.Presenters.ID
+Styleguide Data.Presenter.ID
 */
 /*
 Agenda Item
@@ -411,6 +411,27 @@ Weight: 10
 
 Styleguide Sessions.Simple
 
+*/
+/*
+Simple
+
+Description: 
+
+Markup:
+<ul class="ul_none font_1">
+    <li class="font_display c_primary font_bold">{{> "Data.Presenter.FullName"}}</li>
+    <li class="font-size_down-1">{{> "Data.Presenter.Title"}}</li>
+    <li class="font-size_down-2">{{> "Data.Presenter.Location"}}</li>
+</ul>
+<div class="reading-typography">
+<h3>Bio</h3>
+{{> "Data.Presenter.Bio" }}
+</div>
+
+
+Weight:0
+
+Styleguide Presenter.Simple
 */
 
 /*# sourceMappingURL=styleguide.css.map */

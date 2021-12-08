@@ -1,0 +1,21 @@
+/*
+Simple
+
+Description: 
+ 
+Markup:
+<ul class="ul_none font_1">
+    <li class="font_display c_primary font_bold">{{> "Data.Presenter.FullName"}}</li>
+    <li class="font-size_down-1">{{> "Data.Presenter.Title"}}</li>
+    <li class="font-size_down-2">{{> "Data.Presenter.Location"}}</li>
+</ul>
+<div class="reading-typography">
+<h3>Bio</h3>
+{{> "Data.Presenter.Bio" }}
+</div>
+
+ 
+Weight:0
+ 
+Styleguide Presenter.Simple
+*/
