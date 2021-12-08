@@ -1,415 +1,33 @@
-@charset "UTF-8";
-/*
-Presenter 
-
-Description:
-An educator who created or participated in a presentation
-
-Weight:1000
-
-Styleguide Data.Presenter
-*/
-/*
-Photo
-
-Description:
-A photo of the Presenter member
-
-Markup:
-<img
-    class="aspect_1x1 w_100"
-    src="https://i.pravatar.cc/300"
-    alt="{{> "Data.Presenter.FullName" }}"
-/>
-
-MarkupWrapperClasses: max-w_30
-
-FORMAT: 300px by 300px
-
-Weight:0
-
-Styleguide Data.Presenter.Photo
-*/
-/*
-Full Name
-
-The full name of the Presenter member
-
-Markup: Pepper H. Soda III, MD, FACC
-
-
-FORMAT: First Name MI (if known) Last Name Suffix (Jr., Sr., the III ), Optional Degree, Optional ACC Honorifics, Optional Exceptions Honorifics
-
-Weight:0
-
-Styleguide Data.Presenter.FullName
-*/
-/*
-Location
-
-Description:
-The location of the Presenter member
-
-Markup: New York, NY, USA
-
-Weight:0
-
-FORMAT: City, State, Country
-
-NOTE:  if the conference country is USA you can drop the country if it is USA.
-
-Styleguide Data.Presenter.Location
-*/
-/*
-Title
-
-Description:
-the roles of the Presenter member within the session
-
-Markup:
-{{> "Data.Presenter.Title.InstitutionTitle" }}, {{> "Data.Presenter.Title.InstitutionDivision" }}, {{> "Data.Presenter.Title.Institution" }}
-
-
-
-FORMAT: Institution Title, Institution Division, Institution
-
-NOTE: This format is currently not being enforced.
-
-EXPERIMENTAL: This is not an approved data point.
-
-Weight:100
-
-Styleguide Data.Presenter.Title
-*/
-/*
-Institution
-
-Description:
-Institution of the Presenter member where they hold a title
-
-Markup:
-Mount SugarLoaf Hospital
-
-Weight:101
-
-Styleguide Data.Presenter.Title.Institution
-*/
-/*
-Institution Division
-
-Description:
-The Division of the Institution of the Presenter member where they hold a title
-
-Markup:
-Mount SugarLoaf Hospital
-
-Weight:102
-
-Styleguide Data.Presenter.Title.InstitutionDivision
-*/
-/*
-Institutional Title
-
-Description:
-the roles of the Presenter member within the session
-
-Markup:
-Physician-in-Chief
-
-Weight:103
-
-Styleguide Data.Presenter.Title.InstitutionTitle
-*/
-/*
-Twitter Handle
-
-Description:
-The handle of the Presenter member on twitter
-
-Markup:
-Tweat_DrSoda
-
-Weight:0
-
-Styleguide Data.Presenter.TwitterHandle
-*/
-/*
-Role
-
-Description:
-the roles of the Presenter member within the session
-
-Markup:
-Co-Chair
-
-Weight:0
-
-Styleguide Data.Presenter.Role
-*/
-/*
-Bio
-
-Description:
-simple html text that describes the Presenter member
-
-Markup:
-<p>Omnis laboriosam vero dolorum harum nihil debitis placeat eligendi. Molestiae voluptatibus nemo eveniet. Vero ipsum eius. Alias sapiente quidem dolore dolorem atque alias est.</p>
-
-Weight:0
-
-Styleguide Data.Presenter.Bio
-*/
-/*
-Identification Number
-
-Description:
-this id can both be used to link to the Presenter member's page, the member's image, and disclosures
-
-Markup:
-122154254
-
-Weight:0
-
-Styleguide Data.Presenter.ID
-*/
-/*
-Agenda Item
-
-Description:
-Agenda items are sessions that are scheduled for a specific date, location, and time.
-
-Weight:0
-
-Styleguide Data.Agenda
-*/
-/*
-Agenda ID
-
-Description:
-The ID given to an Agenda. This number is unique to the Agenda and is incremented for each new Agenda created.
-
-Markup:
-101
-
-Weight:1
-
-Styleguide Data.Agenda.ID
-*/
-/*
-Channel Name
-
-Description:
-A channel is a visible category that an Agenda Item belongs to.
-
-Markup:
-Navigating Health Care Economics 
-
-
-Weight:1
-
-Styleguide Data.Agenda.ChannelName
-*/
-/*
-Live Time
-
-Description:
-The time at which a Agenda is live.
-
-Markup: @ 11:15 a.m. – 11:45 p.m <abbr title="EASTERN TIME, UTC -4">EDT</abbr>
-
-FORMAT: 12 hour with 'a.m.'/'p.m' and Abbreviation of Timezone.
-
-NOTE: The 'a.m.'/'p.m.' if the same should only occur on the last time mark.  11:15 a.m. - 11:30 a.m. should be shortened to 11:15  - 11:30 a.m.
-
-Weight:0
-
-Styleguide Data.Agenda.LiveTime
-*/
-/*
-Live Date
-
-Description:
-There is usually a delay to when recording will make it to on demand. This is the time that recording will be available.
-
-Markup: Saturday, Nov. 20, 2021 
-
-FORMAT: Day-of-Week, Month-Abbreviation.  Day, Year
-
-Weight:0
-
-Styleguide Data.Agenda.LiveDate
-*/
-/*
-On Demand Release Date and Time
-
-Description:
-There is usually a delay to when recording will make it to on demand. This is the time that recording will be available.
-
-Markup: Saturday, Nov. 20, 2021 @ 8:00 p.m. <abbr title="EASTERN TIME, UTC -4">EDT</abbr>
-
-FORMAT: Day-of-Week, Month-Abbreviation.  Day, Year @ Hour:Minute 'a.m.'/'p.m' Abbreviation-of-Timezone.  
-
-NOTE:  Use the simple abbreviation for the timezone without Daylight Savings Time. IE: ET not EDT or EST.
-
-Weight:0
-
-Styleguide Data.Agenda.onDemandReleaseTime
-*/
-/*
-Session 
-
-A Session is a specific time slot in an Agenda. This could be either a single presentation or a series of presentations.
-
-Markup:
-Electrical Disorders - Rhythm and Conduction Disorders
-
-Experiential: This is not an approved data point.
-
-Weight:100
-
-Styleguide Data.Session
-*/
-/*
-Session Subtitle
-
-The subtitle of a Session.
-
-Markup:
-Electrical Disorders - Rhythm and Conduction Disorders
-
-Experiential: This is not an approved data point.
-
-Weight:2
-
-Styleguide Data.Session.Subtitle
-*/
-/*
-Session Title
-
-Description:
-The title of a Session.
-
-Markup:
-Cardiovascular Update for the Clinician III
-
-Weight:1
-
-Styleguide Data.Session.Title
-*/
-/*
-Session Identifier
-
-Description:
-The ID given to a session
-
-Markup:
-3652
-
-Weight:0
-
-Styleguide Data.Session.ID
-*/
-/*
-Session Description
-
-The description of a session.
-
-Markup:
-<p>Maxime et ea adipisci voluptas. Omnis nobis recusandae alias eius sed ipsam aut. Ipsam dolore qui. Soluta laudantium quae assumenda ipsa tempore voluptas et culpa. Et praesentium quasi. Quas ratione vero aspernatur.</p>
-
-Weight:3
-
-Styleguide Data.Session.Description
-*/
-/*
-Presentation 
-
-Description:
-A presentation is a single part of education that can not be subdivided.
-
-Weight:0
-
-Styleguide Data.Presentation
-*/
-/*
-Presentation Description
-
-Description:
-The Description of a presentation
-
-Markup:Drug Coated Balloons
-
-Weight:500
-
-Styleguide Data.Presentation.Description
-*/
-/*
-Presentation Title
-
-Description:
-The title of a presentation
-
-Markup:
-New York Cardiovascular Symposium 2021 Welcome Video and Introduction of Session and Presenters
-
-Weight:0
-
-Styleguide Data.Presentation.Title
-*/
-/*
-Presentation Live Time
-
-Description:
-The Live Time of a Presentation
-
-Markup:
-11:45 – 11:49 a.m. <abbr title="EASTERN DAYLIGHT TIME, UTC -4">ET</abbr>
-
-FORMAT: 12 hour with 'a.m.'/'p.m' and Abbreviation of Timezone.
-
-NOTE: The 'a.m.'/'p.m.' if the same should only occur on the last time mark.  11:15 a.m. - 11:30 a.m. should be shortened to 11:15  - 11:30 a.m.
-
-
-Weight:0
-
-Styleguide Data.Presentation.LiveTime
-*/
-/*
-Presentation ID
-
-Description:
-Unique system generated identifier for a presentation.
-
-Markup:
-15612
-
-Weight:0
-
-Styleguide Data.Presentation.ID
-*/
+%Data.Sponsor {
+}
 /*
 Sponsor
-
+ 
 Description:
 Sponsor are industry that has offered money or support to an event.
-
+ 
 Weight:0
-
+ 
 Styleguide Data.Sponsor
 */
+
+%Data.Sponsor.Name {
+}
 /*
 Name
 
 Markup:
 Circus World
-
+ 
 Weight:-100
-
+ 
 Styleguide Data.Sponsor.Name
 */
+%Data.Sponsor.Address {
+}
 /*
 Address
-
+ 
 Description:
 Sponsor's Name
 
@@ -447,12 +65,15 @@ Markup:
 </address>
 
 Weight:20
-
+ 
 Styleguide Data.Sponsor.Address
 */
+
+%Data.Sponsor.Logo {
+}
 /*
 Logo
-
+ 
 Description:
 Logo of the Company
 
@@ -463,74 +84,31 @@ MarkupWrapperClasses: max-w_40
 
 
 Weight:0
-
+ 
 Styleguide Data.Sponsor.Logo
 */
+
+
+%Data.Sponsor.WebAddress {
+}
 /*
 Web Address
 
 Markup:
 http://wwww.CircusWorld1232.com
-
+ 
 Weight:25
-
+ 
 Styleguide Data.Sponsor.WebAddress
 */
+
 /*
 Website Link
 
 Markup:
 <a class="link website" href="{{> 'Data.Sponsor.WebAddress'}}">webiste</a>
-
+ 
 Weight:26
-
+ 
 Styleguide Data.Sponsor.WebLink
 */
-/*
-
-Simple
-
-Description: When the count of sessions is lower then 10 in count, the Simple Design is recommended. 
-
-Markup:
-<header>
-    <div class="font-size_up-2 font_display lh_1 c_primary-n2">
-        <strong class="font_bold p-r_3">{{> "Data.Agenda.ID" }}</strong>
-        {{> "Data.Session.Title" }}
-    </div>
-    <div class="font-size_up ">
-        {{> "Data.Session.Subtitle" }}
-    </div>
-    <div class="c_accent font-size_down-1">
-        {{> "Data.Agenda.LiveDate" }} {{> "Data.Agenda.LiveTime" }}
-    </div>
-</header>
-
-Weight: 10
-
-Styleguide Sessions.Simple
-
-*/
-/*
-Simple
-
-Description: 
-
-Markup:
-<ul class="ul_none font_1">
-    <li class="font_display c_primary font_bold">{{> "Data.Presenter.FullName"}}</li>
-    <li class="font-size_down-1">{{> "Data.Presenter.Title"}}</li>
-    <li class="font-size_down-2">{{> "Data.Presenter.Location"}}</li>
-</ul>
-<div class="reading-typography">
-<h3>Bio</h3>
-{{> "Data.Presenter.Bio" }}
-</div>
-
-
-Weight:0
-
-Styleguide Presenter.Simple
-*/
-
-/*# sourceMappingURL=styleguide.css.map */
