@@ -67,6 +67,63 @@ a.link.website::before {
   color: #101010;
 }
 
+::root {
+  --vertical-space: 1rem;
+  --headline-color: #3182bd;
+  --font_up-4: 2.44140625em;
+  --font_up-3: 1.953125em;
+  --font_up-2: 1.5625em;
+  --font_up-1: 1.25em;
+  --font_0: 1em;
+  --font_down-1: 0.8em;
+  --margin-top: ;
+}
+
+.reading-typography h1,
+.reading-typography h2,
+.reading-typography h3,
+.reading-typography h4,
+.reading-typography h5,
+.reading-typography h6 {
+  color: hsla(var(--primary-h) var(--primary-s) var(--primary-l)/1);
+}
+.reading-typography h1:not(:first-child),
+.reading-typography h2:not(:first-child),
+.reading-typography h3:not(:first-child),
+.reading-typography h4:not(:first-child),
+.reading-typography h5:not(:first-child),
+.reading-typography h6:not(:first-child) {
+  margin: var(--vertical-space) 0 calc(var(--vertical-space) / 2);
+}
+.reading-typography h4, .reading-typography h5, .reading-typography blockquote, .reading-typography h3, .reading-typography h2, .reading-typography h1 {
+  line-height: 1.125;
+}
+.reading-typography h1 {
+  font-size: var(--font_up-4);
+}
+.reading-typography h2 {
+  font-size: var(--font_up-3);
+}
+.reading-typography h3 {
+  font-size: var(--font_up-2);
+}
+.reading-typography h4, .reading-typography h5, .reading-typography blockquote {
+  font-size: var(--font_up-1);
+}
+.reading-typography h6, .reading-typography p, .reading-typography ul, .reading-typography ol, .reading-typography dl, .reading-typography table {
+  font-size: var(--font_0);
+  margin-top: var(--margin-top);
+}
+.reading-typography tfoot, .reading-typography cite {
+  font-size: var(--font_down-1);
+}
+.reading-typography table {
+  width: 100%;
+}
+.reading-typography thead {
+  border-bottom: 1px solid hsla(var(--primary-h) var(--primary-s) var(--primary-l)/0.5);
+}
+
 :root {
   --brand-h: 228.8deg;
   --brand-s: 75%;
