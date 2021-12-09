@@ -8,7 +8,9 @@
     <meta content="yes" name="mobile-web-app-capable">
     <meta content="kss-node" name="generator">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,300" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-rqn26AG5Pj86AF4SO72RK5fyefcQ/x32DNQfChxWvbXIyXFePlEktwD18fEz+kQU" crossorigin="anonymous">
     <link href="kss-assets/vendor/prism.css" rel="stylesheet">
     <link href="kss-assets/css/kss.css" rel="stylesheet">
@@ -19,7 +21,7 @@
     <!-- header. -->
     <header class="bg_white shadow_overlap-light br_black-1 br_solid br_1 sticky t_0 display_none:md flex flex_inline z_5">
         <h1 class="self_center m_3">
-            <a class="undecorated h:undecorated" href="https://acc-style.github.io/WebCasters/index.html">Web Casters</a>
+            <a class="undecorated h:undecorated" href="/WebCasters/index.html">Web Casters</a>
         </h1>
         <a class="m-l_auto self_center m_3 kss-header__hamburger-trigger">
             <div class="kss-header__hamburger"></div>
@@ -29,35 +31,54 @@
     <!-- navigation. -->
     <!-- /navigation. -->
     <!-- documentation. -->
-    <header class="p_4 text_center bg_black-8 ">
+    <header class="p_4 text_center">
         <h1 class="font_display font_10 font_light display_none block:md">
             <a class="undecorated h:undecorated c_primary" href="./index.html">Web Casters</a>
         </h1>
     </header>
-    <nav class="display_none block:md shadow_overlap-light bg_white ">
+    <section class="display_none block:md">
         <aside class="m_auto font_copy display_none block:md sticky t_0">
             <ul class="ul_none flex flex_row:md flex_column justify_center br-t_1 br_solid br_black-4 p-y_3 br-b_1 ">
-                <li class="w_auto:md w_100 br-l_1 br_black-2 br_solid:md p_2 self_center ">
-                    <a class="block inline-block:md c_black-8 h:c_black-9 undecorated  h:bg_black-2 a:bg_accent a:c_white h:undecorated p_3 br_radius nowrap" href="index.html">
+
+                <li class=" w_auto:md w_100 p_2 self_center ">
+                    <a class="block inline-block:md undecorated  h:bg_black-2 a:bg_accent a:c_white h:undecorated c_black-8 h:c_black-9 p_3 br_radius nowrap" href="index.html">
                         <span class=""><i class="fas fa-home p-x_2"></i></span>
                     </a>
                 </li>
-                    <li class="w_auto:md w_100 br-l_1 br_black-2 br_solid:md p_2 self_center is-active active">
-                        <a class="block inline-block:md c_black-8 h:c_black-9 undecorated is-active active h:bg_black-2 a:bg_accent a:c_white h:undecorated p_3 br_radius nowrap" href="section-recipes.html">
-                            <span class="">Home Page</span>
+                    <li class="w_auto:md w_100 br-l_1 br_black-2 br_solid:md p_2 self_center ">
+                        <a class="block inline-block:md c_black-8 h:c_black-9 undecorated  h:bg_black-2 a:bg_accent a:c_white h:undecorated p_3 br_radius nowrap" href="section-data.html">
+                            <span class="">Data</span>
                         </a>
                     </li>
                     <li class="w_auto:md w_100 br-l_1 br_black-2 br_solid:md p_2 self_center ">
-                        <a class="block inline-block:md c_black-8 h:c_black-9 undecorated  h:bg_black-2 a:bg_accent a:c_white h:undecorated p_3 br_radius nowrap" href="section-recipes-virtual.html">
-                            <span class="">Recipes Virtual</span>
+                        <a class="block inline-block:md c_black-8 h:c_black-9 undecorated  h:bg_black-2 a:bg_accent a:c_white h:undecorated p_3 br_radius nowrap" href="section-presenter.html">
+                            <span class="">Presenter</span>
+                        </a>
+                    </li>
+                    <li class="w_auto:md w_100 br-l_1 br_black-2 br_solid:md p_2 self_center is-active active">
+                        <a class="block inline-block:md c_black-8 h:c_black-9 undecorated is-active active h:bg_black-2 a:bg_accent a:c_white h:undecorated p_3 br_radius nowrap" href="section-recipes.html">
+                            <span class="">Reading Typography</span>
+                        </a>
+                    </li>
+                    <li class="w_auto:md w_100 br-l_1 br_black-2 br_solid:md p_2 self_center ">
+                        <a class="block inline-block:md c_black-8 h:c_black-9 undecorated  h:bg_black-2 a:bg_accent a:c_white h:undecorated p_3 br_radius nowrap" href="section-sessions.html">
+                            <span class="">Sessions</span>
+                        </a>
+                    </li>
+                    <li class="w_auto:md w_100 br-l_1 br_black-2 br_solid:md p_2 self_center ">
+                        <a class="block inline-block:md c_black-8 h:c_black-9 undecorated  h:bg_black-2 a:bg_accent a:c_white h:undecorated p_3 br_radius nowrap" href="section-sponsor.html">
+                            <span class="">Sponsor</span>
                         </a>
                     </li>
             </ul>
         </aside>
-    </nav>
-    <section id="MobleNav" class="bg_secondary-n3 display_none:lg font_0 font_ui kss-navigation kss-state-active overflow_auto p-b_2 p-x_3 scrollbar-mini shadow_emboss-light shadow_overlap-bold" style="padding-top:70px">
+    </section>
+    <section id="MobleNav" class="bg_secondary-n3 display_none:lg font_0 font_ui kss-navigation overflow_auto p-b_2 p-x_3 scrollbar-mini shadow_overlap-bold z_4" style="padding-top:70px">
         <aside class="display_none:md flex flex_column-reverse">
             <ul class="block flex flex_column ul_none w_100 ul_none lh_3" id="sitenav">
+                    <li class="flex_auto is-active active m-b_2">
+                        <a class="c_white undecorated h:undecorated a:bg_primary h:bg_black-5 p_2 block br_radius" href="/" id="home_nav">UC</a>
+                    </li>
                         <li class="flex_auto m-y_2 p_3 bg_black-5 br_radius p_3 shadow_emboss-light">
                             <ul class="block flex flex_column ul_none w_100 ul_none lh_3">
                                 <li class=" m-b_2 a:bg_accent h:bg_black-5 relative br_radius p_2 m-b_1">
@@ -65,14 +86,29 @@
                                         <span class=""><i class="fas fa-home p-x_2"></i> Home</span>
                                     </a>
                                 </li>
-                                    <li class="is-active active m-b_2 a:bg_accent h:bg_accent-4 relative br_radius p_2 p-l_3 m-b_1">
-                                        <a class="is-active active a:c_white c_white-8 h:c_white block inline-block:md undecorated flex flex_row h:undecorated flex_nowrap" href="section-recipes.html">
-                                            <span class="">Home Page</span>
+                                    <li class=" m-b_2 a:bg_accent h:bg_accent-4 relative br_radius p_2 p-l_3 m-b_1">
+                                        <a class=" a:c_white c_white-8 h:c_white block inline-block:md undecorated flex flex_row h:undecorated flex_nowrap" href="section-data.html">
+                                            <span class="">Data</span>
                                         </a>
                                     </li>
                                     <li class=" m-b_2 a:bg_accent h:bg_accent-4 relative br_radius p_2 p-l_3 m-b_1">
-                                        <a class=" a:c_white c_white-8 h:c_white block inline-block:md undecorated flex flex_row h:undecorated flex_nowrap" href="section-recipes-virtual.html">
-                                            <span class="">Recipes Virtual</span>
+                                        <a class=" a:c_white c_white-8 h:c_white block inline-block:md undecorated flex flex_row h:undecorated flex_nowrap" href="section-presenter.html">
+                                            <span class="">Presenter</span>
+                                        </a>
+                                    </li>
+                                    <li class="is-active active m-b_2 a:bg_accent h:bg_accent-4 relative br_radius p_2 p-l_3 m-b_1">
+                                        <a class="is-active active a:c_white c_white-8 h:c_white block inline-block:md undecorated flex flex_row h:undecorated flex_nowrap" href="section-recipes.html">
+                                            <span class="">Reading Typography</span>
+                                        </a>
+                                    </li>
+                                    <li class=" m-b_2 a:bg_accent h:bg_accent-4 relative br_radius p_2 p-l_3 m-b_1">
+                                        <a class=" a:c_white c_white-8 h:c_white block inline-block:md undecorated flex flex_row h:undecorated flex_nowrap" href="section-sessions.html">
+                                            <span class="">Sessions</span>
+                                        </a>
+                                    </li>
+                                    <li class=" m-b_2 a:bg_accent h:bg_accent-4 relative br_radius p_2 p-l_3 m-b_1">
+                                        <a class=" a:c_white c_white-8 h:c_white block inline-block:md undecorated flex flex_row h:undecorated flex_nowrap" href="section-sponsor.html">
+                                            <span class="">Sponsor</span>
                                         </a>
                                     </li>
                             </ul>
@@ -86,50 +122,637 @@
     <div class="m_auto p-x_4 ">
             <!-- display each section, in order. the "root" element comes first in this loop, and can be detected using the "#if @first" block as seen below. -->
             <div class="flex flex_column flex_row:md gap-x_5 p-t_4 max-w_90 m_auto">
-                <section class="max-w_15 w_20:lg flex_none relative display_none block:md ">
-                    <aside class="">
+                <section class="max-w_15 w_20:lg flex_none relative display_none block:md">
+                    <aside class="sticky t_0">
                         <div>
-                                    <h3>Home Page</h3>
+                                    <h3>Reading Typography</h3>
+                            <div class=" font_bold ">
+                                <a class="block inline-block:md undecorated flex flex_row h:undecorated flex_nowrap" href="#topbody">
+                                    <i class="fas fa-arrow-up"></i><span class="flex_auto overflow_ellipsis">Top</span>
+                                </a>
+                            </div>
                         </div>
                     </aside>
                 </section>
                 <main class="w_100 flex_auto">
-                            <header class="bg_white kss-section kss-section--depth-1 br_radius shadow_2 br_radius" id="kssref-recipes">
+                            <header class="bg_white kss-section kss-section--depth-1 br_radius shadow_overlap-light br_radius" id="kssref-recipes">
                         <article class="kss-section__content relative">
-                            <div class="absolute t_0 r_4">
+                            <div class="absolute t_0 r_4 flex flex_row gap-x_2 justify_end">
+                                <a class="c_white bg_black-5 c_white flex_none h:bg_black-7 inline-block p_2 shadow_overlap-light" target="_blank" href="item-recipes.html" title="pop out component into new tab">
+                                    <i class="fa-external-link fa-fw fas fa-fw fas"></i>
+                                </a>
                             </div>
-                                <p class="kss-section__source font_n3"> Source: <span>dist/css/UC.css</span>, line <span>15988</span> | 
-
+                                <p class="kss-section__source font_n3"> Source: <span>dist/css/styleguide.css</span>, line <span>2</span>
                                 </p>
                             <a class="kss-section__permalink" href="#kssref-recipes">
                                 <h1 class="kss-section__item c_primary kss-section__item--depth-1">
-                                    <span class="kss-section__ref">1</span>
-                                    <span class="kss-section__name">Home Page</span>
+                                    <span class="kss-section__ref">3</span>
+                                    <span class="kss-section__name">Reading Typography</span>
                                 </h1>
                             </a>
-                                <div class="kss-section__description reading-typography font-size_up overflow_auto ">
-                                    <div class="font_n1">
-                                    </div>
-                                    <p>Description: This is the first Comment</p>
-
-                                </div>
                         </article>
                             <article class="kss-section__modifiers">
                                 <h1 class="kss-modifiers__heading"> Example 
                                 </h1>
                                 <div class="kss-modifiers__example">
                                     <div class="">
-                                        Markup:<H1>Hello World This is a Test</H1>
+                                        <main class="reading-typography">
+    <section>
+        <hgroup>
+            <h1>h1 HTML5 Kitchen Sink</h1>
+            <h2>h2 Back in my quaint <a href='#'>garden</a></h2>
+            <h3>h3 Jaunty <a href='#'>zinnias</a> vie with flaunting phlox</h3>
+            <h4>h4 Five or six big jet planes zoomed quickly by the new tower.</h4>
+            <h5>h5 Expect skilled songwriters to use many jazzy, quaint old alphabets effectively.</h5>
+            <h6>h6 Pack my box with five dozen liquor jugs.</h6>
+        </hgroup>
+    </section>
+    <hr>
+    <section>
+        <header>
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+        <article>
+            <p>This paragraph is nested inside an article. It contains many different, sometimes useful, <a href="https://www.w3schools.com/tags/">HTML5 tags</a>. Of course there are classics like <em>emphasis</em>, <strong>strong</strong>, and <small>small</small> but there are many others as well. Hover the following text for abbreviation tag: <abbr title="abbreviation">abbr</abbr>. Similarly, you can use acronym tag like this: <acronym title="For The Win">ftw</acronym>. You can define <del>deleted text</del> which often gets replaced with <ins>inserted</ins> text.</p>
+            <p>You can also use <kbd>keyboard text</kbd>, which sometimes is styled similarly to the <code>&lt;code&gt;</code> or <samp>samp</samp> tags. Even more specifically, there is a tag just for <var>variables</var>. Not to be mistaken with blockquotes below, the quote tag lets you denote something as <q>quoted text</q>. Lastly don't forget the sub (H<sub>2</sub>O) and sup (E = MC<sup>2</sup>) tags. </p>
+        </article>
+        <aside>This is an aside.</aside>
+        <footer>This is footer for this section</footer>
+    </section>
+    <hr>
+    <section>
+        <blockquote>
+            <p>Blockquote: I quickly explained that many big jobs involve few hazards</p>
+        </blockquote>
+        <blockquote>
+            <p>This is a mult-line blockquote with a cite reference. People think focus means saying yes to the thing you’ve got to focus on. But that’s not what it means at all. It means saying no to the hundred other good ideas that there are. You have to pick carefully. I’m actually as proud of the things we haven’tdone as the things I have done. Innovation is saying no to 1,000 things. <cite>Steve Jobs – Apple Worldwide Developers’ Conference, 1997</cite>
+            </p>
+        </blockquote>
+    </section>
+    <hr>
+    <section>
+        <table>
+            <caption>Tables can have captions now.</caption>
+            <tbody>
+                <tr>
+                    <th>Person</th>
+                    <th>Number</th>
+                    <th>Third Column</th>
+                </tr>
+                <tr>
+                    <td>Someone Lastname</td>
+                    <td>900</td>
+                    <td>Nullam quis risus eget urna mollis ornare vel eu leo.</td>
+                </tr>
+                <tr>
+                    <td><a href="#">Person Name</a></td>
+                    <td>1200</td>
+                    <td>Vestibulum id ligula porta felis euismod semper. Donec ullamcorper nulla non metus auctor fringilla.</td>
+                </tr>
+                <tr>
+                    <td>Another Person</td>
+                    <td>1500</td>
+                    <td>Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Nullam id dolor id nibh ultricies vehicula ut id elit.</td>
+                </tr>
+                <tr>
+                    <td>Last One</td>
+                    <td>2800</td>
+                    <td>Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Cras mattis consectetur purus sit amet fermentum.</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+    <hr>
+    <section>
+        <dl>
+            <dt>Definition List Title</dt>
+            <dd>Definition list division.</dd>
+            <dt>Kitchen Sink</dt>
+            <dd>Used in expressions to describe work in which all conceivable (and some inconceivable) sources have been mined. In this case, a bunch of markup.</dd>
+            <dt>aside</dt>
+            <dd>Defines content aside from the page content</dd>
+            <dt>blockquote</dt>
+            <dd>Defines a section that is quoted from another source</dd>
+        </dl>
+    </section>
+    <hr>
+    <section>
+        <ul>
+            <li>Unordered List item one <ul>
+                    <li>Nested list item <ul>
+                            <li>Level 3, item one</li>
+                            <li>Level 3, item two</li>
+                            <li>Level 3, item three</li>
+                            <li>Level 3, item four</li>
+                        </ul>
+                    </li>
+                    <li>List item two</li>
+                    <li>List item three</li>
+                    <li>List item four</li>
+                </ul>
+            </li>
+            <li>List item two</li>
+            <li>List item three</li>
+            <li>List item four</li>
+        </ul>
+        <hr>
+        <ol>
+            <li>List item one <ol>
+                    <li>List item one <ol>
+                            <li>List item one</li>
+                            <li>List item two</li>
+                            <li>List item three</li>
+                            <li>List item four</li>
+                        </ol>
+                    </li>
+                    <li>List item two</li>
+                    <li>List item three</li>
+                    <li>List item four</li>
+                </ol>
+            </li>
+            <li>List item two</li>
+            <li>List item three</li>
+            <li>List item four</li>
+        </ol>
+    </section>
+    <hr>
+    <section>
+        <address>1 Infinite Loop<br> Cupertino, CA 95014<br> United States</address>
+    </section>
+    <hr>
+    <section>
+        <pre>
+  pre {
+    display: block;
+    padding: 7px;
+    background-color: #F5F5F5;
+    border: 1px solid #E1E1E8;
+    border-radius: 3px;
+    white-space: pre-wrap;
+    word-break: break-all;
+    font-family: Menlo, Monaco;
+    line-height: 160%;
+  }</pre>
+    </section>
+</main>
                                     </div>
                                 </div>
                             </article>
-                                <section class="relative ">
-                                    <article class="kss-section__markup overflow_scroll scrollbar-mini" style="max-height: 30vh;">
-                                        <pre><code class="language-markup"  id="input-recipes" value='Markup:&lt;H1&gt;Hello World This is a Test&lt;/H1&gt;'>Markup:&lt;H1&gt;Hello World This is a Test&lt;/H1&gt;</code></pre>
-                                    </article>
-                                    <input class="display_none text-input html-code-input" type="text" name="" id="input-recipes" value='Markup:&lt;H1&gt;Hello World This is a Test&lt;/H1&gt;'>
-                                    <a class="absolute bg_black-3 br_1 br_black-3 br_radius br_solid font_medium h:bg_black-1 m-r_3 p-x_4 p-y_3 r_3 shadow_overlap-light t_3" onclick="CopyText( '#input-recipes',event )"><i class="far fa-copy"></i> Copy</a>
-                                </section>
+                            <section class="relative  br-t_1 br_solid br_black-2 bg_black-1 shadow_n1 texture_light">
+                                <main class="kss-section__markup overflow_scroll scrollbar-mini collapse transition_3" id="collapse-recipes">
+                                    <pre><code class="language-markup"  id="code-recipes" value='&lt;main class&#x3D;&quot;reading-typography&quot;&gt;
+    &lt;section&gt;
+        &lt;hgroup&gt;
+            &lt;h1&gt;h1 HTML5 Kitchen Sink&lt;/h1&gt;
+            &lt;h2&gt;h2 Back in my quaint &lt;a href&#x3D;&#x27;#&#x27;&gt;garden&lt;/a&gt;&lt;/h2&gt;
+            &lt;h3&gt;h3 Jaunty &lt;a href&#x3D;&#x27;#&#x27;&gt;zinnias&lt;/a&gt; vie with flaunting phlox&lt;/h3&gt;
+            &lt;h4&gt;h4 Five or six big jet planes zoomed quickly by the new tower.&lt;/h4&gt;
+            &lt;h5&gt;h5 Expect skilled songwriters to use many jazzy, quaint old alphabets effectively.&lt;/h5&gt;
+            &lt;h6&gt;h6 Pack my box with five dozen liquor jugs.&lt;/h6&gt;
+        &lt;/hgroup&gt;
+    &lt;/section&gt;
+    &lt;hr&gt;
+    &lt;section&gt;
+        &lt;header&gt;
+            &lt;nav&gt;
+                &lt;ul&gt;
+                    &lt;li&gt;&lt;a href&#x3D;&quot;#&quot;&gt;Home&lt;/a&gt;&lt;/li&gt;
+                    &lt;li&gt;&lt;a href&#x3D;&quot;#&quot;&gt;About&lt;/a&gt;&lt;/li&gt;
+                    &lt;li&gt;&lt;a href&#x3D;&quot;#&quot;&gt;Contact&lt;/a&gt;&lt;/li&gt;
+                &lt;/ul&gt;
+            &lt;/nav&gt;
+        &lt;/header&gt;
+        &lt;article&gt;
+            &lt;p&gt;This paragraph is nested inside an article. It contains many different, sometimes useful, &lt;a href&#x3D;&quot;https://www.w3schools.com/tags/&quot;&gt;HTML5 tags&lt;/a&gt;. Of course there are classics like &lt;em&gt;emphasis&lt;/em&gt;, &lt;strong&gt;strong&lt;/strong&gt;, and &lt;small&gt;small&lt;/small&gt; but there are many others as well. Hover the following text for abbreviation tag: &lt;abbr title&#x3D;&quot;abbreviation&quot;&gt;abbr&lt;/abbr&gt;. Similarly, you can use acronym tag like this: &lt;acronym title&#x3D;&quot;For The Win&quot;&gt;ftw&lt;/acronym&gt;. You can define &lt;del&gt;deleted text&lt;/del&gt; which often gets replaced with &lt;ins&gt;inserted&lt;/ins&gt; text.&lt;/p&gt;
+            &lt;p&gt;You can also use &lt;kbd&gt;keyboard text&lt;/kbd&gt;, which sometimes is styled similarly to the &lt;code&gt;&amp;lt;code&amp;gt;&lt;/code&gt; or &lt;samp&gt;samp&lt;/samp&gt; tags. Even more specifically, there is a tag just for &lt;var&gt;variables&lt;/var&gt;. Not to be mistaken with blockquotes below, the quote tag lets you denote something as &lt;q&gt;quoted text&lt;/q&gt;. Lastly don&#x27;t forget the sub (H&lt;sub&gt;2&lt;/sub&gt;O) and sup (E &#x3D; MC&lt;sup&gt;2&lt;/sup&gt;) tags. &lt;/p&gt;
+        &lt;/article&gt;
+        &lt;aside&gt;This is an aside.&lt;/aside&gt;
+        &lt;footer&gt;This is footer for this section&lt;/footer&gt;
+    &lt;/section&gt;
+    &lt;hr&gt;
+    &lt;section&gt;
+        &lt;blockquote&gt;
+            &lt;p&gt;Blockquote: I quickly explained that many big jobs involve few hazards&lt;/p&gt;
+        &lt;/blockquote&gt;
+        &lt;blockquote&gt;
+            &lt;p&gt;This is a mult-line blockquote with a cite reference. People think focus means saying yes to the thing you’ve got to focus on. But that’s not what it means at all. It means saying no to the hundred other good ideas that there are. You have to pick carefully. I’m actually as proud of the things we haven’tdone as the things I have done. Innovation is saying no to 1,000 things. &lt;cite&gt;Steve Jobs – Apple Worldwide Developers’ Conference, 1997&lt;/cite&gt;
+            &lt;/p&gt;
+        &lt;/blockquote&gt;
+    &lt;/section&gt;
+    &lt;hr&gt;
+    &lt;section&gt;
+        &lt;table&gt;
+            &lt;caption&gt;Tables can have captions now.&lt;/caption&gt;
+            &lt;tbody&gt;
+                &lt;tr&gt;
+                    &lt;th&gt;Person&lt;/th&gt;
+                    &lt;th&gt;Number&lt;/th&gt;
+                    &lt;th&gt;Third Column&lt;/th&gt;
+                &lt;/tr&gt;
+                &lt;tr&gt;
+                    &lt;td&gt;Someone Lastname&lt;/td&gt;
+                    &lt;td&gt;900&lt;/td&gt;
+                    &lt;td&gt;Nullam quis risus eget urna mollis ornare vel eu leo.&lt;/td&gt;
+                &lt;/tr&gt;
+                &lt;tr&gt;
+                    &lt;td&gt;&lt;a href&#x3D;&quot;#&quot;&gt;Person Name&lt;/a&gt;&lt;/td&gt;
+                    &lt;td&gt;1200&lt;/td&gt;
+                    &lt;td&gt;Vestibulum id ligula porta felis euismod semper. Donec ullamcorper nulla non metus auctor fringilla.&lt;/td&gt;
+                &lt;/tr&gt;
+                &lt;tr&gt;
+                    &lt;td&gt;Another Person&lt;/td&gt;
+                    &lt;td&gt;1500&lt;/td&gt;
+                    &lt;td&gt;Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Nullam id dolor id nibh ultricies vehicula ut id elit.&lt;/td&gt;
+                &lt;/tr&gt;
+                &lt;tr&gt;
+                    &lt;td&gt;Last One&lt;/td&gt;
+                    &lt;td&gt;2800&lt;/td&gt;
+                    &lt;td&gt;Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Cras mattis consectetur purus sit amet fermentum.&lt;/td&gt;
+                &lt;/tr&gt;
+            &lt;/tbody&gt;
+        &lt;/table&gt;
+    &lt;/section&gt;
+    &lt;hr&gt;
+    &lt;section&gt;
+        &lt;dl&gt;
+            &lt;dt&gt;Definition List Title&lt;/dt&gt;
+            &lt;dd&gt;Definition list division.&lt;/dd&gt;
+            &lt;dt&gt;Kitchen Sink&lt;/dt&gt;
+            &lt;dd&gt;Used in expressions to describe work in which all conceivable (and some inconceivable) sources have been mined. In this case, a bunch of markup.&lt;/dd&gt;
+            &lt;dt&gt;aside&lt;/dt&gt;
+            &lt;dd&gt;Defines content aside from the page content&lt;/dd&gt;
+            &lt;dt&gt;blockquote&lt;/dt&gt;
+            &lt;dd&gt;Defines a section that is quoted from another source&lt;/dd&gt;
+        &lt;/dl&gt;
+    &lt;/section&gt;
+    &lt;hr&gt;
+    &lt;section&gt;
+        &lt;ul&gt;
+            &lt;li&gt;Unordered List item one &lt;ul&gt;
+                    &lt;li&gt;Nested list item &lt;ul&gt;
+                            &lt;li&gt;Level 3, item one&lt;/li&gt;
+                            &lt;li&gt;Level 3, item two&lt;/li&gt;
+                            &lt;li&gt;Level 3, item three&lt;/li&gt;
+                            &lt;li&gt;Level 3, item four&lt;/li&gt;
+                        &lt;/ul&gt;
+                    &lt;/li&gt;
+                    &lt;li&gt;List item two&lt;/li&gt;
+                    &lt;li&gt;List item three&lt;/li&gt;
+                    &lt;li&gt;List item four&lt;/li&gt;
+                &lt;/ul&gt;
+            &lt;/li&gt;
+            &lt;li&gt;List item two&lt;/li&gt;
+            &lt;li&gt;List item three&lt;/li&gt;
+            &lt;li&gt;List item four&lt;/li&gt;
+        &lt;/ul&gt;
+        &lt;hr&gt;
+        &lt;ol&gt;
+            &lt;li&gt;List item one &lt;ol&gt;
+                    &lt;li&gt;List item one &lt;ol&gt;
+                            &lt;li&gt;List item one&lt;/li&gt;
+                            &lt;li&gt;List item two&lt;/li&gt;
+                            &lt;li&gt;List item three&lt;/li&gt;
+                            &lt;li&gt;List item four&lt;/li&gt;
+                        &lt;/ol&gt;
+                    &lt;/li&gt;
+                    &lt;li&gt;List item two&lt;/li&gt;
+                    &lt;li&gt;List item three&lt;/li&gt;
+                    &lt;li&gt;List item four&lt;/li&gt;
+                &lt;/ol&gt;
+            &lt;/li&gt;
+            &lt;li&gt;List item two&lt;/li&gt;
+            &lt;li&gt;List item three&lt;/li&gt;
+            &lt;li&gt;List item four&lt;/li&gt;
+        &lt;/ol&gt;
+    &lt;/section&gt;
+    &lt;hr&gt;
+    &lt;section&gt;
+        &lt;address&gt;1 Infinite Loop&lt;br&gt; Cupertino, CA 95014&lt;br&gt; United States&lt;/address&gt;
+    &lt;/section&gt;
+    &lt;hr&gt;
+    &lt;section&gt;
+        &lt;pre&gt;
+  pre {
+    display: block;
+    padding: 7px;
+    background-color: #F5F5F5;
+    border: 1px solid #E1E1E8;
+    border-radius: 3px;
+    white-space: pre-wrap;
+    word-break: break-all;
+    font-family: Menlo, Monaco;
+    line-height: 160%;
+  }&lt;/pre&gt;
+    &lt;/section&gt;
+&lt;/main&gt;'>&lt;main class&#x3D;&quot;reading-typography&quot;&gt;
+    &lt;section&gt;
+        &lt;hgroup&gt;
+            &lt;h1&gt;h1 HTML5 Kitchen Sink&lt;/h1&gt;
+            &lt;h2&gt;h2 Back in my quaint &lt;a href&#x3D;&#x27;#&#x27;&gt;garden&lt;/a&gt;&lt;/h2&gt;
+            &lt;h3&gt;h3 Jaunty &lt;a href&#x3D;&#x27;#&#x27;&gt;zinnias&lt;/a&gt; vie with flaunting phlox&lt;/h3&gt;
+            &lt;h4&gt;h4 Five or six big jet planes zoomed quickly by the new tower.&lt;/h4&gt;
+            &lt;h5&gt;h5 Expect skilled songwriters to use many jazzy, quaint old alphabets effectively.&lt;/h5&gt;
+            &lt;h6&gt;h6 Pack my box with five dozen liquor jugs.&lt;/h6&gt;
+        &lt;/hgroup&gt;
+    &lt;/section&gt;
+    &lt;hr&gt;
+    &lt;section&gt;
+        &lt;header&gt;
+            &lt;nav&gt;
+                &lt;ul&gt;
+                    &lt;li&gt;&lt;a href&#x3D;&quot;#&quot;&gt;Home&lt;/a&gt;&lt;/li&gt;
+                    &lt;li&gt;&lt;a href&#x3D;&quot;#&quot;&gt;About&lt;/a&gt;&lt;/li&gt;
+                    &lt;li&gt;&lt;a href&#x3D;&quot;#&quot;&gt;Contact&lt;/a&gt;&lt;/li&gt;
+                &lt;/ul&gt;
+            &lt;/nav&gt;
+        &lt;/header&gt;
+        &lt;article&gt;
+            &lt;p&gt;This paragraph is nested inside an article. It contains many different, sometimes useful, &lt;a href&#x3D;&quot;https://www.w3schools.com/tags/&quot;&gt;HTML5 tags&lt;/a&gt;. Of course there are classics like &lt;em&gt;emphasis&lt;/em&gt;, &lt;strong&gt;strong&lt;/strong&gt;, and &lt;small&gt;small&lt;/small&gt; but there are many others as well. Hover the following text for abbreviation tag: &lt;abbr title&#x3D;&quot;abbreviation&quot;&gt;abbr&lt;/abbr&gt;. Similarly, you can use acronym tag like this: &lt;acronym title&#x3D;&quot;For The Win&quot;&gt;ftw&lt;/acronym&gt;. You can define &lt;del&gt;deleted text&lt;/del&gt; which often gets replaced with &lt;ins&gt;inserted&lt;/ins&gt; text.&lt;/p&gt;
+            &lt;p&gt;You can also use &lt;kbd&gt;keyboard text&lt;/kbd&gt;, which sometimes is styled similarly to the &lt;code&gt;&amp;lt;code&amp;gt;&lt;/code&gt; or &lt;samp&gt;samp&lt;/samp&gt; tags. Even more specifically, there is a tag just for &lt;var&gt;variables&lt;/var&gt;. Not to be mistaken with blockquotes below, the quote tag lets you denote something as &lt;q&gt;quoted text&lt;/q&gt;. Lastly don&#x27;t forget the sub (H&lt;sub&gt;2&lt;/sub&gt;O) and sup (E &#x3D; MC&lt;sup&gt;2&lt;/sup&gt;) tags. &lt;/p&gt;
+        &lt;/article&gt;
+        &lt;aside&gt;This is an aside.&lt;/aside&gt;
+        &lt;footer&gt;This is footer for this section&lt;/footer&gt;
+    &lt;/section&gt;
+    &lt;hr&gt;
+    &lt;section&gt;
+        &lt;blockquote&gt;
+            &lt;p&gt;Blockquote: I quickly explained that many big jobs involve few hazards&lt;/p&gt;
+        &lt;/blockquote&gt;
+        &lt;blockquote&gt;
+            &lt;p&gt;This is a mult-line blockquote with a cite reference. People think focus means saying yes to the thing you’ve got to focus on. But that’s not what it means at all. It means saying no to the hundred other good ideas that there are. You have to pick carefully. I’m actually as proud of the things we haven’tdone as the things I have done. Innovation is saying no to 1,000 things. &lt;cite&gt;Steve Jobs – Apple Worldwide Developers’ Conference, 1997&lt;/cite&gt;
+            &lt;/p&gt;
+        &lt;/blockquote&gt;
+    &lt;/section&gt;
+    &lt;hr&gt;
+    &lt;section&gt;
+        &lt;table&gt;
+            &lt;caption&gt;Tables can have captions now.&lt;/caption&gt;
+            &lt;tbody&gt;
+                &lt;tr&gt;
+                    &lt;th&gt;Person&lt;/th&gt;
+                    &lt;th&gt;Number&lt;/th&gt;
+                    &lt;th&gt;Third Column&lt;/th&gt;
+                &lt;/tr&gt;
+                &lt;tr&gt;
+                    &lt;td&gt;Someone Lastname&lt;/td&gt;
+                    &lt;td&gt;900&lt;/td&gt;
+                    &lt;td&gt;Nullam quis risus eget urna mollis ornare vel eu leo.&lt;/td&gt;
+                &lt;/tr&gt;
+                &lt;tr&gt;
+                    &lt;td&gt;&lt;a href&#x3D;&quot;#&quot;&gt;Person Name&lt;/a&gt;&lt;/td&gt;
+                    &lt;td&gt;1200&lt;/td&gt;
+                    &lt;td&gt;Vestibulum id ligula porta felis euismod semper. Donec ullamcorper nulla non metus auctor fringilla.&lt;/td&gt;
+                &lt;/tr&gt;
+                &lt;tr&gt;
+                    &lt;td&gt;Another Person&lt;/td&gt;
+                    &lt;td&gt;1500&lt;/td&gt;
+                    &lt;td&gt;Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Nullam id dolor id nibh ultricies vehicula ut id elit.&lt;/td&gt;
+                &lt;/tr&gt;
+                &lt;tr&gt;
+                    &lt;td&gt;Last One&lt;/td&gt;
+                    &lt;td&gt;2800&lt;/td&gt;
+                    &lt;td&gt;Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Cras mattis consectetur purus sit amet fermentum.&lt;/td&gt;
+                &lt;/tr&gt;
+            &lt;/tbody&gt;
+        &lt;/table&gt;
+    &lt;/section&gt;
+    &lt;hr&gt;
+    &lt;section&gt;
+        &lt;dl&gt;
+            &lt;dt&gt;Definition List Title&lt;/dt&gt;
+            &lt;dd&gt;Definition list division.&lt;/dd&gt;
+            &lt;dt&gt;Kitchen Sink&lt;/dt&gt;
+            &lt;dd&gt;Used in expressions to describe work in which all conceivable (and some inconceivable) sources have been mined. In this case, a bunch of markup.&lt;/dd&gt;
+            &lt;dt&gt;aside&lt;/dt&gt;
+            &lt;dd&gt;Defines content aside from the page content&lt;/dd&gt;
+            &lt;dt&gt;blockquote&lt;/dt&gt;
+            &lt;dd&gt;Defines a section that is quoted from another source&lt;/dd&gt;
+        &lt;/dl&gt;
+    &lt;/section&gt;
+    &lt;hr&gt;
+    &lt;section&gt;
+        &lt;ul&gt;
+            &lt;li&gt;Unordered List item one &lt;ul&gt;
+                    &lt;li&gt;Nested list item &lt;ul&gt;
+                            &lt;li&gt;Level 3, item one&lt;/li&gt;
+                            &lt;li&gt;Level 3, item two&lt;/li&gt;
+                            &lt;li&gt;Level 3, item three&lt;/li&gt;
+                            &lt;li&gt;Level 3, item four&lt;/li&gt;
+                        &lt;/ul&gt;
+                    &lt;/li&gt;
+                    &lt;li&gt;List item two&lt;/li&gt;
+                    &lt;li&gt;List item three&lt;/li&gt;
+                    &lt;li&gt;List item four&lt;/li&gt;
+                &lt;/ul&gt;
+            &lt;/li&gt;
+            &lt;li&gt;List item two&lt;/li&gt;
+            &lt;li&gt;List item three&lt;/li&gt;
+            &lt;li&gt;List item four&lt;/li&gt;
+        &lt;/ul&gt;
+        &lt;hr&gt;
+        &lt;ol&gt;
+            &lt;li&gt;List item one &lt;ol&gt;
+                    &lt;li&gt;List item one &lt;ol&gt;
+                            &lt;li&gt;List item one&lt;/li&gt;
+                            &lt;li&gt;List item two&lt;/li&gt;
+                            &lt;li&gt;List item three&lt;/li&gt;
+                            &lt;li&gt;List item four&lt;/li&gt;
+                        &lt;/ol&gt;
+                    &lt;/li&gt;
+                    &lt;li&gt;List item two&lt;/li&gt;
+                    &lt;li&gt;List item three&lt;/li&gt;
+                    &lt;li&gt;List item four&lt;/li&gt;
+                &lt;/ol&gt;
+            &lt;/li&gt;
+            &lt;li&gt;List item two&lt;/li&gt;
+            &lt;li&gt;List item three&lt;/li&gt;
+            &lt;li&gt;List item four&lt;/li&gt;
+        &lt;/ol&gt;
+    &lt;/section&gt;
+    &lt;hr&gt;
+    &lt;section&gt;
+        &lt;address&gt;1 Infinite Loop&lt;br&gt; Cupertino, CA 95014&lt;br&gt; United States&lt;/address&gt;
+    &lt;/section&gt;
+    &lt;hr&gt;
+    &lt;section&gt;
+        &lt;pre&gt;
+  pre {
+    display: block;
+    padding: 7px;
+    background-color: #F5F5F5;
+    border: 1px solid #E1E1E8;
+    border-radius: 3px;
+    white-space: pre-wrap;
+    word-break: break-all;
+    font-family: Menlo, Monaco;
+    line-height: 160%;
+  }&lt;/pre&gt;
+    &lt;/section&gt;
+&lt;/main&gt;</code></pre>
+                                    <input class="display_none text-input html-code-input" type="text" name="" id="input-recipes" value='&lt;main class&#x3D;&quot;reading-typography&quot;&gt;
+    &lt;section&gt;
+        &lt;hgroup&gt;
+            &lt;h1&gt;h1 HTML5 Kitchen Sink&lt;/h1&gt;
+            &lt;h2&gt;h2 Back in my quaint &lt;a href&#x3D;&#x27;#&#x27;&gt;garden&lt;/a&gt;&lt;/h2&gt;
+            &lt;h3&gt;h3 Jaunty &lt;a href&#x3D;&#x27;#&#x27;&gt;zinnias&lt;/a&gt; vie with flaunting phlox&lt;/h3&gt;
+            &lt;h4&gt;h4 Five or six big jet planes zoomed quickly by the new tower.&lt;/h4&gt;
+            &lt;h5&gt;h5 Expect skilled songwriters to use many jazzy, quaint old alphabets effectively.&lt;/h5&gt;
+            &lt;h6&gt;h6 Pack my box with five dozen liquor jugs.&lt;/h6&gt;
+        &lt;/hgroup&gt;
+    &lt;/section&gt;
+    &lt;hr&gt;
+    &lt;section&gt;
+        &lt;header&gt;
+            &lt;nav&gt;
+                &lt;ul&gt;
+                    &lt;li&gt;&lt;a href&#x3D;&quot;#&quot;&gt;Home&lt;/a&gt;&lt;/li&gt;
+                    &lt;li&gt;&lt;a href&#x3D;&quot;#&quot;&gt;About&lt;/a&gt;&lt;/li&gt;
+                    &lt;li&gt;&lt;a href&#x3D;&quot;#&quot;&gt;Contact&lt;/a&gt;&lt;/li&gt;
+                &lt;/ul&gt;
+            &lt;/nav&gt;
+        &lt;/header&gt;
+        &lt;article&gt;
+            &lt;p&gt;This paragraph is nested inside an article. It contains many different, sometimes useful, &lt;a href&#x3D;&quot;https://www.w3schools.com/tags/&quot;&gt;HTML5 tags&lt;/a&gt;. Of course there are classics like &lt;em&gt;emphasis&lt;/em&gt;, &lt;strong&gt;strong&lt;/strong&gt;, and &lt;small&gt;small&lt;/small&gt; but there are many others as well. Hover the following text for abbreviation tag: &lt;abbr title&#x3D;&quot;abbreviation&quot;&gt;abbr&lt;/abbr&gt;. Similarly, you can use acronym tag like this: &lt;acronym title&#x3D;&quot;For The Win&quot;&gt;ftw&lt;/acronym&gt;. You can define &lt;del&gt;deleted text&lt;/del&gt; which often gets replaced with &lt;ins&gt;inserted&lt;/ins&gt; text.&lt;/p&gt;
+            &lt;p&gt;You can also use &lt;kbd&gt;keyboard text&lt;/kbd&gt;, which sometimes is styled similarly to the &lt;code&gt;&amp;lt;code&amp;gt;&lt;/code&gt; or &lt;samp&gt;samp&lt;/samp&gt; tags. Even more specifically, there is a tag just for &lt;var&gt;variables&lt;/var&gt;. Not to be mistaken with blockquotes below, the quote tag lets you denote something as &lt;q&gt;quoted text&lt;/q&gt;. Lastly don&#x27;t forget the sub (H&lt;sub&gt;2&lt;/sub&gt;O) and sup (E &#x3D; MC&lt;sup&gt;2&lt;/sup&gt;) tags. &lt;/p&gt;
+        &lt;/article&gt;
+        &lt;aside&gt;This is an aside.&lt;/aside&gt;
+        &lt;footer&gt;This is footer for this section&lt;/footer&gt;
+    &lt;/section&gt;
+    &lt;hr&gt;
+    &lt;section&gt;
+        &lt;blockquote&gt;
+            &lt;p&gt;Blockquote: I quickly explained that many big jobs involve few hazards&lt;/p&gt;
+        &lt;/blockquote&gt;
+        &lt;blockquote&gt;
+            &lt;p&gt;This is a mult-line blockquote with a cite reference. People think focus means saying yes to the thing you’ve got to focus on. But that’s not what it means at all. It means saying no to the hundred other good ideas that there are. You have to pick carefully. I’m actually as proud of the things we haven’tdone as the things I have done. Innovation is saying no to 1,000 things. &lt;cite&gt;Steve Jobs – Apple Worldwide Developers’ Conference, 1997&lt;/cite&gt;
+            &lt;/p&gt;
+        &lt;/blockquote&gt;
+    &lt;/section&gt;
+    &lt;hr&gt;
+    &lt;section&gt;
+        &lt;table&gt;
+            &lt;caption&gt;Tables can have captions now.&lt;/caption&gt;
+            &lt;tbody&gt;
+                &lt;tr&gt;
+                    &lt;th&gt;Person&lt;/th&gt;
+                    &lt;th&gt;Number&lt;/th&gt;
+                    &lt;th&gt;Third Column&lt;/th&gt;
+                &lt;/tr&gt;
+                &lt;tr&gt;
+                    &lt;td&gt;Someone Lastname&lt;/td&gt;
+                    &lt;td&gt;900&lt;/td&gt;
+                    &lt;td&gt;Nullam quis risus eget urna mollis ornare vel eu leo.&lt;/td&gt;
+                &lt;/tr&gt;
+                &lt;tr&gt;
+                    &lt;td&gt;&lt;a href&#x3D;&quot;#&quot;&gt;Person Name&lt;/a&gt;&lt;/td&gt;
+                    &lt;td&gt;1200&lt;/td&gt;
+                    &lt;td&gt;Vestibulum id ligula porta felis euismod semper. Donec ullamcorper nulla non metus auctor fringilla.&lt;/td&gt;
+                &lt;/tr&gt;
+                &lt;tr&gt;
+                    &lt;td&gt;Another Person&lt;/td&gt;
+                    &lt;td&gt;1500&lt;/td&gt;
+                    &lt;td&gt;Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Nullam id dolor id nibh ultricies vehicula ut id elit.&lt;/td&gt;
+                &lt;/tr&gt;
+                &lt;tr&gt;
+                    &lt;td&gt;Last One&lt;/td&gt;
+                    &lt;td&gt;2800&lt;/td&gt;
+                    &lt;td&gt;Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Cras mattis consectetur purus sit amet fermentum.&lt;/td&gt;
+                &lt;/tr&gt;
+            &lt;/tbody&gt;
+        &lt;/table&gt;
+    &lt;/section&gt;
+    &lt;hr&gt;
+    &lt;section&gt;
+        &lt;dl&gt;
+            &lt;dt&gt;Definition List Title&lt;/dt&gt;
+            &lt;dd&gt;Definition list division.&lt;/dd&gt;
+            &lt;dt&gt;Kitchen Sink&lt;/dt&gt;
+            &lt;dd&gt;Used in expressions to describe work in which all conceivable (and some inconceivable) sources have been mined. In this case, a bunch of markup.&lt;/dd&gt;
+            &lt;dt&gt;aside&lt;/dt&gt;
+            &lt;dd&gt;Defines content aside from the page content&lt;/dd&gt;
+            &lt;dt&gt;blockquote&lt;/dt&gt;
+            &lt;dd&gt;Defines a section that is quoted from another source&lt;/dd&gt;
+        &lt;/dl&gt;
+    &lt;/section&gt;
+    &lt;hr&gt;
+    &lt;section&gt;
+        &lt;ul&gt;
+            &lt;li&gt;Unordered List item one &lt;ul&gt;
+                    &lt;li&gt;Nested list item &lt;ul&gt;
+                            &lt;li&gt;Level 3, item one&lt;/li&gt;
+                            &lt;li&gt;Level 3, item two&lt;/li&gt;
+                            &lt;li&gt;Level 3, item three&lt;/li&gt;
+                            &lt;li&gt;Level 3, item four&lt;/li&gt;
+                        &lt;/ul&gt;
+                    &lt;/li&gt;
+                    &lt;li&gt;List item two&lt;/li&gt;
+                    &lt;li&gt;List item three&lt;/li&gt;
+                    &lt;li&gt;List item four&lt;/li&gt;
+                &lt;/ul&gt;
+            &lt;/li&gt;
+            &lt;li&gt;List item two&lt;/li&gt;
+            &lt;li&gt;List item three&lt;/li&gt;
+            &lt;li&gt;List item four&lt;/li&gt;
+        &lt;/ul&gt;
+        &lt;hr&gt;
+        &lt;ol&gt;
+            &lt;li&gt;List item one &lt;ol&gt;
+                    &lt;li&gt;List item one &lt;ol&gt;
+                            &lt;li&gt;List item one&lt;/li&gt;
+                            &lt;li&gt;List item two&lt;/li&gt;
+                            &lt;li&gt;List item three&lt;/li&gt;
+                            &lt;li&gt;List item four&lt;/li&gt;
+                        &lt;/ol&gt;
+                    &lt;/li&gt;
+                    &lt;li&gt;List item two&lt;/li&gt;
+                    &lt;li&gt;List item three&lt;/li&gt;
+                    &lt;li&gt;List item four&lt;/li&gt;
+                &lt;/ol&gt;
+            &lt;/li&gt;
+            &lt;li&gt;List item two&lt;/li&gt;
+            &lt;li&gt;List item three&lt;/li&gt;
+            &lt;li&gt;List item four&lt;/li&gt;
+        &lt;/ol&gt;
+    &lt;/section&gt;
+    &lt;hr&gt;
+    &lt;section&gt;
+        &lt;address&gt;1 Infinite Loop&lt;br&gt; Cupertino, CA 95014&lt;br&gt; United States&lt;/address&gt;
+    &lt;/section&gt;
+    &lt;hr&gt;
+    &lt;section&gt;
+        &lt;pre&gt;
+  pre {
+    display: block;
+    padding: 7px;
+    background-color: #F5F5F5;
+    border: 1px solid #E1E1E8;
+    border-radius: 3px;
+    white-space: pre-wrap;
+    word-break: break-all;
+    font-family: Menlo, Monaco;
+    line-height: 160%;
+  }&lt;/pre&gt;
+    &lt;/section&gt;
+&lt;/main&gt;'>
+                                </main>
+                                <header class="flex_row flex shadow_n1 br-br_radius br-bl_radius">
+                                    <div class="flex flex_row flex_auto collapsed h:bg_black-7 br-bl_radius c_black-8 h:c_white" aria-expanded="false" data-bs-toggle="collapse" data-bs-target="#collapse-recipes" aria-controls="#collapse-recipes">
+                                        <div class="flex_none p_2 font_1">
+                                            <i class="a:rotation fa-fw fa-chevron-up fas self_center text_center"></i>
+                                        </div>
+                                        <div class="flex_auto flex flex_row">
+                                            <h4 class="font_0 font_bold flex_auto p-l_2 self_center m_0 text_left">Code Sample</h4>
+                                        </div>
+                                    </div>
+                                    <a class="bg_primary br_1 br_black-3 br_solid c_white flex_none font_medium font_ui h:bg_primary-n2 h:undecorated m-l_auto p-x_3 p-y_2 br-br_radius" onclick="CopyCode( 'input-recipes')"><i class="fas fa-copy"></i> Copy Code</a>
+                                </header>
+                            </section>
                             </header>
                 </main>
             </div>
@@ -140,7 +763,22 @@
         <script src="kss-assets/vendor/prism.js"></script>
         <script src="kss-assets/js/kss.js"></script>
         <script>
+            var CopyCode = function ($id) {
+                var copyTextarea = document.getElementById($id);
+                console.log($id);
+                copyTextarea.classList.remove('display_none');
+                copyTextarea.focus();
+                copyTextarea.select();
 
+                try {
+                    var successful = document.execCommand('copy');
+                    var msg = successful ? 'successful' : 'unsuccessful';
+                    console.log('Copying text command was ' + msg);
+                } catch (err) {
+                    console.log('Oops, unable to copy');
+                }
+                copyTextarea.classList.add('display_none');
+            };
         </script>
         <script src=""></script>
 

@@ -9,8 +9,8 @@ Markup:
     <li class="font-size_down-1">{{> "Data.Presenter.Title"}}</li>
     <li class="font-size_down-2">{{> "Data.Presenter.Location"}}</li>
 </ul>
-<div class="reading-typography">
-<h3>Bio</h3>
+<div class="reading-typography font_0">
+<span class="block">Bio</span>
 {{> "Data.Presenter.Bio" }}
 </div>
 
