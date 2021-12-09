@@ -1,5 +1,5 @@
 @charset "UTF-8";
-.icon-after::after, a.link[target=_blank]::after, a.link[href^=http]::after, a.link[href^=https]::after, .icon-before:before, a.link:before {
+.icon-after::after, .link[target=_blank]::after, .reading-typography a[target=_blank]::after, .link[href^=http]::after, .reading-typography a[href^=http]::after, .link[href^=https]::after, .reading-typography a[href^=https]::after, .icon-before::before, .link::before, .reading-typography a::before {
   -webkit-font-smoothing: antialiased;
   display: inline-block;
   font-style: normal;
@@ -10,52 +10,59 @@
   font-weight: 900;
 }
 
-.icon-before:before, a.link:before {
+.icon-before::before, .link::before, .reading-typography a::before {
   margin-right: 0.25em;
   width: 1.28571429em;
   text-align: center;
 }
 
-.icon-after::after, a.link[target=_blank]::after, a.link[href^=http]::after, a.link[href^=https]::after {
+.icon-after::after, .link[target=_blank]::after, .reading-typography a[target=_blank]::after, .link[href^=http]::after, .reading-typography a[href^=http]::after, .link[href^=https]::after, .reading-typography a[href^=https]::after {
   margin-left: 0.25em;
   width: 1.28571429em;
   text-align: center;
 }
 
-a.link[href$=".pdf"]:before {
+.link, .reading-typography a {
+  color: hsl(var(--accent-h), var(--accent-s), calc( var( --accent-l ) + ( ( var( --accent-l )) * -0.37 )));
+}
+h1 .link, h1 .reading-typography a, .reading-typography h1 a, h2 .link, h2 .reading-typography a, .reading-typography h2 a, h3 .link, h3 .reading-typography a, .reading-typography h3 a, h4 .link, h4 .reading-typography a, .reading-typography h4 a, h5 .link, h5 .reading-typography a, .reading-typography h5 a, h6 .link, h6 .reading-typography a, .reading-typography h6 a {
+  color: inherit;
+}
+.link[href$=".pdf"]::before, .reading-typography a[href$=".pdf"]::before {
   content: "";
 }
-a.link[href$=".doc"]:before, a.link[href$=".docx"]:before, a.link[href$=".txt"]:before {
+.link[href$=".doc"]::before, .reading-typography a[href$=".doc"]::before, .link[href$=".docx"]::before, .reading-typography a[href$=".docx"]::before, .link[href$=".txt"]::before, .reading-typography a[href$=".txt"]::before {
   content: "";
 }
-a.link[href$=".zip"]:before {
+.link[href$=".zip"]::before, .reading-typography a[href$=".zip"]::before {
   content: "";
 }
-a.link[href*=".ppt"]:before, a.link[href*=".pptx"]:before {
+.link[href*=".ppt"]::before, .reading-typography a[href*=".ppt"]::before, .link[href*=".pptx"]::before, .reading-typography a[href*=".pptx"]::before {
   content: "";
 }
-a.link[href$=".csv"]:before, a.link[href$=".xls"]:before, a.link[href$=".xlsx"]:before {
+.link[href$=".csv"]::before, .reading-typography a[href$=".csv"]::before, .link[href$=".xls"]::before, .reading-typography a[href$=".xls"]::before, .link[href$=".xlsx"]::before, .reading-typography a[href$=".xlsx"]::before {
   content: "";
 }
-a.link[href$=".mp4"]:before, a.link[href$=".mov"]:before {
+.link[href$=".mp4"]::before, .reading-typography a[href$=".mp4"]::before, .link[href$=".mov"]::before, .reading-typography a[href$=".mov"]::before {
   content: "";
 }
-a.link[target=_blank]::after, a.link[href^=http]::after, a.link[href^=https]::after {
+.link[target=_blank]::after, .reading-typography a[target=_blank]::after, .link[href^=http]::after, .reading-typography a[href^=http]::after, .link[href^=https]::after, .reading-typography a[href^=https]::after {
   content: "";
 }
-a.link[href^="mailto:"]::after {
+.link[href^="mailto:"]::after, .reading-typography a[href^="mailto:"]::after {
   content: "";
 }
-a.link[href^="tel:"]::after {
+.link[href^="tel:"]::after, .reading-typography a[href^="tel:"]::after {
   content: "";
 }
-a.link[href^="fax:"]::after {
+.link[href^="fax:"]::after, .reading-typography a[href^="fax:"]::after {
   content: "";
 }
-a.link:hover {
+.link:hover, .reading-typography a:hover {
   text-decoration: underline;
+  color: hsl(var(--accent-h), var(--accent-s), calc( var( --accent-l ) + ( ( var( --accent-l )) * -0.50 )));
 }
-a.link.website::before {
+.link.website::before, .reading-typography a.website::before {
   content: "";
 }
 
@@ -67,7 +74,7 @@ a.link.website::before {
   color: #101010;
 }
 
-::root {
+:root {
   --vertical-space: 1rem;
   --headline-color: #3182bd;
   --font_up-4: 2.44140625em;
@@ -86,6 +93,7 @@ a.link.website::before {
 .reading-typography h5,
 .reading-typography h6 {
   color: hsla(var(--primary-h) var(--primary-s) var(--primary-l)/1);
+  font-family: Maven Pro, Open Sans, Helvetica Neue, Helvetica, Helvetica, Arial, sans-serif;
 }
 .reading-typography h1:not(:first-child),
 .reading-typography h2:not(:first-child),
@@ -113,6 +121,7 @@ a.link.website::before {
 .reading-typography h6, .reading-typography p, .reading-typography ul, .reading-typography ol, .reading-typography dl, .reading-typography table {
   font-size: var(--font_0);
   margin-top: var(--margin-top);
+  font-family: Open Sans, Helvetica Neue, Helvetica, Helvetica, Arial, sans-serif;
 }
 .reading-typography tfoot, .reading-typography cite {
   font-size: var(--font_down-1);
@@ -122,6 +131,10 @@ a.link.website::before {
 }
 .reading-typography thead {
   border-bottom: 1px solid hsla(var(--primary-h) var(--primary-s) var(--primary-l)/0.5);
+}
+.reading-typography pre, .reading-typography code {
+  font-family: SFMono-Regular, Menlo, Monaco, Consolas, Liberation Mono, Courier New, monospace;
+  font-size: var(--font_up-1);
 }
 
 :root {
