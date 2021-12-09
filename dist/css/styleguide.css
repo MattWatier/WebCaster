@@ -582,7 +582,7 @@ Description: Simple only text version of the sponsor
 Markup:
 {{> "Sponsor.Simple"}}{{> "Sponsor.Simple"}}{{> "Sponsor.Simple"}}
 
-MarkupWrapperClasses: grid grid-col_3:lg grid-col_1 gap_5 p_4 p-b_5 
+MarkupWrapperClasses: grid grid-x_3:lg grid-x_1 gap_5 p_4 p-b_5 
 
 Weight:0
 
