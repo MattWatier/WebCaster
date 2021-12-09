@@ -1,0 +1,39 @@
+/*
+Simple
+ 
+Description: Simple only text version of the sponsor
+ 
+Markup:
+<div class="flex flex_column gap-y_4">
+    <header class="grid justify_center"><div class="self_center">{{> "Data.Sponsor.Logo"}}</div></header>
+    <h2>
+    {{> "Data.Sponsor.Name"}}
+    </h2>
+    <div class="readable-typography">
+    {{> "Data.Sponsor.Description"}}
+    {{> "Data.Sponsor.Address"}}
+    </div>
+    <footer class="br-t_1 br_dashed grid justify_center m-t_4 m-t_auto p-t_4 self_stretch">{{> "Data.Sponsor.WebLink" modifier_class="btn btn-secondary c_white h:c_white-8 self_center"}}</footer>
+</div>
+
+MarkupWrapperClasses: grid grid-col_3:lg grid-col_1 gap_5 p_4 p-b_5 
+
+Weight:0
+ 
+Styleguide Sponsor.Simple
+*/
+
+/*
+Grid
+ 
+Description: Simple only text version of the sponsor
+ 
+Markup:
+{{> "Sponsor.Simple"}}{{> "Sponsor.Simple"}}{{> "Sponsor.Simple"}}
+
+MarkupWrapperClasses: grid grid-col_3:lg grid-col_1 gap_5 p_4 p-b_5 
+
+Weight:0
+ 
+Styleguide Sponsor.Simple.Grid
+*/

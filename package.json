@@ -19,6 +19,7 @@
     "modularscale-sass": "^3.0.10",
     "ngx-highlightjs": "^6.1.0",
     "normalize-path": "^3.0.0",
+    "npm-watch": "^0.11.0",
     "picomatch": "^2.3.0",
     "readdirp": "^3.6.0",
     "sass": "^1.35.1",
@@ -35,13 +36,17 @@
     "postcss-merge-selectors": "^0.0.6",
     "sc5-styleguide": "^2.2.0"
   },
+  "watch": {
+    "styleguide": "dist/css/styleguide.css"
+  },
   "scripts": {
     "scss": "sass  --load-path=node_modules/ src/scss/styleguide.scss dist/css/styleguide.css -w",
     "copyStyleToStyleGuide": "copyfiles -f  ./UtilityClass/dist/css/*.*  ./docs/css",
     "postcss": "postcss ./dist/css/UC.css -o ./docs/css/UC.min.css -w",
     "gzipper": "gzipper",
     "compress": "gzipper compress ./dist/css/Uc.min.css",
-    "styleguide": "kss --config kss-config.json"
+    "styleguide": "kss --source dist/css/styleguide.css --config kss-config.json",
+    "watch": "npm-watch"
   },
   "repository": {
     "type": "git",
