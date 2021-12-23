@@ -16747,7 +16747,7 @@ h1 .link, h1 .reading-typography a, .reading-typography h1 a, h2 .link, h2 .read
 }
 
 .shadow_bevel-bold {
-  box-shadow: -2px -2px 4px hsla(0, 0%, 82.4%, 0.05), -2px -2px 3px hsla(0, 0%, 46.7%, 0.07), 1px 2.5px 4.5px rgba(0, 0, 0, 0.4), 0 6.4px 12.1px rgba(0, 0, 0, 0.14), 0 16px 19px rgba(0,0,0,.07);
+  box-shadow: -2px -2px 4px rgb(255 255 255 / 5%), -2px -2px 3px rgb(169 169 169 / 7%), 1px 2.5px 4.5px rgb(0 0 0 / 20%), 0 6.4px 7.1px rgb(0 0 0 / 10%), 0 10px 13px rgb(0 0 0 / 7%);
 }
 
 .shadow_overlap-light {
@@ -17664,6 +17664,15 @@ h1 .link, h1 .reading-typography a, .reading-typography h1 a, h2 .link, h2 .read
 
 .z_5 {
   z-index: 9999;
+}
+
+:root {
+  --bg_texture-dark: url(../img/dark-honeycomb.png);
+  --bg_texture-light: url(../img/worn_dots.png);
+}
+
+.bg_texture-dark {
+  background-image: var(--bg_texture-light, none);
 }
 
 /*# sourceMappingURL=UC.css.map */
