@@ -20459,6 +20459,66 @@ h1 .link, h1 .reading-typography a, .reading-typography h1 a, h2 .link, h2 .read
   text-decoration: none;
 }
 
+.active > .a\:underline {
+  text-decoration: underline;
+}
+
+.active > .a\:dotted {
+  text-decoration: dotted;
+}
+
+.active > .a\:dashed {
+  text-decoration: dashed;
+}
+
+.active > .a\:double {
+  text-decoration: double;
+}
+
+.active > .a\:undecorated {
+  text-decoration: none;
+}
+
+.active.a\:underline {
+  text-decoration: underline;
+}
+
+.active.a\:dotted {
+  text-decoration: dotted;
+}
+
+.active.a\:dashed {
+  text-decoration: dashed;
+}
+
+.active.a\:double {
+  text-decoration: double;
+}
+
+.active.a\:undecorated {
+  text-decoration: none;
+}
+
+.h\:underline:hover {
+  text-decoration: underline;
+}
+
+.h\:dotted:hover {
+  text-decoration: dotted;
+}
+
+.h\:dashed:hover {
+  text-decoration: dashed;
+}
+
+.h\:double:hover {
+  text-decoration: double;
+}
+
+.h\:undecorated:hover {
+  text-decoration: none;
+}
+
 .text-indent_0 {
   text-indent: 0;
 }

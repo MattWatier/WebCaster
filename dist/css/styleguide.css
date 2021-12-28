@@ -971,6 +971,106 @@ Styleguide Template.BrandArea.Logged Out
 
 */
 /*
+Nav
+
+Description: Basic Navigation
+
+Markup:
+<nav class="bg_white-5 font_1 font_ui">
+    <ul class="ul_none flex flex_row:md flex_column no_wrap gap-x_4">
+        {{> "Nav.Link" }}
+        {{> "Nav.Dropdown" modifier_class="dropdown2"}}
+        {{> "Nav.Dropdown" modifier_class="dropdown3"}}
+    </ul>
+</nav>
+
+MarkupWrapperClasses: ul_none bg_texture-dark h_20
+
+Weight:0
+
+Styleguide Nav
+*/
+/*
+Basic Link
+
+Description: 
+
+Markup:
+<li class="dropdown flex_none p-x_4">
+    <div class="flex flex_inline nowrap gap-x_3">            
+        <a href="" class="undecorated h:underline c_brand h:c_brand-n2">Basic Link</a>
+    </div>
+</li>
+
+MarkupWrapperClasses: ul_none
+
+
+Weight: -150
+
+Styleguide Nav.Link
+*/
+/*
+DropDown Link
+
+Description: 
+
+Markup:
+<li class="dropdown flex_none p-x_4">
+    <div class="flex flex_inline nowrap gap-x_3">            
+        <a href="" class="undecorated h:underline">Drop Down Link</a>
+        {{> Nav.Dropdown.Toggle modifier_class="dropdown1"}}
+        {{> Nav.Dropdown.Menu modifier_class="dropdown1"}}
+    </div>
+</li>
+
+MarkupWrapperClasses: ul_none
+
+
+Weight: 0
+
+Styleguide Nav.Dropdown
+*/
+/*
+Dropdown Toggle
+
+show - the class that is applied to the toggle when the dropdown is open
+
+Description: The toggle for a dropdown menu.
+
+Markup:
+<a href="#" class="toggle undecorated {{modifier_class}}" data-bs-target="{{modifier_class}}Menu" id="{{modifier_class}}Button" aria-expanded="false" data-bs-toggle="dropdown">
+    <i class="fas fa-chevron-down"></i>
+    <span class="display_none">Toggle Dropdown</span>
+</a>
+
+Weight:1000
+
+Styleguide Nav.Dropdown.Toggle
+*/
+/*
+Dropdown Menu
+
+.show.relative - show is the class that is applied to the menu when it is open. 
+
+Description: 
+
+Markup:
+<ul class="dropdown-menu ul_none font-size_down-1  {{modifier_class}}" aria-labelledby="{{modifier_class}}Button" id="{{modifier_class}}Menu">
+    <li><a class="dropdown-item" href="#">Action</a></li>
+    <li><a class="dropdown-item" href="#">Another action</a></li>
+    <li><a class="dropdown-item" href="#">Something else here</a></li>
+    <li><hr class="dropdown-divider"></li>
+    <li><a class="dropdown-item" href="#">Separated link</a></li>
+</ul> 
+
+
+NOTE: the `relative` class is added to the menu to make it appear in the documentation.
+
+Weight:1000
+
+Styleguide Nav.Dropdown.Menu
+*/
+/*
 Template
 
 Description: Foundational structures that shape how the page is structured.

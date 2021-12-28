@@ -19,9 +19,20 @@
     &{
         background-color: rgba($blue, 0.1);
     }
-    > *{
+    > *, > * > *, > * > * > * {
         background-color: rgba($blue, 0.2);
         border:rgba($blue, 0.5) dashed 1px;
     }
 
+}
+
+:root{
+    --bg_texture-dark: url(../img/dark-honeycomb.png);
+    --bg_texture-light: url(../img/worn_dots.png);
+  }
+.bg_texture-dark{
+background-image: var( --bg_texture-dark, none );
+}
+.bg_texture-light{
+background-image: var( --bg_texture-light, none );
 }
