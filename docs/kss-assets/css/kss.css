@@ -515,7 +515,7 @@
   background-color: rgba(52, 152, 219, 0.1); }
 .styleguide_frame > *, .styleguide_frame > * > *, .styleguide_frame > * > * > * {
   background-color: rgba(52, 152, 219, 0.2);
-  border: rgba(52, 152, 219, 0.5) dashed 1px; }
+  outline: rgba(52, 152, 219, 0.5) dashed 1px; }
 
 :root {
   --bg_texture-dark: url(../img/dark-honeycomb.png);

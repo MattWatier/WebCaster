@@ -976,15 +976,15 @@ Nav
 Description: Basic Navigation
 
 Markup:
-<nav class="bg_white-5 font_1 font_ui">
-    <ul class="ul_none flex flex_row:md flex_column no_wrap gap-x_4">
+<nav class="bg_white-7 font_1 font_display sticky t_0">
+    <ul class="ul_none flex flex_row:md flex_column no_wrap gap-x_1 ">
         {{> "Nav.Link" }}
         {{> "Nav.Dropdown" modifier_class="dropdown2"}}
         {{> "Nav.Dropdown" modifier_class="dropdown3"}}
     </ul>
 </nav>
 
-MarkupWrapperClasses: ul_none bg_texture-dark h_20
+MarkupWrapperClasses: bg_texture-dark h_40
 
 Weight:0
 
@@ -996,9 +996,9 @@ Basic Link
 Description: 
 
 Markup:
-<li class="dropdown flex_none p-x_4">
+<li class="{{> Nav.Link.ContainerClasses}}" >
     <div class="flex flex_inline nowrap gap-x_3">            
-        <a href="" class="undecorated h:underline c_brand h:c_brand-n2">Basic Link</a>
+        <a href="" class="undecorated h:underline {{> "Nav.Link.Classes"}}">Basic Link</a>
     </div>
 </li>
 
@@ -1015,9 +1015,9 @@ DropDown Link
 Description: 
 
 Markup:
-<li class="dropdown flex_none p-x_4">
+<li class="dropdown {{> Nav.Link.ContainerClasses }}">
     <div class="flex flex_inline nowrap gap-x_3">            
-        <a href="" class="undecorated h:underline">Drop Down Link</a>
+        <a href="#" class="undecorated h:underline {{> "Nav.Link.Classes"}}">Drop Down Link</a>
         {{> Nav.Dropdown.Toggle modifier_class="dropdown1"}}
         {{> Nav.Dropdown.Menu modifier_class="dropdown1"}}
     </div>
@@ -1038,7 +1038,7 @@ show - the class that is applied to the toggle when the dropdown is open
 Description: The toggle for a dropdown menu.
 
 Markup:
-<a href="#" class="toggle undecorated {{modifier_class}}" data-bs-target="{{modifier_class}}Menu" id="{{modifier_class}}Button" aria-expanded="false" data-bs-toggle="dropdown">
+<a href="#" class="toggle undecorated br_radius h:bg_white-5 p-x_2 m-l_auto {{> "Nav.Link.Classes"}} {{modifier_class}}" data-bs-target="{{modifier_class}}Menu" id="{{modifier_class}}Button" aria-expanded="false" data-bs-toggle="dropdown">
     <i class="fas fa-chevron-down"></i>
     <span class="display_none">Toggle Dropdown</span>
 </a>
@@ -1069,6 +1069,30 @@ NOTE: the `relative` class is added to the menu to make it appear in the documen
 Weight:1000
 
 Styleguide Nav.Dropdown.Menu
+*/
+/*
+Link Decoration Classes
+
+Description: 
+
+Markup:
+text-shadow_black font_bold  text-shadow_white-1 c_primary h:c_primary-n2 
+
+Weight:0
+
+Styleguide Nav.Link.Classes
+*/
+/*
+Link Container Decoration Classes
+
+Description: 
+
+Markup:
+p_4 h:bg_white-5 flex_none
+
+Weight:0
+
+Styleguide Nav.Link.ContainerClasses
 */
 /*
 Template

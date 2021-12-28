@@ -21,7 +21,7 @@
     }
     > *, > * > *, > * > * > * {
         background-color: rgba($blue, 0.2);
-        border:rgba($blue, 0.5) dashed 1px;
+        outline:rgba($blue, 0.5) dashed 1px;
     }
 
 }

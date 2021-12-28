@@ -46,7 +46,8 @@
     "gzipper": "gzipper",
     "compress": "gzipper compress ./dist/css/Uc.min.css",
     "styleguide": "kss --source dist/css/styleguide.css --config kss-config.json",
-    "watch": "npm-watch"
+    "watch": "npm-watch",
+    "kssStyles": "--load-path=node_modules/ michelangelo/kss_styleguide/base-template/kss-assets/css/kss.scss michelangelo/kss_styleguide/base-template/kss-assets/css/kss.css"
   },
   "repository": {
     "type": "git",

@@ -21505,13 +21505,4 @@ h1 .link, h1 .reading-typography a, .reading-typography h1 a, h2 .link, h2 .read
   z-index: 9999;
 }
 
-:root {
-  --bg_texture-dark: url(../img/dark-honeycomb.png);
-  --bg_texture-light: url(../img/worn_dots.png);
-}
-
-.bg_texture-dark {
-  background-image: var(--bg_texture-light, none);
-}
-
 /*# sourceMappingURL=UC.css.map */
