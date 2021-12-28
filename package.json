@@ -1,5 +1,5 @@
 {
-  "name": "utilityclass",
+  "name": "webcasters",
   "version": "1.0.0",
   "description": "Build of a cleaner run utility class generator",
   "main": "index.js",

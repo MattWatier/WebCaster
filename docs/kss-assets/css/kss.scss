@@ -14,3 +14,14 @@
 @import '_kss-documentation.scss';
 
 @import '_kss-colors.scss';
+
+.styleguide_frame{
+    &{
+        background-color: rgba($blue, 0.1);
+    }
+    > *{
+        background-color: rgba($blue, 0.2);
+        border:rgba($blue, 0.5) dashed 1px;
+    }
+
+}

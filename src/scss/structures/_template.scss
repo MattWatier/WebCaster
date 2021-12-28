@@ -1,0 +1,235 @@
+/*
+Header
+ 
+The header has some basic manipulation to make it fullscreen or constrained to a width. There are `[ styleguide_frame ]` applied the DOM to make it easier to see.
+
+.max-w_none.fullscreen.flex_column  - fullscreen
+.max-w_65.constrained.flex_column  - constrained at a max width of 50rem
+.max-w_65.constrained.flex_column-reverse  - constrained at a max width of 50rem with nav first
+ 
+Markup:
+<header class="relative m-x_auto w_100 flex flex_column [ styleguide_frame ]">
+    <section id="BrandArea" class="{{ modifier_class }} self_center w_100">
+        {{>"Template.BrandArea"}}
+    </section>
+    <section id="MainNav" class="{{ modifier_class }} self_center w_100">
+        <nav> Main Nav</nav>
+    </section>  
+</header>
+
+ 
+Weight:0
+ 
+Styleguide Template.Header
+*/
+/*
+Content Area
+ 
+The main area has the same modifiers and the header to constrain or go fullscreen. There are background colors applied the DOM to make it easier to see.
+
+.max-w_none.fullscreen  - fullscreen
+.max-w_65.constrained  - constrained at a max width of 50rem
+ 
+Markup:
+<main  id="ContentArea" class="relative m-x_auto w_100 [ styleguide_frame ]">
+    <section id="ContentContainer" class="p_4 m-x_auto w_100 self_center {{ modifier_class }}"> Main Content</section>
+</main>
+
+ 
+Weight:0
+ 
+Styleguide Template.ContentArea
+*/
+
+/*
+Footer
+ 
+The main area has the same modifiers and the header to constrain or go fullscreen. There are background colors applied the DOM to make it easier to see.
+
+.max-w_none.fullscreen  - fullscreen
+.max-w_65.constrained  - constrained at a max width of 50rem
+ 
+Markup:
+<footer class="relative m-x_auto w_100 [ styleguide_frame   ]">
+    <section id="FooterContainer" class="p_4 m-x_auto w_100 self_center {{ modifier_class }}"> Footer</section>
+</footer>
+
+ 
+Weight:0
+ 
+Styleguide Template.Footer
+*/
+
+
+/*
+
+Header Branding Area
+
+Conferences can have a header branding area which gives the design team the ability to add a logo, graphics, and or text to the header or the site.
+
+
+Weight: -999
+
+Styleguide Template.Brand Area
+
+*/
+
+/*
+
+Header Brand Area with Buttons (Logged In)
+
+Description: This is the logged in header brand area.
+ 
+Markup:
+<div class="relative">
+    {{> "Template.BrandArea.Buttons.LoggedIn"}}
+    {{>"Template.BrandArea"}}
+</div>
+
+ 
+Weight: -999
+
+Styleguide Template.BrandArea.LoggedIn
+
+*/
+
+/*
+Logged Out Buttons
+ 
+Description: The logged Out buttons. 
+ 
+Markup:
+<div class="absolute b_4 r_4 l_4 b_auto:lg t_4:lg r_4:lg r_4:md l_auto:md b_4:md t_4:md justify_center flex flex_row flex_column:md flex_row:lg ">
+    <a class="btn btn-lg br-tr_square br-br_square  bg_primary-n1 h:bg_primary-n3 br_solid br_black-2 br_1 c_white h:c_white uppercase shadow_overlap-light font_ui font_bold" href="#">Register</a>
+    <a class="btn btn-lg br-tl_square br-bl_square bg_accent-n1 h:bg_accent-n3 br_solid br_black-2 br_1 c_white  h:c_white uppercase shadow_overlap-light font_ui font_bold" href="#">Login <i class="fas fa-sign-in p-l_2"></i></a>
+</div>
+ 
+MarkupWrapperClasses:relative
+
+Weight:0
+ 
+Styleguide Template.BrandArea.Buttons.LoggedOut
+*/
+
+/*
+Logged In Buttons
+ 
+Description: The logged in buttons. 
+ 
+Markup:
+<div class="absolute b_4 r_4 l_4 b_auto:lg t_4:lg r_4:lg r_4:md l_auto:md b_4:md t_4:md">
+    <div class="bg_black-3 br_1 br_black-4 br_radius br_solid:lg br_none font_medium font_ui gap-x_3 inline-block inline-flex justify_end">
+        <span class="font_accent self_center vertical-align_middle display_none inline:md p-x_3 c_white">User Name</span>
+        <a class="btn m-y_n1 m-r_n1 br-tl_square br-bl_square bg_accent-n1 h:bg_accent-n3 br_solid br_black-4 br_1 c_white-8  h:c_white uppercase shadow_overlap-light font_ui font_bold" href="#"><i class="fas fa-sign-out p-l_2"></i></a>
+    </div>
+</div> 
+ 
+MarkupWrapperClasses:relative
+
+Weight:0
+ 
+Styleguide Template.BrandArea.Buttons.LoggedIn
+*/
+
+/*
+
+Unsafe Area
+
+Description: Because the UI is floats on top of the images there are area that are unsafe to contain text. 
+ 
+Markup:
+<div class="relative m-t_4 overflow-hidden" style="width:1400px">
+{{> "Template.BrandArea.Buttons.LoggedIn"}}
+<div class="absolute b_0 bg_highlight font_5 font_xbold grid justify_center opacity_5 r_0 self_center t_0 text_center" style="width:250px"><span class="self_center c_black font-blend_color-burn">UNSAFE</span></div>
+	<img
+		class="w_100"
+		src="https://via.placeholder.com/1440x200.png?text=Desktop+Large+1440x200"
+	/>
+</div>
+<div class="relative m-t_4  overflow-hidden" style="width:1200px">
+ {{> "Template.BrandArea.Buttons.LoggedIn"}}
+<div class="absolute b_0 bg_highlight font_5 font_xbold grid justify_center opacity_5 r_0 self_center t_0 text_center" style="width:250px"><span class="self_center c_black font-blend_color-burn">UNSAFE</span></div>
+	<img
+		class="w_100"
+		src="https://via.placeholder.com/1200x200.png?text=Desktop+1200x200"
+	/>
+</div>
+<div class="relative m-t_4  overflow-hidden" style="width:768px">
+ {{> "Template.BrandArea.Buttons.LoggedIn"}}
+<div class="absolute b_0 bg_highlight font_5 font_xbold grid justify_center opacity_5 r_0 self_center t_0 text_center" style="width:250px"><span class="self_center c_black font-blend_color-burn">UNSAFE</span></div>
+	<img
+		class="w_100"
+		src="https://via.placeholder.com/768x200.png?text=Tablet+768x200"
+	/>
+</div>
+<div class="relative m-t_4  overflow-hidden"  style="width:600px">
+<div class="absolute r_4 l_auto b_4 t_auto justify_center flex flex_column gap-x_4 gap-y_4">
+     <div class="bg_secondary-2 br_1 br_black-3 br_radius br_solid:lg br_none c_white font_medium font_ui gap-x_3 inline-block inline-flex justify_end m-x_2 p_2:lg p_0 relative shadow_overlap-light">
+         <span class="font_bold font_ui self_center vertical-align_middle display_none inline:md p-x_3">User Name</span>
+         <a class="btn bg_accent-n1 h:bg_accent-n3 br_solid br_black-2 br_1 c_white  h:c_white uppercase shadow_overlap-light font_ui font_bold" href="#">Log Out <i class="fas fa-sign-out p-l_2"></i></a>
+     </div>
+ </div>
+<div class="absolute b_0 bg_highlight font_5 font_xbold grid justify_center opacity_5 r_0 self_center l_0 text_center" style="height:100px"><span class="self_center c_black font-blend_color-burn">UNSAFE</span></div>
+	<img
+		class="w_100"
+		src="https://via.placeholder.com/600x250.png?text=Mobile+600x250"
+	/>
+</div>
+<div class="relative m-t_4  overflow-hidden" style="width:400px">
+<div class="absolute b_4 r_4 l_4 justify_center flex flex_row flex_column gap-x_4 gap-y_4">
+     <div class="bg_secondary-2 br_1 br_black-3 br_radius br_solid:lg br_none c_white font_medium font_ui gap-x_3 inline-block inline-flex justify_end m-x_2 p_2:lg p_0 relative shadow_overlap-light">
+         <span class="font_bold font_ui self_center vertical-align_middle display_none inline:md p-x_3">User Name</span>
+         <a class="btn bg_accent-n1 h:bg_accent-n3 br_solid br_black-2 br_1 c_white  h:c_white uppercase shadow_overlap-light font_ui font_bold" href="#">Log Out <i class="fas fa-sign-out p-l_2"></i></a>
+     </div>
+ </div>
+<div class="absolute b_0 bg_highlight font_5 font_xbold grid justify_center opacity_5 r_0 self_center l_0 text_center" style="height:100px"><span class="self_center c_black font-blend_color-burn">UNSAFE</span></div>
+	<img
+		class="w_100"
+		src="https://via.placeholder.com/400x300.png?text=Mobile+400x300"	
+	/>
+</div>
+
+ 
+Weight: -999
+
+Styleguide Template.BrandArea.UnSafeArea
+
+*/
+/*
+Header Brand Area
+ 
+The Branding Area is made up of multiple images that have responsive sizes.
+ 
+Markup:
+<picture class="w_100">
+    <source class="w_100" srcset="https://via.placeholder.com/1440x200.png?text=Desktop+Large" media="(min-width: 90rem)">
+    <source class="w_100" srcset="https://via.placeholder.com/1200x200.png?text=Desktop" media="(min-width: 75rem)">
+    <source class="w_100" srcset="https://via.placeholder.com/768x200.png?text=Tablet" media="(min-width: 65rem)">
+    <source class="w_100" srcset="https://via.placeholder.com/600x250.png?text=Mobile" media="(min-width: 50rem)"> 
+    <source class="w_100" srcset="https://via.placeholder.com/400x300.png?text=Mobile" media="(min-width: 30rem)">
+    <img src="https://via.placeholder.com/400x300.png?text=Mobile" class="w_100" alt="">
+</picture>
+ 
+Weight: -1000
+
+Styleguide Template.BrandArea
+*/
+
+/*
+
+Header Brand Area with Buttons (Logged Out)
+
+Description: This is the logged Out header brand area.
+ 
+Markup:
+<div class="relative">
+    {{>"Template.BrandArea.Buttons.LoggedOut"}}
+    {{>"Template.BrandArea"}}
+</div>
+
+ 
+Weight: -1000
+
+Styleguide Template.BrandArea.Logged Out
+
+*/
