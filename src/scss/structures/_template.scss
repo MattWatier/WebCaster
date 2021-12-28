@@ -118,9 +118,9 @@ Description: The logged in buttons.
  
 Markup:
 <div class="absolute b_4 r_4 l_4 b_auto:lg t_4:lg r_4:lg r_4:md l_auto:md b_4:md t_4:md">
-    <div class="bg_black-3 br_1 br_black-4 br_radius br_solid:lg br_none font_medium font_ui gap-x_3 inline-block inline-flex justify_end">
+    <div class="bg_black-3 br_1 br_black-4 br_radius br_solid:lg br_none font_medium font_ui gap-x_3 inline-block inline-flex justify_end w_100 w_auto:md">
         <span class="font_accent self_center vertical-align_middle overflow_hidden p-x_3 c_white">User Name</span>
-        <a class="btn m-y_n1 m-r_n1 br-tl_square br-bl_square bg_accent-n1 h:bg_accent-n3 br_solid br_black-4 br_1 c_white-8  h:c_white uppercase shadow_overlap-light font_ui font_bold" href="#"><i class="fas fa-sign-out p-l_2"></i></a>
+        <a class="btn m-y_n1 m-l_auto m-r_n1 br-tl_square br-bl_square bg_accent-n1 h:bg_accent-n3 br_solid br_black-4 br_1 c_white-8  h:c_white uppercase shadow_overlap-light font_ui font_bold" href="#"><i class="fas fa-sign-out p-l_2"></i></a>
     </div>
 </div> 
  
@@ -163,15 +163,25 @@ Markup:
 	/>
 </div>
 <div class="relative m-t_4  overflow-hidden"  style="width:600px">
- {{> "Template.BrandArea.Buttons.LoggedIn"}}
+<div class="absolute b_4 r_4 l_4 r_4:md l_auto:md b_4:md t_auto:md">
+    <div class="bg_black-3 br_1 br_black-4 br_radius br_solid:lg br_none font_medium font_ui gap-x_3 inline-block inline-flex justify_end">
+        <span class="font_accent self_center vertical-align_middle overflow_hidden p-x_3 c_white">User Name</span>
+        <a class="btn m-y_n1 m-r_n1 br-tl_square br-bl_square bg_accent-n1 h:bg_accent-n3 br_solid br_black-4 br_1 c_white-8  h:c_white uppercase shadow_overlap-light font_ui font_bold" href="#"><i class="fas fa-sign-out p-l_2"></i></a>
+    </div>
+</div> 
 <div class="absolute b_0 bg_highlight font_5 font_xbold grid justify_center opacity_5 r_0 self_center l_0 text_center" style="height:100px"><span class="self_center c_black font-blend_color-burn">UNSAFE</span></div>
 	<img
 		class="w_100"
-		src="https://via.placeholder.com/600x250.png?text=Mobile+600x250"
+		src="https://via.placeholder.com/600x250.png?text=MobileLarge+600x250"
 	/>
 </div>
 <div class="relative m-t_4  overflow-hidden" style="width:400px">
- {{> "Template.BrandArea.Buttons.LoggedIn"}}
+<div class="absolute b_4 r_4 l_4 ">
+    <div class="bg_black-3 w_100 br_1 br_black-4 br_radius br_solid:lg br_none font_medium font_ui gap-x_3 inline-block inline-flex justify_end">
+        <span class="font_accent self_center vertical-align_middle overflow_hidden p-x_3 c_white">User Name</span>
+        <a class="btn m-y_n1 m-l_auto m-r_n1 br-tl_square br-bl_square bg_accent-n1 h:bg_accent-n3 br_solid br_black-4 br_1 c_white-8  h:c_white uppercase shadow_overlap-light font_ui font_bold" href="#"><i class="fas fa-sign-out p-l_2"></i></a>
+    </div>
+</div> 
 <div class="absolute b_0 bg_highlight font_5 font_xbold grid justify_center opacity_5 r_0 self_center l_0 text_center" style="height:100px"><span class="self_center c_black font-blend_color-burn">UNSAFE</span></div>
 	<img
 		class="w_100"
@@ -195,8 +205,7 @@ Markup:
     <source class="w_100" srcset="https://via.placeholder.com/1440x200.png?text=Desktop+Large" media="(min-width: 90rem)">
     <source class="w_100" srcset="https://via.placeholder.com/1200x200.png?text=Desktop" media="(min-width: 75rem)">
     <source class="w_100" srcset="https://via.placeholder.com/768x200.png?text=Tablet" media="(min-width: 65rem)">
-    <source class="w_100" srcset="https://via.placeholder.com/600x250.png?text=Mobile" media="(min-width: 50rem)"> 
-    <source class="w_100" srcset="https://via.placeholder.com/400x300.png?text=Mobile" media="(min-width: 30rem)">
+    <source class="w_100" srcset="https://via.placeholder.com/600x250.png?text=MobileLarge" media="(min-width: 30rem)"> 
     <img src="https://via.placeholder.com/400x300.png?text=Mobile" class="w_100" alt="">
 </picture>
  

@@ -18076,6 +18076,22 @@ h1 .link, h1 .reading-typography a, .reading-typography h1 a, h2 .link, h2 .read
   opacity: 1;
 }
 
+.overflow_visible {
+  overflow: visible;
+}
+
+.overflow_hidden {
+  overflow: hidden;
+}
+
+.overflow_scroll {
+  overflow: scroll;
+}
+
+.overflow_auto {
+  overflow: auto;
+}
+
 .p-x_0 {
   padding-left: 0;
   padding-right: 0;
