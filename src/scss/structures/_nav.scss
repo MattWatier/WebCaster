@@ -1,127 +1,36 @@
 /*
-Nav
+Basic DOM
  
-Description: Basic Navigation
+Navigation Skeleton DOM structure.
  
 Markup:
-<nav class="bg_white-7 font_1 font_display sticky t_0">
-    <ul class="ul_none flex flex_row:md flex_column no_wrap gap-x_1 ">
-        {{> "Nav.Link" }}
-        {{> "Nav.Dropdown" modifier_class="dropdown2"}}
-        {{> "Nav.Dropdown" modifier_class="dropdown3"}}
+<nav class="[nav-container-classes]">
+    <ul class="ul_none flex flex_row:md flex_column no_wrap [nav-classes | gap-x_4 ]">
+        <li class="[nav-link-container-classes]" >
+            <div class="flex flex_inline nowrap gap-x_3">            
+                <a href="" class="[nav-link-classes]">Basic Link</a>
+            </div>
+        </li>
+        <li class="dropdown [nav-link-container-classes]">
+            <div class="flex flex_inline nowrap gap-x_3">            
+                <a href="#" class="[nav-link-classes]">Drop Down Link</a>
+                <a href="#" class="toggle [nav-toggle-classes] [uniqueID]" data-bs-target="[uniqueID]Menu" id="[uniqueID]Button" aria-expanded="false" data-bs-toggle="dropdown">
+                    <i class="fas fa-chevron-down"></i>
+                    <span class="display_none">Toggle Dropdown</span>
+                </a>
+                <ul class="dropdown-menu ul_none font-size_down-1  [uniqueID]" aria-labelledby="[uniqueID]Button" id="[uniqueID]Menu">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="#">Separated link</a></li>
+                </ul> 
+            </div>
+        </li>
     </ul>
 </nav>
-
-MarkupWrapperClasses: bg_texture-dark h_40
  
-Weight:0
+Weight: -10000
  
-Styleguide Nav
-*/
-/*
-Basic Link
- 
-Description: 
- 
-Markup:
-<li class="{{> Nav.Link.ContainerClasses}}" >
-    <div class="flex flex_inline nowrap gap-x_3">            
-        <a href="" class="undecorated h:underline {{> "Nav.Link.Classes"}}">Basic Link</a>
-    </div>
-</li>
-
-MarkupWrapperClasses: ul_none
-
- 
-Weight: -150
- 
-Styleguide Nav.Link
-*/
-/*
-DropDown Link
- 
-Description: 
- 
-Markup:
-<li class="dropdown {{> Nav.Link.ContainerClasses }}">
-    <div class="flex flex_inline nowrap gap-x_3">            
-        <a href="#" class="undecorated h:underline {{> "Nav.Link.Classes"}}">Drop Down Link</a>
-        {{> Nav.Dropdown.Toggle modifier_class="dropdown1"}}
-        {{> Nav.Dropdown.Menu modifier_class="dropdown1"}}
-    </div>
-</li>
-
-MarkupWrapperClasses: ul_none
-
- 
-Weight: 0
- 
-Styleguide Nav.Dropdown
-*/
-
-/*
-Dropdown Toggle
-
-show - the class that is applied to the toggle when the dropdown is open
- 
-Description: The toggle for a dropdown menu.
- 
-Markup:
-<a href="#" class="toggle undecorated br_radius h:bg_white-5 p-x_2 m-l_auto {{> "Nav.Link.Classes"}} {{modifier_class}}" data-bs-target="{{modifier_class}}Menu" id="{{modifier_class}}Button" aria-expanded="false" data-bs-toggle="dropdown">
-    <i class="fas fa-chevron-down"></i>
-    <span class="display_none">Toggle Dropdown</span>
-</a>
-
-Weight:1000
- 
-Styleguide Nav.Dropdown.Toggle
-*/
-
-/*
-Dropdown Menu
-
-.show.relative - show is the class that is applied to the menu when it is open. 
- 
-Description: 
- 
-Markup:
-<ul class="dropdown-menu ul_none font-size_down-1  {{modifier_class}}" aria-labelledby="{{modifier_class}}Button" id="{{modifier_class}}Menu">
-    <li><a class="dropdown-item" href="#">Action</a></li>
-    <li><a class="dropdown-item" href="#">Another action</a></li>
-    <li><a class="dropdown-item" href="#">Something else here</a></li>
-    <li><hr class="dropdown-divider"></li>
-    <li><a class="dropdown-item" href="#">Separated link</a></li>
-</ul> 
-
-
-NOTE: the `relative` class is added to the menu to make it appear in the documentation.
- 
-Weight:1000
- 
-Styleguide Nav.Dropdown.Menu
-*/
-/*
-Link Decoration Classes
- 
-Description: 
- 
-Markup:
-text-shadow_black font_bold  text-shadow_white-1 c_primary h:c_primary-n2 
- 
-Weight:0
- 
-Styleguide Nav.Link.Classes
-*/
-
-/*
-Link Container Decoration Classes
- 
-Description: 
- 
-Markup:
-p_4 h:bg_white-5 flex_none
- 
-Weight:0
- 
-Styleguide Nav.Link.ContainerClasses
+Styleguide Nav.Skeleton
 */
