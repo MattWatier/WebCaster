@@ -5,15 +5,16 @@ DropTab Nav
 DropTab Nav
  
 Markup:
-<nav class="{{> "Nav.DropTab.ContainerClasses"}}">
-    <ul class="ul_none flex flex_row:md flex_column no_wrap {{> "Nav.DropTab.Classes"}} ">
+<nav class="{{> "Nav.DropTab.Classes.Container"}}">
+    <ul class="ul_none flex flex_row:md flex_column no_wrap {{> "Nav.DropTab.Classes.Nav"}} ">
         {{> "Nav.DropTab.Link" }}
+        {{> "Nav.DropTab.Link" modifier_class='active' }}
         {{> "Nav.DropTab.Dropdown" modifier_class="dropdown2"}}
         {{> "Nav.DropTab.Dropdown" modifier_class="dropdown3"}}
     </ul>
 </nav>
 
-MarkupWrapperClasses: bg_texture-dark h_40
+MarkupWrapperClasses: bg_black-1 h_40
  
 Weight:10
  
@@ -24,12 +25,12 @@ Styleguide Nav.DropTab
 /*
 Link
  
-Description: 
+active - the active state of the nav item.
  
 Markup:
-<li class="{{> Nav.DropTab.Link.ContainerClasses}}" >
-    <div class="flex flex_inline nowrap gap-x_3">            
-        <a href="" class="{{> "Nav.DropTab.Link.Classes"}}">Basic Link</a>
+<li class="{{modifier_class}} {{> Nav.DropTab.Classes.LinkContainer}}" >
+    <div class="flex flex_row nowrap gap-x_3">            
+        <a href="" class="flex_auto {{modifier_class}} {{> "Nav.DropTab.Classes.Link"}}">{{modifier_class}}  Basic Link</a>
     </div>
 </li>
 
@@ -46,10 +47,10 @@ Link - Dropdown
 Description: 
  
 Markup:
-<li class="dropdown {{> Nav.DropTab.Link.ContainerClasses }}">
+<li class="dropdown {{> Nav.DropTab.Classes.LinkContainer }}">
     <div class="flex flex_inline nowrap gap-x_3">            
-        <a href="#" class="{{> "Nav.DropTab.Link.Classes"}}">Drop Down Link</a>
-        <a href="#" class="toggle {{> "Nav.DropTab.Dropdown.ToggleClasses"}} {{modifier_class}}" data-bs-target="{{modifier_class}}Menu" id="{{modifier_class}}Button" aria-expanded="false" data-bs-toggle="dropdown">
+        <a href="#" class="{{> "Nav.DropTab.Classes.Link"}}">Drop Down Link</a>
+        <a href="#" class="toggle {{> "Nav.DropTab.Classes.DropdownToggle"}} {{modifier_class}}" data-bs-target="{{modifier_class}}Menu" id="{{modifier_class}}Button" aria-expanded="false" data-bs-toggle="dropdown">
             <i class="fas fa-chevron-down"></i>
             <span class="display_none">Toggle Dropdown</span>
         </a>
@@ -71,66 +72,90 @@ Weight: 0
 Styleguide Nav.DropTab.Dropdown
 */
 
-/*
-Classes - Nav Container
- 
-Nav Container Classes
- 
+/* 
+Classes
+
 Markup:
-font_1 font_display sticky t_0
- 
-Weight:1000
- 
-Styleguide Nav.DropTab.ContainerClasses
-*/
-/*
-Classes - Nav
- 
-Nav Classes
- 
-Markup:
-gap-x_4 p-x_3
- 
-Weight:1000
- 
+<code><pre>
+NavBar ={
+    nav-container-classes:{ {{> "Nav.DropTab.Classes.Container"}} },
+    nav-classes:{ {{> "Nav.DropTab.Classes.Nav"}}  },
+    nav-link-container-classes:{ {{> Nav.DropTab.Classes.LinkContainer}} },
+    nav-link-classes:{ {{> Nav.DropTab.Classes.Link}}  },
+    nav-toggle-classes:{ {{> Nav.DropTab.Classes.DropdownToggle}}  },
+    nav-toggle-icon:{ fa-chevron-down }
+}
+</pre></code>
+
+Weight: 100
+
+
+
 Styleguide Nav.DropTab.Classes
 */
 
 /*
-Classes - Link
+Classes: Nav Container
  
-Description: 
+Nav Container Classes
  
 Markup:
-font_bold  c_white h:c_white-n2 undecorated h:undecorated
+font_1 font_display sticky t_0 br-t_3 br_solid br_brand flex flex_row
  
 Weight:1000
  
-Styleguide Nav.DropTab.Link.Classes
+Styleguide Nav.DropTab.Classes.Container
+*/
+/*
+Classes: Nav
+ 
+Nav Classes
+ 
+Markup:
+gap-x_4 p-x_3 m-l_auto
+ 
+Weight:1000
+ 
+Styleguide Nav.DropTab.Classes.Nav
 */
 
 /*
-Classes - Link Container
+Classes: Link Container
  
 Description: 
  
 Markup:
-p_4 h:bg_white-5 flex_none br-br_round br-bl_round
+h:bg_brand-5 flex_none br-br_round br-bl_round a:bg_brand
  
 Weight:1000
  
-Styleguide Nav.DropTab.Link.ContainerClasses
+Styleguide Nav.DropTab.Classes.LinkContainer
 */
 
 /*
-Classes - Dropdown Toggle
+Classes: Link
  
 Description: 
  
 Markup:
-toggle undecorated br_radius h:bg_white-5 p-x_2 m-l_auto text-shadow_black font_bold  text-shadow_white-1 c_primary h:c_primary-n2 flex flex_column justify_center
+font_bold c_brand h:c_brand-n3 undecorated h:undecorated a:c_white p_4 flex
  
 Weight:1000
  
-Styleguide Nav.DropTab.Dropdown.ToggleClasses
+Styleguide Nav.DropTab.Classes.Link
+*/
+
+
+
+/*
+Classes: Dropdown Toggle
+ 
+Description: 
+ 
+Markup:
+toggle undecorated br_radius h:bg_brand-5 p-x_2 m-l_auto font_bold c_brand h:c_brand-n2 flex flex_column justify_center
+ 
+Weight:1000
+ 
+Styleguide Nav.DropTab.Classes.DropdownToggle
 */
