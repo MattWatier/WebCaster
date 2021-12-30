@@ -16,7 +16,7 @@ Navigation Skeleton DOM structure.
  
 Markup:
 <nav class="[nav-container-classes]">
-    <ul class="ul_none flex flex_row:md flex_column no_wrap [nav-classes | gap-x_4 ]">
+    <ul class="[nav-classes | gap-x_4 ul_none flex flex_row:md flex_column no_wrap ]">
         <li class="[nav-link-container-classes]" >
             <div class="flex flex_inline nowrap gap-x_3">            
                 <a href="" class="[nav-link-classes]">Basic Link</a>
@@ -30,11 +30,11 @@ Markup:
                     <span class="display_none">Toggle Dropdown</span>
                 </a>
                 <ul class="dropdown-menu ul_none font-size_down-1  [uniqueID]" aria-labelledby="[uniqueID]Button" id="[uniqueID]Menu">
-                    <li><a class="dropdown-item" href="#">Action</a></li>
-                    <li><a class="dropdown-item" href="#">Another action</a></li>
-                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    <li><a class="dropdown-item [nav-dropdown-item]" href="#">Action</a></li>
+                    <li><a class="dropdown-item [nav-dropdown-item]" href="#">Another action</a></li>
+                    <li><a class="dropdown-item [nav-dropdown-item]" href="#">Something else here</a></li>
                     <li><hr class="dropdown-divider"></li>
-                    <li><a class="dropdown-item" href="#">Separated link</a></li>
+                    <li><a class="dropdown-item [nav-dropdown-item]" href="#">Separated link</a></li>
                 </ul> 
             </div>
         </li>

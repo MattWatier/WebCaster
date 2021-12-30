@@ -6,8 +6,9 @@ Bar Nav
  
 Markup:
 <nav class="{{> "Nav.Bar.Classes.Container"}}">
-    <ul class="ul_none flex flex_row:md flex_column no_wrap {{> "Nav.Bar.Classes.Nav"}} ">
+    <ul class="{{> "Nav.Bar.Classes.Nav"}} ">
         {{> "Nav.Bar.Link" }}
+        {{> "Nav.Bar.Link" modifier_class='active' }}
         {{> "Nav.Bar.Dropdown" modifier_class="dropdown2"}}
         {{> "Nav.Bar.Dropdown" modifier_class="dropdown3"}}
     </ul>
@@ -24,12 +25,12 @@ Styleguide Nav.Bar
 /*
 Link
  
-Description: 
+active - the active state of the nav item.
  
 Markup:
-<li class="{{> Nav.Bar.Classes.LinkContainer}}" >
+<li class="{{> Nav.Bar.Classes.LinkContainer}} {{modifier_class}}" >
     <div class="flex flex_inline nowrap gap-x_3">            
-        <a href="" class="{{> "Nav.Bar.Classes.Link"}}">Basic Link</a>
+        <a href="" class="{{> "Nav.Bar.Classes.Link"}} {{modifier_class}}"> <span class="capitalize">{{modifier_class}}</span> Basic Link</a>
     </div>
 </li>
 
@@ -75,17 +76,21 @@ Styleguide Nav.Bar.Dropdown
 Classes
 
 Markup:
-<code><pre>
-NavBar ={
-    nav-container-classes:{ {{> "Nav.Bar.Classes.Container"}} },
-    nav-classes:{ {{> "Nav.Bar.Classes.Nav"}}  },
-    nav-link-container-classes:{ {{> Nav.Bar.Classes.LinkContainer}} },
-    nav-link-classes:{ {{> Nav.Bar.Classes.Link}}  },
-    nav-toggle-classes:{ {{> Nav.Bar.Classes.DropdownToggle}}  }
-}
-</pre></code>
+<code>
+    <pre>
+    Classes:{
+        nav-container-classes:{ {{> "Nav.Bar.Classes.Container"}} },
+        nav-classes:{ {{> "Nav.Bar.Classes.Nav"}}  },
+        nav-link-container-classes:{ {{> Nav.Bar.Classes.LinkContainer}} },
+        nav-link-classes:{ {{> Nav.Bar.Classes.Link}}  },
+        nav-toggle-classes:{ {{> Nav.Bar.Classes.DropdownToggle}}  },
+        nav-toggle-icon:{ {{> "Nav.Bar.Classes.DropdownToggleIcon"}} },
+        nav-dropdown-item:{ {{> "Nav.DropTab.Classes.DropdownItem" }} }
+    }
+    </pre>
+</code>
 
-Weight: -100
+Weight: 100
 
 Styleguide Nav.Bar.Classes
 */
@@ -96,7 +101,7 @@ Classes - Nav Container
 Nav Container Classes
  
 Markup:
-bg_white-7 font_1 font_display sticky t_0
+bg_white-7 font_2:lg font_0:md font_display sticky t_0
  
 Weight:1000
  
@@ -108,7 +113,7 @@ Classes - Nav
 Nav Classes
  
 Markup:
-gap-x_2 
+ul_none flex flex_row:md flex_column no_wrap justify_flex-end
  
 Weight:1000
  
@@ -121,7 +126,7 @@ Classes - Link
 Description: 
  
 Markup:
-text-shadow_black font_bold  text-shadow_white-1 c_primary h:c_primary-n2 undecorated h:underline 
+text-shadow_black font_bold c_brand h:c_brand-n2 undecorated h:undecorated 
  
 Weight:1000
  
@@ -147,9 +152,31 @@ Classes - Dropdown Toggle
 Description: 
  
 Markup:
-toggle undecorated br_radius h:bg_white-5 p-x_2 m-l_auto text-shadow_black font_bold  text-shadow_white-1 c_primary h:c_primary-n2 
+toggle undecorated br_radius h:bg_white-5 p-x_2 m-l_auto text-shadow_black font_bold  text-shadow_white-1 c_brand h:c_brand-n2 
  
 Weight:1000
  
 Styleguide Nav.Bar.Classes.DropdownToggle
+*/
+/*
+Classes: Dropdown Toggle Icon
+ 
+
+Markup:
+fa-chevron-circle-down
+ 
+Weight:0
+ 
+Styleguide Nav.Bar.Classes.DropdownToggleIcon
+*/
+
+/*
+Classes: Dropdown Item
+ 
+Markup:
+h:bg-brand-5 
+ 
+Weight:0
+ 
+Styleguide Nav.DropTab.Classes.DropdownItem
 */

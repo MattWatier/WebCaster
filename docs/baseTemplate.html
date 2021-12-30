@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Include the Google Font Links -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter&family=Oswald&family=Podkova&display=swap" rel="stylesheet">
+    <style>
+        :root{
+            /*  write all the css variables that need to be overridden in the design.  */
+            /* Colors are broken into hsla for greater flexibility. */
+            --brand-h: 228.8deg;
+            --brand-s: 75%;
+            --brand-l: 39.2156862745%;
+            --primary-h: 205.2857142857deg;
+            --primary-s: 58.8235294118%;
+            --primary-l: 46.6666666667%;
+            --secondary-h: 223.6363636364deg;
+            --secondary-s: 5.069124424%;
+            --secondary-l: 42.5490196078%;
+            --accent-h: 19.9078341014deg;
+            --accent-s: 89.3004115226%;
+            --accent-l: 47.6470588235%;
+            --highlight-h: 270.9677419355deg;
+            --highlight-s: 89.3004115226%;
+            --highlight-l: 47.6470588235%;
+
+            /* font family rules based on the selected google font. */
+            --font_accent: "Podkova", Lucida Bright, Georgia, serif;
+            --font_display: "Oswald", Open Sans, Helvetica Neue, Helvetica, Helvetica, Arial, sans-serif;
+            --font_copy: "Inter", Helvetica Neue, Helvetica, Helvetica, Arial, sans-serif;
+            --font_ui: "Inter", -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+            --font_mono: SFMono-Regular, Menlo, Monaco, Consolas, Liberation Mono, Courier New, monospace;
+
+            /* reading typography overrides. */
+            --font-family_headline: var(--font-family_display);
+            --font-family_headline-alt: var(--font-family_accent);
+            --font-family_content: var(--font-family_copy);
+            --font-family_code: var(--font-family_mono);
+
+        }
+    </style>
+</head>
+<body>
+    <header class="relative m-x_auto w_100 flex flex_column [ header-container-constraint ]">
+        <section id="BrandArea" class="[ header-content-constraint ] self_center w_100">
+            <picture class="w_100">
+                <source class="w_100" srcset="https://via.placeholder.com/1440x200.png?text=Desktop+Large" media="(min-width: 90rem)">
+                <source class="w_100" srcset="https://via.placeholder.com/1200x200.png?text=Desktop" media="(min-width: 75rem)">
+                <source class="w_100" srcset="https://via.placeholder.com/768x200.png?text=Tablet" media="(min-width: 65rem)">
+                <source class="w_100" srcset="https://via.placeholder.com/600x250.png?text=MobileLarge" media="(min-width: 30rem)">
+                <img src="https://via.placeholder.com/400x300.png?text=Mobile" class="w_100" alt="">
+            </picture>    </section>
+        <section id="MainNav" class="[ header-content-constraint ] self_center w_100">
+            <nav> Main Nav > Nav Item</nav>
+        </section>
+    </header>
+    <main  id="ContentArea" class="relative m-x_auto w_100 [ main-container-constraint ]">
+        <section id="ContentContainer[uniqueID]" class="p_4 m-x_auto w_100 self_center [ main-content-constraint ]"> Content Row Layout > Component </section>
+    </main>
+    <footer class="relative m-x_auto w_100 [  footer-container-constraint   ]" style="background-color:[footer-background-color]">
+        <!-- Repeat the footer content dom as many times as needed.  -->
+        <section id="FooterContainer[uniqueID]" class="p_4 m-x_auto w_100 self_center [footer-content-constraint]">  Content Row Layout > Component</section>
+    </footer>
+</body>
+</html>
