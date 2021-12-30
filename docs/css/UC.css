@@ -5041,23 +5041,23 @@ h1 .link, h1 .reading-typography a, .reading-typography h1 a, h2 .link, h2 .read
   border-block-start-width: 0px;
 }
 
-.br-t_1 {
+.br-t_1, .br-yy_1 > * + * {
   border-block-start-width: 1px;
 }
 
-.br-t_2 {
+.br-t_2, .br-yy_2 > * + * {
   border-block-start-width: 3px;
 }
 
-.br-t_3 {
+.br-t_3, .br-yy_3 > * + * {
   border-block-start-width: 0.25rem;
 }
 
-.br-t_4 {
+.br-t_4, .br-yy_4 > * + * {
   border-block-start-width: 0.5rem;
 }
 
-.br-t_5 {
+.br-t_5, .br-yy_5 > * + * {
   border-block-start-width: 1rem;
 }
 
@@ -5065,23 +5065,23 @@ h1 .link, h1 .reading-typography a, .reading-typography h1 a, h2 .link, h2 .read
   border-inline-start-width: 0px;
 }
 
-.br-l_1 {
+.br-l_1, .br-xx_1 > * + * {
   border-inline-start-width: 1px;
 }
 
-.br-l_2 {
+.br-l_2, .br-xx_2 > * + * {
   border-inline-start-width: 3px;
 }
 
-.br-l_3 {
+.br-l_3, .br-xx_3 > * + * {
   border-inline-start-width: 0.25rem;
 }
 
-.br-l_4 {
+.br-l_4, .br-xx_4 > * + * {
   border-inline-start-width: 0.5rem;
 }
 
-.br-l_5 {
+.br-l_5, .br-xx_5 > * + * {
   border-inline-start-width: 1rem;
 }
 

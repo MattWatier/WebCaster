@@ -1,0 +1,181 @@
+
+/*
+LInk & Pipe Nav
+ 
+Markup:
+<nav class="{{> "Nav.LinkPipe.Classes.Container"}} isolate z_3">
+    <ul class="{{> "Nav.LinkPipe.Classes.Nav"}} ">
+        {{> "Nav.LinkPipe.Link" }}
+        {{> "Nav.LinkPipe.Link" modifier_class='active' }}
+        {{> "Nav.LinkPipe.Dropdown" modifier_class="dropdown2"}}
+        {{> "Nav.LinkPipe.Dropdown" modifier_class="dropdown3"}}
+    </ul>
+</nav>
+
+MarkupWrapperClasses: 
+ 
+Weight:10
+ 
+Styleguide Nav.LinkPipe
+*/
+
+
+/*
+Link
+ 
+active - the active state of the nav item.
+ 
+Markup:
+<li class="{{> Nav.LinkPipe.Classes.LinkContainer}} {{modifier_class}}" >
+    <div class="flex flex_row text_center justify_center:md justify_flex-start nowrap gap-x_3">            
+        <a href="" class="{{> "Nav.LinkPipe.Classes.Link"}} {{modifier_class}}"> <span class="capitalize">{{modifier_class}}</span> Basic Link</a>
+    </div>
+</li>
+
+MarkupWrapperClasses: ul_none
+ 
+Weight: -150
+ 
+Styleguide Nav.LinkPipe.Link
+*/
+
+/*
+Link - Dropdown
+ 
+Description: 
+ 
+Markup:
+<li class="dropdown {{> Nav.LinkPipe.Classes.LinkContainer }}">
+    <div class="flex flex_row text_center justify_center:md justify_flex-start nowrap gap-x_3">            
+        <a href="#" class="{{> "Nav.LinkPipe.Classes.Link"}}">Drop Down Link</a>
+        <a href="#" class="toggle {{> "Nav.LinkPipe.Classes.DropdownToggle"}} {{modifier_class}}" data-bs-target="{{modifier_class}}Menu" id="{{modifier_class}}Button" aria-expanded="false" data-bs-toggle="dropdown">
+            <i class="fas fa-chevron-down"></i>
+            <span class="display_none">Toggle Dropdown</span>
+        </a>
+        <ul class="dropdown-menu ul_none font-size_down-1 {{modifier_class}}" aria-labelledby="{{modifier_class}}Button" id="{{modifier_class}}Menu">
+            <li><a class="dropdown-item {{> "Nav.DropTab.Classes.DropdownItem" }}" href="#">Action</a></li>
+            <li><a class="dropdown-item {{> "Nav.DropTab.Classes.DropdownItem" }}" href="#">Another action</a></li>
+            <li><a class="dropdown-item {{> "Nav.DropTab.Classes.DropdownItem" }}" href="#">Something else here</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item {{> "Nav.DropTab.Classes.DropdownItem" }}" href="#">Separated link</a></li>
+        </ul> 
+    </div>
+</li>
+
+MarkupWrapperClasses: ul_none
+
+ 
+Weight: 0
+ 
+Styleguide Nav.LinkPipe.Dropdown
+*/
+
+/* 
+Classes
+
+Markup:
+<code>
+    <pre>
+    Classes:{
+        nav-container-classes:{ {{> "Nav.LinkPipe.Classes.Container"}} },
+        nav-classes:{ {{> "Nav.LinkPipe.Classes.Nav"}}  },
+        nav-link-container-classes:{ {{> Nav.LinkPipe.Classes.LinkContainer}} },
+        nav-link-classes:{ {{> Nav.LinkPipe.Classes.Link}}  },
+        nav-toggle-classes:{ {{> Nav.LinkPipe.Classes.DropdownToggle}}  },
+        nav-toggle-icon:{ {{> "Nav.LinkPipe.Classes.DropdownToggleIcon"}} },
+        nav-dropdown-item:{ {{> "Nav.DropTab.Classes.DropdownItem" }} }
+    }
+    </pre>
+</code>
+
+Weight: 100
+
+Styleguide Nav.LinkPipe.Classes
+*/
+
+/*
+Classes - Nav Container
+ 
+Nav Container Classes
+ 
+Markup:
+font_2:lg font_1:md font_0 font_display sticky t_0
+ 
+Weight:1000
+ 
+Styleguide Nav.LinkPipe.Classes.Container
+*/
+/*
+Classes - Nav
+ 
+Nav Classes
+ 
+Markup:
+ul_none flex flex_row:md flex_column no_wrap justify_center br-xx_1
+ 
+Weight:1000
+ 
+Styleguide Nav.LinkPipe.Classes.Nav
+*/
+
+/*
+Classes - Link Container
+ 
+Description: 
+ 
+Markup:
+p-x_4  p-y_4:lg p-y_3:md p-y_2 flex_auto br_brand br_dotted
+ 
+Weight:1000
+ 
+Styleguide Nav.LinkPipe.Classes.LinkContainer
+*/
+
+/*
+Classes - Link
+ 
+Description: 
+ 
+Markup:
+font_light c_brand h:c_brand-n2 undecorated h:underline 
+ 
+Weight:1000
+ 
+Styleguide Nav.LinkPipe.Classes.Link
+*/
+
+
+/*
+Classes - Dropdown Toggle
+ 
+Description: 
+ 
+Markup:
+toggle undecorated br_radius h:bg_white-5 p-x_2 m-l_auto m-l_2:lg text-shadow_black text-shadow_white-1 c_brand h:c_brand-n2 
+ 
+Weight:1000
+ 
+Styleguide Nav.LinkPipe.Classes.DropdownToggle
+*/
+/*
+Classes: Dropdown Toggle Icon
+ 
+
+Markup:
+fa-chevron-circle-down
+ 
+Weight:0
+ 
+Styleguide Nav.LinkPipe.Classes.DropdownToggleIcon
+*/
+
+/*
+Classes: Dropdown Item
+ 
+Markup:
+h:bg_brand h:c_white 
+ 
+Weight:0
+ 
+Styleguide Nav.DropTab.Classes.DropdownItem
+*/
