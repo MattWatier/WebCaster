@@ -5,8 +5,8 @@ Bar Nav
 Bar Nav
  
 Markup:
-<nav class="{{> "Nav.Bar.ContainerClasses"}}">
-    <ul class="ul_none flex flex_row:md flex_column no_wrap {{> "Nav.Bar.Classes"}} ">
+<nav class="{{> "Nav.Bar.Classes.Container"}}">
+    <ul class="ul_none flex flex_row:md flex_column no_wrap {{> "Nav.Bar.Classes.Nav"}} ">
         {{> "Nav.Bar.Link" }}
         {{> "Nav.Bar.Dropdown" modifier_class="dropdown2"}}
         {{> "Nav.Bar.Dropdown" modifier_class="dropdown3"}}
@@ -27,9 +27,9 @@ Link
 Description: 
  
 Markup:
-<li class="{{> Nav.Bar.Link.ContainerClasses}}" >
+<li class="{{> Nav.Bar.Classes.LinkContainer}}" >
     <div class="flex flex_inline nowrap gap-x_3">            
-        <a href="" class="{{> "Nav.Bar.Link.Classes"}}">Basic Link</a>
+        <a href="" class="{{> "Nav.Bar.Classes.Link"}}">Basic Link</a>
     </div>
 </li>
 
@@ -46,10 +46,10 @@ Link - Dropdown
 Description: 
  
 Markup:
-<li class="dropdown {{> Nav.Bar.Link.ContainerClasses }}">
+<li class="dropdown {{> Nav.Bar.Classes.LinkContainer }}">
     <div class="flex flex_inline nowrap gap-x_3">            
-        <a href="#" class="{{> "Nav.Bar.Link.Classes"}}">Drop Down Link</a>
-        <a href="#" class="toggle {{> "Nav.Bar.Dropdown.ToggleClasses"}} {{modifier_class}}" data-bs-target="{{modifier_class}}Menu" id="{{modifier_class}}Button" aria-expanded="false" data-bs-toggle="dropdown">
+        <a href="#" class="{{> "Nav.Bar.Classes.Link"}}">Drop Down Link</a>
+        <a href="#" class="toggle {{> "Nav.Bar.Classes.DropdownToggle"}} {{modifier_class}}" data-bs-target="{{modifier_class}}Menu" id="{{modifier_class}}Button" aria-expanded="false" data-bs-toggle="dropdown">
             <i class="fas fa-chevron-down"></i>
             <span class="display_none">Toggle Dropdown</span>
         </a>
@@ -71,6 +71,25 @@ Weight: 0
 Styleguide Nav.Bar.Dropdown
 */
 
+/* 
+Classes
+
+Markup:
+<code><pre>
+NavBar ={
+    nav-container-classes:{ {{> "Nav.Bar.Classes.Container"}} },
+    nav-classes:{ {{> "Nav.Bar.Classes.Nav"}}  },
+    nav-link-container-classes:{ {{> Nav.Bar.Classes.LinkContainer}} },
+    nav-link-classes:{ {{> Nav.Bar.Classes.Link}}  },
+    nav-toggle-classes:{ {{> Nav.Bar.Classes.DropdownToggle}}  }
+}
+</pre></code>
+
+Weight: -100
+
+Styleguide Nav.Bar.Classes
+*/
+
 /*
 Classes - Nav Container
  
@@ -81,7 +100,7 @@ bg_white-7 font_1 font_display sticky t_0
  
 Weight:1000
  
-Styleguide Nav.Bar.ContainerClasses
+Styleguide Nav.Bar.Classes.Container
 */
 /*
 Classes - Nav
@@ -89,11 +108,11 @@ Classes - Nav
 Nav Classes
  
 Markup:
-gap-x_2
+gap-x_2 
  
 Weight:1000
  
-Styleguide Nav.Bar.Classes
+Styleguide Nav.Bar.Classes.Nav
 */
 
 /*
@@ -106,7 +125,7 @@ text-shadow_black font_bold  text-shadow_white-1 c_primary h:c_primary-n2 undeco
  
 Weight:1000
  
-Styleguide Nav.Bar.Link.Classes
+Styleguide Nav.Bar.Classes.Link
 */
 
 /*
@@ -119,7 +138,7 @@ p_4 h:bg_white-5 flex_none
  
 Weight:1000
  
-Styleguide Nav.Bar.Link.ContainerClasses
+Styleguide Nav.Bar.Classes.LinkContainer
 */
 
 /*
@@ -132,5 +151,5 @@ toggle undecorated br_radius h:bg_white-5 p-x_2 m-l_auto text-shadow_black font_
  
 Weight:1000
  
-Styleguide Nav.Bar.Dropdown.ToggleClasses
+Styleguide Nav.Bar.Classes.DropdownToggle
 */
