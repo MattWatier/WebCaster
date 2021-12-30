@@ -17,6 +17,52 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"/>
 <link rel="stylesheet" href="css/UC.css"/>
 
+    <style>
+    :root{
+            /*  write all the css variables that need to be overridden in the design from the admin.  */
+            /* Colors are broken into hsla for greater flexibility. */
+            --brand-h: 228.8deg;
+            --brand-s: 75%;
+            --brand-l: 39.2156862745%;
+            --primary-h: 205.2857142857deg;
+            --primary-s: 58.8235294118%;
+            --primary-l: 46.6666666667%;
+            --secondary-h: 223.6363636364deg;
+            --secondary-s: 5.069124424%;
+            --secondary-l: 42.5490196078%;
+            --accent-h: 19.9078341014deg;
+            --accent-s: 89.3004115226%;
+            --accent-l: 47.6470588235%;
+            --highlight-h: 270.9677419355deg;
+            --highlight-s: 89.3004115226%;
+            --highlight-l: 47.6470588235%;
+
+            /* font family rules based on the selected google font. */
+            --font_accent: "Podkova", Lucida Bright, Georgia, serif;
+            --font_display: "Oswald", Open Sans, Helvetica Neue, Helvetica, Helvetica, Arial, sans-serif;
+            --font_copy: "Inter", Helvetica Neue, Helvetica, Helvetica, Arial, sans-serif;
+            --font_ui: "Inter", -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+            --font_mono: SFMono-Regular, Menlo, Monaco, Consolas, Liberation Mono, Courier New, monospace;
+
+            /* reading typography overrides. */
+            --font-family_headline: var(--font-family_display);
+            --font-family_headline-alt: var(--font-family_accent);
+            --font-family_content: var(--font-family_copy);
+            --font-family_code: var(--font-family_mono);
+
+/* Bootstrap Versions */
+    --bs-primary: hsl(var(--primary-h), var(--primary-s), var(--primary-l));
+    --bs-secondary: hsl(var(--secondary-h), var(--secondary-s), var(--secondary-l));
+    --bs-info:  hsl(var(--accent-h), var(--accent-s), var(--accent-l));;
+    --bs-primary-rgb: 13,110,253; /* admin area will have to render these as rgb */
+    --bs-secondary-rgb: 108,117,125; /* admin area will have to render these as rgb */
+    --bs-info-rgb: 13,202,240; /* admin area will have to render these as rgb */
+    --bs-font-sans-serif: var(--font-family_ui);
+    --bs-font-monospace: var(--font-family_mono);
+    --bs-gradient: linear-gradient(180deg, hsla(var(--primary-h), var(--primary-s), var(--primary-l), 0.15), hsla(var(--primary-h), var(--primary-s), var(--primary-l), 0));
+    --bs-body-font-family: var(--bs-font-sans-serif);
+}
+</style>
 </head>
 <body class="kss-body  bg_texture-light font_ui bg_black-2">
     <!-- header. -->
@@ -181,7 +227,7 @@
     Classes:{
         nav-container-classes:{ font_2:lg font_1:md font_0 font_display sticky t_0 },
         nav-classes:{ ul_none flex flex_row:md flex_column no_wrap justify_center br-xx_1  },
-        nav-link-container-classes:{ p-x_4  p-y_4:lg p-y_3:md p-y_2 flex_auto br_brand br_dotted },
+        nav-link-container-classes:{ p-x_4  p-y_4:lg p-y_3:md p-y_2 flex_auto br_brand br_dotted:md br_none },
         nav-link-classes:{ font_light c_brand h:c_brand-n2 undecorated h:underline  },
         nav-toggle-classes:{ toggle undecorated br_radius h:bg_white-5 p-x_2 m-l_auto m-l_2:lg text-shadow_black text-shadow_white-1 c_brand h:c_brand-n2  },
         nav-toggle-icon:{ fa-chevron-circle-down },
@@ -199,7 +245,7 @@
     Classes:{
         nav-container-classes:{ font_2:lg font_1:md font_0 font_display sticky t_0 },
         nav-classes:{ ul_none flex flex_row:md flex_column no_wrap justify_center br-xx_1  },
-        nav-link-container-classes:{ p-x_4  p-y_4:lg p-y_3:md p-y_2 flex_auto br_brand br_dotted },
+        nav-link-container-classes:{ p-x_4  p-y_4:lg p-y_3:md p-y_2 flex_auto br_brand br_dotted:md br_none },
         nav-link-classes:{ font_light c_brand h:c_brand-n2 undecorated h:underline  },
         nav-toggle-classes:{ toggle undecorated br_radius h:bg_white-5 p-x_2 m-l_auto m-l_2:lg text-shadow_black text-shadow_white-1 c_brand h:c_brand-n2  },
         nav-toggle-icon:{ fa-chevron-circle-down },
@@ -211,7 +257,7 @@
     Classes:{
         nav-container-classes:{ font_2:lg font_1:md font_0 font_display sticky t_0 },
         nav-classes:{ ul_none flex flex_row:md flex_column no_wrap justify_center br-xx_1  },
-        nav-link-container-classes:{ p-x_4  p-y_4:lg p-y_3:md p-y_2 flex_auto br_brand br_dotted },
+        nav-link-container-classes:{ p-x_4  p-y_4:lg p-y_3:md p-y_2 flex_auto br_brand br_dotted:md br_none },
         nav-link-classes:{ font_light c_brand h:c_brand-n2 undecorated h:underline  },
         nav-toggle-classes:{ toggle undecorated br_radius h:bg_white-5 p-x_2 m-l_auto m-l_2:lg text-shadow_black text-shadow_white-1 c_brand h:c_brand-n2  },
         nav-toggle-icon:{ fa-chevron-circle-down },
@@ -224,7 +270,7 @@
     Classes:{
         nav-container-classes:{ font_2:lg font_1:md font_0 font_display sticky t_0 },
         nav-classes:{ ul_none flex flex_row:md flex_column no_wrap justify_center br-xx_1  },
-        nav-link-container-classes:{ p-x_4  p-y_4:lg p-y_3:md p-y_2 flex_auto br_brand br_dotted },
+        nav-link-container-classes:{ p-x_4  p-y_4:lg p-y_3:md p-y_2 flex_auto br_brand br_dotted:md br_none },
         nav-link-classes:{ font_light c_brand h:c_brand-n2 undecorated h:underline  },
         nav-toggle-classes:{ toggle undecorated br_radius h:bg_white-5 p-x_2 m-l_auto m-l_2:lg text-shadow_black text-shadow_white-1 c_brand h:c_brand-n2  },
         nav-toggle-icon:{ fa-chevron-circle-down },
