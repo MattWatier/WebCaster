@@ -1127,7 +1127,7 @@ Classes - Nav Container
 Nav Container Classes
 
 Markup:
-bg_white font_2:lg font_0:md font_display sticky t_0 shadow_overlap-light 
+bg_white font_2:lg font_1:md font_display sticky t_0 shadow_overlap-light 
 
 Weight:1000
 
@@ -1163,7 +1163,7 @@ Classes - Link
 Description: 
 
 Markup:
-text-shadow_black-1 undecorated h:undecorated p-y_4 flex_auto text_center:lg
+text-shadow_black-1 undecorated h:undecorated p-y_4 p-x_3:md p-x_4 flex_auto text_center:lg
 
 Weight:1000
 
@@ -1294,7 +1294,7 @@ Classes - Nav Container
 Nav Container Classes
 
 Markup:
-bg_brand font_2:lg font_0:md font_display sticky t_0 shadow_overlap-light 
+bg_brand font_2:lg font_1:md font_display sticky t_0 shadow_overlap-light 
 
 Weight:1000
 
@@ -1330,7 +1330,7 @@ Classes - Link
 Description: 
 
 Markup:
-text-shadow_black-1 undecorated h:undecorated  p-y_4 flex_auto text_center:lg
+text-shadow_black-1 undecorated h:undecorated  p-y_4 p-x_3:md p-x_4 flex_auto text_center:lg
 
 Weight:1000
 
@@ -1626,7 +1626,7 @@ Classes - Nav Container
 Nav Container Classes
 
 Markup:
-font_2:lg font_1:md font_0 font_display sticky t_0
+font_3:lg font_2:md font_1 font_display sticky t_0
 
 Weight:1000
 
@@ -1705,6 +1705,12 @@ Styleguide Nav.DropTab.Classes.DropdownItem
 Big Stacked Text Nav
 
 Markup:
+<button class="btn btn-primary c_white" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+  <i class="fas fa-bars"></i> Menu
+</button>
+<div class="offcanvas offcanvas-start bg_white w_auto:md w_100" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+  <div class="offcanvas-body relative">
+  <button type="button" class="t_4:md r_4 br_0 br_none br_radius p-x_4 p-y_3  font_0 c_black-6 h:c_black b_4 b_auto:md absolute bg_black-_01" data-bs-dismiss="offcanvas" aria-label="Close">Close <i class="fas fa-times"></i></button>
 <nav class="{{> "Nav.BigStackedText.Classes.Container"}} isolate z_3">
     <ul class="{{> "Nav.BigStackedText.Classes.Nav"}} ">
         {{> "Nav.BigStackedText.Link" }}
@@ -1714,6 +1720,8 @@ Markup:
         {{> "Nav.BigStackedText.Dropdown" modifier_class="dropdown3"}}
     </ul>
 </nav>
+</div>
+</div>
 
 MarkupWrapperClasses: 
 

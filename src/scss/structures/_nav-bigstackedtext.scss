@@ -3,6 +3,12 @@
 Big Stacked Text Nav
  
 Markup:
+<button class="btn btn-primary c_white" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+  <i class="fas fa-bars"></i> Menu
+</button>
+<div class="offcanvas offcanvas-start bg_white w_auto:md w_100" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+  <div class="offcanvas-body relative">
+  <button type="button" class="t_4:md r_4 br_0 br_none br_radius p-x_4 p-y_3  font_0 c_black-6 h:c_black b_4 b_auto:md absolute bg_black-_01" data-bs-dismiss="offcanvas" aria-label="Close">Close <i class="fas fa-times"></i></button>
 <nav class="{{> "Nav.BigStackedText.Classes.Container"}} isolate z_3">
     <ul class="{{> "Nav.BigStackedText.Classes.Nav"}} ">
         {{> "Nav.BigStackedText.Link" }}
@@ -12,6 +18,8 @@ Markup:
         {{> "Nav.BigStackedText.Dropdown" modifier_class="dropdown3"}}
     </ul>
 </nav>
+</div>
+</div>
 
 MarkupWrapperClasses: 
  
