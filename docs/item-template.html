@@ -16,9 +16,8 @@
     <link href="kss-assets/css/kss.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"/>
 <link rel="stylesheet" href="css/UC.css"/>
-
-    <style>
-    :root{
+ <style>
+        :root {
             /*  write all the css variables that need to be overridden in the design from the admin.  */
             /* Colors are broken into hsla for greater flexibility. */
             --brand-h: 228.8deg;
@@ -36,34 +35,36 @@
             --highlight-h: 270.9677419355deg;
             --highlight-s: 89.3004115226%;
             --highlight-l: 47.6470588235%;
-
             /* font family rules based on the selected google font. */
             --font_accent: "Podkova", Lucida Bright, Georgia, serif;
             --font_display: "Oswald", Open Sans, Helvetica Neue, Helvetica, Helvetica, Arial, sans-serif;
             --font_copy: "Inter", Helvetica Neue, Helvetica, Helvetica, Arial, sans-serif;
             --font_ui: "Inter", -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
             --font_mono: SFMono-Regular, Menlo, Monaco, Consolas, Liberation Mono, Courier New, monospace;
-
             /* reading typography overrides. */
             --font-family_headline: var(--font-family_display);
             --font-family_headline-alt: var(--font-family_accent);
             --font-family_content: var(--font-family_copy);
             --font-family_code: var(--font-family_mono);
-
-/* Bootstrap Versions */
-    --bs-primary: hsl(var(--primary-h), var(--primary-s), var(--primary-l));
-    --bs-secondary: hsl(var(--secondary-h), var(--secondary-s), var(--secondary-l));
-    --bs-info:  hsl(var(--accent-h), var(--accent-s), var(--accent-l));;
-    --bs-primary-rgb: 13,110,253; /* admin area will have to render these as rgb */
-    --bs-secondary-rgb: 108,117,125; /* admin area will have to render these as rgb */
-    --bs-info-rgb: 13,202,240; /* admin area will have to render these as rgb */
-    --bs-font-sans-serif: var(--font-family_ui);
-    --bs-font-monospace: var(--font-family_mono);
-    --bs-gradient: linear-gradient(180deg, hsla(var(--primary-h), var(--primary-s), var(--primary-l), 0.15), hsla(var(--primary-h), var(--primary-s), var(--primary-l), 0));
-    --bs-body-font-family: var(--bs-font-sans-serif);
-}
-</style>
+            /* Bootstrap Versions */
+            --bs-primary: hsl(var(--primary-h), var(--primary-s), var(--primary-l));
+            --bs-secondary: hsl(var(--secondary-h), var(--secondary-s), var(--secondary-l));
+            --bs-info: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
+            ;
+            --bs-primary-rgb: 13, 110, 253;
+            /* admin area will have to render these as rgb */
+            --bs-secondary-rgb: 108, 117, 125;
+            /* admin area will have to render these as rgb */
+            --bs-info-rgb: 13, 202, 240;
+            /* admin area will have to render these as rgb */
+            --bs-font-sans-serif: var(--font-family_ui);
+            --bs-font-monospace: var(--font-family_mono);
+            --bs-gradient: linear-gradient(180deg, hsla(var(--primary-h), var(--primary-s), var(--primary-l), 0.15), hsla(var(--primary-h), var(--primary-s), var(--primary-l), 0));
+            --bs-body-font-family: var(--bs-font-sans-serif);
+        }
+    </style>
 </head>
+
 <body class="kss-body  bg_texture-light font_ui bg_black-2">
     <!-- header. -->
     <header class="bg_white shadow_overlap-light br_black-1 br_solid br_1 sticky t_0 display_none:md flex flex_inline z_5">
@@ -84,9 +85,8 @@
         </h1>
     </header>
     <section id="HeaderNav" class="display_none block:md m_auto bg_white shadow_bevel-bold">
-        <aside class="m_auto font_copy display_none block:md sticky t_0">
+        <nav class="m_auto font_copy display_none block:md sticky t_0">
             <ul class="ul_none flex flex_row:md flex_column justify_center br-t_1 br_solid br_black-4 p-y_3 br-b_1 ">
-
                 <li class=" w_auto:md w_100 p_2 self_center ">
                     <a class="block inline-block:md undecorated  h:bg_black-2 a:bg_accent a:c_white h:undecorated c_black-8 h:c_black-9 p_3 br_radius nowrap" href="index.html">
                         <span class=""><i class="fas fa-home p-x_2"></i></span>
@@ -128,10 +128,10 @@
                         </a>
                     </li>
             </ul>
-        </aside>
+        </nav>
     </section>
     <section id="MobleNav" class="bg_secondary-n3 bg_white display_none:lg font_0 font_ui kss-navigation overflow_auto p-b_2 p-x_3 scrollbar-mini shadow_overlap-bold z_4" style="padding-top:70px">
-        <aside class="display_none:md flex flex_column-reverse">
+        <nav class="display_none:md flex flex_column-reverse">
             <ul class="block flex flex_column ul_none w_100 ul_none lh_3" id="sitenav">
                     <li class="flex_auto is-active active m-b_2">
                         <a class="c_white undecorated h:undecorated a:bg_primary h:bg_black-5 p_2 block br_radius" href="/" id="home_nav">UC</a>
@@ -240,79 +240,77 @@
                     <a class="c_white undecorated h:undecorated a:bg_primary h:bg_black-5 p_2 block br_radius" href="https://acc-style.github.io/origami6/?path=/story/introduction--page" id="origami"><i class="fas fa-paper-plane p-r_3"></i><span>Project Origami</span></a>
                 </li>
             </ul>
-        </aside>
+        </nav>
     </section>
     <div class="m_auto p-x_4">
             <!-- display each section, in order. the "root" element comes first in this loop, and can be detected using the "#if @first" block as seen below. -->
             <div class="flex flex_column flex_row:md gap-x_5 p-t_4 max-w_90 m_auto">
-                <section class="max-w_20 w_25:lg flex_none relative display_none block:md">
-                    <aside class="sticky t_0 br_round shadow_bevel-bold bg_white p_4">
-                        <div>
-                                    <h3>Template</h3>
-                                        <ul class="m-l_0 ul_none lh_2">
-                                                <li class=" font_bold ">
-                                                    <a class="block inline-block:md undecorated flex flex_row h:undecorated flex_nowrap" href="section-template.html#kssref-template-brandarea">
-                                                        <span class="flex_auto overflow_ellipsis">Header Brand Area</span>
-                                                    </a>
-                                                </li>
-                                                <li class="p-l_4 font-size_down lh_2">
-                                                    <a class="block inline-block:md undecorated flex flex_row h:undecorated flex_nowrap" href="section-template.html#kssref-template-brandarea-logged-out">
-                                                        <span class="flex_auto overflow_ellipsis">Header Brand Area with Buttons (Logged Out)</span>
-                                                    </a>
-                                                </li>
-                                                <li class="p-l_4 font-size_down lh_2">
-                                                    <a class="block inline-block:md undecorated flex flex_row h:undecorated flex_nowrap" href="section-template.html#kssref-template-brandarea-loggedin">
-                                                        <span class="flex_auto overflow_ellipsis">Header Brand Area with Buttons (Logged In)</span>
-                                                    </a>
-                                                </li>
-                                                <li class="p-l_4 font-size_down lh_2">
-                                                    <a class="block inline-block:md undecorated flex flex_row h:undecorated flex_nowrap" href="section-template.html#kssref-template-brandarea-unsafearea">
-                                                        <span class="flex_auto overflow_ellipsis">Unsafe Area</span>
-                                                    </a>
-                                                </li>
-                                                <li class="p-l_4 font-size_down lh_2">
-                                                    <a class="block inline-block:md undecorated flex flex_row h:undecorated flex_nowrap" href="section-template.html#kssref-template-brandarea-buttons">
-                                                        <span class="flex_auto overflow_ellipsis">Template.BrandArea.Buttons</span>
-                                                    </a>
-                                                </li>
-                                                <li class=" font_bold ">
-                                                    <a class="block inline-block:md undecorated flex flex_row h:undecorated flex_nowrap" href="section-template.html#kssref-template-brand-area">
-                                                        <span class="flex_auto overflow_ellipsis">Header Branding Area</span>
-                                                    </a>
-                                                </li>
-                                                <li class=" font_bold ">
-                                                    <a class="block inline-block:md undecorated flex flex_row h:undecorated flex_nowrap" href="section-template.html#kssref-template-contentarea">
-                                                        <span class="flex_auto overflow_ellipsis">Content Area</span>
-                                                    </a>
-                                                </li>
-                                                <li class=" font_bold ">
-                                                    <a class="block inline-block:md undecorated flex flex_row h:undecorated flex_nowrap" href="section-template.html#kssref-template-footer">
-                                                        <span class="flex_auto overflow_ellipsis">Footer</span>
-                                                    </a>
-                                                </li>
-                                                <li class=" font_bold ">
-                                                    <a class="block inline-block:md undecorated flex flex_row h:undecorated flex_nowrap" href="section-template.html#kssref-template-header">
-                                                        <span class="flex_auto overflow_ellipsis">Header</span>
-                                                    </a>
-                                                </li>
-                                        </ul>
-                            <div class=" font_bold br-t_1 br_primary br_solid font_bold m-t_3 p-t_3">
-                                <a class="block inline-block:md undecorated flex flex_row h:undecorated flex_nowrap" href="#topbody">
-                                    <i class="fas fa-arrow-up"></i><span class="flex_auto overflow_ellipsis">Top</span>
-                                </a>
-                            </div>
+                <aside class="max-w_20 w_25:lg flex_none relative display_none block:md">
+                    <nav class="sticky t_0 br_round shadow_bevel-bold bg_white p_4">
+                                <h3>Template</h3>
+                                    <ul class="m-l_0 ul_none lh_2">
+                                            <li class=" font_bold ">
+                                                <a class="block inline-block:md undecorated flex flex_row h:undecorated flex_nowrap" href="section-template.html#kssref-template-brandarea">
+                                                    <span class="flex_auto overflow_ellipsis">Header Brand Area</span>
+                                                </a>
+                                            </li>
+                                            <li class="p-l_4 font-size_down lh_2">
+                                                <a class="block inline-block:md undecorated flex flex_row h:undecorated flex_nowrap" href="section-template.html#kssref-template-brandarea-logged-out">
+                                                    <span class="flex_auto overflow_ellipsis">Header Brand Area with Buttons (Logged Out)</span>
+                                                </a>
+                                            </li>
+                                            <li class="p-l_4 font-size_down lh_2">
+                                                <a class="block inline-block:md undecorated flex flex_row h:undecorated flex_nowrap" href="section-template.html#kssref-template-brandarea-loggedin">
+                                                    <span class="flex_auto overflow_ellipsis">Header Brand Area with Buttons (Logged In)</span>
+                                                </a>
+                                            </li>
+                                            <li class="p-l_4 font-size_down lh_2">
+                                                <a class="block inline-block:md undecorated flex flex_row h:undecorated flex_nowrap" href="section-template.html#kssref-template-brandarea-unsafearea">
+                                                    <span class="flex_auto overflow_ellipsis">Unsafe Area</span>
+                                                </a>
+                                            </li>
+                                            <li class="p-l_4 font-size_down lh_2">
+                                                <a class="block inline-block:md undecorated flex flex_row h:undecorated flex_nowrap" href="section-template.html#kssref-template-brandarea-buttons">
+                                                    <span class="flex_auto overflow_ellipsis">Template.BrandArea.Buttons</span>
+                                                </a>
+                                            </li>
+                                            <li class=" font_bold ">
+                                                <a class="block inline-block:md undecorated flex flex_row h:undecorated flex_nowrap" href="section-template.html#kssref-template-brand-area">
+                                                    <span class="flex_auto overflow_ellipsis">Header Branding Area</span>
+                                                </a>
+                                            </li>
+                                            <li class=" font_bold ">
+                                                <a class="block inline-block:md undecorated flex flex_row h:undecorated flex_nowrap" href="section-template.html#kssref-template-contentarea">
+                                                    <span class="flex_auto overflow_ellipsis">Content Area</span>
+                                                </a>
+                                            </li>
+                                            <li class=" font_bold ">
+                                                <a class="block inline-block:md undecorated flex flex_row h:undecorated flex_nowrap" href="section-template.html#kssref-template-footer">
+                                                    <span class="flex_auto overflow_ellipsis">Footer</span>
+                                                </a>
+                                            </li>
+                                            <li class=" font_bold ">
+                                                <a class="block inline-block:md undecorated flex flex_row h:undecorated flex_nowrap" href="section-template.html#kssref-template-header">
+                                                    <span class="flex_auto overflow_ellipsis">Header</span>
+                                                </a>
+                                            </li>
+                                    </ul>
+                        <div class=" font_bold br-t_1 br_primary br_solid font_bold m-t_3 p-t_3">
+                            <a class="block inline-block:md undecorated flex flex_row h:undecorated flex_nowrap" href="#topbody">
+                                <i class="fas fa-arrow-up"></i><span class="flex_auto overflow_ellipsis">Top</span>
+                            </a>
                         </div>
-                    </aside>
-                </section>
+                    </nav>
+                </aside>
                 <main class="w_100 flex_auto">
                             <header class="kss-section kss-section--depth-1 br_radius shadow_bevel-bold bg_white br_solid br_black-4 br_1" id="kssref-template">
                         <article class="kss-section__content relative br_radius">
                             <div class="absolute t_0 r_4 flex flex_row gap-x_2 justify_end">
-                                <a class="c_white bg_black-5 c_white flex_none h:bg_black-7 inline-block p_2 shadow_overlap-light" target="_blank" href="item-template.html" title="pop out component into new tab">
+                                <a class="c_white link-reset bg_black-5 h:c_white flex_none h:bg_black-7 inline-block p_2 shadow_overlap-light" target="_blank" href="item-template.html" title="pop out component into new tab">
                                     <i class="fa-external-link fa-fw fas fa-fw fas"></i>
                                 </a>
                             </div>
-                                <p class="kss-section__source font_n3"> Source: <span>dist/css/styleguide.css</span>, line <span>1532</span>
+                                <p class="kss-section__source font_n3"> Source: <span>dist/css/styleguide.css</span>, line <span>1871</span>
                                 </p>
                             <a class="kss-section__permalink" href="#kssref-template">
                                 <h1 class="kss-section__item c_primary kss-section__item--depth-1">

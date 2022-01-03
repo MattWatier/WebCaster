@@ -1,15 +1,15 @@
 /*
 Typography
  
-Description: Styling html that you don't have conrol over is best wrapped in a `<div>` with a `class` of `.reading-typography`.
+Description: Styling html that you don't have control over is best wrapped in a `<div>` with a `class` of `.reading-typography`.
  
 Markup:
 <main class="reading-typography">
     <section>
         <hgroup>
             <h1>h1 HTML5 Kitchen Sink</h1>
-            <h2>h2 Back in my quaint <a href='#'>garden</a></h2>
-            <h3>h3 Jaunty <a href='#'>zinnias</a> vie with flaunting phlox</h3>
+            <h2>links in the header use  <a href='mailto:.pdf'>super versions</a> of the link decorators.</h2>
+            <h3>h3 This is a trademark link <a href='#' aria-label="trademark">zinnias</a> the symbol shows up because of the aria-label</h3>
             <h4>h4 Five or six big jet planes zoomed quickly by the new tower.</h4>
             <h5>h5 Expect skilled songwriters to use many jazzy, quaint old alphabets effectively.</h5>
             <h6>h6 Pack my box with five dozen liquor jugs.</h6>
@@ -153,4 +153,22 @@ Markup:
 Weight:0
  
 Styleguide Basic.Typography
+*/
+
+/*
+Aria Labels
+ 
+Description: Sometimes is important to have a labels around parts of text.
+
+copyright - copyright symbol
+trademark - trademark symbol
+register - registered trademark symbol
+ 
+Markup:
+<span class="font_2 font_bold font_display" aria-label="{{modifier_class}}">the Aria Label {{modifier_class}}</span>
+
+ 
+Weight:0
+ 
+Styleguide Basic.AriaLabelText
 */

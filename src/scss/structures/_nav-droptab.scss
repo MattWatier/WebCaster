@@ -29,9 +29,7 @@ active - the active state of the nav item.
  
 Markup:
 <li class="{{modifier_class}} {{> Nav.DropTab.Classes.LinkContainer}}" >
-    <div class="flex flex_row nowrap gap-x_3">            
-        <a href="" class="flex_auto {{modifier_class}} {{> "Nav.DropTab.Classes.Link"}}"><span class="capitalize">{{modifier_class}}</span> Basic Link</a>
-    </div>
+    <a href="" class="flex_auto {{modifier_class}} {{> "Nav.DropTab.Classes.Link"}}"><span class="capitalize">{{modifier_class}}</span> Basic Link</a>
 </li>
 
 MarkupWrapperClasses: ul_none
@@ -48,20 +46,18 @@ Description:
  
 Markup:
 <li class="dropdown {{> Nav.DropTab.Classes.LinkContainer }}">
-    <div class="flex flex_inline nowrap gap-x_3">            
-        <a href="#" class="{{> "Nav.DropTab.Classes.Link"}}">Drop Down Link</a>
-        <a href="#" class="toggle {{> "Nav.DropTab.Classes.DropdownToggle"}} {{modifier_class}}" data-bs-target="{{modifier_class}}Menu" id="{{modifier_class}}Button" aria-expanded="false" data-bs-toggle="dropdown">
-            <i class="fas {{> "Nav.DropTab.Classes.DropdownToggleIcon"}}"></i>
-            <span class="display_none">Toggle Dropdown</span>
-        </a>
-        <ul class="dropdown-menu ul_none font-size_down-1  {{modifier_class}}" aria-labelledby="{{modifier_class}}Button" id="{{modifier_class}}Menu">
-            <li><a class="dropdown-item {{> "Nav.DropTab.Classes.DropdownItem" }}" href="#">Action</a></li>
-            <li><a class="dropdown-item {{> "Nav.DropTab.Classes.DropdownItem" }}" href="#">Another action</a></li>
-            <li><a class="dropdown-item {{> "Nav.DropTab.Classes.DropdownItem" }}" href="#">Something else here</a></li>
-            <li><hr class="dropdown-divider"></li>
-            <li><a class="dropdown-item {{> "Nav.DropTab.Classes.DropdownItem" }}" href="#">Separated link</a></li>
-        </ul> 
-    </div>
+    <a href="#" class="{{> "Nav.DropTab.Classes.Link"}}">Drop Down Link</a>
+    <a href="#" class="toggle {{> "Nav.DropTab.Classes.DropdownToggle"}} {{modifier_class}}" data-bs-target="{{modifier_class}}Menu" id="{{modifier_class}}Button" aria-expanded="false" data-bs-toggle="dropdown">
+        <i class="fas {{> "Nav.DropTab.Classes.DropdownToggleIcon"}}"></i>
+        <span class="display_none">Toggle Dropdown</span>
+    </a>
+    <ul class="dropdown-menu ul_none font-size_down-1  {{modifier_class}}" aria-labelledby="{{modifier_class}}Button" id="{{modifier_class}}Menu">
+        <li><a class="dropdown-item {{> "Nav.DropTab.Classes.DropdownItem" }}" href="#">Action</a></li>
+        <li><a class="dropdown-item {{> "Nav.DropTab.Classes.DropdownItem" }}" href="#">Another action</a></li>
+        <li><a class="dropdown-item {{> "Nav.DropTab.Classes.DropdownItem" }}" href="#">Something else here</a></li>
+        <li><hr class="dropdown-divider"></li>
+        <li><a class="dropdown-item {{> "Nav.DropTab.Classes.DropdownItem" }}" href="#">Separated link</a></li>
+    </ul> 
 </li>
 
 MarkupWrapperClasses: ul_none
@@ -76,7 +72,7 @@ Styleguide Nav.DropTab.Dropdown
 Classes
 
 Markup:
-<code><pre>
+<code class="overflow_scroll"><pre class="font_0l">
 Classes:{
     nav-container-classes:{ {{> "Nav.DropTab.Classes.Container"}} },
     nav-classes:{ {{> "Nav.DropTab.Classes.Nav"}}  },
@@ -124,7 +120,7 @@ Classes: Link Container
 Description: 
  
 Markup:
-h:bg_brand-5 flex_none br-br_round:md br-bl_round:md a:bg_brand
+h:bg_brand-5 flex_none br-br_round:md br-bl_round:md a:bg_brand flex flex_inline nowrap gap-x_3
  
 Weight:1000
  
@@ -152,7 +148,7 @@ Classes: Dropdown Toggle
 Description: 
  
 Markup:
-toggle undecorated br_radius h:bg_brand-5 p-x_2 m-l_auto m-r_4 font_bold c_brand h:c_brand-n2 flex flex_column justify_center flex_none
+toggle undecorated br_radius h:bg_brand-5 p-x_2 m-l_auto m-l_0:auto m-r_4 font_bold c_brand h:c_brand-n2 flex flex_column justify_center flex_none
  
 Weight:1000
  

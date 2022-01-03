@@ -16,9 +16,8 @@
     <link href="kss-assets/css/kss.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"/>
 <link rel="stylesheet" href="css/UC.css"/>
-
-    <style>
-    :root{
+ <style>
+        :root {
             /*  write all the css variables that need to be overridden in the design from the admin.  */
             /* Colors are broken into hsla for greater flexibility. */
             --brand-h: 228.8deg;
@@ -36,34 +35,36 @@
             --highlight-h: 270.9677419355deg;
             --highlight-s: 89.3004115226%;
             --highlight-l: 47.6470588235%;
-
             /* font family rules based on the selected google font. */
             --font_accent: "Podkova", Lucida Bright, Georgia, serif;
             --font_display: "Oswald", Open Sans, Helvetica Neue, Helvetica, Helvetica, Arial, sans-serif;
             --font_copy: "Inter", Helvetica Neue, Helvetica, Helvetica, Arial, sans-serif;
             --font_ui: "Inter", -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
             --font_mono: SFMono-Regular, Menlo, Monaco, Consolas, Liberation Mono, Courier New, monospace;
-
             /* reading typography overrides. */
             --font-family_headline: var(--font-family_display);
             --font-family_headline-alt: var(--font-family_accent);
             --font-family_content: var(--font-family_copy);
             --font-family_code: var(--font-family_mono);
-
-/* Bootstrap Versions */
-    --bs-primary: hsl(var(--primary-h), var(--primary-s), var(--primary-l));
-    --bs-secondary: hsl(var(--secondary-h), var(--secondary-s), var(--secondary-l));
-    --bs-info:  hsl(var(--accent-h), var(--accent-s), var(--accent-l));;
-    --bs-primary-rgb: 13,110,253; /* admin area will have to render these as rgb */
-    --bs-secondary-rgb: 108,117,125; /* admin area will have to render these as rgb */
-    --bs-info-rgb: 13,202,240; /* admin area will have to render these as rgb */
-    --bs-font-sans-serif: var(--font-family_ui);
-    --bs-font-monospace: var(--font-family_mono);
-    --bs-gradient: linear-gradient(180deg, hsla(var(--primary-h), var(--primary-s), var(--primary-l), 0.15), hsla(var(--primary-h), var(--primary-s), var(--primary-l), 0));
-    --bs-body-font-family: var(--bs-font-sans-serif);
-}
-</style>
+            /* Bootstrap Versions */
+            --bs-primary: hsl(var(--primary-h), var(--primary-s), var(--primary-l));
+            --bs-secondary: hsl(var(--secondary-h), var(--secondary-s), var(--secondary-l));
+            --bs-info: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
+            ;
+            --bs-primary-rgb: 13, 110, 253;
+            /* admin area will have to render these as rgb */
+            --bs-secondary-rgb: 108, 117, 125;
+            /* admin area will have to render these as rgb */
+            --bs-info-rgb: 13, 202, 240;
+            /* admin area will have to render these as rgb */
+            --bs-font-sans-serif: var(--font-family_ui);
+            --bs-font-monospace: var(--font-family_mono);
+            --bs-gradient: linear-gradient(180deg, hsla(var(--primary-h), var(--primary-s), var(--primary-l), 0.15), hsla(var(--primary-h), var(--primary-s), var(--primary-l), 0));
+            --bs-body-font-family: var(--bs-font-sans-serif);
+        }
+    </style>
 </head>
+
 <body class="kss-body  bg_texture-light font_ui bg_black-2">
     <!-- header. -->
     <header class="bg_white shadow_overlap-light br_black-1 br_solid br_1 sticky t_0 display_none:md flex flex_inline z_5">
@@ -84,9 +85,8 @@
         </h1>
     </header>
     <section id="HeaderNav" class="display_none block:md m_auto bg_white shadow_bevel-bold">
-        <aside class="m_auto font_copy display_none block:md sticky t_0">
+        <nav class="m_auto font_copy display_none block:md sticky t_0">
             <ul class="ul_none flex flex_row:md flex_column justify_center br-t_1 br_solid br_black-4 p-y_3 br-b_1 ">
-
                 <li class=" w_auto:md w_100 p_2 self_center ">
                     <a class="block inline-block:md undecorated  h:bg_black-2 a:bg_accent a:c_white h:undecorated c_black-8 h:c_black-9 p_3 br_radius nowrap" href="index.html">
                         <span class=""><i class="fas fa-home p-x_2"></i></span>
@@ -128,10 +128,10 @@
                         </a>
                     </li>
             </ul>
-        </aside>
+        </nav>
     </section>
     <section id="MobleNav" class="bg_secondary-n3 bg_white display_none:lg font_0 font_ui kss-navigation overflow_auto p-b_2 p-x_3 scrollbar-mini shadow_overlap-bold z_4" style="padding-top:70px">
-        <aside class="display_none:md flex flex_column-reverse">
+        <nav class="display_none:md flex flex_column-reverse">
             <ul class="block flex flex_column ul_none w_100 ul_none lh_3" id="sitenav">
                     <li class="flex_auto is-active active m-b_2">
                         <a class="c_white undecorated h:undecorated a:bg_primary h:bg_black-5 p_2 block br_radius" href="/" id="home_nav">UC</a>
@@ -150,8 +150,14 @@
                                     </li>
                                             <ul class="m-l_4 ul_none lh_3">
                                                     <li class=" font_bold  m-b_2">
-                                                        <a class="block inline-block:md undecorated flex flex_row h:undecorated flex_nowrap   c_white-8 h:c_white" href="section-basic.html#kssref-basic-typography">
+                                                        <a class="block inline-block:md undecorated flex flex_row h:undecorated flex_nowrap   c_white-8 h:c_white" href="section-basic.html#kssref-basic-arialabeltext">
                                                             <span class="kss-nav__ref flex_shrink p-r_3 font_bold">1.1</span>
+                                                            <span class="flex_auto overflow_ellipsis">Aria Labels</span>
+                                                        </a>
+                                                    </li>
+                                                    <li class=" font_bold  m-b_2">
+                                                        <a class="block inline-block:md undecorated flex flex_row h:undecorated flex_nowrap   c_white-8 h:c_white" href="section-basic.html#kssref-basic-typography">
+                                                            <span class="kss-nav__ref flex_shrink p-r_3 font_bold">1.2</span>
                                                             <span class="flex_auto overflow_ellipsis">Typography</span>
                                                         </a>
                                                     </li>
@@ -192,35 +198,38 @@
                     <a class="c_white undecorated h:undecorated a:bg_primary h:bg_black-5 p_2 block br_radius" href="https://acc-style.github.io/origami6/?path=/story/introduction--page" id="origami"><i class="fas fa-paper-plane p-r_3"></i><span>Project Origami</span></a>
                 </li>
             </ul>
-        </aside>
+        </nav>
     </section>
     <div class="m_auto p-x_4">
             <!-- display each section, in order. the "root" element comes first in this loop, and can be detected using the "#if @first" block as seen below. -->
             <div class="flex flex_column flex_row:md gap-x_5 p-t_4 max-w_90 m_auto">
-                <section class="max-w_20 w_25:lg flex_none relative display_none block:md">
-                    <aside class="sticky t_0 br_round shadow_bevel-bold bg_white p_4">
-                        <div>
-                                    <h3>Basic</h3>
-                                        <ul class="m-l_0 ul_none lh_2">
-                                                <li class=" font_bold ">
-                                                    <a class="block inline-block:md undecorated flex flex_row h:undecorated flex_nowrap" href="section-basic.html#kssref-basic-typography">
-                                                        <span class="flex_auto overflow_ellipsis">Typography</span>
-                                                    </a>
-                                                </li>
-                                        </ul>
-                            <div class=" font_bold br-t_1 br_primary br_solid font_bold m-t_3 p-t_3">
-                                <a class="block inline-block:md undecorated flex flex_row h:undecorated flex_nowrap" href="#topbody">
-                                    <i class="fas fa-arrow-up"></i><span class="flex_auto overflow_ellipsis">Top</span>
-                                </a>
-                            </div>
+                <aside class="max-w_20 w_25:lg flex_none relative display_none block:md">
+                    <nav class="sticky t_0 br_round shadow_bevel-bold bg_white p_4">
+                                <h3>Basic</h3>
+                                    <ul class="m-l_0 ul_none lh_2">
+                                            <li class=" font_bold ">
+                                                <a class="block inline-block:md undecorated flex flex_row h:undecorated flex_nowrap" href="section-basic.html#kssref-basic-arialabeltext">
+                                                    <span class="flex_auto overflow_ellipsis">Aria Labels</span>
+                                                </a>
+                                            </li>
+                                            <li class=" font_bold ">
+                                                <a class="block inline-block:md undecorated flex flex_row h:undecorated flex_nowrap" href="section-basic.html#kssref-basic-typography">
+                                                    <span class="flex_auto overflow_ellipsis">Typography</span>
+                                                </a>
+                                            </li>
+                                    </ul>
+                        <div class=" font_bold br-t_1 br_primary br_solid font_bold m-t_3 p-t_3">
+                            <a class="block inline-block:md undecorated flex flex_row h:undecorated flex_nowrap" href="#topbody">
+                                <i class="fas fa-arrow-up"></i><span class="flex_auto overflow_ellipsis">Top</span>
+                            </a>
                         </div>
-                    </aside>
-                </section>
+                    </nav>
+                </aside>
                 <main class="w_100 flex_auto">
                             <header class="kss-section kss-section--depth-1 br_radius shadow_bevel-bold bg_white br_solid br_black-4 br_1" id="kssref-basic">
                         <article class="kss-section__content relative br_radius">
                             <div class="absolute t_0 r_4 flex flex_row gap-x_2 justify_end">
-                                <a class="c_white bg_black-5 c_white flex_none h:bg_black-7 inline-block p_2 shadow_overlap-light" target="_blank" href="item-basic.html" title="pop out component into new tab">
+                                <a class="c_white link-reset bg_black-5 h:c_white flex_none h:bg_black-7 inline-block p_2 shadow_overlap-light" target="_blank" href="item-basic.html" title="pop out component into new tab">
                                     <i class="fa-external-link fa-fw fas fa-fw fas"></i>
                                 </a>
                             </div>
@@ -232,10 +241,89 @@
                             </a>
                         </article>
                             </header>
-                            <section class="kss-section kss-section--depth-2 br_radius shadow_bevel-light bg_white br_solid br_black-4 br_1" id="kssref-basic-typography">
+                                <section class="kss-section kss-section--depth-2 br_radius shadow_bevel-light bg_white br_solid br_black-4 br_1" id="kssref-basic-arialabeltext">
                         <article class="kss-section__content relative br_radius">
                             <div class="absolute t_0 r_4 flex flex_row gap-x_2 justify_end">
-                                <a class="c_white bg_black-5 c_white flex_none h:bg_black-7 inline-block p_2 shadow_overlap-light" target="_blank" href="item-basic-typography.html" title="pop out component into new tab">
+                                <a class="c_white link-reset bg_black-5 h:c_white flex_none h:bg_black-7 inline-block p_2 shadow_overlap-light" target="_blank" href="item-basic-arialabeltext.html" title="pop out component into new tab">
+                                    <i class="fa-external-link fa-fw fas fa-fw fas"></i>
+                                </a>
+                            </div>
+                                <p class="kss-section__source font_n3"> Source: <span>dist/css/styleguide.css</span>, line <span>158</span>
+                                </p>
+                            <a class="kss-section__permalink" href="#kssref-basic-arialabeltext">
+                                <h2 class="kss-section__item c_primary kss-section__item--depth-2">
+                                    <span class="kss-section__ref">1.1</span>
+                                    <span class="kss-section__name">Aria Labels</span>
+                                </h2>
+                            </a>
+                        </article>
+                            <article class="kss-section__modifiers">
+                                <h1 class="kss-modifiers__heading"> Example s 
+                                </h1>
+                                    <h2 class="kss-modifiers__name"> Default styling</h2>
+                                <div class="kss-modifiers__example">
+                                    <div class="">
+                                        <span class="font_2 font_bold font_display" aria-label="[modifier class]">the Aria Label [modifier class]</span>
+                                    </div>
+                                </div>
+                                    <div class="">
+                                            <article class="kss-modifiers__modifier">
+                                                <h2 class="kss-modifiers__name">
+                                                    copyright
+                                                </h2>
+                                                <p class="kss-modifiers__description">
+                                                    copyright symbol
+                                                </p>
+                                                <div class="kss-modifiers__example ">
+                                                    <span class="font_2 font_bold font_display" aria-label="copyright">the Aria Label copyright</span>
+                                                </div>
+                                            </article>
+                                            <article class="kss-modifiers__modifier">
+                                                <h2 class="kss-modifiers__name">
+                                                    trademark
+                                                </h2>
+                                                <p class="kss-modifiers__description">
+                                                    trademark symbol
+                                                </p>
+                                                <div class="kss-modifiers__example ">
+                                                    <span class="font_2 font_bold font_display" aria-label="trademark">the Aria Label trademark</span>
+                                                </div>
+                                            </article>
+                                            <article class="kss-modifiers__modifier">
+                                                <h2 class="kss-modifiers__name">
+                                                    register
+                                                </h2>
+                                                <p class="kss-modifiers__description">
+                                                    registered trademark symbol
+                                                </p>
+                                                <div class="kss-modifiers__example ">
+                                                    <span class="font_2 font_bold font_display" aria-label="register">the Aria Label register</span>
+                                                </div>
+                                            </article>
+                                    </div>
+                            </article>
+                            <section class="relative  br-t_1 br_solid br_black-2 bg_black-1 shadow_n1 texture_light">
+                                <main class="kss-section__markup overflow_scroll scrollbar-mini collapse transition_3" id="collapse-basic-arialabeltext">
+                                    <pre><code class="language-markup"  id="code-basic-arialabeltext" value='&lt;span class&#x3D;&quot;font_2 font_bold font_display&quot; aria-label&#x3D;&quot;[modifier class]&quot;&gt;the Aria Label [modifier class]&lt;/span&gt;'>&lt;span class&#x3D;&quot;font_2 font_bold font_display&quot; aria-label&#x3D;&quot;[modifier class]&quot;&gt;the Aria Label [modifier class]&lt;/span&gt;</code></pre>
+                                    <input class="display_none text-input html-code-input" type="text" name="" id="input-basic-arialabeltext" value='&lt;span class&#x3D;&quot;font_2 font_bold font_display&quot; aria-label&#x3D;&quot;[modifier class]&quot;&gt;the Aria Label [modifier class]&lt;/span&gt;'>
+                                </main>
+                                <header class="flex_row flex shadow_n1 br-br_radius br-bl_radius">
+                                    <div class="flex flex_row flex_auto collapsed h:bg_black-7 br-bl_radius c_black-8 h:c_white" aria-expanded="false" data-bs-toggle="collapse" data-bs-target="#collapse-basic-arialabeltext" aria-controls="#collapse-basic-arialabeltext">
+                                        <div class="flex_none p_2 font_1">
+                                            <i class="a:rotation fa-fw fa-chevron-up fas self_center text_center"></i>
+                                        </div>
+                                        <div class="flex_auto flex flex_row">
+                                            <h4 class="font_0 font_bold flex_auto p-l_2 self_center m_0 text_left">Code Sample</h4>
+                                        </div>
+                                    </div>
+                                    <a class="bg_primary br_1 br_black-3 br_solid c_white flex_none font_medium font_ui h:bg_primary-n2 h:undecorated m-l_auto p-x_3 p-y_2 br-br_radius" onclick="CopyCode( 'input-basic-arialabeltext')"><i class="fas fa-copy"></i> Copy Code</a>
+                                </header>
+                            </section>
+                            </section>
+                                <section class="kss-section kss-section--depth-2 br_radius shadow_bevel-light bg_white br_solid br_black-4 br_1" id="kssref-basic-typography">
+                        <article class="kss-section__content relative br_radius">
+                            <div class="absolute t_0 r_4 flex flex_row gap-x_2 justify_end">
+                                <a class="c_white link-reset bg_black-5 h:c_white flex_none h:bg_black-7 inline-block p_2 shadow_overlap-light" target="_blank" href="item-basic-typography.html" title="pop out component into new tab">
                                     <i class="fa-external-link fa-fw fas fa-fw fas"></i>
                                 </a>
                             </div>
@@ -243,7 +331,7 @@
                                 </p>
                             <a class="kss-section__permalink" href="#kssref-basic-typography">
                                 <h2 class="kss-section__item c_primary kss-section__item--depth-2">
-                                    <span class="kss-section__ref">1.1</span>
+                                    <span class="kss-section__ref">1.2</span>
                                     <span class="kss-section__name">Typography</span>
                                 </h2>
                             </a>
@@ -257,8 +345,8 @@
     <section>
         <hgroup>
             <h1>h1 HTML5 Kitchen Sink</h1>
-            <h2>h2 Back in my quaint <a href='#'>garden</a></h2>
-            <h3>h3 Jaunty <a href='#'>zinnias</a> vie with flaunting phlox</h3>
+            <h2>links in the header use  <a href='mailto:.pdf'>super versions</a> of the link decorators.</h2>
+            <h3>h3 This is a trademark link <a href='#' aria-label="trademark">zinnias</a> the symbol shows up because of the aria-label</h3>
             <h4>h4 Five or six big jet planes zoomed quickly by the new tower.</h4>
             <h5>h5 Expect skilled songwriters to use many jazzy, quaint old alphabets effectively.</h5>
             <h6>h6 Pack my box with five dozen liquor jugs.</h6>
@@ -407,8 +495,8 @@
     &lt;section&gt;
         &lt;hgroup&gt;
             &lt;h1&gt;h1 HTML5 Kitchen Sink&lt;/h1&gt;
-            &lt;h2&gt;h2 Back in my quaint &lt;a href&#x3D;&#x27;#&#x27;&gt;garden&lt;/a&gt;&lt;/h2&gt;
-            &lt;h3&gt;h3 Jaunty &lt;a href&#x3D;&#x27;#&#x27;&gt;zinnias&lt;/a&gt; vie with flaunting phlox&lt;/h3&gt;
+            &lt;h2&gt;links in the header use  &lt;a href&#x3D;&#x27;mailto:.pdf&#x27;&gt;super versions&lt;/a&gt; of the link decorators.&lt;/h2&gt;
+            &lt;h3&gt;h3 This is a trademark link &lt;a href&#x3D;&#x27;#&#x27; aria-label&#x3D;&quot;trademark&quot;&gt;zinnias&lt;/a&gt; the symbol shows up because of the aria-label&lt;/h3&gt;
             &lt;h4&gt;h4 Five or six big jet planes zoomed quickly by the new tower.&lt;/h4&gt;
             &lt;h5&gt;h5 Expect skilled songwriters to use many jazzy, quaint old alphabets effectively.&lt;/h5&gt;
             &lt;h6&gt;h6 Pack my box with five dozen liquor jugs.&lt;/h6&gt;
@@ -551,8 +639,8 @@
     &lt;section&gt;
         &lt;hgroup&gt;
             &lt;h1&gt;h1 HTML5 Kitchen Sink&lt;/h1&gt;
-            &lt;h2&gt;h2 Back in my quaint &lt;a href&#x3D;&#x27;#&#x27;&gt;garden&lt;/a&gt;&lt;/h2&gt;
-            &lt;h3&gt;h3 Jaunty &lt;a href&#x3D;&#x27;#&#x27;&gt;zinnias&lt;/a&gt; vie with flaunting phlox&lt;/h3&gt;
+            &lt;h2&gt;links in the header use  &lt;a href&#x3D;&#x27;mailto:.pdf&#x27;&gt;super versions&lt;/a&gt; of the link decorators.&lt;/h2&gt;
+            &lt;h3&gt;h3 This is a trademark link &lt;a href&#x3D;&#x27;#&#x27; aria-label&#x3D;&quot;trademark&quot;&gt;zinnias&lt;/a&gt; the symbol shows up because of the aria-label&lt;/h3&gt;
             &lt;h4&gt;h4 Five or six big jet planes zoomed quickly by the new tower.&lt;/h4&gt;
             &lt;h5&gt;h5 Expect skilled songwriters to use many jazzy, quaint old alphabets effectively.&lt;/h5&gt;
             &lt;h6&gt;h6 Pack my box with five dozen liquor jugs.&lt;/h6&gt;
@@ -696,8 +784,8 @@
     &lt;section&gt;
         &lt;hgroup&gt;
             &lt;h1&gt;h1 HTML5 Kitchen Sink&lt;/h1&gt;
-            &lt;h2&gt;h2 Back in my quaint &lt;a href&#x3D;&#x27;#&#x27;&gt;garden&lt;/a&gt;&lt;/h2&gt;
-            &lt;h3&gt;h3 Jaunty &lt;a href&#x3D;&#x27;#&#x27;&gt;zinnias&lt;/a&gt; vie with flaunting phlox&lt;/h3&gt;
+            &lt;h2&gt;links in the header use  &lt;a href&#x3D;&#x27;mailto:.pdf&#x27;&gt;super versions&lt;/a&gt; of the link decorators.&lt;/h2&gt;
+            &lt;h3&gt;h3 This is a trademark link &lt;a href&#x3D;&#x27;#&#x27; aria-label&#x3D;&quot;trademark&quot;&gt;zinnias&lt;/a&gt; the symbol shows up because of the aria-label&lt;/h3&gt;
             &lt;h4&gt;h4 Five or six big jet planes zoomed quickly by the new tower.&lt;/h4&gt;
             &lt;h5&gt;h5 Expect skilled songwriters to use many jazzy, quaint old alphabets effectively.&lt;/h5&gt;
             &lt;h6&gt;h6 Pack my box with five dozen liquor jugs.&lt;/h6&gt;

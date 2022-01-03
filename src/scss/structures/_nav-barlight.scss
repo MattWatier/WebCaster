@@ -1,0 +1,178 @@
+
+/*
+Bar Light Nav
+ 
+Markup:
+<nav class="{{> "Nav.BarLight.Classes.Container"}}">
+    <ul class="{{> "Nav.BarLight.Classes.Nav"}} ">
+        {{> "Nav.BarLight.Link" }}
+        {{> "Nav.BarLight.Link" modifier_class='active' }}
+        {{> "Nav.BarLight.Link" modifier_class='disabled' }}
+        {{> "Nav.BarLight.Dropdown" modifier_class="dropdown2"}}
+        {{> "Nav.BarLight.Dropdown" modifier_class="dropdown3"}}
+    </ul>
+</nav>
+
+MarkupWrapperClasses: bg_texture-dark h_40
+ 
+Weight:10
+ 
+Styleguide Nav.BarLight
+*/
+
+
+/*
+Link
+ 
+active - the active state of the nav item.
+disabled - the disabled state of the nav item.
+ 
+Markup:
+<li class="{{> Nav.BarLight.Classes.LinkContainer}} {{modifier_class}}" >
+    <a href="" class="{{> "Nav.BarLight.Classes.Link"}} {{modifier_class}}"> <span class="capitalize">{{modifier_class}}</span> Basic Link</a>
+</li>
+
+MarkupWrapperClasses: ul_none
+ 
+Weight: -150
+ 
+Styleguide Nav.BarLight.Link
+*/
+
+/*
+Link - Dropdown
+ 
+Description: 
+ 
+Markup:
+<li class="dropdown {{> Nav.BarLight.Classes.LinkContainer }}">
+<a href="#" class="{{> "Nav.BarLight.Classes.Link"}}">Drop Down Link</a>
+<a href="#" class="toggle {{> "Nav.BarLight.Classes.DropdownToggle"}} {{modifier_class}}" data-bs-target="{{modifier_class}}Menu" id="{{modifier_class}}Button" aria-expanded="false" data-bs-toggle="dropdown">
+    <i class="fas fa-chevron-down"></i>
+    <span class="display_none">Toggle Dropdown</span>
+</a>
+<ul class="dropdown-menu ul_none font-size_down-1  {{modifier_class}}" aria-labelledby="{{modifier_class}}Button" id="{{modifier_class}}Menu">
+    <li><a class="dropdown-item" href="#">Action</a></li>
+    <li><a class="dropdown-item" href="#">Another action</a></li>
+    <li><a class="dropdown-item" href="#">Something else here</a></li>
+    <li><hr class="dropdown-divider"></li>
+    <li><a class="dropdown-item" href="#">Separated link</a></li>
+</ul> 
+</li>
+
+MarkupWrapperClasses: ul_none
+
+ 
+Weight: 0
+ 
+Styleguide Nav.BarLight.Dropdown
+*/
+
+/* 
+Classes
+
+Markup:
+<code class="overflow_scroll">
+    <pre class="font_0l">
+    Classes:{
+        nav-container-classes:{ {{> "Nav.BarLight.Classes.Container"}} },
+        nav-classes:{ {{> "Nav.BarLight.Classes.Nav"}}  },
+        nav-link-container-classes:{ {{> Nav.BarLight.Classes.LinkContainer}} },
+        nav-link-classes:{ {{> Nav.BarLight.Classes.Link}}  },
+        nav-toggle-classes:{ {{> Nav.BarLight.Classes.DropdownToggle}}  },
+        nav-toggle-icon:{ {{> "Nav.BarLight.Classes.DropdownToggleIcon"}} },
+        nav-dropdown-item:{ {{> "Nav.DropTab.Classes.DropdownItem" }} }
+    }
+    </pre>
+</code>
+
+Weight: 100
+
+Styleguide Nav.BarLight.Classes
+*/
+
+/*
+Classes - Nav Container
+ 
+Nav Container Classes
+ 
+Markup:
+bg_white font_2:lg font_0:md font_display sticky t_0 shadow_overlap-light 
+
+Weight:1000
+ 
+Styleguide Nav.BarLight.Classes.Container
+*/
+/*
+Classes - Nav
+ 
+Nav Classes
+ 
+Markup:
+ul_none flex flex_row:md flex_column no_wrap justify_stretch 
+ 
+Weight:1000
+ 
+Styleguide Nav.BarLight.Classes.Nav
+*/
+
+
+/*
+Classes - Link Container
+ 
+Description: 
+ 
+Markup:
+h:bg_brand-5 h:c_brand-n2 a:c_white a:bg_accent c_brand  flex_auto flex flex_inline nowrap gap-x_2 justify_stretch
+ 
+Weight:1000
+ 
+Styleguide Nav.BarLight.Classes.LinkContainer
+*/
+/*
+Classes - Link
+ 
+Description: 
+ 
+Markup:
+text-shadow_black-1 undecorated h:undecorated p-y_4 flex_auto text_center:lg
+ 
+Weight:1000
+ 
+Styleguide Nav.BarLight.Classes.Link
+*/
+
+/*
+Classes - Dropdown Toggle
+ 
+Description: 
+ 
+Markup:
+toggle | h:bg_brand-4 c_brand h:c_brand-n2 | undecorated br_radius p-x_3 m-l_auto m-l_3:lg m_4 text-shadow_black-1 flex_column flex justify_center
+ 
+Weight:1000
+ 
+Styleguide Nav.BarLight.Classes.DropdownToggle
+*/
+/*
+Classes: Dropdown Toggle Icon
+ 
+
+Markup:
+fa-chevron-circle-down
+ 
+Weight:0
+ 
+Styleguide Nav.BarLight.Classes.DropdownToggleIcon
+*/
+
+/*
+Classes: Dropdown Item
+ 
+Markup:
+h:bg-brand-5 
+ 
+Weight:0
+ 
+Styleguide Nav.DropTab.Classes.DropdownItem
+*/

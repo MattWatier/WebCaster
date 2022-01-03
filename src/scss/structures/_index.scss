@@ -9,10 +9,13 @@ Weight:0
  
 Styleguide Template
 */
-@forward "nav";
-@forward "nav-bar";
-@forward "nav-droptab";
-@forward "nav-linkpipe";
+@use "nav";
+@use "nav-barlight";
+
+@use "nav-bardark";
+@use "nav-droptab";
+@use "nav-linkpipe";
+@use "nav-bigstackedtext";
 
 
 

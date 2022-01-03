@@ -2,15 +2,15 @@
 /*
 Typography
 
-Description: Styling html that you don't have conrol over is best wrapped in a `<div>` with a `class` of `.reading-typography`.
+Description: Styling html that you don't have control over is best wrapped in a `<div>` with a `class` of `.reading-typography`.
 
 Markup:
 <main class="reading-typography">
     <section>
         <hgroup>
             <h1>h1 HTML5 Kitchen Sink</h1>
-            <h2>h2 Back in my quaint <a href='#'>garden</a></h2>
-            <h3>h3 Jaunty <a href='#'>zinnias</a> vie with flaunting phlox</h3>
+            <h2>links in the header use  <a href='mailto:.pdf'>super versions</a> of the link decorators.</h2>
+            <h3>h3 This is a trademark link <a href='#' aria-label="trademark">zinnias</a> the symbol shows up because of the aria-label</h3>
             <h4>h4 Five or six big jet planes zoomed quickly by the new tower.</h4>
             <h5>h5 Expect skilled songwriters to use many jazzy, quaint old alphabets effectively.</h5>
             <h6>h6 Pack my box with five dozen liquor jugs.</h6>
@@ -154,6 +154,23 @@ Markup:
 Weight:0
 
 Styleguide Basic.Typography
+*/
+/*
+Aria Labels
+
+Description: Sometimes is important to have a labels around parts of text.
+
+copyright - copyright symbol
+trademark - trademark symbol
+register - registered trademark symbol
+
+Markup:
+<span class="font_2 font_bold font_display" aria-label="{{modifier_class}}">the Aria Label {{modifier_class}}</span>
+
+
+Weight:0
+
+Styleguide Basic.AriaLabelText
 */
 /*
 Presenter 
@@ -1018,17 +1035,16 @@ Weight: -10000
 Styleguide Nav.Skeleton
 */
 /*
-Bar Nav
-
-Bar Nav
+Bar Light Nav
 
 Markup:
-<nav class="{{> "Nav.Bar.Classes.Container"}}">
-    <ul class="{{> "Nav.Bar.Classes.Nav"}} ">
-        {{> "Nav.Bar.Link" }}
-        {{> "Nav.Bar.Link" modifier_class='active' }}
-        {{> "Nav.Bar.Dropdown" modifier_class="dropdown2"}}
-        {{> "Nav.Bar.Dropdown" modifier_class="dropdown3"}}
+<nav class="{{> "Nav.BarLight.Classes.Container"}}">
+    <ul class="{{> "Nav.BarLight.Classes.Nav"}} ">
+        {{> "Nav.BarLight.Link" }}
+        {{> "Nav.BarLight.Link" modifier_class='active' }}
+        {{> "Nav.BarLight.Link" modifier_class='disabled' }}
+        {{> "Nav.BarLight.Dropdown" modifier_class="dropdown2"}}
+        {{> "Nav.BarLight.Dropdown" modifier_class="dropdown3"}}
     </ul>
 </nav>
 
@@ -1036,25 +1052,24 @@ MarkupWrapperClasses: bg_texture-dark h_40
 
 Weight:10
 
-Styleguide Nav.Bar
+Styleguide Nav.BarLight
 */
 /*
 Link
 
 active - the active state of the nav item.
+disabled - the disabled state of the nav item.
 
 Markup:
-<li class="{{> Nav.Bar.Classes.LinkContainer}} {{modifier_class}}" >
-    <div class="flex flex_inline nowrap gap-x_3">            
-        <a href="" class="{{> "Nav.Bar.Classes.Link"}} {{modifier_class}}"> <span class="capitalize">{{modifier_class}}</span> Basic Link</a>
-    </div>
+<li class="{{> Nav.BarLight.Classes.LinkContainer}} {{modifier_class}}" >
+    <a href="" class="{{> "Nav.BarLight.Classes.Link"}} {{modifier_class}}"> <span class="capitalize">{{modifier_class}}</span> Basic Link</a>
 </li>
 
 MarkupWrapperClasses: ul_none
 
 Weight: -150
 
-Styleguide Nav.Bar.Link
+Styleguide Nav.BarLight.Link
 */
 /*
 Link - Dropdown
@@ -1062,21 +1077,19 @@ Link - Dropdown
 Description: 
 
 Markup:
-<li class="dropdown {{> Nav.Bar.Classes.LinkContainer }}">
-    <div class="flex flex_inline nowrap gap-x_3">            
-        <a href="#" class="{{> "Nav.Bar.Classes.Link"}}">Drop Down Link</a>
-        <a href="#" class="toggle {{> "Nav.Bar.Classes.DropdownToggle"}} {{modifier_class}}" data-bs-target="{{modifier_class}}Menu" id="{{modifier_class}}Button" aria-expanded="false" data-bs-toggle="dropdown">
-            <i class="fas fa-chevron-down"></i>
-            <span class="display_none">Toggle Dropdown</span>
-        </a>
-        <ul class="dropdown-menu ul_none font-size_down-1  {{modifier_class}}" aria-labelledby="{{modifier_class}}Button" id="{{modifier_class}}Menu">
-            <li><a class="dropdown-item" href="#">Action</a></li>
-            <li><a class="dropdown-item" href="#">Another action</a></li>
-            <li><a class="dropdown-item" href="#">Something else here</a></li>
-            <li><hr class="dropdown-divider"></li>
-            <li><a class="dropdown-item" href="#">Separated link</a></li>
-        </ul> 
-    </div>
+<li class="dropdown {{> Nav.BarLight.Classes.LinkContainer }}">
+<a href="#" class="{{> "Nav.BarLight.Classes.Link"}}">Drop Down Link</a>
+<a href="#" class="toggle {{> "Nav.BarLight.Classes.DropdownToggle"}} {{modifier_class}}" data-bs-target="{{modifier_class}}Menu" id="{{modifier_class}}Button" aria-expanded="false" data-bs-toggle="dropdown">
+    <i class="fas fa-chevron-down"></i>
+    <span class="display_none">Toggle Dropdown</span>
+</a>
+<ul class="dropdown-menu ul_none font-size_down-1  {{modifier_class}}" aria-labelledby="{{modifier_class}}Button" id="{{modifier_class}}Menu">
+    <li><a class="dropdown-item" href="#">Action</a></li>
+    <li><a class="dropdown-item" href="#">Another action</a></li>
+    <li><a class="dropdown-item" href="#">Something else here</a></li>
+    <li><hr class="dropdown-divider"></li>
+    <li><a class="dropdown-item" href="#">Separated link</a></li>
+</ul> 
 </li>
 
 MarkupWrapperClasses: ul_none
@@ -1084,21 +1097,21 @@ MarkupWrapperClasses: ul_none
 
 Weight: 0
 
-Styleguide Nav.Bar.Dropdown
+Styleguide Nav.BarLight.Dropdown
 */
 /* 
 Classes
 
 Markup:
-<code>
-    <pre>
+<code class="overflow_scroll">
+    <pre class="font_0l">
     Classes:{
-        nav-container-classes:{ {{> "Nav.Bar.Classes.Container"}} },
-        nav-classes:{ {{> "Nav.Bar.Classes.Nav"}}  },
-        nav-link-container-classes:{ {{> Nav.Bar.Classes.LinkContainer}} },
-        nav-link-classes:{ {{> Nav.Bar.Classes.Link}}  },
-        nav-toggle-classes:{ {{> Nav.Bar.Classes.DropdownToggle}}  },
-        nav-toggle-icon:{ {{> "Nav.Bar.Classes.DropdownToggleIcon"}} },
+        nav-container-classes:{ {{> "Nav.BarLight.Classes.Container"}} },
+        nav-classes:{ {{> "Nav.BarLight.Classes.Nav"}}  },
+        nav-link-container-classes:{ {{> Nav.BarLight.Classes.LinkContainer}} },
+        nav-link-classes:{ {{> Nav.BarLight.Classes.Link}}  },
+        nav-toggle-classes:{ {{> Nav.BarLight.Classes.DropdownToggle}}  },
+        nav-toggle-icon:{ {{> "Nav.BarLight.Classes.DropdownToggleIcon"}} },
         nav-dropdown-item:{ {{> "Nav.DropTab.Classes.DropdownItem" }} }
     }
     </pre>
@@ -1106,7 +1119,7 @@ Markup:
 
 Weight: 100
 
-Styleguide Nav.Bar.Classes
+Styleguide Nav.BarLight.Classes
 */
 /*
 Classes - Nav Container
@@ -1114,11 +1127,11 @@ Classes - Nav Container
 Nav Container Classes
 
 Markup:
-bg_white-7 font_2:lg font_0:md font_display sticky t_0
+bg_white font_2:lg font_0:md font_display sticky t_0 shadow_overlap-light 
 
 Weight:1000
 
-Styleguide Nav.Bar.Classes.Container
+Styleguide Nav.BarLight.Classes.Container
 */
 /*
 Classes - Nav
@@ -1126,23 +1139,11 @@ Classes - Nav
 Nav Classes
 
 Markup:
-ul_none flex flex_row:md flex_column no_wrap
+ul_none flex flex_row:md flex_column no_wrap justify_stretch 
 
 Weight:1000
 
-Styleguide Nav.Bar.Classes.Nav
-*/
-/*
-Classes - Link
-
-Description: 
-
-Markup:
-text-shadow_black font_bold c_brand h:c_brand-n2 undecorated h:undecorated 
-
-Weight:1000
-
-Styleguide Nav.Bar.Classes.Link
+Styleguide Nav.BarLight.Classes.Nav
 */
 /*
 Classes - Link Container
@@ -1150,11 +1151,23 @@ Classes - Link Container
 Description: 
 
 Markup:
-p_4 h:bg_white-5 flex_none
+h:bg_brand-5 h:c_brand-n2 a:c_white a:bg_accent c_brand  flex_auto flex flex_inline nowrap gap-x_2 justify_stretch
 
 Weight:1000
 
-Styleguide Nav.Bar.Classes.LinkContainer
+Styleguide Nav.BarLight.Classes.LinkContainer
+*/
+/*
+Classes - Link
+
+Description: 
+
+Markup:
+text-shadow_black-1 undecorated h:undecorated p-y_4 flex_auto text_center:lg
+
+Weight:1000
+
+Styleguide Nav.BarLight.Classes.Link
 */
 /*
 Classes - Dropdown Toggle
@@ -1162,11 +1175,11 @@ Classes - Dropdown Toggle
 Description: 
 
 Markup:
-toggle undecorated br_radius h:bg_white-5 p-x_2 m-l_auto text-shadow_black font_bold  text-shadow_white-1 c_brand h:c_brand-n2 
+toggle | h:bg_brand-4 c_brand h:c_brand-n2 | undecorated br_radius p-x_3 m-l_auto m-l_3:lg m_4 text-shadow_black-1 flex_column flex justify_center
 
 Weight:1000
 
-Styleguide Nav.Bar.Classes.DropdownToggle
+Styleguide Nav.BarLight.Classes.DropdownToggle
 */
 /*
 Classes: Dropdown Toggle Icon
@@ -1177,13 +1190,180 @@ fa-chevron-circle-down
 
 Weight:0
 
-Styleguide Nav.Bar.Classes.DropdownToggleIcon
+Styleguide Nav.BarLight.Classes.DropdownToggleIcon
 */
 /*
 Classes: Dropdown Item
 
 Markup:
 h:bg-brand-5 
+
+Weight:0
+
+Styleguide Nav.DropTab.Classes.DropdownItem
+*/
+/*
+Bar Dark Nav
+
+Markup:
+<nav class="{{> "Nav.BarDark.Classes.Container"}}">
+    <ul class="{{> "Nav.BarDark.Classes.Nav"}} ">
+        {{> "Nav.BarDark.Link" }}
+        {{> "Nav.BarDark.Link" modifier_class='active' }}
+        {{> "Nav.BarDark.Link" modifier_class='disabled' }}
+        {{> "Nav.BarDark.Dropdown" modifier_class="dropdown2"}}
+        {{> "Nav.BarDark.Dropdown" modifier_class="dropdown3"}}
+    </ul>
+</nav>
+
+MarkupWrapperClasses: bg_texture-light h_40
+
+Weight:10
+
+Styleguide Nav.BarDark
+*/
+/*
+Link
+
+active - the active state of the nav item.
+
+Markup:
+<li class="{{> Nav.BarDark.Classes.LinkContainer}} {{modifier_class}}" >
+    <a href="" class="{{> "Nav.BarDark.Classes.Link"}} {{modifier_class}}"> <span class="capitalize">{{modifier_class}}</span> Basic Link</a>
+</li>
+
+MarkupWrapperClasses: ul_none
+
+Weight: -150
+
+Styleguide Nav.BarDark.Link
+*/
+/*
+Link - Dropdown
+
+Description: 
+
+Markup:
+<li class="dropdown {{> Nav.BarDark.Classes.LinkContainer }}">
+<a href="#" class="{{> "Nav.BarDark.Classes.Link"}}">Drop Down Link</a>
+<a href="#" class="toggle {{> "Nav.BarDark.Classes.DropdownToggle"}} {{modifier_class}}" data-bs-target="{{modifier_class}}Menu" id="{{modifier_class}}Button" aria-expanded="false" data-bs-toggle="dropdown">
+    <i class="fas fa-chevron-down"></i>
+    <span class="display_none">Toggle Dropdown</span>
+</a>
+<ul class="dropdown-menu ul_none font-size_down-1  {{modifier_class}}" aria-labelledby="{{modifier_class}}Button" id="{{modifier_class}}Menu">
+    <li><a class="dropdown-item" href="#">Action</a></li>
+    <li><a class="dropdown-item" href="#">Another action</a></li>
+    <li><a class="dropdown-item" href="#">Something else here</a></li>
+    <li><hr class="dropdown-divider"></li>
+    <li><a class="dropdown-item" href="#">Separated link</a></li>
+</ul> 
+</li>
+
+MarkupWrapperClasses: ul_none
+
+
+Weight: 0
+
+Styleguide Nav.BarDark.Dropdown
+*/
+/* 
+Classes
+
+Markup:
+<code class="overflow_scroll">
+    <pre class="font_0l">
+    Classes:{
+        nav-container-classes:{ {{> "Nav.BarDark.Classes.Container"}} },
+        nav-classes:{ {{> "Nav.BarDark.Classes.Nav"}}  },
+        nav-link-container-classes:{ {{> Nav.BarDark.Classes.LinkContainer}} },
+        nav-link-classes:{ {{> Nav.BarDark.Classes.Link}}  },
+        nav-toggle-classes:{ {{> Nav.BarDark.Classes.DropdownToggle}}  },
+        nav-toggle-icon:{ {{> "Nav.BarDark.Classes.DropdownToggleIcon"}} },
+        nav-dropdown-item:{ {{> "Nav.DropTab.Classes.DropdownItem" }} }
+    }
+    </pre>
+</code>
+
+Weight: 100
+
+Styleguide Nav.BarDark.Classes
+*/
+/*
+Classes - Nav Container
+
+Nav Container Classes
+
+Markup:
+bg_brand font_2:lg font_0:md font_display sticky t_0 shadow_overlap-light 
+
+Weight:1000
+
+Styleguide Nav.BarDark.Classes.Container
+*/
+/*
+Classes - Nav
+
+Nav Classes
+
+Markup:
+ul_none flex flex_row:md flex_column no_wrap justify_stretch 
+
+Weight:1000
+
+Styleguide Nav.BarDark.Classes.Nav
+*/
+/*
+Classes - Link Container
+
+Description: 
+
+Markup:
+c_white h:bg_brand-n2 a:bg_accent flex_auto flex flex_inline nowrap gap-x_2 justify_stretch
+
+Weight:1000
+
+Styleguide Nav.BarDark.Classes.LinkContainer
+*/
+/*
+Classes - Link
+
+Description: 
+
+Markup:
+text-shadow_black-1 undecorated h:undecorated  p-y_4 flex_auto text_center:lg
+
+Weight:1000
+
+Styleguide Nav.BarDark.Classes.Link
+*/
+/*
+Classes - Dropdown Toggle
+
+Description: 
+
+Markup:
+toggle | h:bg_brand-n4 h:c_white | undecorated br_radius p-x_3 m-l_auto m-l_3:lg m_4 text-shadow_black-1 flex_column flex justify_center
+
+Weight:1000
+
+Styleguide Nav.BarDark.Classes.DropdownToggle
+*/
+/*
+Classes: Dropdown Toggle Icon
+
+
+Markup:
+fa-chevron-circle-down
+
+Weight:0
+
+Styleguide Nav.BarDark.Classes.DropdownToggleIcon
+*/
+/*
+Classes: Dropdown Item
+
+Markup:
+h:bg_brand-n3 
 
 Weight:0
 
@@ -1217,9 +1397,7 @@ active - the active state of the nav item.
 
 Markup:
 <li class="{{modifier_class}} {{> Nav.DropTab.Classes.LinkContainer}}" >
-    <div class="flex flex_row nowrap gap-x_3">            
-        <a href="" class="flex_auto {{modifier_class}} {{> "Nav.DropTab.Classes.Link"}}"><span class="capitalize">{{modifier_class}}</span> Basic Link</a>
-    </div>
+    <a href="" class="flex_auto {{modifier_class}} {{> "Nav.DropTab.Classes.Link"}}"><span class="capitalize">{{modifier_class}}</span> Basic Link</a>
 </li>
 
 MarkupWrapperClasses: ul_none
@@ -1235,20 +1413,18 @@ Description:
 
 Markup:
 <li class="dropdown {{> Nav.DropTab.Classes.LinkContainer }}">
-    <div class="flex flex_inline nowrap gap-x_3">            
-        <a href="#" class="{{> "Nav.DropTab.Classes.Link"}}">Drop Down Link</a>
-        <a href="#" class="toggle {{> "Nav.DropTab.Classes.DropdownToggle"}} {{modifier_class}}" data-bs-target="{{modifier_class}}Menu" id="{{modifier_class}}Button" aria-expanded="false" data-bs-toggle="dropdown">
-            <i class="fas {{> "Nav.DropTab.Classes.DropdownToggleIcon"}}"></i>
-            <span class="display_none">Toggle Dropdown</span>
-        </a>
-        <ul class="dropdown-menu ul_none font-size_down-1  {{modifier_class}}" aria-labelledby="{{modifier_class}}Button" id="{{modifier_class}}Menu">
-            <li><a class="dropdown-item {{> "Nav.DropTab.Classes.DropdownItem" }}" href="#">Action</a></li>
-            <li><a class="dropdown-item {{> "Nav.DropTab.Classes.DropdownItem" }}" href="#">Another action</a></li>
-            <li><a class="dropdown-item {{> "Nav.DropTab.Classes.DropdownItem" }}" href="#">Something else here</a></li>
-            <li><hr class="dropdown-divider"></li>
-            <li><a class="dropdown-item {{> "Nav.DropTab.Classes.DropdownItem" }}" href="#">Separated link</a></li>
-        </ul> 
-    </div>
+    <a href="#" class="{{> "Nav.DropTab.Classes.Link"}}">Drop Down Link</a>
+    <a href="#" class="toggle {{> "Nav.DropTab.Classes.DropdownToggle"}} {{modifier_class}}" data-bs-target="{{modifier_class}}Menu" id="{{modifier_class}}Button" aria-expanded="false" data-bs-toggle="dropdown">
+        <i class="fas {{> "Nav.DropTab.Classes.DropdownToggleIcon"}}"></i>
+        <span class="display_none">Toggle Dropdown</span>
+    </a>
+    <ul class="dropdown-menu ul_none font-size_down-1  {{modifier_class}}" aria-labelledby="{{modifier_class}}Button" id="{{modifier_class}}Menu">
+        <li><a class="dropdown-item {{> "Nav.DropTab.Classes.DropdownItem" }}" href="#">Action</a></li>
+        <li><a class="dropdown-item {{> "Nav.DropTab.Classes.DropdownItem" }}" href="#">Another action</a></li>
+        <li><a class="dropdown-item {{> "Nav.DropTab.Classes.DropdownItem" }}" href="#">Something else here</a></li>
+        <li><hr class="dropdown-divider"></li>
+        <li><a class="dropdown-item {{> "Nav.DropTab.Classes.DropdownItem" }}" href="#">Separated link</a></li>
+    </ul> 
 </li>
 
 MarkupWrapperClasses: ul_none
@@ -1262,7 +1438,7 @@ Styleguide Nav.DropTab.Dropdown
 Classes
 
 Markup:
-<code><pre>
+<code class="overflow_scroll"><pre class="font_0l">
 Classes:{
     nav-container-classes:{ {{> "Nav.DropTab.Classes.Container"}} },
     nav-classes:{ {{> "Nav.DropTab.Classes.Nav"}}  },
@@ -1308,7 +1484,7 @@ Classes: Link Container
 Description: 
 
 Markup:
-h:bg_brand-5 flex_none br-br_round:md br-bl_round:md a:bg_brand
+h:bg_brand-5 flex_none br-br_round:md br-bl_round:md a:bg_brand flex flex_inline nowrap gap-x_3
 
 Weight:1000
 
@@ -1332,7 +1508,7 @@ Classes: Dropdown Toggle
 Description: 
 
 Markup:
-toggle undecorated br_radius h:bg_brand-5 p-x_2 m-l_auto m-r_4 font_bold c_brand h:c_brand-n2 flex flex_column justify_center flex_none
+toggle undecorated br_radius h:bg_brand-5 p-x_2 m-l_auto m-l_0:auto m-r_4 font_bold c_brand h:c_brand-n2 flex flex_column justify_center flex_none
 
 Weight:1000
 
@@ -1385,9 +1561,7 @@ active - the active state of the nav item.
 
 Markup:
 <li class="{{> Nav.LinkPipe.Classes.LinkContainer}} {{modifier_class}}" >
-    <div class="flex flex_row text_center justify_center:md justify_flex-start nowrap gap-x_3">            
-        <a href="" class="{{> "Nav.LinkPipe.Classes.Link"}} {{modifier_class}}"> <span class="capitalize">{{modifier_class}}</span> Basic Link</a>
-    </div>
+    <a href="" class="{{> "Nav.LinkPipe.Classes.Link"}} {{modifier_class}}"> <span class="capitalize">{{modifier_class}}</span> Basic Link</a>
 </li>
 
 MarkupWrapperClasses: ul_none
@@ -1403,20 +1577,18 @@ Description:
 
 Markup:
 <li class="dropdown {{> Nav.LinkPipe.Classes.LinkContainer }}">
-    <div class="flex flex_row text_center justify_center:md justify_flex-start nowrap gap-x_3">            
-        <a href="#" class="{{> "Nav.LinkPipe.Classes.Link"}}">Drop Down Link</a>
-        <a href="#" class="toggle {{> "Nav.LinkPipe.Classes.DropdownToggle"}} {{modifier_class}}" data-bs-target="{{modifier_class}}Menu" id="{{modifier_class}}Button" aria-expanded="false" data-bs-toggle="dropdown">
-            <i class="fas fa-chevron-down"></i>
-            <span class="display_none">Toggle Dropdown</span>
-        </a>
-        <ul class="dropdown-menu ul_none font-size_down-1 {{modifier_class}}" aria-labelledby="{{modifier_class}}Button" id="{{modifier_class}}Menu">
-            <li><a class="dropdown-item {{> "Nav.DropTab.Classes.DropdownItem" }}" href="#">Action</a></li>
-            <li><a class="dropdown-item {{> "Nav.DropTab.Classes.DropdownItem" }}" href="#">Another action</a></li>
-            <li><a class="dropdown-item {{> "Nav.DropTab.Classes.DropdownItem" }}" href="#">Something else here</a></li>
-            <li><hr class="dropdown-divider"></li>
-            <li><a class="dropdown-item {{> "Nav.DropTab.Classes.DropdownItem" }}" href="#">Separated link</a></li>
-        </ul> 
-    </div>
+    <a href="#" class="{{> "Nav.LinkPipe.Classes.Link"}}">Drop Down Link</a>
+    <a href="#" class="toggle {{> "Nav.LinkPipe.Classes.DropdownToggle"}} {{modifier_class}}" data-bs-target="{{modifier_class}}Menu" id="{{modifier_class}}Button" aria-expanded="false" data-bs-toggle="dropdown">
+        <i class="fas {{> "Nav.LinkPipe.Classes.DropdownToggleIcon"}}"></i>
+        <span class="display_none">Toggle Dropdown</span>
+    </a>
+    <ul class="dropdown-menu ul_none font-size_down-1 {{modifier_class}}" aria-labelledby="{{modifier_class}}Button" id="{{modifier_class}}Menu">
+        <li><a class="dropdown-item {{> "Nav.DropTab.Classes.DropdownItem" }}" href="#">Action</a></li>
+        <li><a class="dropdown-item {{> "Nav.DropTab.Classes.DropdownItem" }}" href="#">Another action</a></li>
+        <li><a class="dropdown-item {{> "Nav.DropTab.Classes.DropdownItem" }}" href="#">Something else here</a></li>
+        <li><hr class="dropdown-divider"></li>
+        <li><a class="dropdown-item {{> "Nav.DropTab.Classes.DropdownItem" }}" href="#">Separated link</a></li>
+    </ul> 
 </li>
 
 MarkupWrapperClasses: ul_none
@@ -1430,8 +1602,8 @@ Styleguide Nav.LinkPipe.Dropdown
 Classes
 
 Markup:
-<code>
-    <pre>
+<code class="overflow_scroll">
+    <pre class="font_0l">
     Classes:{
         nav-container-classes:{ {{> "Nav.LinkPipe.Classes.Container"}} },
         nav-classes:{ {{> "Nav.LinkPipe.Classes.Nav"}}  },
@@ -1478,7 +1650,7 @@ Classes - Link Container
 Description: 
 
 Markup:
-p-x_4  p-y_4:lg p-y_3:md p-y_2 flex_auto br_brand br_dotted:md br_none 
+flex_auto br_brand br_dotted:md br_none flex flex_row text_center justify_center:md justify_flex-start nowrap gap-x_3 p-y_3:lg p-y_3:md p-y_2
 
 Weight:1000
 
@@ -1490,7 +1662,7 @@ Classes - Link
 Description: 
 
 Markup:
-font_light c_brand h:c_brand-n2 undecorated h:underline 
+font_light c_brand h:c_brand-n2 undecorated h:undecorated br-b_4 br_solid  br_white h:br_brand a:br_accent text_center:lg
 
 Weight:1000
 
@@ -1502,7 +1674,7 @@ Classes - Dropdown Toggle
 Description: 
 
 Markup:
-toggle undecorated br_radius h:bg_white-5 p-x_2 m-l_auto m-l_2:lg text-shadow_black text-shadow_white-1 c_brand h:c_brand-n2 
+toggle undecorated br_radius p-x_2 m-l_auto m-l_0:md m-r_4 font_bold c_brand h:c_brand-n2 flex flex_column justify_center flex_none br-b_4 br_solid br_white
 
 Weight:1000
 
@@ -1513,11 +1685,178 @@ Classes: Dropdown Toggle Icon
 
 
 Markup:
-fa-chevron-circle-down
+fa-plus-square
 
 Weight:0
 
 Styleguide Nav.LinkPipe.Classes.DropdownToggleIcon
+*/
+/*
+Classes: Dropdown Item
+
+Markup:
+h:bg_brand h:c_white 
+
+Weight:0
+
+Styleguide Nav.DropTab.Classes.DropdownItem
+*/
+/*
+Big Stacked Text Nav
+
+Markup:
+<nav class="{{> "Nav.BigStackedText.Classes.Container"}} isolate z_3">
+    <ul class="{{> "Nav.BigStackedText.Classes.Nav"}} ">
+        {{> "Nav.BigStackedText.Link" }}
+        {{> "Nav.BigStackedText.Link" modifier_class='active' }}
+        {{> "Nav.BigStackedText.Link" modifier_class='disabled' }}
+        {{> "Nav.BigStackedText.Dropdown" modifier_class="dropdown2"}}
+        {{> "Nav.BigStackedText.Dropdown" modifier_class="dropdown3"}}
+    </ul>
+</nav>
+
+MarkupWrapperClasses: 
+
+Weight:10
+
+Styleguide Nav.BigStackedText
+*/
+/*
+Link
+
+active - the active state of the nav item.
+
+Markup:
+<li class="{{> Nav.BigStackedText.Classes.LinkContainer}} {{modifier_class}}" >
+    <a href="" class="{{> "Nav.BigStackedText.Classes.Link"}} {{modifier_class}}"> <span class="capitalize">{{modifier_class}}</span> Basic Link</a>
+</li>
+
+MarkupWrapperClasses: ul_none
+
+Weight: -150
+
+Styleguide Nav.BigStackedText.Link
+*/
+/*
+Link - Dropdown
+
+Description: 
+
+Markup:
+<li class="dropdown {{> Nav.BigStackedText.Classes.LinkContainer }}">
+    <a href="#" class="{{> "Nav.BigStackedText.Classes.Link"}}">Drop Down Link</a>
+    <a href="#" class="toggle {{> "Nav.BigStackedText.Classes.DropdownToggle"}} {{modifier_class}}" data-bs-target="{{modifier_class}}Menu" id="{{modifier_class}}Button" aria-expanded="false" data-bs-toggle="dropdown">
+        <i class="fas {{> "Nav.BigStackedText.Classes.DropdownToggleIcon"}}"></i>
+        <span class="display_none">Toggle Dropdown</span>
+    </a>
+    <ul class="dropdown-menu ul_none font_0  {{modifier_class}}" aria-labelledby="{{modifier_class}}Button" id="{{modifier_class}}Menu">
+        <li><a class="dropdown-item {{> "Nav.DropTab.Classes.DropdownItem" }}" href="#">Action</a></li>
+        <li><a class="dropdown-item {{> "Nav.DropTab.Classes.DropdownItem" }}" href="#">Another action</a></li>
+        <li><a class="dropdown-item {{> "Nav.DropTab.Classes.DropdownItem" }}" href="#">Something else here</a></li>
+        <li><hr class="dropdown-divider"></li>
+        <li><a class="dropdown-item {{> "Nav.DropTab.Classes.DropdownItem" }}" href="#">Separated link</a></li>
+    </ul> 
+</li>
+
+MarkupWrapperClasses: ul_none
+
+
+Weight: 0
+
+Styleguide Nav.BigStackedText.Dropdown
+*/
+/* 
+Classes
+
+Markup:
+<code class="overflow_scroll">
+    <pre class="font_0l">
+    Classes:{
+        nav-container-classes:{ {{> "Nav.BigStackedText.Classes.Container"}} },
+        nav-classes:{ {{> "Nav.BigStackedText.Classes.Nav"}}  },
+        nav-link-container-classes:{ {{> Nav.BigStackedText.Classes.LinkContainer}} },
+        nav-link-classes:{ {{> Nav.BigStackedText.Classes.Link}}  },
+        nav-toggle-classes:{ {{> Nav.BigStackedText.Classes.DropdownToggle}}  },
+        nav-toggle-icon:{ {{> "Nav.BigStackedText.Classes.DropdownToggleIcon"}} },
+        nav-dropdown-item:{ {{> "Nav.DropTab.Classes.DropdownItem" }} }
+    }
+    </pre>
+</code>
+
+Weight: 100
+
+Styleguide Nav.BigStackedText.Classes
+*/
+/*
+Classes - Nav Container
+
+Nav Container Classes
+
+Markup:
+font_7:lg font_4:md font_3 font_display font_light t_0 p_5
+
+Weight:1000
+
+Styleguide Nav.BigStackedText.Classes.Container
+*/
+/*
+Classes - Nav
+
+Nav Classes
+
+Markup:
+ul_none flex flex_column justify_start gap-y_4
+
+Weight:1000
+
+Styleguide Nav.BigStackedText.Classes.Nav
+*/
+/*
+Classes - Link Container
+
+Description: 
+
+Markup:
+flex_auto flex flex_row justify_flex-start nowrap gap-x_3 p-y_3:lg p-y_3:md p-y_2
+
+Weight:1000
+
+Styleguide Nav.BigStackedText.Classes.LinkContainer
+*/
+/*
+Classes - Link
+
+Description: 
+
+Markup:
+c_brand h:c_brand-n2 undecorated h:undecorated br-b_3  p-b_2 br_solid  br_white h:br_brand a:br_accent a:c_accent text_center:lg lh_0 
+
+Weight:1000
+
+Styleguide Nav.BigStackedText.Classes.Link
+*/
+/* 
+Classes - Dropdown Toggle
+
+Description: 
+
+Markup:
+toggle undecorated br_radius p-x_2 m-l_auto m-l_0:md m-r_4 c_brand h:c_brand-n2 flex flex_column justify_center flex_none  font-size_down-2:lg font-size_down-1:md
+
+Weight:1000
+
+Styleguide Nav.BigStackedText.Classes.DropdownToggle
+*/
+/*
+Classes: Dropdown Toggle Icon
+
+
+Markup:
+fa-plus fal
+
+Weight:0
+
+Styleguide Nav.BigStackedText.Classes.DropdownToggleIcon
 */
 /*
 Classes: Dropdown Item
