@@ -6,7 +6,7 @@ Agenda Item
 Description:
 Agenda items are sessions that are scheduled for a specific date, location, and time.
  
-Weight:0
+Weight:-1000
  
 Styleguide Data.Agenda
 */
@@ -21,7 +21,7 @@ The ID given to an Agenda. This number is unique to the Agenda and is incremente
 Markup:
 101
  
-Weight:1
+Weight: 0
  
 Styleguide Data.Agenda.ID
 */
@@ -34,10 +34,10 @@ Description:
 A channel is a visible category that an Agenda Item belongs to.
  
 Markup:
-Navigating Health Care Economics 
+(Channel Name) Navigating Health Care Economics 
 
  
-Weight:1
+Weight: 1
  
 Styleguide Data.Agenda.ChannelName
 */
@@ -55,7 +55,7 @@ FORMAT: 12 hour with 'a.m.'/'p.m' and Abbreviation of Timezone.
 
 NOTE: The 'a.m.'/'p.m.' if the same should only occur on the last time mark.  11:15 a.m. - 11:30 a.m. should be shortened to 11:15  - 11:30 a.m.
 
-Weight:0
+Weight: 10
  
 Styleguide Data.Agenda.LiveTime
 */
@@ -71,7 +71,7 @@ Markup: Saturday, Nov. 20, 2021
 
 FORMAT: Day-of-Week, Month-Abbreviation.  Day, Year
 
-Weight:0
+Weight: 11
  
 Styleguide Data.Agenda.LiveDate
 */
@@ -89,7 +89,7 @@ FORMAT: Day-of-Week, Month-Abbreviation.  Day, Year @ Hour:Minute 'a.m.'/'p.m' A
 
 NOTE:  Use the simple abbreviation for the timezone without Daylight Savings Time. IE: ET not EDT or EST.
 
-Weight:0
+Weight: 12
  
 Styleguide Data.Agenda.onDemandReleaseTime
 */

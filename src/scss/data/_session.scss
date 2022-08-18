@@ -1,4 +1,20 @@
 
+%Data.Collection {
+}
+/*
+Collection 
+ 
+A collection is an grouping of sessions
+ 
+Markup:
+(Collection Title) Yearly Conference 
+
+Experiential: This is not an approved data point.
+
+Weight:100
+ 
+Styleguide Data.Collection
+*/
 %Data.Session {
 }
 /*
@@ -6,12 +22,8 @@ Session
  
 A Session is a specific time slot in an Agenda. This could be either a single presentation or a series of presentations.
  
-Markup:
-Electrical Disorders - Rhythm and Conduction Disorders
 
-Experiential: This is not an approved data point.
-
-Weight:100
+Weight: -10
  
 Styleguide Data.Session
 */
@@ -24,26 +36,26 @@ Session Subtitle
 The subtitle of a Session.
  
 Markup:
-Electrical Disorders - Rhythm and Conduction Disorders
+(Session Sub Title) Rhythm and Conduction Disorders
 
 Experiential: This is not an approved data point.
 
-Weight:2
+Weight: 2
  
 Styleguide Data.Session.Subtitle
 */
 %Data.Session.Title {
 }
 /*
-Session Title
+Title
  
 Description:
 The title of a Session.
  
 Markup:
-Cardiovascular Update for the Clinician III
+(Title) Quam ut Blat Ruble Prapms 
  
-Weight:1
+Weight: 1
  
 Styleguide Data.Session.Title
 */
@@ -51,7 +63,7 @@ Styleguide Data.Session.Title
 %Data.Session.ID {
 }
 /*
-Session Identifier
+ID
  
 Description:
 The ID given to a session
@@ -59,22 +71,22 @@ The ID given to a session
 Markup:
 3652
  
-Weight:0
+Weight: 0
  
 Styleguide Data.Session.ID
 */
 
-%Data.Session.Subtitle {
+%Data.Session.Description {
 }
 /*
-Session Description
+Description
  
 The description of a session.
  
 Markup:
-<p>Maxime et ea adipisci voluptas. Omnis nobis recusandae alias eius sed ipsam aut. Ipsam dolore qui. Soluta laudantium quae assumenda ipsa tempore voluptas et culpa. Et praesentium quasi. Quas ratione vero aspernatur.</p>
+<p>Maxime et ea adipisci voluptas. Omnis nobis recusandae alias eius sed ipsam aut. Ipsam dolore qui. Soluta laudantium quae assumenda ipsa tempore voluptas et culpa. Et praesentium quasi. Quas ratione vero aspernatur.<em>(Description)</em></p>
  
-Weight:3
+Weight: 3
  
 Styleguide Data.Session.Description
 */
